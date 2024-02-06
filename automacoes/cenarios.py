@@ -5,4 +5,3 @@ class Cenarios:
         self.cenarios = {
             "inputUsuario":"page.goto('https://github.com')"  
         }
-page.locator("text=Sign in").click()
