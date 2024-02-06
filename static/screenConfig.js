@@ -74,11 +74,13 @@ function addNewImage(x,y,width,height,img){
 
 
 
-addNewImage(-330,120,1300,1300,'static/telaLogin.jpeg')
-addNewImage(1000,120,1300,1300,'static/modalTopDrivers.jpeg')
-addNewImage(2300,120,1300,1300,'static/telaInicial.jpeg')
+addNewImage(150,120,1300,1300,'static/telaLogin.jpeg')
+addNewImage(150,1800,1300,1300,'static/modalTopDrivers.jpeg')
+addNewImage(-500,3400,1300,1300,'static/telaInicial.jpeg')
 
-addNewImage(3000,1800,1300,1300,'static/telaMenu.jpeg')
-addNewImage(3700,1800,1300,1300,'static/telaMenu2.jpeg')
-addNewImage(1300,1800,1300,1300,'static/telaAgenda.jpeg')
-addNewImage(4500,120,1300,1300,'static/telaViagens.jpeg')
+addNewImage(800,3400,1300,1300,'static/telaMenu.jpeg')
+addNewImage(1500,3400,1300,1300,'static/telaMenu2.jpeg')
+addNewImage(150,5200,1300,1300,'static/telaAgenda.jpeg')
+addNewImage(-2000,1200,1300,1300,'static/telaViagens.jpeg')
+
+addNewImage(-4000,2000,1300,1300,'static/modalRanking.png')
