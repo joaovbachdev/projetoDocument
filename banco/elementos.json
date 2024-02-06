@@ -1,0 +1,162 @@
+{
+    "inputUsuario": {
+        "position": [
+            120,
+            600
+        ],
+        "description": "input da tela ddasdadadsdassdae login",
+        "name": "inputUsuario",
+        "interageCom":"botaoEntrar"
+    },
+    "inputSenha": {
+        "position": [
+            120,
+            720
+        ],
+        "description": "input para digitar a senha na tela de login",
+        "name": "inputSenha",
+        "interageCom":""
+    },
+    "botaoEntrar": {
+        "position": [
+            530,
+            860
+        ],
+        "description": "botao usado para validar inputs de usuario e senha",
+        "name": "botaoEntrar",
+        "interageCom":"modalTopDrivers"
+    },
+    "erroLogin": {
+        "position": [
+            120,
+            810
+        ],
+        "description": "botao usado para validar inputs de usuario e senha",
+        "name": "erroLogin",
+        "interageCom":"inputSenha"
+    },
+    "botaoPoliticas": {
+        "position": [
+            170,
+            1250
+        ],
+        "description": "botao clicavel que leva para uma pagina web com as politicas",
+        "name": "botaoPoliticas",
+        "interageCom":""
+    },
+    "modalTopDrivers": {
+        "position": [
+            1400,
+            400
+        ],
+        "description": "botao clicavel que leva para uma pagina web com as politicas",
+        "name": "modalTopDrivers",
+        "interageCom":""
+    },
+    "xFecharModalTopDriver": {
+        "position": [
+            1920,
+            400
+        ],
+        "description": "x para fechar a modal matrix top driver",
+        "name": "xFecharModalTopDriver",
+        "interageCom":"modalTopDrivers"
+    },
+    "botaoTamoJunto": {
+        "position": [
+            1410,
+            1060
+        ],
+        "description": "x para fechar a modal matrix top driver",
+        "name": "botaoTamoJunto",
+        "interageCom":"modalTopDrivers"
+    },
+    "sinoNotificacaoHeader": {
+        "position": [
+            3120,
+            260
+        ],
+        "description": "descricao aqui",
+        "name": "sinoNotificacaoHeader",
+        "interageCom":""
+    },
+    "chatHeader": {
+        "position": [3220,260],
+        "description": "descricao aqui",
+        "name": "chatHeader",
+        "interageCom":""
+    },
+    "atalhoMatrixPay": {
+        "position": [2700,320],
+        "description": "descricao aqui",
+        "name": "atalhoMatrixPay",
+        "interageCom":""
+    },
+    "rankingHeader": {
+        "position": [2700,240],
+        "description": "descricao aqui",
+        "name": "rankingHeader",
+        "interageCom":""
+    },
+    "inicioRodape": {
+        "position": [2700,1300],
+        "description": "descricao aqui",
+        "name": "inicioRodape",
+        "interageCom":""
+    },
+    "agendaRodape": {
+        "position": [2900,1300],
+        "description": "descricao aqui",
+        "name": "agendaRodape",
+        "interageCom":"telaAgenda"
+    },
+    "viagensRodape": {
+        "position": [3000,1300],
+        "description": "descricao aqui",
+        "name": "viagensRodape",
+        "interageCom":"telaViagens"
+    },
+    "menuRodape": {
+        "position": [3200,1300],
+        "description": "descricao aqui",
+        "name": "menuRodape",
+        "interageCom":"telaMenu"
+    },
+    "3pontinhosLocalizacao": {
+        "position": [3200,1000],
+        "description": "descricao aqui",
+        "name": "3pontinhosLocalizacao",
+        "interageCom":""
+    },
+    "telaViagens":{
+        "position": [4850,120],
+        "description": "descricao aqui",
+        "name": "telaViagens",
+        "interageCom":""
+    },
+    "telaAgenda":{
+        "position": [1650,1800],
+        "description": "descricao aqui",
+        "name": "telaAgenda",
+        "interageCom":""
+    },
+    "telaMenu":{
+        "position": [3350,1800],
+        "description": "descricao aqui",
+        "name": "telaMenu",
+        "interageCom":""
+    },
+    "telaLogin":{
+        "position": [30,120],
+        "description": "descricao aqui",
+        "name": "telaLogin",
+        "interageCom":""
+    },
+
+    "botaoSairDoAplicativo":{
+        "position": [4100,2850],
+        "description": "descricao aqui",
+        "name": "telaLogin",
+        "interageCom":"telaLogin"
+    }
+}

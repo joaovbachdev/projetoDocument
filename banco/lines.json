@@ -1,0 +1,92 @@
+{
+    "inputUsuario/botaoEntrar": {
+        "positions": [
+            120,
+            600,
+            530,
+            860
+        ],
+        "description": "sua descricao aqui",
+        "name": "inputUsuario/botaoEntrar"
+    },
+    "botaoEntrar/modalTopDrivers": {
+        "positions": [
+            530,
+            860,
+            1400,
+            400
+        ],
+        "description": "sua descricao aqui",
+        "name": "botaoEntrar/modalTopDrivers"
+    },
+    "erroLogin/inputSenha": {
+        "positions": [
+            120,
+            810,
+            120,
+            720
+        ],
+        "description": "sua descricao aqui",
+        "name": "erroLogin/inputSenha"
+    },
+    "xFecharModalTopDriver/modalTopDrivers": {
+        "positions": [
+            1920,
+            400,
+            1400,
+            400
+        ],
+        "description": "sua descricao aqui",
+        "name": "xFecharModalTopDriver/modalTopDrivers"
+    },
+    "botaoTamoJunto/modalTopDrivers": {
+        "positions": [
+            1410,
+            1060,
+            1400,
+            400
+        ],
+        "description": "sua descricao aqui",
+        "name": "botaoTamoJunto/modalTopDrivers"
+    },
+    "agendaRodape/telaAgenda": {
+        "positions": [
+            2900,
+            1300,
+            1650,
+            1800
+        ],
+        "description": "sua descricao aqui",
+        "name": "agendaRodape/telaAgenda"
+    },
+    "viagensRodape/telaViagens": {
+        "positions": [
+            3000,
+            1300,
+            4850,
+            120
+        ],
+        "description": "sua descricao aqui",
+        "name": "viagensRodape/telaViagens"
+    },
+    "menuRodape/telaMenu": {
+        "positions": [
+            3200,
+            1300,
+            3350,
+            1800
+        ],
+        "description": "sua descricao aqui",
+        "name": "menuRodape/telaMenu"
+    },
+    "botaoSairDoAplicativo/telaLogin": {
+        "positions": [
+            4100,
+            2850,
+            30,
+            120
+        ],
+        "description": "sua descricao aqui",
+        "name": "botaoSairDoAplicativo/telaLogin"
+    }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Aumento da escala para 1.5 -->
+        
+        
+    </head>
+    <body>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="{{ url_for('static', filename='criaElementos.js') }}"></script>
+        <script src="{{ url_for('static', filename='elementoController.js') }}"></script>
+        <script src="{{ url_for('static', filename='api.js') }}"></script>
+        <script src="{{ url_for('static', filename='createCard.js') }}"></script>
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', function(){
+            
+                getLines(createLine)
+                getElementos(createElement)
+
+            })
+
+            function clickElement(name){
+                getInformations(createCard,name)
+            }
+            function clickLine(name){
+                getLineInformations(createCard,name)
+            }
+            function executa(){
+                executar()
+            }
+        </script>
+        <div id="canvas-container">
+            
+
+                
+            <svg id="campo" xmlns="http://www.w3.org/2000/svg">
+            
+          </svg>
+        </div>
+      
+                <div class="sidebar" id="card">
+                    <h1></h1>
+                    <p></p>
+                    <button>Ececutar</button>
+                </div>
+
+
+                <script src="{{ url_for('static', filename='screenConfig.js') }}"></script>
+        
+    </body>
+</html>
