@@ -84,3 +84,7 @@ addNewImage(150,5200,1300,1300,'static/telaAgenda.jpeg')
 addNewImage(-2000,1200,1300,1300,'static/telaViagens.jpeg')
 
 addNewImage(-4000,2000,1300,1300,'static/modalRanking.png')
+
+addNewImage(-4000,4000,1300,1300,'static/telaCentralNotificacoes.png')
+
+addNewImage(-6000,2000,1300,1300,'static/top5Ranking.png')
