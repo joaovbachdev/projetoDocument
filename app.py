@@ -1,3 +1,5 @@
+from crypt import methods
+from unicodedata import name
 from flask import Flask, render_template, request
 import json
 from banco.controllerBanco import ControllerBanco
@@ -32,5 +34,21 @@ def getLineInformation():
 def executa():
     main.start()
     return "executado"
+
+@app.route("/auxCriaElemento", methods=["POST"])
+def auxCriaElemento():
+    print(request.json)
+    with open("banco/elementos.json", "r+") as f:
+        data = json.load(f)
+        data[request.json['name']] = {
+            'position': request.json['pos'],
+            'description':'cria via  auxiliar',
+            'name':request.json['name'],
+            'interageCom':""
+        }
+        f.seek(0)
+        json.dump(data,f,indent=4)
+        f.truncate()
+    return "a"
 
 app.run(debug=True)

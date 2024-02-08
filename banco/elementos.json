@@ -6,7 +6,7 @@
         ],
         "description": "input para digitar o cpf da conta do motorista, campo que aceita apenas numeros",
         "name": "inputUsuario",
-        "interageCom":"botaoEntrar"
+        "interageCom": "botaoEntrar"
     },
     "inputSenha": {
         "position": [
@@ -15,7 +15,7 @@
         ],
         "description": "input de senha para acessar a conta do motorista, campo que aceita qualquer caractere",
         "name": "inputSenha",
-        "interageCom":"erroLogin"
+        "interageCom": "erroLogin"
     },
     "botaoEntrar": {
         "position": [
@@ -24,7 +24,7 @@
         ],
         "description": "botao para validar login e entrar no aplicatio caso os dados estejam corretos",
         "name": "botaoEntrar",
-        "interageCom":"modalTopDrivers"
+        "interageCom": "modalTopDrivers"
     },
     "erroLogin": {
         "position": [
@@ -33,7 +33,7 @@
         ],
         "description": "mensagem de erro para quando tentar efeturar o login com dados invalidos",
         "name": "erroLogin",
-        "interageCom":"inputSenha"
+        "interageCom": "inputSenha"
     },
     "botaoPoliticas": {
         "position": [
@@ -42,16 +42,16 @@
         ],
         "description": "botao clicavel que leva para uma pagina web com as politicas",
         "name": "botaoPoliticas",
-        "interageCom":""
+        "interageCom": ""
     },
     "modalTopDrivers": {
         "position": [
             520,
             2050
         ],
-        "description": "modal que aparece após efeturar login no app",
+        "description": "modal que aparece ap\u00f3s efeturar login no app",
         "name": "modalTopDrivers",
-        "interageCom":""
+        "interageCom": ""
     },
     "xFecharModalTopDriver": {
         "position": [
@@ -60,7 +60,7 @@
         ],
         "description": "x para fechar a modal matrix top driver",
         "name": "xFecharModalTopDriver",
-        "interageCom":"modalTopDrivers"
+        "interageCom": "modalTopDrivers"
     },
     "botaoTamoJunto": {
         "position": [
@@ -69,7 +69,7 @@
         ],
         "description": "botao de confirmacao de leitura que fecha o modal top driver",
         "name": "botaoTamoJunto",
-        "interageCom":"modalTopDrivers"
+        "interageCom": "modalTopDrivers"
     },
     "sinoNotificacaoHeader": {
         "position": [
@@ -78,85 +78,141 @@
         ],
         "description": "botao de sino que redireiona para a central de notificacoes",
         "name": "sinoNotificacaoHeader",
-        "interageCom":""
+        "interageCom": ""
     },
     "chatHeader": {
-        "position": [420,3550],
+        "position": [
+            420,
+            3550
+        ],
         "description": "botao de chat que redireciona para a tela de minhas conversas",
         "name": "chatHeader",
-        "interageCom":""
+        "interageCom": ""
     },
     "atalhoMatrixPay": {
-        "position": [150,3600],
+        "position": [
+            150,
+            3600
+        ],
         "description": "botao que redireciona o usuario para o app matrix pay",
         "name": "atalhoMatrixPay",
-        "interageCom":""
+        "interageCom": ""
     },
     "rankingHeader": {
-        "position": [-100,3500],
+        "position": [
+            -100,
+            3500
+        ],
         "description": "botao de ranking que abre uma modal do ranking dos motoristas",
         "name": "rankingHeader",
-        "interageCom":""
+        "interageCom": ""
     },
     "inicioRodape": {
-        "position": [-80,4600],
+        "position": [
+            -80,
+            4600
+        ],
         "description": "botao que redireciona o usuario para a tela de inicio do app",
         "name": "inicioRodape",
-        "interageCom":""
+        "interageCom": ""
     },
     "agendaRodape": {
-        "position": [100,4600],
+        "position": [
+            100,
+            4600
+        ],
         "description": "botao que redireciona o usuario para a tela de agenda",
         "name": "agendaRodape",
-        "interageCom":"telaAgenda"
+        "interageCom": "telaAgenda"
     },
     "viagensRodape": {
-        "position": [200,4600],
+        "position": [
+            200,
+            4600
+        ],
         "description": "botao que redireciona o usuario para a tela de viagens",
         "name": "viagensRodape",
-        "interageCom":"telaViagens"
+        "interageCom": "telaViagens"
     },
     "menuRodape": {
-        "position": [410,4600],
+        "position": [
+            410,
+            4600
+        ],
         "description": "botao que abre o menu do aplicativo",
         "name": "menuRodape",
-        "interageCom":"telaMenu"
+        "interageCom": "telaMenu"
     },
     "3pontinhosLocalizacao": {
-        "position": [400,4330],
+        "position": [
+            400,
+            4330
+        ],
         "description": "botao que da opcoes para o motorista editar sua localizacao",
         "name": "3pontinhosLocalizacao",
-        "interageCom":""
+        "interageCom": ""
     },
-    "telaViagens":{
-        "position": [-1630,1200],
+    "telaViagens": {
+        "position": [
+            -1630,
+            1200
+        ],
         "description": "tela onde se encotram as viagens do motoristas, sejam elas agendadas, em aceite ou concluidas",
         "name": "telaViagens",
-        "interageCom":""
+        "interageCom": ""
     },
-    "telaAgenda":{
-        "position": [500,5180],
+    "telaAgenda": {
+        "position": [
+            500,
+            5180
+        ],
         "description": "tela que mostra a agenda do motorista, sendo possivel visualizar e criar eventos",
         "name": "telaAgenda",
-        "interageCom":""
+        "interageCom": ""
     },
-    "telaMenu":{
-        "position": [1150,3390],
+    "telaMenu": {
+        "position": [
+            1150,
+            3390
+        ],
         "description": "tela onde o motorista tem varias opcoes para fazer dentro do app",
         "name": "telaMenu",
-        "interageCom":""
+        "interageCom": ""
     },
-    "telaLogin":{
-        "position": [490,120],
+    "telaLogin": {
+        "position": [
+            490,
+            120
+        ],
         "description": "tela de inicio do aplicativo do motorista",
         "name": "telaLogin",
-        "interageCom":""
+        "interageCom": ""
     },
-
-    "botaoSairDoAplicativo":{
-        "position": [1900,4450],
+    "botaoSairDoAplicativo": {
+        "position": [
+            1900,
+            4450
+        ],
         "description": "botao que faz logou do motorista e redireciona o usuario para a tela de login",
         "name": "botaoSairDoAplicativo",
-        "interageCom":"telaLogin"
+        "interageCom": "telaLogin"
+    },
+    "modalRanking": {
+        "position": [
+            -3610,
+            2250
+        ],
+        "description": "botao que faz logou do motorista e redireciona o usuario para a tela de login",
+        "name": "modalRanking",
+        "interageCom": ""
+    },
+    "botaoVerRankingMotoristas": {
+        "position": [
+            -3570,
+            2750
+        ],
+        "description": "botao que faz logou do motorista e redireciona o usuario para a tela de login",
+        "name": "botaoVerRankingMotoristas",
+        "interageCom": ""
     }
 }

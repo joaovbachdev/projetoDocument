@@ -68,3 +68,18 @@ function getElementos(callback)
         }
     })  
  }
+
+ function auxCriaElemento(pos, nome){
+    $.ajax({
+        url:`/auxCriaElemento`,
+        type:'POST',
+        data:JSON.stringify({'pos':pos,'name':nome}),
+        contentType:'application/json',
+        success: function(response){
+            console.log("executando")
+        },
+        error:function(error){
+            console.log(error, "deu ruim")
+        }
+    })  
+ }
