@@ -58,28 +58,33 @@ body {
 }
 
 #tags {
-  background-color: red;
+  background-color: rgba(136, 130, 130, 0.384);
+  margin-top: 20px;
   margin-bottom: 20px;
+  margin-left: 0px;
   padding: 20px;
   width: 300px; /* Defina uma largura para a div pai */
   display: flex;
   align-items: stretch;
   flex-wrap: wrap;
+  border-radius: 5px;
 }
 
 .tag {
   display: inline-block;
-  background-color: blue;
-  padding: 5px;
+  background:  #1488cc;
+  padding-left: 18px;
+  padding-right: 10px;
   margin: 10px;
   width: fit-content;
+  border-radius: 8px;
 }
 
 .deleteTag {
   background-color: #ff4d4d; /* Vermelho */
   border: none;
   color: white;
-  padding: 1px 6px;
+  padding: 1px 4px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -88,4 +93,14 @@ body {
   cursor: pointer;
   border-radius: 5px; /* Bordas levemente arredondadas */
   outline: none; /* Remove a borda ao focar */
+}
+#newTagName{
+  
+    padding: 8px; /* Adiciona algum espaço interno */
+    border: 1px solid #ccc; /* Adiciona uma borda cinza */
+    border-radius: 4px; /* Adiciona cantos arredondados */
+    font-size: 16px; /* Tamanho da fonte */
+    outline: none; /* Remove a borda de foco padrão */
+    box-shadow: none; /* Remove a sombra padrão */
+
 }

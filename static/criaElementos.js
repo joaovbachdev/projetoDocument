@@ -40,8 +40,9 @@ function createLine(items){
 }
 function createElement(items){ //itens recebo um array de arrays, o primeiro é um array das posicoes e o segundo dos nomes
     svgEle = document.getElementById("campo")
-
+   
     for(let i=0;i<Object.keys(items).length;i++){
+        
         var ele = document.createElementNS("http://www.w3.org/2000/svg", 'circle');
         ele.setAttribute('cx',items[Object.keys(items)[i]]['position'][0])
         ele.setAttribute('cy',items[Object.keys(items)[i]]['position'][1])
@@ -54,6 +55,7 @@ function createElement(items){ //itens recebo um array de arrays, o primeiro é 
 
 
         svgEle.appendChild(ele)
+        
     }
     /*
     for(let i=0;i<items['positions'].length;i++){

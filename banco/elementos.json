@@ -8,10 +8,9 @@
         "name": "inputUsuario",
         "interageCom": "botaoEntrar",
         "tags": [
-            "teste1",
-            "test23",
-            "t",
-            "ttesteste"
+            "tesste",
+            "tetetetetetet",
+            "t"
         ]
     },
     "inputSenha": {
@@ -22,7 +21,9 @@
         "description": "input de senha para acessar a conta do motorista, campo que aceita qualquer caractere",
         "name": "inputSenha",
         "interageCom": "erroLogin",
-        "tags": []
+        "tags": [
+            "campoDigitavel"
+        ]
     },
     "botaoEntrar": {
         "position": [
