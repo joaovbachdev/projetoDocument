@@ -88,3 +88,5 @@ addNewImage(-4000,2000,1300,1300,'static/modalRanking.png')
 addNewImage(-4000,4000,1300,1300,'static/telaCentralNotificacoes.png')
 
 addNewImage(-6000,2000,1300,1300,'static/top5Ranking.png')
+
+addNewImage(-6000,0,1300,1300,'static/modalHistoricoPontuacao.jpg')

@@ -6,7 +6,13 @@
         ],
         "description": "input para digitar o cpf da conta do motorista, campo que aceita apenas numeros",
         "name": "inputUsuario",
-        "interageCom": "botaoEntrar"
+        "interageCom": "botaoEntrar",
+        "tags": [
+            "teste1",
+            "test23",
+            "t",
+            "ttesteste"
+        ]
     },
     "inputSenha": {
         "position": [
@@ -15,7 +21,8 @@
         ],
         "description": "input de senha para acessar a conta do motorista, campo que aceita qualquer caractere",
         "name": "inputSenha",
-        "interageCom": "erroLogin"
+        "interageCom": "erroLogin",
+        "tags": []
     },
     "botaoEntrar": {
         "position": [
@@ -24,7 +31,8 @@
         ],
         "description": "botao para validar login e entrar no aplicatio caso os dados estejam corretos",
         "name": "botaoEntrar",
-        "interageCom": "modalTopDrivers"
+        "interageCom": "modalTopDrivers",
+        "tags": []
     },
     "erroLogin": {
         "position": [
@@ -33,7 +41,8 @@
         ],
         "description": "mensagem de erro para quando tentar efeturar o login com dados invalidos",
         "name": "erroLogin",
-        "interageCom": "inputSenha"
+        "interageCom": "inputSenha",
+        "tags": []
     },
     "botaoPoliticas": {
         "position": [
@@ -42,7 +51,8 @@
         ],
         "description": "botao clicavel que leva para uma pagina web com as politicas",
         "name": "botaoPoliticas",
-        "interageCom": ""
+        "interageCom": "",
+        "tags": []
     },
     "modalTopDrivers": {
         "position": [
@@ -51,7 +61,8 @@
         ],
         "description": "modal que aparece ap\u00f3s efeturar login no app",
         "name": "modalTopDrivers",
-        "interageCom": ""
+        "interageCom": "",
+        "tags": []
     },
     "xFecharModalTopDriver": {
         "position": [
@@ -60,7 +71,8 @@
         ],
         "description": "x para fechar a modal matrix top driver",
         "name": "xFecharModalTopDriver",
-        "interageCom": "modalTopDrivers"
+        "interageCom": "modalTopDrivers",
+        "tags": []
     },
     "botaoTamoJunto": {
         "position": [
@@ -69,7 +81,8 @@
         ],
         "description": "botao de confirmacao de leitura que fecha o modal top driver",
         "name": "botaoTamoJunto",
-        "interageCom": "modalTopDrivers"
+        "interageCom": "modalTopDrivers",
+        "tags": []
     },
     "sinoNotificacaoHeader": {
         "position": [
@@ -78,7 +91,8 @@
         ],
         "description": "botao de sino que redireiona para a central de notificacoes",
         "name": "sinoNotificacaoHeader",
-        "interageCom": ""
+        "interageCom": "TelaCentralNotificacoes",
+        "tags": []
     },
     "chatHeader": {
         "position": [
@@ -87,7 +101,8 @@
         ],
         "description": "botao de chat que redireciona para a tela de minhas conversas",
         "name": "chatHeader",
-        "interageCom": ""
+        "interageCom": "",
+        "tags": []
     },
     "atalhoMatrixPay": {
         "position": [
@@ -96,7 +111,8 @@
         ],
         "description": "botao que redireciona o usuario para o app matrix pay",
         "name": "atalhoMatrixPay",
-        "interageCom": ""
+        "interageCom": "",
+        "tags": []
     },
     "rankingHeader": {
         "position": [
@@ -105,7 +121,8 @@
         ],
         "description": "botao de ranking que abre uma modal do ranking dos motoristas",
         "name": "rankingHeader",
-        "interageCom": ""
+        "interageCom": "",
+        "tags": []
     },
     "inicioRodape": {
         "position": [
@@ -114,7 +131,8 @@
         ],
         "description": "botao que redireciona o usuario para a tela de inicio do app",
         "name": "inicioRodape",
-        "interageCom": ""
+        "interageCom": "",
+        "tags": []
     },
     "agendaRodape": {
         "position": [
@@ -123,7 +141,8 @@
         ],
         "description": "botao que redireciona o usuario para a tela de agenda",
         "name": "agendaRodape",
-        "interageCom": "telaAgenda"
+        "interageCom": "telaAgenda",
+        "tags": []
     },
     "viagensRodape": {
         "position": [
@@ -132,7 +151,8 @@
         ],
         "description": "botao que redireciona o usuario para a tela de viagens",
         "name": "viagensRodape",
-        "interageCom": "telaViagens"
+        "interageCom": "telaViagens",
+        "tags": []
     },
     "menuRodape": {
         "position": [
@@ -141,7 +161,8 @@
         ],
         "description": "botao que abre o menu do aplicativo",
         "name": "menuRodape",
-        "interageCom": "telaMenu"
+        "interageCom": "telaMenu",
+        "tags": []
     },
     "3pontinhosLocalizacao": {
         "position": [
@@ -150,7 +171,8 @@
         ],
         "description": "botao que da opcoes para o motorista editar sua localizacao",
         "name": "3pontinhosLocalizacao",
-        "interageCom": ""
+        "interageCom": "",
+        "tags": []
     },
     "telaViagens": {
         "position": [
@@ -159,7 +181,8 @@
         ],
         "description": "tela onde se encotram as viagens do motoristas, sejam elas agendadas, em aceite ou concluidas",
         "name": "telaViagens",
-        "interageCom": ""
+        "interageCom": "",
+        "tags": []
     },
     "telaAgenda": {
         "position": [
@@ -168,7 +191,8 @@
         ],
         "description": "tela que mostra a agenda do motorista, sendo possivel visualizar e criar eventos",
         "name": "telaAgenda",
-        "interageCom": ""
+        "interageCom": "",
+        "tags": []
     },
     "telaMenu": {
         "position": [
@@ -177,7 +201,8 @@
         ],
         "description": "tela onde o motorista tem varias opcoes para fazer dentro do app",
         "name": "telaMenu",
-        "interageCom": ""
+        "interageCom": "",
+        "tags": []
     },
     "telaLogin": {
         "position": [
@@ -186,7 +211,8 @@
         ],
         "description": "tela de inicio do aplicativo do motorista",
         "name": "telaLogin",
-        "interageCom": ""
+        "interageCom": "",
+        "tags": []
     },
     "botaoSairDoAplicativo": {
         "position": [
@@ -195,7 +221,8 @@
         ],
         "description": "botao que faz logou do motorista e redireciona o usuario para a tela de login",
         "name": "botaoSairDoAplicativo",
-        "interageCom": "telaLogin"
+        "interageCom": "telaLogin",
+        "tags": []
     },
     "modalRanking": {
         "position": [
@@ -204,7 +231,8 @@
         ],
         "description": "botao que faz logou do motorista e redireciona o usuario para a tela de login",
         "name": "modalRanking",
-        "interageCom": ""
+        "interageCom": "",
+        "tags": []
     },
     "botaoVerRankingMotoristas": {
         "position": [
@@ -213,6 +241,367 @@
         ],
         "description": "botao que faz logou do motorista e redireciona o usuario para a tela de login",
         "name": "botaoVerRankingMotoristas",
-        "interageCom": ""
+        "interageCom": "telaMatrixTopDriver",
+        "tags": []
+    },
+    "teste": {
+        "position": [
+            -659.0502486349842,
+            1330.2853583964902
+        ],
+        "description": "cria via  auxiliar",
+        "name": "teste",
+        "interageCom": "",
+        "tags": []
+    },
+    "atalhoFlutuanteChat": {
+        "position": [
+            370.11688760733887,
+            4476.68410781121
+        ],
+        "description": "cria via  auxiliar",
+        "name": "atalhoFlutuanteChat",
+        "interageCom": "",
+        "tags": []
+    },
+    "botaoMeusVeiculos]": {
+        "position": [
+            1453.3904924199483,
+            3662.897600752719
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoMeusVeiculos]",
+        "interageCom": "",
+        "tags": []
+    },
+    "botaoMeusDados": {
+        "position": [
+            1455.480427201686,
+            3769.4753081409403
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoMeusDados",
+        "interageCom": "",
+        "tags": []
+    },
+    "botaoCentralDeNoificacoes": {
+        "position": [
+            1545.1103709100641,
+            3870.098390502615
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoCentralDeNoificacoes",
+        "interageCom": "",
+        "tags": []
+    },
+    "botaoComissoes": {
+        "position": [
+            1502.5184653425608,
+            3977.8690894291017
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoComissoes",
+        "interageCom": "",
+        "tags": []
+    },
+    "botaoMeusComprovantes": {
+        "position": [
+            1525.9724633835258,
+            4083.454767172903
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoMeusComprovantes",
+        "interageCom": "",
+        "tags": []
+    },
+    "botaoChecklist": {
+        "position": [
+            1510.2153050157883,
+            4183.611534504034
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoChecklist",
+        "interageCom": "",
+        "tags": []
+    },
+    "botaoPrimeirosPassos": {
+        "position": [
+            1528.829397661613,
+            4303.990502237589
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoPrimeirosPassos",
+        "interageCom": "",
+        "tags": []
+    },
+    "botaoMenuPolicaPrivacidade": {
+        "position": [
+            1560.0736500182757,
+            4415.536456828468
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoMenuPolicaPrivacidade",
+        "interageCom": "",
+        "tags": []
+    },
+    "botaoDenunciar": {
+        "position": [
+            1550.377241499057,
+            4506.06232394798
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoDenunciar",
+        "interageCom": "",
+        "tags": []
+    },
+    "xParaFecharMenu": {
+        "position": [
+            2402.597894519967,
+            3533.1694484198215
+        ],
+        "description": "cria via  auxiliar",
+        "name": "xParaFecharMenu",
+        "interageCom": "",
+        "tags": []
+    },
+    "botaoAgendaAvancarmes": {
+        "position": [
+            1059.852959092726,
+            5384.206332214399
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoAgendaAvancarmes",
+        "interageCom": "",
+        "tags": []
+    },
+    "botaoAgendaVoltarMes": {
+        "position": [
+            545.6402823667531,
+            5364.612363898844
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoAgendaVoltarMes",
+        "interageCom": "",
+        "tags": []
+    },
+    "botaoAgendaAdicionarCompromisso": {
+        "position": [
+            958.2708550002421,
+            6260.709162599548
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoAgendaAdicionarCompromisso",
+        "interageCom": "",
+        "tags": []
+    },
+    "botaoAgendaDiasDoMes": {
+        "position": [
+            866.8476299838173,
+            5502.261642150746
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoAgendaDiasDoMes",
+        "interageCom": "",
+        "tags": []
+    },
+    "agendaDiasDoMesSelecionado": {
+        "position": [
+            685.8634826763706,
+            5553.252526382115
+        ],
+        "description": "cria via  auxiliar",
+        "name": "agendaDiasDoMesSelecionado",
+        "interageCom": "",
+        "tags": []
+    },
+    "botaoViagensAgendadas": {
+        "position": [
+            -1634.808081443252,
+            1401.772494366745
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoViagensAgendadas",
+        "interageCom": "",
+        "tags": []
+    },
+    "botaoViagensEmAceite": {
+        "position": [
+            -1279.3602718469072,
+            1375.6384757979
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoViagensEmAceite",
+        "interageCom": "",
+        "tags": []
+    },
+    "botaoViagensConluidas": {
+        "position": [
+            -1068.0852024800276,
+            1378.648007997181
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoViagensConluidas",
+        "interageCom": "",
+        "tags": []
+    },
+    "atalhoChatTelaViagens": {
+        "position": [
+            -1155.962638174748,
+            2301.7773035155783
+        ],
+        "description": "cria via  auxiliar",
+        "name": "atalhoChatTelaViagens",
+        "interageCom": "",
+        "tags": []
+    },
+    "botaoVerifiacrhistoricoDePontuacao": {
+        "position": [
+            -3159.620051596461,
+            2844.676091708541
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoVerifiacrhistoricoDePontuacao",
+        "interageCom": "modalHistoricoPontuacao",
+        "tags": []
+    },
+    "xFecharModalRanking": {
+        "position": [
+            -3110.127460373563,
+            2304.517122173898
+        ],
+        "description": "cria via  auxiliar",
+        "name": "xFecharModalRanking",
+        "interageCom": "",
+        "tags": []
+    },
+    "botaoFecharModalRanking": {
+        "position": [
+            -3401.51594194325,
+            2989.7972606468725
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoFecharModalRanking",
+        "interageCom": "",
+        "tags": []
+    },
+    "botaoCompartilharModalRRanking": {
+        "position": [
+            -3141.628229773809,
+            2984.04264679569
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoCompartilharModalRRanking",
+        "interageCom": "",
+        "tags": []
+    },
+    "setVoltarMatrixTopDriver": {
+        "position": [
+            -5566.491245075984,
+            2180.5442267983663
+        ],
+        "description": "cria via  auxiliar",
+        "name": "setVoltarMatrixTopDriver",
+        "interageCom": "",
+        "tags": []
+    },
+    "setaVoltaarCentralNotificacoes": {
+        "position": [
+            -3590.6183389531075,
+            4118.412484248917
+        ],
+        "description": "cria via  auxiliar",
+        "name": "setaVoltaarCentralNotificacoes",
+        "interageCom": "",
+        "tags": []
+    },
+    "telaMatrixTopDriver": {
+        "position": [
+            -5641.308690706688,
+            2011.0009850117672
+        ],
+        "description": "cria via  auxiliar",
+        "name": "telaMatrixTopDriver",
+        "interageCom": "",
+        "tags": []
+    },
+    "TelaCentralNotificacoes": {
+        "position": [
+            -3648.0088886105364,
+            4023.3155369195283
+        ],
+        "description": "cria via  auxiliar",
+        "name": "TelaCentralNotificacoes",
+        "interageCom": "",
+        "tags": []
+    },
+    "modalHistoricoPontuacao": {
+        "position": [
+            -5623.941109811647,
+            165.81404932100457
+        ],
+        "description": "cria via  auxiliar",
+        "name": "modalHistoricoPontuacao",
+        "interageCom": "",
+        "tags": []
+    },
+    "xFechaModalHistoricoPpntuacao": {
+        "position": [
+            -5105.60515265508,
+            168.45924881212233
+        ],
+        "description": "cria via  auxiliar",
+        "name": "xFechaModalHistoricoPpntuacao",
+        "interageCom": "",
+        "tags": []
+    },
+    "botaoVerMaisHistorico": {
+        "position": [
+            -5149.912116264333,
+            384.05799809244695
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoVerMaisHistorico",
+        "interageCom": "cardAbrtoHistoricoPontuacao",
+        "tags": []
+    },
+    "botaoVerMenosHistoricoPontuaca": {
+        "position": [
+            -5153.95834418513,
+            444.8984634454397
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoVerMenosHistoricoPontuaca",
+        "interageCom": "cardFechadoHistorcoPontuacao",
+        "tags": []
+    },
+    "cardFechadoHistorcoPontuacao": {
+        "position": [
+            -5332.404290148465,
+            398.0705916188205
+        ],
+        "description": "cria via  auxiliar",
+        "name": "cardFechadoHistorcoPontuacao",
+        "interageCom": "",
+        "tags": []
+    },
+    "cardAbrtoHistoricoPontuacao": {
+        "position": [
+            -5588.98657734074,
+            570.6759683108685
+        ],
+        "description": "cria via  auxiliar",
+        "name": "cardAbrtoHistoricoPontuacao",
+        "interageCom": "",
+        "tags": []
+    },
+    "botaoVoltarHistoricoPontucao": {
+        "position": [
+            -5292.033200566313,
+            1076.852491060797
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoVoltarHistoricoPontucao",
+        "interageCom": "",
+        "tags": []
     }
 }

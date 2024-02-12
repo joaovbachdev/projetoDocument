@@ -98,5 +98,55 @@
         ],
         "description": "sua descricao aqui",
         "name": "botaoSairDoAplicativo/telaLogin"
+    },
+    "sinoNotificacaoHeader/TelaCentralNotificacoes": {
+        "positions": [
+            350,
+            3550,
+            -3648.0088886105364,
+            4023.3155369195283
+        ],
+        "description": "sua descricao aqui",
+        "name": "sinoNotificacaoHeader/TelaCentralNotificacoes"
+    },
+    "botaoVerRankingMotoristas/telaMatrixTopDriver": {
+        "positions": [
+            -3570,
+            2750,
+            -5641.308690706688,
+            2011.0009850117672
+        ],
+        "description": "sua descricao aqui",
+        "name": "botaoVerRankingMotoristas/telaMatrixTopDriver"
+    },
+    "botaoVerifiacrhistoricoDePontuacao/modalHistoricoPontuacao": {
+        "positions": [
+            -3159.620051596461,
+            2844.676091708541,
+            -5623.941109811647,
+            165.81404932100457
+        ],
+        "description": "sua descricao aqui",
+        "name": "botaoVerifiacrhistoricoDePontuacao/modalHistoricoPontuacao"
+    },
+    "botaoVerMaisHistorico/cardAbrtoHistoricoPontuacao": {
+        "positions": [
+            -5149.912116264333,
+            384.05799809244695,
+            -5588.98657734074,
+            570.6759683108685
+        ],
+        "description": "sua descricao aqui",
+        "name": "botaoVerMaisHistorico/cardAbrtoHistoricoPontuacao"
+    },
+    "botaoVerMenosHistoricoPontuaca/cardFechadoHistorcoPontuacao": {
+        "positions": [
+            -5153.95834418513,
+            444.8984634454397,
+            -5332.404290148465,
+            398.0705916188205
+        ],
+        "description": "sua descricao aqui",
+        "name": "botaoVerMenosHistoricoPontuaca/cardFechadoHistorcoPontuacao"
     }
 }

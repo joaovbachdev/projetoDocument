@@ -7,7 +7,8 @@ class ControllerBanco:
     def getElementosPositions(self):
         with open('banco/elementos.json','r+') as f:
             data = json.load(f)
-            return {'positions':[data[i]['position'] for i in data.keys()],'names':[i for i in data.keys()],'interactions':[data[i]['interageCom'] for i in data.keys()]}
+            return data
+            #return {'positions':[data[i]['position'] for i in data.keys()],'names':[i for i in data.keys()],'interactions':[data[i]['interageCom'] for i in data.keys()]}
         
     def getInformatios(self, name):
         with open('banco/elementos.json','r+') as f:
@@ -17,7 +18,7 @@ class ControllerBanco:
     def getLines(self):
         with open("banco/lines.json","r+") as f:
             data = json.load(f)
-            return {"positions":[data[i]["positions"] for i in data.keys()],"names":[i for i in data.keys()]}
+            return data
 
     def getLineInformation(self,name):
         with open("banco/lines.json", "r+") as f:
@@ -53,6 +54,23 @@ class ControllerBanco:
                         b.seek(0)
                         json.dump(data2,b,indent=4)
                         b.truncate()
+
+    def deletaTag(self,name,father):
+        with open("banco/elementos.json","r+") as f:
+            data = json.load(f)
+            if name in data[father]['tags']:
+                data[father]['tags'].remove(name)
+            f.seek(0)
+            json.dump(data,f,indent=4)
+            f.truncate()
+        
+    def addNewTag(self,tagName,fatherName):
+        with open("banco/elementos.json","r+") as f:
+            data = json.load(f)
+            data[fatherName]['tags'].append(tagName)
+            f.seek(0)
+            json.dump(data,f,indent=4)
+            f.truncate()
                     
 
 #ControllerBanco().createLines()

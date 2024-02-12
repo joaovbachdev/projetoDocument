@@ -81,5 +81,39 @@ function getElementos(callback)
         error:function(error){
             console.log(error, "deu ruim")
         }
-    })  
+    })
  }
+ function deletaElementTag(name, father){
+    document.getElementsByName(name)[0].remove()
+    $.ajax({
+        url:`/deletaTag`,
+        type:'POST',
+        data:JSON.stringify({'name':name,'father':father}),
+        contentType:'application/json',
+        success: function(response){
+            console.log("deletando tag")
+        },
+        error:function(error){
+            console.log(error, "deu ruim ao deletar tag")
+        }
+    })
+ }
+ function addNewTag(){
+    tagName = document.getElementById("newTagName").value
+    fatherName = document.getElementById("card").getAttribute("name")
+
+    
+    $.ajax({
+        url:`/addNewTag`,
+        type:'POST',
+        data:JSON.stringify({'tagName':tagName,'fatherName':fatherName}),
+        contentType:'application/json',
+        success: function(response){
+            console.log("adicionando tag")
+        },
+        error:function(error){
+            console.log(error, "deu ruim ao adicionar tag")
+        }
+    })
+    updateTag(tagName,fatherName)
+ }  

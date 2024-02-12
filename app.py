@@ -1,4 +1,3 @@
-from crypt import methods
 from unicodedata import name
 from flask import Flask, render_template, request
 import json
@@ -37,7 +36,6 @@ def executa():
 
 @app.route("/auxCriaElemento", methods=["POST"])
 def auxCriaElemento():
-    print(request.json)
     with open("banco/elementos.json", "r+") as f:
         data = json.load(f)
         data[request.json['name']] = {
@@ -50,5 +48,19 @@ def auxCriaElemento():
         json.dump(data,f,indent=4)
         f.truncate()
     return "a"
+
+@app.route("/deletaTag", methods=["POST"])
+def deletaTag():
+    name = request.json['name']
+    father = request.json['father']
+    bd.deletaTag(name,father)
+
+    return "tag deletada com sucesso"
+@app.route("/addNewTag",methods=["POST"])
+def addNewTag():    
+    tagName = request.json["tagName"]
+    fatherName = request.json["fatherName"]
+    bd.addNewTag(tagName, fatherName)
+    return "tag adicionada com sucesso"
 
 app.run(debug=True)

@@ -56,3 +56,36 @@ body {
   height: 100vh;
   cursor: grab;
 }
+
+#tags {
+  background-color: red;
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 300px; /* Defina uma largura para a div pai */
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.tag {
+  display: inline-block;
+  background-color: blue;
+  padding: 5px;
+  margin: 10px;
+  width: fit-content;
+}
+
+.deleteTag {
+  background-color: #ff4d4d; /* Vermelho */
+  border: none;
+  color: white;
+  padding: 1px 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 8px;
+  cursor: pointer;
+  border-radius: 5px; /* Bordas levemente arredondadas */
+  outline: none; /* Remove a borda ao focar */
+}
