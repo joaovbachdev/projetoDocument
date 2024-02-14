@@ -11,7 +11,9 @@ class Main:
         context = browser.new_context()
         page = context.new_page()
 
+       
         exec(self.cenarios.cenarios["inputUsuario"])
+
 
     def start(self):
         with sync_playwright() as playwright:

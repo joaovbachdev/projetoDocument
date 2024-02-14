@@ -11,7 +11,7 @@ main = Main(Cenarios())
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return render_template('index.html', tags=bd.getAllTags())
 
 @app.route('/getElementos',methods=['GET'])
 def getElementos():
@@ -29,9 +29,17 @@ def getLines():
 def getLineInformation():
     return bd.getLineInformation(request.args.get('name'))
 
-@app.route("/executar")
+@app.route("/executar", methods=["POST"])
 def executa():
-    main.start()
+    print(request.json)
+    try:
+        main.start()
+        bd.saveHistorico(request.json["name"], "sucesso")
+        print("deu certo")
+    except:
+        bd.saveHistorico(request.json["name"], "erro")
+        print("deu erro")
+
     return "executado"
 
 @app.route("/auxCriaElemento", methods=["POST"])
@@ -63,4 +71,16 @@ def addNewTag():
     bd.addNewTag(tagName, fatherName)
     return "tag adicionada com sucesso"
 
+@app.route("/checkTagExists")
+def checkTagExists():
+    return bd.validateElementTagFilter(request.args.get("elementName"),request.args.get("tagName"))
+
+
+@app.route("/checkTodo",methods=["POST"])
+def checkTodo():
+    print(request.json)
+    elementName = request.json["elementName"]
+    index = request.json["index"]
+    bd.updateTodo(elementName,int(index))
+    return "todo atualizado"
 app.run(debug=True)

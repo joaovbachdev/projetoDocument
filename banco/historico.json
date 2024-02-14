@@ -1,0 +1,23 @@
+{
+    "inputUsuario": [
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        }
+    ],
+    "inputSenha": [
+        {
+            "resultado": "sucesso"
+        }
+    ],
+    "telaLogin": [
+        {
+            "resultado": "erro"
+        },
+        {
+            "resultado": "erro"
+        }
+    ]
+}

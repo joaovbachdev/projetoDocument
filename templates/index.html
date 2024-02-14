@@ -17,8 +17,9 @@
         <script>
             document.addEventListener('DOMContentLoaded', function(){
             
-                //getLines(createLine)
+                getLines(createLine)
                 getElementos(createElement)
+                
 
             })
 
@@ -29,10 +30,17 @@
                 getLineInformations(createCard,name)
             }
             function executa(){
-                executar()
+                
             }
-        
+
+            
         </script>
+    <button onclick="setFilter()">Selecionar Filtro</button>
+       <select id="tagFilter" name="opcoes">
+        {% for i in tags%}
+        <option value={{i}}>{{i}}</option>
+        {% endfor %}
+      </select>
 
         <div id="canvas-container">
             
@@ -44,14 +52,18 @@
         </div>
       
                 <div class="sidebar" id="card">
+                    <button id="closeCard" onclick="closeCard()">X</button>
                     <h1></h1>
                     <p></p>
-                    <button>Ececutar</button>
+                    <button id="executarCard">Executar</button>
                     <div id="tags">
                         <div class="tagHeader">
                             <input type="text" placeholder="tagName" id="newTagName">
                             <button id="addNewTag" onclick="addNewTag()">adicionar</button>
                         </div>
+                    </div>
+                    <div id="todoTestes">
+
                     </div>
                 </div>
 

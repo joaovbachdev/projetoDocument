@@ -7,7 +7,8 @@
             860
         ],
         "description": "sua descricao aqui",
-        "name": "inputUsuario/botaoEntrar"
+        "name": "inputUsuario/botaoEntrar",
+        "tags": []
     },
     "inputSenha/erroLogin": {
         "positions": [
@@ -17,7 +18,8 @@
             810
         ],
         "description": "sua descricao aqui",
-        "name": "inputSenha/erroLogin"
+        "name": "inputSenha/erroLogin",
+        "tags": []
     },
     "botaoEntrar/modalTopDrivers": {
         "positions": [
@@ -27,7 +29,8 @@
             2050
         ],
         "description": "sua descricao aqui",
-        "name": "botaoEntrar/modalTopDrivers"
+        "name": "botaoEntrar/modalTopDrivers",
+        "tags": []
     },
     "erroLogin/inputSenha": {
         "positions": [
@@ -37,7 +40,8 @@
             720
         ],
         "description": "sua descricao aqui",
-        "name": "erroLogin/inputSenha"
+        "name": "erroLogin/inputSenha",
+        "tags": []
     },
     "xFecharModalTopDriver/modalTopDrivers": {
         "positions": [
@@ -47,7 +51,8 @@
             2050
         ],
         "description": "sua descricao aqui",
-        "name": "xFecharModalTopDriver/modalTopDrivers"
+        "name": "xFecharModalTopDriver/modalTopDrivers",
+        "tags": []
     },
     "botaoTamoJunto/modalTopDrivers": {
         "positions": [
@@ -57,7 +62,8 @@
             2050
         ],
         "description": "sua descricao aqui",
-        "name": "botaoTamoJunto/modalTopDrivers"
+        "name": "botaoTamoJunto/modalTopDrivers",
+        "tags": []
     },
     "agendaRodape/telaAgenda": {
         "positions": [
@@ -67,7 +73,8 @@
             5180
         ],
         "description": "sua descricao aqui",
-        "name": "agendaRodape/telaAgenda"
+        "name": "agendaRodape/telaAgenda",
+        "tags": []
     },
     "viagensRodape/telaViagens": {
         "positions": [
@@ -77,7 +84,8 @@
             1200
         ],
         "description": "sua descricao aqui",
-        "name": "viagensRodape/telaViagens"
+        "name": "viagensRodape/telaViagens",
+        "tags": []
     },
     "menuRodape/telaMenu": {
         "positions": [
@@ -87,7 +95,8 @@
             3390
         ],
         "description": "sua descricao aqui",
-        "name": "menuRodape/telaMenu"
+        "name": "menuRodape/telaMenu",
+        "tags": []
     },
     "botaoSairDoAplicativo/telaLogin": {
         "positions": [
@@ -97,7 +106,8 @@
             120
         ],
         "description": "sua descricao aqui",
-        "name": "botaoSairDoAplicativo/telaLogin"
+        "name": "botaoSairDoAplicativo/telaLogin",
+        "tags": []
     },
     "sinoNotificacaoHeader/TelaCentralNotificacoes": {
         "positions": [
@@ -107,7 +117,8 @@
             4023.3155369195283
         ],
         "description": "sua descricao aqui",
-        "name": "sinoNotificacaoHeader/TelaCentralNotificacoes"
+        "name": "sinoNotificacaoHeader/TelaCentralNotificacoes",
+        "tags": []
     },
     "botaoVerRankingMotoristas/telaMatrixTopDriver": {
         "positions": [
@@ -117,7 +128,8 @@
             2011.0009850117672
         ],
         "description": "sua descricao aqui",
-        "name": "botaoVerRankingMotoristas/telaMatrixTopDriver"
+        "name": "botaoVerRankingMotoristas/telaMatrixTopDriver",
+        "tags": []
     },
     "botaoVerifiacrhistoricoDePontuacao/modalHistoricoPontuacao": {
         "positions": [
@@ -127,7 +139,8 @@
             165.81404932100457
         ],
         "description": "sua descricao aqui",
-        "name": "botaoVerifiacrhistoricoDePontuacao/modalHistoricoPontuacao"
+        "name": "botaoVerifiacrhistoricoDePontuacao/modalHistoricoPontuacao",
+        "tags": []
     },
     "botaoVerMaisHistorico/cardAbrtoHistoricoPontuacao": {
         "positions": [
@@ -137,7 +150,8 @@
             570.6759683108685
         ],
         "description": "sua descricao aqui",
-        "name": "botaoVerMaisHistorico/cardAbrtoHistoricoPontuacao"
+        "name": "botaoVerMaisHistorico/cardAbrtoHistoricoPontuacao",
+        "tags": []
     },
     "botaoVerMenosHistoricoPontuaca/cardFechadoHistorcoPontuacao": {
         "positions": [
@@ -147,6 +161,7 @@
             398.0705916188205
         ],
         "description": "sua descricao aqui",
-        "name": "botaoVerMenosHistoricoPontuaca/cardFechadoHistorcoPontuacao"
+        "name": "botaoVerMenosHistoricoPontuaca/cardFechadoHistorcoPontuacao",
+        "tags": []
     }
 }

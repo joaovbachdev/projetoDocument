@@ -1,15 +1,22 @@
 function createCard(informations){
     ele = document.getElementById("card")
     ele.setAttribute("name",informations["name"])
-    but = ele.querySelector("button")
+    butExecutar = document.getElementById("executarCard")
     tags = document.getElementById("tags")
-    //title = document.createElement("h1")
-    ele.classList.toggle('hidden')
+    todo = document.getElementById("todoTestes")
+    
+    if(ele.classList[1] == "hidden"){
+        ele.classList.toggle('hidden')
+        ele.classList.toggle('hidden')
+    }else{
+        ele.classList.toggle('hidden')
+    }
+    
     ele.querySelector("h1").textContent = informations['name']
     ele.querySelector("p").textContent = informations['description']
 
-    but.setAttribute("acao",informations['name'])
-    but.setAttribute("onclick","executa()")
+    butExecutar.setAttribute("acao",informations['name'])
+    butExecutar.setAttribute("onclick",`executar("${informations['name']}")`)
 
 
     tags.querySelectorAll("label").forEach(element=>{
@@ -31,15 +38,22 @@ function createCard(informations){
         newTag.appendChild(deleteButton)
         tags.appendChild(newTag)
     });
-    
-    //title.textContent = informations['name']
+    informations["testes"].forEach((teste,indice)=>{
+        lab = document.createElement("label")
+        inp = document.createElement("input")
 
-    //desciption = document.createElement('p')
-    //desciption.textContent = informations['description']
+        lab.textContent = teste["teste"]
+        inp.setAttribute("type","checkbox")
+        inp.setAttribute("onclick",`checkTodo("${informations["name"]}",${indice})`)
+
+        if(teste["status"]=="realizado"){
+            inp.checked = true
+        }
+
+        todo.appendChild(lab)
+        todo.appendChild(inp)
+    })
     
-    //ele.style.display = 'block'
-    //ele.appendChild(title)
-    //ele.appendChild(desciption)
 }
 function updateTag(tagName, elementName){
     tags = document.getElementById("tags")
@@ -57,4 +71,9 @@ function updateTag(tagName, elementName){
 
     newTag.appendChild(deleteButton)
     tags.appendChild(newTag)
+}
+
+function closeCard(){
+    ele = document.getElementById("card")
+    ele.classList.toggle('hidden')
 }

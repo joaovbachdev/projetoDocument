@@ -71,6 +71,61 @@ class ControllerBanco:
             f.seek(0)
             json.dump(data,f,indent=4)
             f.truncate()
-                    
+
+    def saveHistorico(self, name, resultado):
+
+        
+        with open("banco/historico.json","r+") as f:
+            data = json.load(f)
+
+            if name not in data.keys():
+                data[name] = []
+
+            data[name].append({
+                "resultado":resultado
+            })
+            f.seek(0)
+            json.dump(data,f, indent=4)
+            f.truncate()
+
+    def getAllTags(self):
+        with open("banco/elementos.json","r+") as f:
+            data = json.load(f)
+            tags = []
+            for i in data.keys():
+                for j in data[i]['tags']:
+                    if j not in tags:
+                        tags.append(j)
+        return tags
+
+    def validateElementTagFilter(self, elementName, tagName):
+        with open("banco/elementos.json","r+") as f:
+            data = json.load(f)
+        if tagName in data[elementName]["tags"]:
+            return "True"
+        else:
+            return "False"
+
+    def updateTodo(self, elementName, index):
+        with open("banco/elementos.json","r+") as f:
+            data = json.load(f)
+            if data[elementName]["testes"][index]["status"] == "realizado":
+                data[elementName]["testes"][index]["status"] = "naoRealizado"
+            else:
+                data[elementName]["testes"][index]["status"] = "realizado"
+            f.seek(0)
+            json.dump(data,f,indent=4)
+            f.truncate()
+#ControllerBanco().getAllTags()
 
 #ControllerBanco().createLines()
+    
+'''
+with open("banco/lines.json","r+") as f:
+    data = json.load(f)
+    for i in data.keys():
+        data[i]["tags"] = []
+    f.seek(0)
+    json.dump(data,f,indent=4)
+    f.truncate
+'''

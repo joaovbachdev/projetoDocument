@@ -47,7 +47,20 @@ function createElement(items){ //itens recebo um array de arrays, o primeiro é 
         ele.setAttribute('cx',items[Object.keys(items)[i]]['position'][0])
         ele.setAttribute('cy',items[Object.keys(items)[i]]['position'][1])
         ele.setAttribute('r','25')
-        ele.setAttribute('fill','#0bfc03')
+        
+        if(items[Object.keys(items)[i]]["testes"].length == 0){
+            ele.setAttribute('fill','#f5b470')
+        }else{
+            ele.setAttribute('fill','#0bfc03')
+            for(let j=0;j<items[Object.keys(items)[i]]["testes"].length;j++){
+                if(items[Object.keys(items)[i]]["testes"][j]["status"] == "naoRealizado"){
+                    ele.setAttribute('fill','#e60000')
+                    break;
+                }
+            }
+            
+        }
+        
         ele.setAttribute('onclick',`clickElement("${items[Object.keys(items)[i]]['name']}")`)
         ele.setAttribute('elementName',items[Object.keys(items)[i]]['name'])
         ele.setAttribute('class','elemento')

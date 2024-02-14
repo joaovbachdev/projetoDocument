@@ -14,6 +14,8 @@ body {
     overflow: hidden;
     position: relative;
     background: linear-gradient(to right, #2b32b2, #1488cc);
+    display: flex;
+    flex-wrap: wrap;
   }
 
 .elemento{
@@ -103,4 +105,11 @@ body {
     outline: none; /* Remove a borda de foco padrão */
     box-shadow: none; /* Remove a sombra padrão */
 
+}
+
+#todoTestes{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: red;
+  width: 50%;
 }

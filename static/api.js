@@ -55,10 +55,12 @@ function getElementos(callback)
  function saveLine(){
      console.log("saveLine")
  }
- function executar(){
+ function executar(name){
+    console.log("executando automacao de ", name)
     $.ajax({
         url:`/executar`,
-        type:'GET',
+        type:'POST',
+        data:JSON.stringify({"name":name}),
         contentType:'application/json',
         success: function(response){
             console.log("executando")
@@ -116,4 +118,37 @@ function getElementos(callback)
         }
     })
     updateTag(tagName,fatherName)
- }  
+ }
+ function checkTagExists(elementName,tagName){
+    return new Promise(function(resolve, reject){
+        console.log(elementName, tagName)
+        $.ajax({
+            url:`/checkTagExists?elementName=${elementName}&tagName=${tagName}`,
+            type:'GET',
+            contentType:'application/json',
+            success: function(response){
+                resolve(response)
+            },
+            error:function(error){
+                reject(response)
+            }
+        });
+    });
+
+ }
+
+ function checkTodo(elementName, index){
+    $.ajax({
+        url:`/checkTodo`,
+        type:'POST',
+        data:JSON.stringify({'elementName':elementName,'index':index}),
+        contentType:'application/json',
+        success: function(response){
+            console.log("todo atualizado com sucesso")
+        },
+        error:function(error){
+            console.log("erro ao atualizar todo")
+        }
+    });
+
+ }
