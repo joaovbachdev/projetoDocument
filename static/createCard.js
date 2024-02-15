@@ -17,13 +17,10 @@ function createCard(informations){
     }
     ele.setAttribute("elementType",elementType)
 
-    if(ele.classList[1] == "hidden"){
+   
         ele.classList.toggle('hidden')
-        ele.classList.toggle('hidden')
-    }else{
-        ele.classList.toggle('hidden')
-    }
-    
+       
+
     ele.querySelector("h1").textContent = informations['name']
     ele.querySelector("p").textContent = informations['description']
 
@@ -50,6 +47,9 @@ function createCard(informations){
         newTag.appendChild(deleteButton)
         tags.appendChild(newTag)
     });
+    while (todo.firstChild) {
+        todo.removeChild(todo.firstChild);
+    }
     informations["testes"].forEach((teste,indice)=>{
         lab = document.createElement("label")
         inp = document.createElement("input")

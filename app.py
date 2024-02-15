@@ -28,17 +28,20 @@ def getLines():
 @app.route("/getLineInformation")
 def getLineInformation():
     return bd.getLineInformation(request.args.get('name'))
-
+ 
 @app.route("/executar", methods=["POST"])
 def executa():
-    print(request.json)
-    try:
-        main.start(bd.getElementTests(request.json["name"],request.json["type"]))
-        bd.saveHistorico(request.json["name"], "sucesso")
-        print("deu certo")
-    except:
-        bd.saveHistorico(request.json["name"], "erro")
-        print("deu erro")
+
+    for index,i in enumerate(bd.getElementTests(request.json["name"],request.json["type"])):
+        try:
+            main.start('\n'.join(i))
+            bd.setTodo(request.json["name"],request.json["type"],index,"realizado")
+            bd.saveHistorico(request.json["name"], "sucesso")
+            print("deu certo")
+        except:
+            bd.setTodo(request.json["name"],request.json["type"],index,"naoRealizado")
+            bd.saveHistorico(request.json["name"], "erro")
+            print("deu erro")
 
     return "executado"
 

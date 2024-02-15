@@ -11,7 +11,18 @@
         "tags": [
             "campoDigitavel"
         ],
-        "testes": []
+        "testes": [
+            {
+                "teste": "clicar deve focar",
+                "status": "realizado",
+                "automacao": ["page.goto('https://github.com')","page.goto('https://google.com')"]
+            },
+            {
+                "teste": "preencher o campo",
+                "status": "naoRealizado",
+                "automacao": ["page.goto('https://github.com')"]
+            }
+        ]
     },
     "inputSenha/erroLogin": {
         "positions": [

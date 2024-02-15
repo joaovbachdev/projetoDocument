@@ -1,4 +1,5 @@
 import json
+from os import stat
 
 class ControllerBanco:
     def __init__(self) -> None:
@@ -140,6 +141,16 @@ class ControllerBanco:
         with open(f"banco/{type}.json","r+") as f:
             data = json.load(f)
         return [i["automacao"] for i in data[name]["testes"]]
+
+    def setTodo(self,elementName,elementType,index,status):
+        print(elementName,elementType,index,status)
+        with open(f"banco/{elementType}.json","r+") as f:
+            data = json.load(f)
+            data[elementName]["testes"][index]["status"] = status
+            f.seek(0)
+            json.dump(data,f,indent=4)
+            f.truncate()
+
 
 
 

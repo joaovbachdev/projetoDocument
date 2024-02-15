@@ -8,18 +8,44 @@
         "name": "inputUsuario",
         "interageCom": "botaoEntrar",
         "tags": [
-            "teste"
+            "campoDigitavel",
+            "telaLogin",
+            "a",
+            "a",
+            "a",
+            "a",
+            "a",
+            "a",
+            "a",
+            "a",
+            "a",
+            "a",
+            "a",
+            "a",
+            "a",
+            "a",
+            "a",
+            "a",
+            "a",
+            "a",
+            "a",
+            "te"
         ],
         "testes": [
             {
                 "teste": "clicar deve focar",
                 "status": "realizado",
-                "automacao": ["page.goto('https://github.com')","page.goto('https://google.com')"]
+                "automacao": [
+                    "page.goto('https://github.com')",
+                    "page.goto('https://google.com')"
+                ]
             },
             {
                 "teste": "preencher o campo",
-                "status": "naoRealizado",
-                "automacao": ["page.goto('https://github.com')"]
+                "status": "realizado",
+                "automacao": [
+                    "page.goto('https://github.com')"
+                ]
             }
         ]
     },
@@ -247,7 +273,9 @@
         "description": "tela de inicio do aplicativo do motorista",
         "name": "telaLogin",
         "interageCom": "",
-        "tags": [],
+        "tags": [
+            "joao"
+        ],
         "testes": []
     },
     "botaoSairDoAplicativo": {
