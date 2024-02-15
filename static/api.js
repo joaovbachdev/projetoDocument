@@ -1,3 +1,6 @@
+var socket = io.connect('http://' + document.domain + ':' + location.port);
+
+
 function getElementos(callback)
 {    
     $.ajax({
@@ -57,6 +60,7 @@ function getElementos(callback)
  }
  function executar(name,type){
     console.log("executando automacao de ", name)
+    socket.send('start')
     $.ajax({
         url:`/executar`,
         type:'POST',
@@ -156,11 +160,11 @@ function getElementos(callback)
 
  }
 
- function checkTodo(elementName, index){
+ function checkTodo(elementName, index, status){
     $.ajax({
         url:`/checkTodo`,
         type:'POST',
-        data:JSON.stringify({'elementName':elementName,'index':index}),
+        data:JSON.stringify({'elementName':elementName,'index':index,'status':status}),
         contentType:'application/json',
         success: function(response){
             console.log("todo atualizado com sucesso")
@@ -171,3 +175,12 @@ function getElementos(callback)
     });
 
  }
+
+
+ socket.on('atualizar', function(data) {
+     if(data['status'] == "realizado"){
+        document.querySelectorAll("input[type='checkbox']")[data["index"]].checked = true
+     }else{
+        document.querySelectorAll("input[type='checkbox']")[data["index"]].checked = false
+     }
+});

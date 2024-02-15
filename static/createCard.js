@@ -18,7 +18,12 @@ function createCard(informations){
     ele.setAttribute("elementType",elementType)
 
    
+    if(ele.classList[1] == "hidden"){
         ele.classList.toggle('hidden')
+        ele.classList.toggle('hidden')
+    }else{
+        ele.classList.toggle('hidden')
+    }
        
 
     ele.querySelector("h1").textContent = informations['name']
@@ -56,7 +61,7 @@ function createCard(informations){
 
         lab.textContent = teste["teste"]
         inp.setAttribute("type","checkbox")
-        inp.setAttribute("onclick",`checkTodo("${informations["name"]}",${indice})`)
+        inp.setAttribute("onclick",`checkTodo("${informations["name"]}",${indice},"none")`)
 
         if(teste["status"]=="realizado"){
             inp.checked = true

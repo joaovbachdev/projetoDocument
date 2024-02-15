@@ -34,7 +34,23 @@
         "description": "sua descricao aqui",
         "name": "inputSenha/erroLogin",
         "tags": [],
-        "testes": []
+        "testes": [
+            {
+                "teste": "usuario valido senha invalida",
+                "status": "naoRealizado",
+                "automacao": ["page.goto('https://github.com')","page.goto('https://google.com')"]
+            },
+            {
+                "teste": "senha invalida usuario valido",
+                "status": "nao realizado",
+                "automacao": ["page.goto('https://github.com')","page.goto('https://google.com')"]
+            },
+            {
+                "teste": "usuario e senha invalidos",
+                "status": "naoRealizado",
+                "automacao": ["page.goto('https://github.com')","page.goto('https://google.com')"]
+            }
+        ]
     },
     "botaoEntrar/modalTopDrivers": {
         "positions": [

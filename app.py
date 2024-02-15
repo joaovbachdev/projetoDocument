@@ -4,10 +4,12 @@ import json
 from banco.controllerBanco import ControllerBanco
 from automacoes.main import Main
 from automacoes.cenarios import Cenarios
+from flask_socketio import SocketIO
 
 app = Flask("app")
 bd = ControllerBanco()
 main = Main(Cenarios())
+socketio = SocketIO(app)
 
 @app.route('/')
 def home():
@@ -37,12 +39,16 @@ def executa():
             main.start('\n'.join(i))
             bd.setTodo(request.json["name"],request.json["type"],index,"realizado")
             bd.saveHistorico(request.json["name"], "sucesso")
+            socketio.emit('atualizar',{'name':request.json["name"],'type':request.json["type"],'index':index,'status':"realizado"})
             print("deu certo")
         except:
             bd.setTodo(request.json["name"],request.json["type"],index,"naoRealizado")
             bd.saveHistorico(request.json["name"], "erro")
+            socketio.emit('atualizar',{'name':request.json["name"],'type':request.json["type"],'index':index,'status':"naoRealizado"})
             print("deu erro")
+        
 
+    
     return "executado"
 
 
@@ -92,6 +98,15 @@ def checkTodo():
     print(request.json)
     elementName = request.json["elementName"]
     index = request.json["index"]
-    bd.updateTodo(elementName,int(index))
+    status = request.json["status"]
+    bd.updateTodo(elementName,int(index),status)
     return "todo atualizado"
+
+
+@socketio.on('atualizar')
+def atualizar():
+    # Execute a atualização dos dados aqui, se necessário
+    socketio.emit('atualizar')
+
 app.run(debug=True)
+#socketio.runapp.run(debug=True)

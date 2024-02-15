@@ -7,37 +7,14 @@
         "description": "input para digitar o cpf da conta do motorista, campo que aceita apenas numeros",
         "name": "inputUsuario",
         "interageCom": "botaoEntrar",
-        "tags": [
-            "campoDigitavel",
-            "telaLogin",
-            "a",
-            "a",
-            "a",
-            "a",
-            "a",
-            "a",
-            "a",
-            "a",
-            "a",
-            "a",
-            "a",
-            "a",
-            "a",
-            "a",
-            "a",
-            "a",
-            "a",
-            "a",
-            "a",
-            "te"
-        ],
+        "tags": [],
         "testes": [
             {
                 "teste": "clicar deve focar",
-                "status": "realizado",
+                "status": "naoRealizado",
                 "automacao": [
                     "page.goto('https://github.com')",
-                    "page.goto('https://google.com')"
+                    "page.goto('https://mvbvcvcvcx.com')"
                 ]
             },
             {
@@ -98,7 +75,16 @@
         "name": "botaoPoliticas",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [
+            {
+                "teste": "clicar deve redirecionar para pagnina de politicas",
+                "status": "realizado",
+                "automacao": [
+                    "page.goto('https://github.com')",
+                    "page.goto('dasdasd://gdfbgjdfbdfgdf.com')"
+                ]
+            }
+        ]
     },
     "modalTopDrivers": {
         "position": [

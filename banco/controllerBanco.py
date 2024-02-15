@@ -126,13 +126,17 @@ class ControllerBanco:
        
         return values
 
-    def updateTodo(self, elementName, index):
+    def updateTodo(self, elementName, index, status):
+        print(elementName, index, status, "DADHASHDASHIASHD")
         with open("banco/elementos.json","r+") as f:
             data = json.load(f)
-            if data[elementName]["testes"][index]["status"] == "realizado":
-                data[elementName]["testes"][index]["status"] = "naoRealizado"
+            if status == "none":
+                if data[elementName]["testes"][index]["status"] == "realizado":
+                    data[elementName]["testes"][index]["status"] = "naoRealizado"
+                else:
+                    data[elementName]["testes"][index]["status"] = "realizado"
             else:
-                data[elementName]["testes"][index]["status"] = "realizado"
+                data[elementName]["testes"][index]["status"] = status
             f.seek(0)
             json.dump(data,f,indent=4)
             f.truncate()
