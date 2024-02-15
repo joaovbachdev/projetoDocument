@@ -1,7 +1,6 @@
 
 
 function createLine(items){
-    console.log(items)
     svgEle = document.getElementById("campo")
     
     for(let i=0;i<Object.keys(items).length;i++){
@@ -10,12 +9,13 @@ function createLine(items){
         linha.setAttribute('y1', items[Object.keys(items)[i]]['positions'][1]);
         linha.setAttribute('x2', items[Object.keys(items)[i]]['positions'][2]);
         linha.setAttribute('y2', items[Object.keys(items)[i]]['positions'][3]);
+        linha.setAttribute("elementName",items[Object.keys(items)[i]]['name'])
         linha.setAttribute('stroke', '#3498db');
         linha.setAttribute('stroke-width', '10');
         linha.setAttribute('lineName',items[Object.keys(items)[i]]['name'])
         linha.setAttribute('onclick',`clickLine("${items[Object.keys(items)[i]]['name']}")`)
         linha.setAttribute('filter', 'url(#shadow)');
-        //linha.setAttribute('onclick','cliquei("linha1")')
+    
         svgEle.appendChild(linha)
     
     }

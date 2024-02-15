@@ -1,10 +1,17 @@
 function createCard(informations){
     ele = document.getElementById("card")
     ele.setAttribute("name",informations["name"])
+
     butExecutar = document.getElementById("executarCard")
     tags = document.getElementById("tags")
     todo = document.getElementById("todoTestes")
-    
+
+    if(informations["name"].includes("/")){
+        ele.setAttribute("elementType","lines")
+    }else{
+        ele.setAttribute("elementType","elementos")
+    }
+
     if(ele.classList[1] == "hidden"){
         ele.classList.toggle('hidden')
         ele.classList.toggle('hidden')

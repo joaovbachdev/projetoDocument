@@ -8,7 +8,8 @@
         "name": "inputUsuario",
         "interageCom": "botaoEntrar",
         "tags": [
-            "geral"
+            "geral",
+            "campoDigitavel"
         ],
         "testes": [
             {
@@ -245,10 +246,7 @@
         "description": "tela de inicio do aplicativo do motorista",
         "name": "telaLogin",
         "interageCom": "",
-        "tags": [
-            "geral",
-            "teste"
-        ],
+        "tags": [],
         "testes": []
     },
     "botaoSairDoAplicativo": {

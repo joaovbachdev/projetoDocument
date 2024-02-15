@@ -35,7 +35,7 @@
 
             
         </script>
-    <button onclick="setFilter()">Selecionar Filtro</button>
+    <button onclick="checkTagExists(setFilter)" id="tagFilterApply">Selecionar Filtro</button>
        <select id="tagFilter" name="opcoes">
         {% for i in tags%}
         <option value={{i}}>{{i}}</option>

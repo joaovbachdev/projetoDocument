@@ -1,12 +1,27 @@
-function setFilter(){
+function setFilter(values){
+
     const tagName = document.getElementById("tagFilter").value
-    document.querySelectorAll("circle").forEach(async element=>{
-       
-        let response = await checkTagExists(element.getAttribute("elementName"),tagName)
-        if(response == "False"){
-            element.style.display = "None"
+
+
+    
+
+    values["circles"].forEach(val => {
+        if(val[1] === "True"){
+            document.querySelector(`circle[elementName='${val[0]}']`).style.display = "block"
         }else{
-            element.style.display = "Block"
+            document.querySelector(`circle[elementName='${val[0]}']`).style.display = "none"
         }
-    })
+        
+    });
+    values["lines"].forEach(val => {
+        if(val[1] === "True"){
+            document.querySelector(`line[elementName='${val[0]}']`).style.display = "block"
+        }else{
+            document.querySelector(`line[elementName='${val[0]}']`).style.display = "none"
+        }
+        
+    });
+
+
+
 }

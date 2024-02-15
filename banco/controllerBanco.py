@@ -55,8 +55,8 @@ class ControllerBanco:
                         json.dump(data2,b,indent=4)
                         b.truncate()
 
-    def deletaTag(self,name,father):
-        with open("banco/elementos.json","r+") as f:
+    def deletaTag(self,name,father,elementType):
+        with open(f"banco/{elementType}.json","r+") as f:
             data = json.load(f)
             if name in data[father]['tags']:
                 data[father]['tags'].remove(name)
@@ -64,8 +64,8 @@ class ControllerBanco:
             json.dump(data,f,indent=4)
             f.truncate()
         
-    def addNewTag(self,tagName,fatherName):
-        with open("banco/elementos.json","r+") as f:
+    def addNewTag(self,tagName,fatherName, elementType):
+        with open(f"banco/{elementType}.json","r+") as f:
             data = json.load(f)
             data[fatherName]['tags'].append(tagName)
             f.seek(0)
@@ -98,13 +98,32 @@ class ControllerBanco:
                         tags.append(j)
         return tags
 
-    def validateElementTagFilter(self, elementName, tagName):
+    def validateElementTagFilter(self,tagName):
+        values = {"circles":[], "lines":[]}
         with open("banco/elementos.json","r+") as f:
             data = json.load(f)
-        if tagName in data[elementName]["tags"]:
-            return "True"
-        else:
-            return "False"
+            for i in data.keys():
+                if len(data[i]["tags"])<=0:
+                    values["circles"].append([data[i]["name"],"False"])
+                else:
+                    if tagName in data[i]["tags"]:
+                        values["circles"].append([data[i]["name"],"True"])
+                    else:
+                        values["circles"].append([data[i]["name"],"False"])
+
+
+        with open("banco/lines.json","r+") as f:
+            data = json.load(f)
+            for i in data.keys():
+                if len(data[i]["tags"])<=0:
+                    values["lines"].append([data[i]["name"],"False"])
+                else:
+                    if tagName in data[i]["tags"]:
+                        values["lines"].append([data[i]["name"],"True"])
+                    else:
+                        values["lines"].append([data[i]["name"],"False"])
+       
+        return values
 
     def updateTodo(self, elementName, index):
         with open("banco/elementos.json","r+") as f:
@@ -129,3 +148,4 @@ with open("banco/lines.json","r+") as f:
     json.dump(data,f,indent=4)
     f.truncate
 '''
+#ControllerBanco().validateElementTagFilter("geral")

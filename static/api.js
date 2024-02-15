@@ -87,10 +87,11 @@ function getElementos(callback)
  }
  function deletaElementTag(name, father){
     document.getElementsByName(name)[0].remove()
+    elementType = document.getElementById("card").getAttribute("elementType")
     $.ajax({
         url:`/deletaTag`,
         type:'POST',
-        data:JSON.stringify({'name':name,'father':father}),
+        data:JSON.stringify({'name':name,'father':father,'elementType':elementType}),
         contentType:'application/json',
         success: function(response){
             console.log("deletando tag")
@@ -103,12 +104,13 @@ function getElementos(callback)
  function addNewTag(){
     tagName = document.getElementById("newTagName").value
     fatherName = document.getElementById("card").getAttribute("name")
+    elementType = document.getElementById("card").getAttribute("elementType")
 
     
     $.ajax({
         url:`/addNewTag`,
         type:'POST',
-        data:JSON.stringify({'tagName':tagName,'fatherName':fatherName}),
+        data:JSON.stringify({'tagName':tagName,'fatherName':fatherName,'elementType':elementType}),
         contentType:'application/json',
         success: function(response){
             console.log("adicionando tag")
@@ -119,11 +121,28 @@ function getElementos(callback)
     })
     updateTag(tagName,fatherName)
  }
- function checkTagExists(elementName,tagName){
+ function checkTagExists(callback){
+     
+    const tagName = document.getElementById("tagFilter").value
+        $.ajax({
+            url:`/checkTagExists?tagName=${tagName}`,
+            type:'GET',
+            contentType:'application/json',
+            success: function(response){
+                console.log("api dos filtros solicitada com sucesso")
+                callback(response)
+            },
+            error:function(error){
+                console.log("erro na api dos filtros")
+            }
+        });
+
+ }
+ function checkTagExistsLine(elementName,tagName){
     return new Promise(function(resolve, reject){
         console.log(elementName, tagName)
         $.ajax({
-            url:`/checkTagExists?elementName=${elementName}&tagName=${tagName}`,
+            url:`/checkTagExists?elementName=${elementName}&tagName=${tagName}&elementType=line`,
             type:'GET',
             contentType:'application/json',
             success: function(response){

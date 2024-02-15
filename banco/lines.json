@@ -8,7 +8,10 @@
         ],
         "description": "sua descricao aqui",
         "name": "inputUsuario/botaoEntrar",
-        "tags": []
+        "tags": [
+            "campoDigitavel"
+        ],
+        "testes": []
     },
     "inputSenha/erroLogin": {
         "positions": [
@@ -19,7 +22,8 @@
         ],
         "description": "sua descricao aqui",
         "name": "inputSenha/erroLogin",
-        "tags": []
+        "tags": [],
+        "testes": []
     },
     "botaoEntrar/modalTopDrivers": {
         "positions": [
@@ -30,7 +34,8 @@
         ],
         "description": "sua descricao aqui",
         "name": "botaoEntrar/modalTopDrivers",
-        "tags": []
+        "tags": [],
+        "testes": []
     },
     "erroLogin/inputSenha": {
         "positions": [
@@ -41,7 +46,8 @@
         ],
         "description": "sua descricao aqui",
         "name": "erroLogin/inputSenha",
-        "tags": []
+        "tags": [],
+        "testes": []
     },
     "xFecharModalTopDriver/modalTopDrivers": {
         "positions": [
@@ -52,7 +58,8 @@
         ],
         "description": "sua descricao aqui",
         "name": "xFecharModalTopDriver/modalTopDrivers",
-        "tags": []
+        "tags": [],
+        "testes": []
     },
     "botaoTamoJunto/modalTopDrivers": {
         "positions": [
@@ -63,7 +70,8 @@
         ],
         "description": "sua descricao aqui",
         "name": "botaoTamoJunto/modalTopDrivers",
-        "tags": []
+        "tags": [],
+        "testes": []
     },
     "agendaRodape/telaAgenda": {
         "positions": [
@@ -74,7 +82,8 @@
         ],
         "description": "sua descricao aqui",
         "name": "agendaRodape/telaAgenda",
-        "tags": []
+        "tags": [],
+        "testes": []
     },
     "viagensRodape/telaViagens": {
         "positions": [
@@ -85,7 +94,8 @@
         ],
         "description": "sua descricao aqui",
         "name": "viagensRodape/telaViagens",
-        "tags": []
+        "tags": [],
+        "testes": []
     },
     "menuRodape/telaMenu": {
         "positions": [
@@ -96,7 +106,8 @@
         ],
         "description": "sua descricao aqui",
         "name": "menuRodape/telaMenu",
-        "tags": []
+        "tags": [],
+        "testes": []
     },
     "botaoSairDoAplicativo/telaLogin": {
         "positions": [
@@ -107,7 +118,8 @@
         ],
         "description": "sua descricao aqui",
         "name": "botaoSairDoAplicativo/telaLogin",
-        "tags": []
+        "tags": [],
+        "testes": []
     },
     "sinoNotificacaoHeader/TelaCentralNotificacoes": {
         "positions": [
@@ -118,7 +130,8 @@
         ],
         "description": "sua descricao aqui",
         "name": "sinoNotificacaoHeader/TelaCentralNotificacoes",
-        "tags": []
+        "tags": [],
+        "testes": []
     },
     "botaoVerRankingMotoristas/telaMatrixTopDriver": {
         "positions": [
@@ -129,7 +142,8 @@
         ],
         "description": "sua descricao aqui",
         "name": "botaoVerRankingMotoristas/telaMatrixTopDriver",
-        "tags": []
+        "tags": [],
+        "testes": []
     },
     "botaoVerifiacrhistoricoDePontuacao/modalHistoricoPontuacao": {
         "positions": [
@@ -140,7 +154,8 @@
         ],
         "description": "sua descricao aqui",
         "name": "botaoVerifiacrhistoricoDePontuacao/modalHistoricoPontuacao",
-        "tags": []
+        "tags": [],
+        "testes": []
     },
     "botaoVerMaisHistorico/cardAbrtoHistoricoPontuacao": {
         "positions": [
@@ -151,7 +166,8 @@
         ],
         "description": "sua descricao aqui",
         "name": "botaoVerMaisHistorico/cardAbrtoHistoricoPontuacao",
-        "tags": []
+        "tags": [],
+        "testes": []
     },
     "botaoVerMenosHistoricoPontuaca/cardFechadoHistorcoPontuacao": {
         "positions": [
@@ -162,6 +178,7 @@
         ],
         "description": "sua descricao aqui",
         "name": "botaoVerMenosHistoricoPontuaca/cardFechadoHistorcoPontuacao",
-        "tags": []
+        "tags": [],
+        "testes": []
     }
 }

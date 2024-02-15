@@ -113,3 +113,31 @@ body {
   background-color: red;
   width: 50%;
 }
+
+#tagFilter{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 16px;
+}
+#tagFilter:focus {
+  outline: none;
+  border-color: #66afe9;
+  box-shadow: 0 0 5px #66afe9;
+}
+
+#tagFilterApply {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#tagFilterApply:focus, #tagFilterApply:hover {
+  background-color: #0056b3;
+}

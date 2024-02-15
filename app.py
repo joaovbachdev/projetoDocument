@@ -42,6 +42,8 @@ def executa():
 
     return "executado"
 
+    
+
 @app.route("/auxCriaElemento", methods=["POST"])
 def auxCriaElemento():
     with open("banco/elementos.json", "r+") as f:
@@ -61,19 +63,25 @@ def auxCriaElemento():
 def deletaTag():
     name = request.json['name']
     father = request.json['father']
-    bd.deletaTag(name,father)
+    elementType = request.json['elementType']
+    bd.deletaTag(name,father, elementType)
 
     return "tag deletada com sucesso"
+
+
 @app.route("/addNewTag",methods=["POST"])
 def addNewTag():    
     tagName = request.json["tagName"]
     fatherName = request.json["fatherName"]
-    bd.addNewTag(tagName, fatherName)
+    elementType = request.json["elementType"]
+    bd.addNewTag(tagName, fatherName, elementType)
     return "tag adicionada com sucesso"
+
+
 
 @app.route("/checkTagExists")
 def checkTagExists():
-    return bd.validateElementTagFilter(request.args.get("elementName"),request.args.get("tagName"))
+    return bd.validateElementTagFilter(request.args.get("tagName"))
 
 
 @app.route("/checkTodo",methods=["POST"])
