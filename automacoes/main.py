@@ -6,15 +6,16 @@ class Main:
     def __init__(self, cenarios) -> None:
         self.cenarios = cenarios
 
-    def run(self, playwright: Playwright) -> None:
+    def run(self, playwright: Playwright, testes) -> None:
         browser = playwright.chromium.launch(headless=False)
         context = browser.new_context()
         page = context.new_page()
+        print(testes)
+        print(testes[0])
+        for i in testes:
+            exec('\n'.join(i))
 
-       
-        exec(self.cenarios.cenarios["inputUsuario"])
 
-
-    def start(self):
+    def start(self, testes):
         with sync_playwright() as playwright:
-            self.run(playwright)
+            self.run(playwright, testes)

@@ -135,6 +135,14 @@ class ControllerBanco:
             f.seek(0)
             json.dump(data,f,indent=4)
             f.truncate()
+
+    def getElementTests(self, name,type):
+        with open(f"banco/{type}.json","r+") as f:
+            data = json.load(f)
+        return [i["automacao"] for i in data[name]["testes"]]
+
+
+
 #ControllerBanco().getAllTags()
 
 #ControllerBanco().createLines()
@@ -149,3 +157,4 @@ with open("banco/lines.json","r+") as f:
     f.truncate
 '''
 #ControllerBanco().validateElementTagFilter("geral")
+#ControllerBanco().getElementTests("inputUsuario","elementos")

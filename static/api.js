@@ -55,12 +55,12 @@ function getElementos(callback)
  function saveLine(){
      console.log("saveLine")
  }
- function executar(name){
+ function executar(name,type){
     console.log("executando automacao de ", name)
     $.ajax({
         url:`/executar`,
         type:'POST',
-        data:JSON.stringify({"name":name}),
+        data:JSON.stringify({"name":name,"type":type}),
         contentType:'application/json',
         success: function(response){
             console.log("executando")

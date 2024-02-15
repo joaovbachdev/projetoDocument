@@ -33,7 +33,7 @@ def getLineInformation():
 def executa():
     print(request.json)
     try:
-        main.start()
+        main.start(bd.getElementTests(request.json["name"],request.json["type"]))
         bd.saveHistorico(request.json["name"], "sucesso")
         print("deu certo")
     except:
@@ -42,7 +42,7 @@ def executa():
 
     return "executado"
 
-    
+
 
 @app.route("/auxCriaElemento", methods=["POST"])
 def auxCriaElemento():

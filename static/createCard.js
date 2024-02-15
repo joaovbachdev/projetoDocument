@@ -6,11 +6,16 @@ function createCard(informations){
     tags = document.getElementById("tags")
     todo = document.getElementById("todoTestes")
 
+    let elementType = ""
+
     if(informations["name"].includes("/")){
-        ele.setAttribute("elementType","lines")
+        elementType = "lines"
+        //ele.setAttribute("elementType","lines")
     }else{
-        ele.setAttribute("elementType","elementos")
+        elementType = "elementos"
+        //ele.setAttribute("elementType","elementos")
     }
+    ele.setAttribute("elementType",elementType)
 
     if(ele.classList[1] == "hidden"){
         ele.classList.toggle('hidden')
@@ -23,7 +28,7 @@ function createCard(informations){
     ele.querySelector("p").textContent = informations['description']
 
     butExecutar.setAttribute("acao",informations['name'])
-    butExecutar.setAttribute("onclick",`executar("${informations['name']}")`)
+    butExecutar.setAttribute("onclick",`executar("${informations['name']}","${elementType}")`)
 
 
     tags.querySelectorAll("label").forEach(element=>{

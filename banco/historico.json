@@ -8,6 +8,39 @@
         },
         {
             "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "erro"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "erro"
+        },
+        {
+            "resultado": "erro"
+        },
+        {
+            "resultado": "erro"
+        },
+        {
+            "resultado": "erro"
+        },
+        {
+            "resultado": "erro"
+        },
+        {
+            "resultado": "erro"
+        },
+        {
+            "resultado": "sucesso"
         }
     ],
     "inputSenha": [
@@ -21,6 +54,17 @@
         },
         {
             "resultado": "erro"
+        },
+        {
+            "resultado": "sucesso"
+        }
+    ],
+    "botaoSairDoAplicativo/telaLogin": [
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
         }
     ]
 }

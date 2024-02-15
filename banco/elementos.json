@@ -8,17 +8,18 @@
         "name": "inputUsuario",
         "interageCom": "botaoEntrar",
         "tags": [
-            "geral",
-            "campoDigitavel"
+            "teste"
         ],
         "testes": [
             {
                 "teste": "clicar deve focar",
-                "status": "realizado"
+                "status": "realizado",
+                "automacao": ["page.goto('https://github.com')","page.goto('https://google.com')"]
             },
             {
                 "teste": "preencher o campo",
-                "status": "realizado"
+                "status": "naoRealizado",
+                "automacao": ["page.goto('https://github.com')"]
             }
         ]
     },
