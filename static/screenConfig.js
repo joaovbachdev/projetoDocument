@@ -1,5 +1,6 @@
 const canvas = document.getElementById('campo');
 const canvasContainer = document.getElementById('canvas-container');
+const grupoImagem = document.getElementById('grupo-img');
 
 
 let isDragging = false;
@@ -69,7 +70,7 @@ function addNewImage(x,y,width,height,img){
   newElement.setAttribute('height', height);
   newElement.setAttributeNS('http://www.w3.org/1999/xlink', 'href', img);
 
-  canvas.appendChild(newElement);
+  grupoImagem.appendChild(newElement);
 }
 
 

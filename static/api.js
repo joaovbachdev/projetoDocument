@@ -60,6 +60,7 @@ function getElementos(callback)
  }
  function executar(name,type){
     console.log("executando automacao de ", name)
+    document.querySelector(`i[elementName='${name}']`).style.display = 'block'
     socket.send('start')
     $.ajax({
         url:`/executar`,
@@ -176,11 +177,19 @@ function getElementos(callback)
 
  }
 
-
  socket.on('atualizar', function(data) {
+     console.log(document.getElementById("card"))
      if(data['status'] == "realizado"){
         document.querySelectorAll("input[type='checkbox']")[data["index"]].checked = true
      }else{
         document.querySelectorAll("input[type='checkbox']")[data["index"]].checked = false
      }
+});
+
+socket.on('atualizarStatus', function(data) {
+    updateElementeTestsStatus(data)
+});
+
+socket.on('desativarSpiner', function(elementName) {
+    document.querySelector(`i[elementName='${elementName}']`).style.display = 'none'
 });

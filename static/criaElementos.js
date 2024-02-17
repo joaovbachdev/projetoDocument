@@ -2,6 +2,9 @@
 
 function createLine(items){
     svgEle = document.getElementById("campo")
+    icones = document.getElementById("icones")
+    var grupoLinha = document.getElementById('grupo-circulos');
+    
     
     for(let i=0;i<Object.keys(items).length;i++){
         var linha = document.createElementNS("http://www.w3.org/2000/svg", 'line');
@@ -16,37 +19,61 @@ function createLine(items){
         linha.setAttribute('onclick',`clickLine("${items[Object.keys(items)[i]]['name']}")`)
         linha.setAttribute('filter', 'url(#shadow)');
     
-        svgEle.appendChild(linha)
+        grupoLinha.appendChild(linha)
     
     }
-    /*
-    for(let i=0;i<items['positions'].length;i++){
-        var linha = document.createElementNS("http://www.w3.org/2000/svg", 'line');
-        linha.setAttribute('x1', items['positions'][i][0]);
-        linha.setAttribute('y1', items['positions'][i][1]);
-        linha.setAttribute('x2', items['positions'][i][2]);
-        linha.setAttribute('y2', items['positions'][i][3]);
-        linha.setAttribute('stroke', '#3498db');
-        linha.setAttribute('stroke-width', '10');
-        linha.setAttribute('lineName',items['names'][i])
-        linha.setAttribute('onclick',`clickLine("${items['names'][i]}")`)
-        linha.setAttribute('filter', 'url(#shadow)');
-        //linha.setAttribute('onclick','cliquei("linha1")')
-        svgEle.appendChild(linha)
-    }
-    */
+
     
     
 }
 function createElement(items){ //itens recebo um array de arrays, o primeiro é um array das posicoes e o segundo dos nomes
     svgEle = document.getElementById("campo")
+    var grupoCirculos = document.getElementById('grupo-circulos');
+    var DivIcone = document.getElementById("icones")
+
+    
+
+
+    
+    
    
     for(let i=0;i<Object.keys(items).length;i++){
         
         var ele = document.createElementNS("http://www.w3.org/2000/svg", 'circle');
+        var icone = document.createElement("i")
+        var foreing = document.createElementNS('http://www.w3.org/2000/svg',"foreignObject")
+        var divI = document.createElement("div")
+
+        foreing.setAttribute("width","30px")
+        foreing.setAttribute("height","30px")
+        foreing.setAttribute("x",`${items[Object.keys(items)[i]]['position'][0]}px`)
+        foreing.setAttribute("y",`${items[Object.keys(items)[i]]['position'][1]-40}px`)
+
+        divI.setAttribute("xmlns","http://www.w3.org/1999/xhtml")
+        divI.setAttribute("id","icones")
+
+        icone.setAttribute("class","fa-solid fa-spinner fa-spin fa-2x spinner")
+        icone.setAttribute("elementName",items[Object.keys(items)[i]]['name'])
+        icone.style.position = "absolute"
+        icone.style.top=`30%`
+        icone.style.left = `30%`
+        icone.style.transform= 'translate(-60%, -60%)'
+        icone.style.animation= "rotate 0.5s linear infinite";
+        icone.style.display = 'none'
+       
+     
+        
+        divI.appendChild(icone)
+        foreing.appendChild(divI)
+        svgEle.appendChild(foreing)
+        
+
         ele.setAttribute('cx',items[Object.keys(items)[i]]['position'][0])
         ele.setAttribute('cy',items[Object.keys(items)[i]]['position'][1])
         ele.setAttribute('r','25')
+
+
+      
         
         if(items[Object.keys(items)[i]]["testes"].length == 0){
             ele.setAttribute('fill','#f5b470')
@@ -62,30 +89,24 @@ function createElement(items){ //itens recebo um array de arrays, o primeiro é 
         }
         
         ele.setAttribute('onclick',`clickElement("${items[Object.keys(items)[i]]['name']}")`)
+        //ele.addEventListener("click",sinal)
         ele.setAttribute('elementName',items[Object.keys(items)[i]]['name'])
         ele.setAttribute('class','elemento')
 
 
 
-        svgEle.appendChild(ele)
+
+
+        //DivIcone.appendChild(icone)
+        grupoCirculos.appendChild(ele)
+        
+        
         
     }
-    /*
-    for(let i=0;i<items['positions'].length;i++){
-            var ele = document.createElementNS("http://www.w3.org/2000/svg", 'circle');
-            ele.setAttribute('cx',items['positions'][i][0])
-            ele.setAttribute('cy',items['positions'][i][1])
-            ele.setAttribute('r','25')
-            ele.setAttribute('fill','#0bfc03')
-            ele.setAttribute('onclick',`clickElement("${items['names'][i]}")`)
-            ele.setAttribute('elementName',items['names'][i])
-            ele.setAttribute('class','elemento')
 
-
-
-            svgEle.appendChild(ele)
     
-        }
-        */
     }
 
+function sinal(){
+    alert("ola mundo")
+}

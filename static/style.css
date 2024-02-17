@@ -24,7 +24,7 @@ body {
 .sidebar {
   position: fixed; /* Define a posição fixa */
   top: 10%; /* Alinha a parte superior da div à parte superior da tela */
-  right: -800px; /* Alinha a parte direita da div à parte direita da tela */
+  right: -50%; /* Alinha a parte direita da div à parte direita da tela */
   height: 60vh; /* Ocupa 100% da altura da tela */
   width: 30%; /* Ocupa 30% da largura da tela */
   opacity: 1;
@@ -35,7 +35,7 @@ body {
   background: #fff;
 }
 .sidebar.hidden{
-  right: 0px;
+  right: 0%;
 }
 .sidebar h1{
   color: #333333;
@@ -47,6 +47,23 @@ body {
   font-size: 16px;
   line-height: 1.5;
   margin: 0;
+}
+#sidebarDescription{
+  padding-bottom: 40px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.301);
+  border-radius: 5px;
+  width: 80%;
+
+}
+#closeCard{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #aaa;
 }
 #canvas-container {
   width: 100%;
@@ -71,7 +88,6 @@ body {
   flex-wrap: wrap;
   border-radius: 5px;
 }
-
 .tag {
   display: inline-block;
   background:  #1488cc;
@@ -104,21 +120,79 @@ body {
     font-size: 16px; /* Tamanho da fonte */
     outline: none; /* Remove a borda de foco padrão */
     box-shadow: none; /* Remove a sombra padrão */
+}
+#addNewTag{
 
+  border-radius: 4px; /* Adiciona cantos arredondados */
+  padding: 8px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
+
+/*ESTILO DA LISTA DE TODO*/
+#executarCard{
+  border-radius: 4px; /* Adiciona cantos arredondados */
+  padding: 8px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
 #todoTestes{
-  display: flex;
-  flex-wrap: wrap;
-  background-color: red;
-  width: 50%;
+  list-style: none;
+  padding-top: 20px;
 }
+#todoTestes div{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+#todoTestes div:hover{
+  background-color: #f0f0f0;
+}
+#todoTestes input{
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  appearance: none;
+  border: 2px solid #999;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+#todoTestes input:checked{
+  background-color: #007bff;
+  border-color: #007bff;
+}
+#todoTestes label{
+  font-size: 16px;
+  color: #333;
+}
+
+
+
+
 
 #tagFilter{
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 8px;
   font-size: 16px;
+
+
 }
 #tagFilter:focus {
   outline: none;
@@ -140,4 +214,16 @@ body {
 }
 #tagFilterApply:focus, #tagFilterApply:hover {
   background-color: #0056b3;
+}
+
+
+/*ESTILIZACAO DO SPINNER*/
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg); /* Começa a rotação de 0 graus */
+  }
+  100% {
+    transform: rotate(360deg); /* Termina a rotação de 360 graus */
+  }
 }

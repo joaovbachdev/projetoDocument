@@ -21,7 +21,19 @@ function setFilter(values){
         }
         
     });
+}
+function updateElementeTestsStatus(data){ //deve receber um dicionario da seguinte forma {"nome do elemento":"status"}
+    Object.keys(data).forEach(val=>{
+        if(data[val] == "none"){
+            document.querySelectorAll(`circle[elementName='${val}'], line[elementName='${val}']`)[0].setAttribute("fill","#f5b470")
+        }else if(data[val] == "naoRealizado"){
+            document.querySelectorAll(`circle[elementName='${val}'], line[elementName='${val}']`)[0].setAttribute("fill","#e60000")
+        }else{
+            document.querySelectorAll(`circle[elementName='${val}'], line[elementName='${val}']`)[0].setAttribute("fill","#0bfc03")
+        }
+    })
+}
 
-
-
+function addNewAutomation(elementName,type){
+        window.location.href = `/addNewAutomation?name=${elementName}&type=${type}`; 
 }

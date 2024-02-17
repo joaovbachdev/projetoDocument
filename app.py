@@ -48,7 +48,10 @@ def executa():
             print("deu erro")
         
 
-    
+    socketio.emit("atualizarStatus",bd.getAllElementstestStatus())
+    socketio.emit("desativarSpiner",request.json["name"])
+
+
     return "executado"
 
 
@@ -95,18 +98,32 @@ def checkTagExists():
 
 @app.route("/checkTodo",methods=["POST"])
 def checkTodo():
-    print(request.json)
     elementName = request.json["elementName"]
     index = request.json["index"]
     status = request.json["status"]
     bd.updateTodo(elementName,int(index),status)
+    socketio.emit("atualizarStatus",bd.getAllElementstestStatus())
     return "todo atualizado"
 
+@app.route("/addNewAutomation")
+def addNewAutomation():
+    print(request.args.get("name"))
+    print(request.args.get("type"))
+    return render_template("addAutomation.html",elementName = request.args.get("name"),elementType=request.args.get("type"))
+
+@app.route("/addNewAutomationDb",methods=["POST"])
+def addNewAutomationBd():
+    print(request.json)
+    bd.addNewAutomationBd(request.json['elementName'],request.json['elementType'],request.json['data'])
+    return "nova automacao salva"
 
 @socketio.on('atualizar')
 def atualizar():
     # Execute a atualização dos dados aqui, se necessário
     socketio.emit('atualizar')
 
+
+
 app.run(debug=True)
+
 #socketio.runapp.run(debug=True)

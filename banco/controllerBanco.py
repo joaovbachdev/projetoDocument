@@ -155,7 +155,31 @@ class ControllerBanco:
             json.dump(data,f,indent=4)
             f.truncate()
 
+    def getAllElementstestStatus(self):
+        values = {}
+        with open("banco/elementos.json","r+") as f:
+            data = json.load(f)
+            for i in data.keys():
+                if len(data[i]["testes"])<=0:
+                    values[i] = "none"
+                else:
+                    values[i] = "realizado"
+                    for j in data[i]["testes"]:
+                        if j["status"] == "naoRealizado":
+                            values[i] = "naoRealizado"
+                            break
+        return values
 
+    def addNewAutomationBd(self,elementName,elementType, newData):
+        with open(f'banco/{elementType}.json','r+') as f:
+            data = json.load(f)
+            data[elementName]["testes"].append(newData)
+            f.seek(0)
+            json.dump(data,f,indent=4)
+            f.truncate()                    
+
+
+#ControllerBanco().getAllElementstestStatus()
 
 
 #ControllerBanco().getAllTags()

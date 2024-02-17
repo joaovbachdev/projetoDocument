@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='styleNewAutomacao.css') }}">
+    </head>
+    <body>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        
+       <input type="text" placeholder="nome da automacao" id="automationName">
+       <button id="add" onclick="adicionar('{{elementName}}','{{elementType}}')">adicionar</button>
+       <div id="codigoAutomacao">
+        <input type="text" class="linhaCodigo" index="0">
+        <button class="addLine" index="0" onclick="addLine()">add</button>
+       </div>
+
+
+       <script src="{{ url_for('static', filename='addNewAutomation/elementController.js') }}"></script>
+       <script src="{{ url_for('static', filename='addNewAutomation/apiNewAutomation.js') }}"></script>
+    </body>
+</html>

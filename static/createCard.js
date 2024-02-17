@@ -56,9 +56,11 @@ function createCard(informations){
         todo.removeChild(todo.firstChild);
     }
     informations["testes"].forEach((teste,indice)=>{
+        div = document.createElement("div")
         lab = document.createElement("label")
         inp = document.createElement("input")
 
+        div.setAttribute("id","todoItem")
         lab.textContent = teste["teste"]
         inp.setAttribute("type","checkbox")
         inp.setAttribute("onclick",`checkTodo("${informations["name"]}",${indice},"none")`)
@@ -67,9 +69,12 @@ function createCard(informations){
             inp.checked = true
         }
 
-        todo.appendChild(lab)
-        todo.appendChild(inp)
+        div.appendChild(lab)
+        div.appendChild(inp)
+        todo.appendChild(div)
     })
+
+    document.getElementById("addNewAutomation").setAttribute("onclick",`addNewAutomation("${informations["name"]}","${elementType}")`)
     
 }
 function updateTag(tagName, elementName){
