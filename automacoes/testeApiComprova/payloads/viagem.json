@@ -1,0 +1,50 @@
+{
+    "id_externo": "212147",
+    "motorista": {
+        "cpf": "111111111111",
+        "nome": "bach Teste"
+    },
+    "cliente": {
+        "id_cliente": "99a092e9-99b0-45f4-9ee6-801517b50a19890002",
+        "nome_cliente": "ARCELORMITTAL GONVARRI BRASIL PRODUTOS SIDERURGICOS S/A"
+    },
+    "previsao_fim_viagem": "2023-01-01T13:00:00.000Z",
+    "pontos_de_entrega": [
+        {
+            "id_ponto_entrega": "f2d329af-351e-4fc6-b5de-6af544721234",
+            "nome_ponto": "3M DO BRASIL LTDA",
+            "georeferencia": {
+                "latitude": -23.61239814,
+                "longitude": -46.56713104
+            },
+            "documentos_para_comprovacao": [
+                {
+                    "chave": "",
+                    "tipo": "documento_acessorio"
+                }
+            ]
+        }
+    ],
+    "metadados": [
+        {
+            "codigo": "recebedor",
+            "titulo": "Recebedor",
+            "valor": "123"
+        },
+        {
+            "codigo": "carga_container",
+            "titulo": "Carga Container",
+            "valor": "true"
+        },
+        {
+            "codigo": "peso",
+            "titulo": "Peso",
+            "valor": "1000kg"
+        },
+        {
+            "codigo": "km_total",
+            "titulo": "KM Total",
+            "valor": "380km"
+        }
+    ]
+}
