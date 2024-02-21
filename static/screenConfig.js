@@ -91,3 +91,10 @@ addNewImage(-4000,4000,1300,1300,'static/telaCentralNotificacoes.png')
 addNewImage(-6000,2000,1300,1300,'static/top5Ranking.png')
 
 addNewImage(-6000,0,1300,1300,'static/modalHistoricoPontuacao.jpg')
+
+addNewImage(3000,0,1300,1300,'static/telaControleDoSono.jpg')
+
+addNewImage(3800,0,1300,1300,'static/telaViageComSeguranca.jpg')
+
+addNewImage(5000,1500,1300,1300,'static/telaConversasAtivas.jpg')
+

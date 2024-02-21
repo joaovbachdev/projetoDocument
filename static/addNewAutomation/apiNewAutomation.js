@@ -13,3 +13,16 @@ function addNewAutomation_api(data){
         }
     });
 }
+function getAutomationTests(elementName,elementType){
+    $.ajax({
+        url:`/getAutomatedTests?elementName=${elementName}&elementType=${elementType}`,
+        type:'GET',
+        contentType:'application/json',
+        success: function(response){
+            console.log("aqui estao os testes do elemento", response)
+        },
+        error:function(error){
+            console.log("erro ao buscar testes do elemento")
+        }
+    });
+}

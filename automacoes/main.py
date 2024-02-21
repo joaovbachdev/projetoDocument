@@ -1,5 +1,5 @@
 from playwright.sync_api import Playwright, sync_playwright, expect
-
+import random
 
 class Main:
 
@@ -17,3 +17,4 @@ class Main:
     def start(self, teste):
         with sync_playwright() as playwright:
             self.run(playwright, teste)
+

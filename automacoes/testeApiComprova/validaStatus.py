@@ -29,9 +29,9 @@ URL_mandaComprovante = "https://comprova-matrix-homol.matrixcargo.com.br/public/
 URL_status = "https://comprova-matrix-homol.matrixcargo.com.br/viagens/{}"
 
 TOKEN = "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJvNnAzNFZTZURNMnVoWTNueXg4dFFxNGJQN1EtQzBBcUxfelV1WFF6Q0xjIn0.eyJleHAiOjE3MDg4ODI5OTMsImlhdCI6MTcwODAxODk5MywianRpIjoiOTM1NGZiZjYtZjJmYy00ZTFiLWFiZmItMmY4MDlhOTljMTNjIiwiaXNzIjoiaHR0cHM6Ly9hdXRoLWhvbW9sLm1hdHJpeGNhcmdvLmNvbS5ici9yZWFsbXMvbWF0cml4Y2FyZ28iLCJhdWQiOlsicmVhbG0tbWFuYWdlbWVudCIsImJyb2tlciIsImFjY291bnQiXSwic3ViIjoiNjg4MjUwYjMtZGM2NS00ZDI0LWI1YzEtY2ZmZmMyYzBhZmY2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiY29tcHJvdmEtbWF0cml4LWFwaSIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1tYXRyaXhjYXJnbyIsIkZGX0ZST05UX1NPUlQiLCJvZmZsaW5lX2FjY2VzcyIsImFkbWluIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJyZWFsbS1tYW5hZ2VtZW50Ijp7InJvbGVzIjpbInZpZXctZXZlbnRzIiwicXVlcnktY2xpZW50cyJdfSwiYnJva2VyIjp7InJvbGVzIjpbInJlYWQtdG9rZW4iXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJ2aWV3LWFwcGxpY2F0aW9ucyIsInZpZXctY29uc2VudCIsInZpZXctZ3JvdXBzIiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJtYW5hZ2UtY29uc2VudCIsImRlbGV0ZS1hY2NvdW50Iiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCB0ZW5hbnQgcHJvZmlsZSByb2xlcyIsImNsaWVudElkIjoiY29tcHJvdmEtbWF0cml4LWFwaSIsImNsaWVudEhvc3QiOiIxNzcuOTIuNDguOSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJzZXJ2aWNlLWFjY291bnQtY29tcHJvdmEtbWF0cml4LWFwaSIsImdpdmVuX25hbWUiOiIiLCJmYW1pbHlfbmFtZSI6IiIsImNsaWVudEFkZHJlc3MiOiIxNzcuOTIuNDguOSJ9.gqaxp7I1msuKKDxYyS7-aLsbIK5hADJ1gTUqB4DS4Gwu-GxVcDCBt0GDB1uVbzIYcCKRlnXOZGSDxiUPtQ9rYk3Puv-STvm5VyCMOGDQgWJqnhzevd88tsf6VtRnIAdXzudYPWvORBidUi3BMpOfQ1VE_njxLuge26rxpRij7Fmtu2lD062tlxx2uLbPLM5Yn7lQSe9vi8N9DWcU5_xdg5kMpG_iMLl2A_08BvxwodeigL58QAwDgsvclxKSwrfNI4n6VfOgOmWQNwIG_VlqLwzVDyogl_aEn9xS3uQBM5mCSgiYV07kBYjLXq3JjsuT8SlClm1zP1NYBy2x7S5OVw"
-TOKEN_STATUS = "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJvNnAzNFZTZURNMnVoWTNueXg4dFFxNGJQN1EtQzBBcUxfelV1WFF6Q0xjIn0.eyJleHAiOjE3MDkzMTM1NDYsImlhdCI6MTcwODQ0OTU0NiwianRpIjoiODNkOWY1YTEtYjNkNS00MTY2LTliYzUtYWQwOTJjY2IxN2EyIiwiaXNzIjoiaHR0cHM6Ly9hdXRoLWhvbW9sLm1hdHJpeGNhcmdvLmNvbS5ici9yZWFsbXMvbWF0cml4Y2FyZ28iLCJhdWQiOlsicmVhbG0tbWFuYWdlbWVudCIsImJyb2tlciIsImFjY291bnQiXSwic3ViIjoiNjg4MjUwYjMtZGM2NS00ZDI0LWI1YzEtY2ZmZmMyYzBhZmY2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiY29tcHJvdmEtbWF0cml4LWFwaSIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1tYXRyaXhjYXJnbyIsIkZGX0ZST05UX1NPUlQiLCJvZmZsaW5lX2FjY2VzcyIsImFkbWluIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJyZWFsbS1tYW5hZ2VtZW50Ijp7InJvbGVzIjpbInZpZXctZXZlbnRzIiwicXVlcnktY2xpZW50cyJdfSwiYnJva2VyIjp7InJvbGVzIjpbInJlYWQtdG9rZW4iXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJ2aWV3LWFwcGxpY2F0aW9ucyIsInZpZXctY29uc2VudCIsInZpZXctZ3JvdXBzIiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJtYW5hZ2UtY29uc2VudCIsImRlbGV0ZS1hY2NvdW50Iiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCB0ZW5hbnQgcHJvZmlsZSByb2xlcyIsImNsaWVudElkIjoiY29tcHJvdmEtbWF0cml4LWFwaSIsImNsaWVudEhvc3QiOiIxNzcuMjIwLjE4MS4xMzciLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicHJlZmVycmVkX3VzZXJuYW1lIjoic2VydmljZS1hY2NvdW50LWNvbXByb3ZhLW1hdHJpeC1hcGkiLCJnaXZlbl9uYW1lIjoiIiwiZmFtaWx5X25hbWUiOiIiLCJjbGllbnRBZGRyZXNzIjoiMTc3LjIyMC4xODEuMTM3In0.YXiTUhZPvhGw5lPZ5lRhtxvAZnH-d3Nv0PSYFnPSRXADkZ4GvaTjRxghThpbNI9DJTlhTvhrZ3DsdJFjNMfnDKCPX-OYqYhH3MXVXzhW8Nn9i5wfJk_C2x79us_k-GU6DUSqFRwLNLQqMM6Ur1hpwKiUWHSBEvibaBvLgrkmaD0LEo6xfK5yQE4Y7-sN89icB2R2Exvjv7gzC6gTHbeXWry3SJCb2ixBbeGyNTupbsr8fsvsJJN_AcJ2b7G0p0DhING7yf92_nBUFkFc83Cufp_h6hJ6Aosp17Af2Wcl_yvGdch4kPQ2QF0BXMGXHbUWS9dVYGyKKJq8xFqmJWSTNg" 
+TOKEN_STATUS = "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJvNnAzNFZTZURNMnVoWTNueXg4dFFxNGJQN1EtQzBBcUxfelV1WFF6Q0xjIn0.eyJleHAiOjE3MDkyMzQ5MjMsImlhdCI6MTcwODM3MDkyMywianRpIjoiODg3NzNmZTItYjk0NC00ZWNjLThhNTAtMzc2NWRkZDM2Yzg5IiwiaXNzIjoiaHR0cHM6Ly9hdXRoLWhvbW9sLm1hdHJpeGNhcmdvLmNvbS5ici9yZWFsbXMvbWF0cml4Y2FyZ28iLCJhdWQiOlsicmVhbG0tbWFuYWdlbWVudCIsImJyb2tlciIsImFjY291bnQiXSwic3ViIjoiNjg4MjUwYjMtZGM2NS00ZDI0LWI1YzEtY2ZmZmMyYzBhZmY2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiY29tcHJvdmEtbWF0cml4LWFwaSIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1tYXRyaXhjYXJnbyIsIkZGX0ZST05UX1NPUlQiLCJvZmZsaW5lX2FjY2VzcyIsImFkbWluIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJyZWFsbS1tYW5hZ2VtZW50Ijp7InJvbGVzIjpbInZpZXctZXZlbnRzIiwicXVlcnktY2xpZW50cyJdfSwiYnJva2VyIjp7InJvbGVzIjpbInJlYWQtdG9rZW4iXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJ2aWV3LWFwcGxpY2F0aW9ucyIsInZpZXctY29uc2VudCIsInZpZXctZ3JvdXBzIiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJtYW5hZ2UtY29uc2VudCIsImRlbGV0ZS1hY2NvdW50Iiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCB0ZW5hbnQgcHJvZmlsZSByb2xlcyIsImNsaWVudElkIjoiY29tcHJvdmEtbWF0cml4LWFwaSIsImNsaWVudEhvc3QiOiIxODkuMTIzLjIzMC42NCIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJzZXJ2aWNlLWFjY291bnQtY29tcHJvdmEtbWF0cml4LWFwaSIsImdpdmVuX25hbWUiOiIiLCJmYW1pbHlfbmFtZSI6IiIsImNsaWVudEFkZHJlc3MiOiIxODkuMTIzLjIzMC42NCJ9.GjWmQq1fv2JSpYU2w4KhNIhdGJImCtGZcRsBOo1iskEU3XmDWR4MJIyZOQtClpzWSKHGl2EeX4ShFw6tOihNueQKx4TmL9pyyyY8c6BOuH6s3BAvgjUtm2RErHgzD7zPogGPqYE3F6uFeokIF9fdeqBLafG06zRcygwXm69g5kEX9S88ZMnmWJmhg3SmXOzxkoiUh3eqOIxwm4Zk_7lEtU6JUXHtzU0YntI01aAfpFY7unGVwpXdG0e48q2fBp0yi9zwsjC9NDjz_a2dOmM2x8EIZTegflL0SnYhBesHaGFDc3nD3RAOWtWjEsJftk0ij2GRxyvXlSeBva6fVwWTkA" 
 HEADERS = {"Authorization":f"Bearer {TOKEN}",'Content-Type': 'application/json'}
-HEADERS_STATUS = {"Authorization":f"Bearer: {TOKEN_STATUS}",'Content-Type': 'application/json'}
+HEADERS_STATUS = {"Authorization":f"Bearer {TOKEN_STATUS}",'Content-Type': 'application/json'}
 ultimoId = 0
 
 def getExternalId():
@@ -101,8 +101,12 @@ def executaCenario(dadosViagens, dadosComprovantes):
         updateExternalId()
 
 
-
-
+print(requests.get("https://comprova-matrix-homol.matrixcargo.com.br/viagens/237919",headers=HEADERS).json())
+'''
+for i in [i["id"] for i in requests.get("https://comprova-matrix-homol.matrixcargo.com.br/viagens?status=todos&limit=5000",headers=HEADERS).json()["itens"]]:
+     r = requests.get(f"https://comprova-matrix-homol.matrixcargo.com.br/viagens/{i}",headers=HEADERS).json()
+     print(r["rejeitada_em"] is not None and r["aprovada_em"] is not None, r["id_externo"])
+'''
 
 #executaCenario([["cte"],["35220882270711002194570000000707921426247610"]],[["cte_completo.jpeg","cte"]]) #VIAGEM ESPERANDO 1 CTE, RECEBE 1 CTE QUE APROVA AUTOMATICO
 
@@ -116,7 +120,8 @@ def executaCenario(dadosViagens, dadosComprovantes):
 
 #executaCenario([["ric"],["8774"]],[["cte_completo.jpeg","ric"]])                                         #VIAGEM ESPERA 1 RIC, RECEBE 1 RIC QUE REJEIT#A
 
-#executaCenario([["cte"],["37368736"]],[["cte_completo.jpeg","cte"],["cte_completo","ric"]])              #VIAGEM ESPERA 1 CTE, RECEBE 1 CTE E 1 RIC QUE REJEITA, DEVE ESTAR REJEITADA
+#executaCenario([["cte"],["37368736"]],[["cte_completo.jpeg","cte"],["cte_completo.jpeg","ric"]])              #VIAGEM ESPERA 1 CTE, RECEBE 1 CTE E 1 RIC QUE REJEITA, DEVE ESTAR REJEITADA
+#executaCenario([["cte"],["35220882270711002194570000000707921426247610"]],[["nf_aprova.jpeg","cte"]])
 
 #executaCenario([["ric"],["35220882270711002194570000000707921426247610"]],[["cte_completo.jpeg","ric"],["cte_completo.jpeg","cte"]]) #ESPERA 1 RIC E RECEBE CTE E RIC QUE REJEITA, DEVE SER REJEITADO
 
@@ -125,10 +130,10 @@ def executaCenario(dadosViagens, dadosComprovantes):
 #executaCenario([["cte"],["35220882270711002194570000000707921426247610"]],[["cte_completo.jpeg","cte"],["cte_completo.jpeg","ric"]])  #ESPERA CTE, RECEBE 1 CTTE QUE APROVA E 1 RIC QUE REJEITA, ARQUIVADA E DELETAR O RIC
 
 #executaCenario([["nf"],["35240212475660000108550010001298291412507339"]],[["nf_aprova.jpeg","nf"],["cte_completo.jpeg","nf"]]) #ESPERA NF, RECEBE 1 QUE APROVA E UMA QUE REJEITA, DEVE APROVAR E APAGAR A REJEITADA
-
+#executaCenario([["nf"],["35240212475660000108550010001298291412507339"]],[["cte_completo.jpeg","nf"],["nf_aprova.jpeg","nf"]])
 #executaCenario([["ric"],["TCLU5927621"]],[["ric_aprova.jpeg","ric"],["cte_completo.jpeg","ric"]]) #ESPERA RIC, RECEBE 1 RIIC QUE APROVA E 1 RIC QUE REJEITA, DEVE ARQUIVAR E DELETAR OO REJEITADO
 
-#executaCenario([["ric"],["TCLU5927621"]],[["ric_aprova.jpeg","ric"],["cte_completo.jpeg","cte"]])  #ESPERA RIIC, RECEBE 1 RIC QUE APROVA E 1 CTE QUE REJEITA, DEVE IR PARA ARQUIVADA E DELETAR O CTE
+#executaCenario([["ric"],["TCLU5927621"]],[["nf_aprova.jpeg","ric"],["cte_completo.jpeg","cte"],["ric_aprova.jpeg","ric"]])  #ESPERA RIIC, RECEBE 1 RIC QUE APROVA E 1 CTE QUE REJEITA, DEVE IR PARA ARQUIVADA E DELETAR O CTE
 
 #executaCenario([["cte"],["35220882270711002194570000000707921426247610"]],[["cte_completo.jpeg","documento_acessorio"],["cte_completo.jpeg","cte"]]) #DEVE FICAR EM ANALISE
 

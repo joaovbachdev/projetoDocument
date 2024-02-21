@@ -64,7 +64,9 @@ def auxCriaElemento():
             'position': request.json['pos'],
             'description':'cria via  auxiliar',
             'name':request.json['name'],
-            'interageCom':""
+            'interageCom':"",
+            'tags':[],
+            'testes':[]
         }
         f.seek(0)
         json.dump(data,f,indent=4)
@@ -116,6 +118,12 @@ def addNewAutomationBd():
     print(request.json)
     bd.addNewAutomationBd(request.json['elementName'],request.json['elementType'],request.json['data'])
     return "nova automacao salva"
+
+@app.route("/getAutomatedTests")
+def getAutomatedTests():
+    name = request.args.get("elementName")
+    elementype = request.args.get("elementType")
+    return bd.getAutomatedTests(name, elementype)
 
 @socketio.on('atualizar')
 def atualizar():

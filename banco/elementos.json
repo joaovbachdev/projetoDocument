@@ -8,12 +8,13 @@
         "name": "inputUsuario",
         "interageCom": "botaoEntrar",
         "tags": [
-            "kawany"
+            "campoDigitavel",
+            "login"
         ],
         "testes": [
             {
                 "teste": "clicar deve focar",
-                "status": "realizado",
+                "status": "naoRealizado",
                 "automacao": [
                     "page.goto('https://github.com')",
                     "page.goto('https://google.com')"
@@ -46,7 +47,7 @@
         "interageCom": "erroLogin",
         "tags": [
             "campoDigitavel",
-            "geral"
+            "login"
         ],
         "testes": []
     },
@@ -59,7 +60,8 @@
         "name": "botaoEntrar",
         "interageCom": "modalTopDrivers",
         "tags": [
-            "geral"
+            "botao",
+            "login"
         ],
         "testes": []
     },
@@ -72,7 +74,7 @@
         "name": "erroLogin",
         "interageCom": "inputSenha",
         "tags": [
-            "geral"
+            "login"
         ],
         "testes": []
     },
@@ -104,7 +106,10 @@
         "description": "modal que aparece ap\u00f3s efeturar login no app",
         "name": "modalTopDrivers",
         "interageCom": "",
-        "tags": [],
+        "tags": [
+            "modal",
+            "topDriver"
+        ],
         "testes": []
     },
     "xFecharModalTopDriver": {
@@ -115,7 +120,9 @@
         "description": "x para fechar a modal matrix top driver",
         "name": "xFecharModalTopDriver",
         "interageCom": "modalTopDrivers",
-        "tags": [],
+        "tags": [
+            "topDriver"
+        ],
         "testes": []
     },
     "botaoTamoJunto": {
@@ -126,7 +133,10 @@
         "description": "botao de confirmacao de leitura que fecha o modal top driver",
         "name": "botaoTamoJunto",
         "interageCom": "modalTopDrivers",
-        "tags": [],
+        "tags": [
+            "topDriver",
+            "botao"
+        ],
         "testes": []
     },
     "sinoNotificacaoHeader": {
@@ -270,8 +280,8 @@
         "name": "telaLogin",
         "interageCom": "",
         "tags": [
-            "joao",
-            "kawany"
+            "tela",
+            "login"
         ],
         "testes": []
     },
@@ -283,7 +293,9 @@
         "description": "botao que faz logou do motorista e redireciona o usuario para a tela de login",
         "name": "botaoSairDoAplicativo",
         "interageCom": "telaLogin",
-        "tags": [],
+        "tags": [
+            "login"
+        ],
         "testes": []
     },
     "modalRanking": {
@@ -703,5 +715,275 @@
         "interageCom": "",
         "tags": [],
         "testes": []
+    },
+    "inputDataControleDoSono": {
+        "position": [
+            3527.732231614224,
+            576.5087611454995
+        ],
+        "description": "cria via  auxiliar",
+        "name": "inputDataControleDoSono",
+        "interageCom": "",
+        "tags": [
+            "controleSono"
+        ],
+        "testes": [
+            {
+                "teste": "ao clicar deve abrir um input de data do celular",
+                "status": "realizado",
+                "automacao": [
+                    "page.goto(\"https://github.com\")"
+                ]
+            },
+            {
+                "teste": "nao deve ser possivel adicionar data no futuro",
+                "status": "realizado",
+                "automacao": [
+                    "page.goto()"
+                ]
+            }
+        ]
+    },
+    "inputHorarioControleDoSono": {
+        "position": [
+            3536.458982636089,
+            747.615085812926
+        ],
+        "description": "cria via  auxiliar",
+        "name": "inputHorarioControleDoSono",
+        "interageCom": "botaoConfirmarControleDoSono",
+        "tags": [
+            "controleSono"
+        ],
+        "testes": [
+            {
+                "teste": "ao clicar deve abrir um input de horario do celular",
+                "status": "realizado",
+                "automacao": [
+                    "page.goto('https://github.com')"
+                ]
+            },
+            {
+                "teste": "nao deve ser possivel adicionar um horario no futuro",
+                "status": "realizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ]
+    },
+    "botaoConfirmarControleDoSono": {
+        "position": [
+            3790.4681052641445,
+            918.9487192104464
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoConfirmarControleDoSono",
+        "interageCom": "inputDataControleDoSono",
+        "tags": [
+            "controleSono"
+        ],
+        "testes": [
+            {
+                "teste": "clicar tendo data e horario preenchido deve seguir",
+                "status": "naoRealizado",
+                "automacao": [
+                    "page.goto()"
+                ]
+            },
+            {
+                "teste": "clicar sem ter data preenchida nao pode seguir",
+                "status": "naoRealizado",
+                "automacao": [
+                    "page.goto()"
+                ]
+            },
+            {
+                "teste": "clicar sem preencher horario nao deve seguir",
+                "status": "naoRealizado",
+                "automacao": [
+                    "page.goto()"
+                ]
+            },
+            {
+                "teste": "clicar sem preencher data nem horario nao deve seguir",
+                "status": "naoRealizado",
+                "automacao": [
+                    "page.goto()"
+                ]
+            }
+        ]
+    },
+    "botaoSuporteControleDoSono": {
+        "position": [
+            3715.6775975303235,
+            1014.8270294930362
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoSuporteControleDoSono",
+        "interageCom": "telaConversasAtivas",
+        "tags": [
+            "controleSono"
+        ],
+        "testes": [
+            {
+                "teste": "clicar deve redirecinar para conversas ativas",
+                "status": "realizado",
+                "automacao": [
+                    "page.goto()"
+                ]
+            }
+        ]
+    },
+    "telaControleDoSono": {
+        "position": [
+            3359.6362489365356,
+            17.924190335854007
+        ],
+        "description": "cria via  auxiliar",
+        "name": "telaControleDoSono",
+        "interageCom": "",
+        "tags": [
+            "controleSono"
+        ],
+        "testes": [
+            {
+                "teste": "deve aparecer 1 vez no dia",
+                "status": "naoRealizado",
+                "automacao": [
+                    "page.goto()"
+                ]
+            },
+            {
+                "teste": "abrir nesta tela e fechar o app sem fazer o registro deve abrir novamente",
+                "status": "naoRealizado",
+                "automacao": [
+                    "page.goto()"
+                ]
+            },
+            {
+                "teste": "apos ter realizado ela deve aparecer novamente a partir de 4h do dia seguinte",
+                "status": "naoRealizado",
+                "automacao": [
+                    "page.goto()"
+                ]
+            },
+            {
+                "teste": "apos ter realizado ela deve aparecer novamente a partir de 4h do dia seguinte",
+                "status": "naoRealizado",
+                "automacao": [
+                    "page.goto()"
+                ]
+            }
+        ]
+    },
+    "telaConversasAtivas": {
+        "position": [
+            5363.224257358817,
+            1513.9356649785293
+        ],
+        "description": "cria via  auxiliar",
+        "name": "telaConversasAtivas",
+        "interageCom": "",
+        "tags": [
+            "controleSono"
+        ],
+        "testes": []
+    },
+    "telaViageComSeguranca": {
+        "position": [
+            4167.61857507342,
+            26.295893912745385
+        ],
+        "description": "cria via  auxiliar",
+        "name": "telaViageComSeguranca",
+        "interageCom": "botaoConfirmarControleDoSono",
+        "tags": [
+            "controleSono"
+        ],
+        "testes": []
+    },
+    "botaoTamoJuntoViageComSeguranca": {
+        "position": [
+            4269.432627388477,
+            893.7303474722873
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoTamoJuntoViageComSeguranca",
+        "interageCom": "telaInicial",
+        "tags": [
+            "controleSono"
+        ],
+        "testes": [
+            {
+                "teste": "clicar deve finalizar e redirecionar para tela inicial",
+                "status": "realizado",
+                "automacao": [
+                    "page.goto()"
+                ]
+            },
+            {
+                "teste": "ao clicar deve salvar no banco os dados inputados",
+                "status": "realizado",
+                "automacao": [
+                    "page.goto()"
+                ]
+            }
+        ]
+    },
+    "horarioDeEncerramentoDasAtiviidades": {
+        "position": [
+            4284.2727963444095,
+            465.7791839136832
+        ],
+        "description": "cria via  auxiliar",
+        "name": "horarioDeEncerramentoDasAtiviidades",
+        "interageCom": "",
+        "tags": [
+            "controleSono"
+        ],
+        "testes": [
+            {
+                "teste": "teste automacao",
+                "status": "realizado",
+                "automacao": [
+                    "page.goto('https://github.com')"
+                ]
+            }
+        ]
+    },
+    "telaInicial": {
+        "position": [
+            -153.04308488686206,
+            3406.8282176312014
+        ],
+        "description": "cria via  auxiliar",
+        "name": "telaInicial",
+        "interageCom": "",
+        "tags": [
+            "controleSono"
+        ],
+        "testes": []
+    },
+    "xParaFecharConversasAtivas": {
+        "position": [
+            5381.970855338286,
+            1654.7903345005445
+        ],
+        "description": "cria via  auxiliar",
+        "name": "xParaFecharConversasAtivas",
+        "interageCom": "telaViageComSeguranca",
+        "tags": [
+            "controleSono"
+        ],
+        "testes": [
+            {
+                "teste": "se esta tela foi aberta atravez do contole de sono, ao clicar deve redirecionar para tela de tamo junto",
+                "status": "naoRealizado",
+                "automacao": [
+                    "page.goto()"
+                ]
+            }
+        ]
     }
 }

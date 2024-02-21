@@ -60,8 +60,11 @@ function getElementos(callback)
  }
  function executar(name,type){
     console.log("executando automacao de ", name)
-    document.querySelector(`i[elementName='${name}']`).style.display = 'block'
-    socket.send('start')
+    if(!name.includes(("/"))){{
+        document.querySelector(`i[elementName='${name}']`).style.display = 'block'
+        socket.send('start')
+    }}
+
     $.ajax({
         url:`/executar`,
         type:'POST',
@@ -191,5 +194,6 @@ socket.on('atualizarStatus', function(data) {
 });
 
 socket.on('desativarSpiner', function(elementName) {
+    if(!elementName.includes("/"))
     document.querySelector(`i[elementName='${elementName}']`).style.display = 'none'
 });

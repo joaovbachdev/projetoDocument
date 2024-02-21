@@ -24,12 +24,17 @@ function setFilter(values){
 }
 function updateElementeTestsStatus(data){ //deve receber um dicionario da seguinte forma {"nome do elemento":"status"}
     Object.keys(data).forEach(val=>{
-        if(data[val] == "none"){
-            document.querySelectorAll(`circle[elementName='${val}'], line[elementName='${val}']`)[0].setAttribute("fill","#f5b470")
-        }else if(data[val] == "naoRealizado"){
-            document.querySelectorAll(`circle[elementName='${val}'], line[elementName='${val}']`)[0].setAttribute("fill","#e60000")
-        }else{
-            document.querySelectorAll(`circle[elementName='${val}'], line[elementName='${val}']`)[0].setAttribute("fill","#0bfc03")
+        //console.log(val,document.querySelectorAll(`circle[elementName='${val}'], line[elementName='${val}']`)[0])
+        try{
+            if(data[val] == "none"){
+                document.querySelectorAll(`circle[elementName='${val}'], line[elementName='${val}']`)[0].setAttribute("fill","#f5b470")
+            }else if(data[val] == "naoRealizado"){
+                document.querySelectorAll(`circle[elementName='${val}'], line[elementName='${val}']`)[0].setAttribute("fill","#e60000")
+            }else{
+                document.querySelectorAll(`circle[elementName='${val}'], line[elementName='${val}']`)[0].setAttribute("fill","#0bfc03")
+            }
+        }catch{
+            console.log("problema com o elemento",val)
         }
     })
 }

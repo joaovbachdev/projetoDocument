@@ -8,21 +8,8 @@
         ],
         "description": "sua descricao aqui",
         "name": "inputUsuario/botaoEntrar",
-        "tags": [
-            "campoDigitavel"
-        ],
-        "testes": [
-            {
-                "teste": "clicar deve focar",
-                "status": "realizado",
-                "automacao": ["page.goto('https://github.com')","page.goto('https://google.com')"]
-            },
-            {
-                "teste": "preencher o campo",
-                "status": "naoRealizado",
-                "automacao": ["page.goto('https://github.com')"]
-            }
-        ]
+        "tags": [],
+        "testes": []
     },
     "inputSenha/erroLogin": {
         "positions": [
@@ -34,23 +21,7 @@
         "description": "sua descricao aqui",
         "name": "inputSenha/erroLogin",
         "tags": [],
-        "testes": [
-            {
-                "teste": "usuario valido senha invalida",
-                "status": "naoRealizado",
-                "automacao": ["page.goto('https://github.com')","page.goto('https://google.com')"]
-            },
-            {
-                "teste": "senha invalida usuario valido",
-                "status": "nao realizado",
-                "automacao": ["page.goto('https://github.com')","page.goto('https://google.com')"]
-            },
-            {
-                "teste": "usuario e senha invalidos",
-                "status": "naoRealizado",
-                "automacao": ["page.goto('https://github.com')","page.goto('https://google.com')"]
-            }
-        ]
+        "testes": []
     },
     "botaoEntrar/modalTopDrivers": {
         "positions": [
@@ -206,6 +177,82 @@
         "description": "sua descricao aqui",
         "name": "botaoVerMenosHistoricoPontuaca/cardFechadoHistorcoPontuacao",
         "tags": [],
+        "testes": []
+    },
+    "botaoSuporteControleDoSono/telaConversasAtivas": {
+        "positions": [
+            3715.6775975303235,
+            1014.8270294930362,
+            5363.224257358817,
+            1513.9356649785293
+        ],
+        "description": "sua descricao aqui",
+        "name": "botaoSuporteControleDoSono/telaConversasAtivas",
+        "tags": [],
+        "testes": []
+    },
+    "botaoTamoJuntoViageComSeguranca/telaInicial": {
+        "positions": [
+            4269.432627388477,
+            893.7303474722873,
+            -153.04308488686206,
+            3406.8282176312014
+        ],
+        "description": "sua descricao aqui",
+        "name": "botaoTamoJuntoViageComSeguranca/telaInicial",
+        "tags": [],
+        "testes": []
+    },
+    "telaViageComSeguranca/botaoConfirmarControleDoSono": {
+        "positions": [
+            4167.61857507342,
+            26.295893912745385,
+            3790.4681052641445,
+            918.9487192104464
+        ],
+        "description": "sua descricao aqui",
+        "name": "telaViageComSeguranca/botaoConfirmarControleDoSono",
+        "tags": [],
+        "testes": []
+    },
+    "xParaFecharConversasAtivas/telaViageComSeguranca": {
+        "positions": [
+            5381.970855338286,
+            1654.7903345005445,
+            4167.61857507342,
+            26.295893912745385
+        ],
+        "description": "sua descricao aqui",
+        "name": "xParaFecharConversasAtivas/telaViageComSeguranca",
+        "tags": [],
+        "testes": []
+    },
+    "inputHorarioControleDoSono/botaoConfirmarControleDoSono": {
+        "positions": [
+            3536.458982636089,
+            747.615085812926,
+            3790.4681052641445,
+            918.9487192104464
+        ],
+        "description": "sua descricao aqui",
+        "name": "inputHorarioControleDoSono/botaoConfirmarControleDoSono",
+        "tags": [
+            "controleSono"
+        ],
+        "testes": []
+    },
+    "botaoConfirmarControleDoSono/inputDataControleDoSono": {
+        "positions": [
+            3790.4681052641445,
+            918.9487192104464,
+            3527.732231614224,
+            576.5087611454995
+        ],
+        "description": "sua descricao aqui",
+        "name": "botaoConfirmarControleDoSono/inputDataControleDoSono",
+        "tags": [
+            "controleSono"
+        ],
         "testes": []
     }
 }

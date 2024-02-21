@@ -47,7 +47,9 @@ class ControllerBanco:
                     newData = {
                         'positions': [j for i in [data[i]['position'],data[data[i]['interageCom']]['position']] for j in i],
                         'description':"sua descricao aqui",
-                        'name':newLine
+                        'name':newLine,
+                        'tags':[],
+                        'testes':[]
                     }
                     with open('banco/lines.json','r+') as b:
                         data2 = json.load(b)
@@ -177,6 +179,11 @@ class ControllerBanco:
             f.seek(0)
             json.dump(data,f,indent=4)
             f.truncate()                    
+
+    def getAutomatedTests(self, elementName,elementType):
+        with open(f"banco/{elementType}.json","r+") as f:
+            data = json.load(f)
+            return data[elementName]["testes"]
 
 
 #ControllerBanco().getAllElementstestStatus()

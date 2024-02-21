@@ -317,6 +317,42 @@
         },
         {
             "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
         }
     ],
     "inputSenha": [
@@ -341,9 +377,33 @@
         },
         {
             "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
         }
     ],
     "inputUsuario/botaoEntrar": [
+        {
+            "resultado": "sucesso"
+        }
+    ],
+    "inputDataControleDoSono": [
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        }
+    ],
+    "inputHorarioControleDoSono": [
+        {
+            "resultado": "sucesso"
+        }
+    ],
+    "horarioDeEncerramentoDasAtiviidades": [
         {
             "resultado": "sucesso"
         }
