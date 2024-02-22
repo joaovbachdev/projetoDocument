@@ -215,18 +215,6 @@
         "tags": [],
         "testes": []
     },
-    "xParaFecharConversasAtivas/telaViageComSeguranca": {
-        "positions": [
-            5381.970855338286,
-            1654.7903345005445,
-            4167.61857507342,
-            26.295893912745385
-        ],
-        "description": "sua descricao aqui",
-        "name": "xParaFecharConversasAtivas/telaViageComSeguranca",
-        "tags": [],
-        "testes": []
-    },
     "inputHorarioControleDoSono/botaoConfirmarControleDoSono": {
         "positions": [
             3536.458982636089,
@@ -236,9 +224,7 @@
         ],
         "description": "sua descricao aqui",
         "name": "inputHorarioControleDoSono/botaoConfirmarControleDoSono",
-        "tags": [
-            "controleSono"
-        ],
+        "tags": [],
         "testes": []
     },
     "botaoConfirmarControleDoSono/inputDataControleDoSono": {
@@ -250,9 +236,19 @@
         ],
         "description": "sua descricao aqui",
         "name": "botaoConfirmarControleDoSono/inputDataControleDoSono",
-        "tags": [
-            "controleSono"
+        "tags": [],
+        "testes": []
+    },
+    "xParaFecharConversasAtivas/telaControleDoSono": {
+        "positions": [
+            5381.970855338286,
+            1654.7903345005445,
+            3359.6362489365356,
+            17.924190335854007
         ],
+        "description": "sua descricao aqui",
+        "name": "xParaFecharConversasAtivas/telaControleDoSono",
+        "tags": [],
         "testes": []
     }
 }

@@ -101,7 +101,7 @@ def executaCenario(dadosViagens, dadosComprovantes):
         updateExternalId()
 
 
-print(requests.get("https://comprova-matrix-homol.matrixcargo.com.br/viagens/237919",headers=HEADERS).json())
+#print(requests.get("https://comprova-matrix-homol.matrixcargo.com.br/viagens/237919",headers=HEADERS).json())
 '''
 for i in [i["id"] for i in requests.get("https://comprova-matrix-homol.matrixcargo.com.br/viagens?status=todos&limit=5000",headers=HEADERS).json()["itens"]]:
      r = requests.get(f"https://comprova-matrix-homol.matrixcargo.com.br/viagens/{i}",headers=HEADERS).json()

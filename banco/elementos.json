@@ -740,9 +740,10 @@
                 ]
             },
             {
-                "teste": "nao deve ser possivel adicionar um horario no futuro",
-                "status": "realizado",
+                "teste": "teste",
+                "status": "naoRealizado",
                 "automacao": [
+                    "teste",
                     ""
                 ]
             }
@@ -761,31 +762,24 @@
         ],
         "testes": [
             {
-                "teste": "clicar tendo data e horario preenchido deve seguir",
-                "status": "naoRealizado",
-                "automacao": [
-                    "page.goto()"
-                ]
-            },
-            {
                 "teste": "clicar sem ter data preenchida nao pode seguir",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [
                     "page.goto()"
                 ]
             },
             {
-                "teste": "clicar sem preencher horario nao deve seguir",
-                "status": "naoRealizado",
+                "teste": "clicar sem preencher horario nao deve ser possivel",
+                "status": "realizado",
                 "automacao": [
-                    "page.goto()"
+                    ""
                 ]
             },
             {
-                "teste": "clicar sem preencher data nem horario nao deve seguir",
-                "status": "naoRealizado",
+                "teste": "clicar com data e horario preenchido deve avancar",
+                "status": "realizado",
                 "automacao": [
-                    "page.goto()"
+                    ""
                 ]
             }
         ]
@@ -824,15 +818,8 @@
         ],
         "testes": [
             {
-                "teste": "deve aparecer 1 vez no dia",
-                "status": "naoRealizado",
-                "automacao": [
-                    "page.goto()"
-                ]
-            },
-            {
                 "teste": "abrir nesta tela e fechar o app sem fazer o registro deve abrir novamente",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [
                     "page.goto()"
                 ]
@@ -845,10 +832,17 @@
                 ]
             },
             {
-                "teste": "apos ter realizado ela deve aparecer novamente a partir de 4h do dia seguinte",
-                "status": "naoRealizado",
+                "teste": "deve ser preenchido apenas uma vez no  dia",
+                "status": "realizado",
                 "automacao": [
-                    "page.goto()"
+                    ""
+                ]
+            },
+            {
+                "teste": "deve aparecer apenas para motoristas dos tipos disponiveis em driver_weakeup_permissions",
+                "status": "realizado",
+                "automacao": [
+                    ""
                 ]
             }
         ]
@@ -904,13 +898,6 @@
                 "automacao": [
                     "page.goto()"
                 ]
-            },
-            {
-                "teste": "",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
             }
         ]
     },
@@ -927,10 +914,10 @@
         ],
         "testes": [
             {
-                "teste": "teste automacao",
+                "teste": "o valor deve ser de 18h apos a hora entrada pelo usuario",
                 "status": "realizado",
                 "automacao": [
-                    "page.goto('https://github.com')"
+                    ""
                 ]
             }
         ]
@@ -955,16 +942,16 @@
         ],
         "description": "cria via  auxiliar",
         "name": "xParaFecharConversasAtivas",
-        "interageCom": "telaViageComSeguranca",
+        "interageCom": "telaControleDoSono",
         "tags": [
             "controleSono"
         ],
         "testes": [
             {
-                "teste": "se esta tela foi aberta atravez do contole de sono, ao clicar deve redirecionar para tela de tamo junto",
-                "status": "naoRealizado",
+                "teste": "se esta tela foi aberta atraves da tela de controle de sono, ao clicar deve voltar para a mesma",
+                "status": "realizado",
                 "automacao": [
-                    "page.goto()"
+                    ""
                 ]
             }
         ]

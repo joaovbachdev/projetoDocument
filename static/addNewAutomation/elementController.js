@@ -15,6 +15,10 @@ function adicionar(name,type){
     addNewAutomation_api({'elementName':name,'elementType':type, 'data':newData})
 }
 function addLine(){
+    var line = document.createElement("div")
+
+    line.setAttribute("class","line")
+
     var newLine = document.createElement("input")
     var newButton = document.createElement("button")
 
@@ -31,8 +35,10 @@ function addLine(){
     newButton.setAttribute("onclick","addLine()")
     newButton.textContent = "add"
 
-    divPai.appendChild(newLine)
-    divPai.appendChild(newButton)
+    line.appendChild(newLine)
+    line.appendChild(newButton)
+    divPai.appendChild(line)
+    
 
     var previousButton = document.querySelectorAll(`button[index="${numOfLines-1}"]`)[0]
     previousButton.textContent = "remove"
@@ -91,7 +97,8 @@ function setTestList(data){
         titulo.textContent = element["teste"]
 
         codigo = document.createElement("label")
-        codigo.textContent = element["automacao"]
+        codigo.textContent = element["automacao"].join("\n")
+        
 
         itemStatus = document.createElement("input")
         itemStatus.setAttribute("type","checkBox")
@@ -105,8 +112,14 @@ function setTestList(data){
         deleteButton = document.createElement("button")
         deleteButton.textContent = "delete"
         deleteButton.setAttribute("onclick",`deleteTest(${index})`)
+        deleteButton.setAttribute("class","deleteTest")
 
-        
+        executarButton = document.createElement("button")
+        executarButton.textContent = "executar" 
+        executarButton.setAttribute("onclick","")
+        executarButton.setAttribute("class","executar")
+
+        item.appendChild(executarButton)
         item.appendChild(titulo)
         item.appendChild(codigo)
         item.appendChild(itemStatus)

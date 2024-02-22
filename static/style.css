@@ -33,9 +33,11 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   background: #fff;
+
 }
 .sidebar.hidden{
   right: 0%;
+  height: auto;
 }
 .sidebar h1{
   color: #333333;
