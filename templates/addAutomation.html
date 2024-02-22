@@ -5,18 +5,30 @@
         <link rel="stylesheet" href="{{ url_for('static', filename='styleNewAutomacao.css') }}">
     </head>
     <body>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
         
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <div id="divHeader">
+            <div id="status">status</div>
+        </div>
        <input type="text" placeholder="nome da automacao" id="automationName">
        <button id="add" onclick="adicionar('{{elementName}}','{{elementType}}')">adicionar</button>
        <div id="codigoAutomacao">
         <input type="text" class="linhaCodigo" index="0">
         <button class="addLine" index="0" onclick="addLine()">add</button>
        </div>
-       <button onclick="getAutomationTests('{{elementName}}','{{elementType}}')">getAutomatedTestes</button>
+       <div id="listaDeTestes">
+
+       </div>
+       
+       <div id="infos" elementName='{{elementName}}' elementType='{{elementType}}'></div>
 
 
        <script src="{{ url_for('static', filename='addNewAutomation/elementController.js') }}"></script>
        <script src="{{ url_for('static', filename='addNewAutomation/apiNewAutomation.js') }}"></script>
+       <script>
+        getAutomationTests(setTestList)
+        getTestStatus(setStatusElement)
+    </script>
     </body>
 </html>

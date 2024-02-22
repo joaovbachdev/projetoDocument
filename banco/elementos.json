@@ -34,6 +34,20 @@
                     "teste",
                     ""
                 ]
+            },
+            {
+                "teste": "teste nao sei que la nessa poha",
+                "status": "naoRealizado",
+                "automacao": [
+                    "teste"
+                ]
+            },
+            {
+                "teste": "a",
+                "status": "naoRealizado",
+                "automacao": [
+                    "a"
+                ]
             }
         ]
     },
@@ -927,6 +941,13 @@
                 "status": "realizado",
                 "automacao": [
                     "page.goto()"
+                ]
+            },
+            {
+                "teste": "",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
                 ]
             }
         ]

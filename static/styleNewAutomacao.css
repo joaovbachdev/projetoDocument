@@ -7,3 +7,29 @@
 .addLine{
     margin-left: 5px;
 }
+#divHeader{
+    background-color: red;
+
+}
+#status{
+    width: 70px;
+    height: 70px;
+    right: 0;
+    position: absolute;
+    background-color: blue;
+    border-radius: 100px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+#listaDeTestes{
+    background-color: blue;
+
+}
+.testItem{
+    background-color: red;
+    width: auto;
+    
+
+}

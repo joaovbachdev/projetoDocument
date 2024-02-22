@@ -68,3 +68,43 @@ function refreshIndexes(){
         }
     })
 }
+function setStatusElement(data){
+    console.log(data)
+    if(data.includes('naoRealizado')){
+        document.getElementById("status").style.backgroundColor = "red";
+    }else if(data.includes('realizado')){
+        document.getElementById("status").style.backgroundColor = "green";
+    }else{
+        document.getElementById("status").style.backgroundColor = "orange";
+    }
+}
+function setTestList(data){
+
+    document.querySelectorAll("div[class='testItem']").forEach(element=>{
+        element.remove()
+    })
+
+    lista = document.getElementById("listaDeTestes")
+    data.forEach(element=>{
+        item = document.createElement("div")
+        item.setAttribute("class","testItem")
+        titulo = document.createElement("h3")
+        titulo.textContent = element["teste"]
+
+        codigo = document.createElement("label")
+        codigo.textContent = element["automacao"]
+
+        itemStatus = document.createElement("input")
+        itemStatus.setAttribute("type","checkBox")
+
+        if(element["status"] == "realizado"){
+            itemStatus.checked = true
+        }else{
+            itemStatus.checked = false
+    }
+        item.appendChild(titulo)
+        item.appendChild(codigo)
+        item.appendChild(itemStatus)
+        lista.appendChild(item)
+    })
+}
