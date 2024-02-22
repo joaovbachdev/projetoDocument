@@ -11,45 +11,7 @@
             "campoDigitavel",
             "login"
         ],
-        "testes": [
-            {
-                "teste": "clicar deve focar",
-                "status": "naoRealizado",
-                "automacao": [
-                    "page.goto('https://github.com')",
-                    "page.goto('https://google.com')"
-                ]
-            },
-            {
-                "teste": "preencher o campo",
-                "status": "realizado",
-                "automacao": [
-                    "page.goto('https://github.com')"
-                ]
-            },
-            {
-                "teste": "aaa",
-                "status": "realizado",
-                "automacao": [
-                    "teste",
-                    ""
-                ]
-            },
-            {
-                "teste": "teste nao sei que la nessa poha",
-                "status": "naoRealizado",
-                "automacao": [
-                    "teste"
-                ]
-            },
-            {
-                "teste": "a",
-                "status": "naoRealizado",
-                "automacao": [
-                    "a"
-                ]
-            }
-        ]
+        "testes": []
     },
     "inputSenha": {
         "position": [

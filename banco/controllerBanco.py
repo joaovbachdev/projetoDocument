@@ -184,7 +184,14 @@ class ControllerBanco:
         with open(f"banco/{elementType}.json","r+") as f:
             data = json.load(f)
             return data[elementName]["testes"]
-
+    
+    def deleteTest(self,elementName, elementType, test):
+        with open(f"banco/{elementType}.json", "r+") as f:
+            data = json.load(f)
+            del data[elementName]["testes"][test]
+            f.seek(0)
+            json.dump(data,f,indent=4)
+            f.truncate()
 
 #ControllerBanco().getAllElementstestStatus()
 

@@ -69,7 +69,6 @@ function refreshIndexes(){
     })
 }
 function setStatusElement(data){
-    console.log(data)
     if(data.includes('naoRealizado')){
         document.getElementById("status").style.backgroundColor = "red";
     }else if(data.includes('realizado')){
@@ -85,7 +84,7 @@ function setTestList(data){
     })
 
     lista = document.getElementById("listaDeTestes")
-    data.forEach(element=>{
+    data.forEach((element, index)=>{
         item = document.createElement("div")
         item.setAttribute("class","testItem")
         titulo = document.createElement("h3")
@@ -96,15 +95,22 @@ function setTestList(data){
 
         itemStatus = document.createElement("input")
         itemStatus.setAttribute("type","checkBox")
+        itemStatus.setAttribute("onclick",`checkTodoNewAutomation(${index},'none')`)
 
         if(element["status"] == "realizado"){
             itemStatus.checked = true
         }else{
             itemStatus.checked = false
     }
+        deleteButton = document.createElement("button")
+        deleteButton.textContent = "delete"
+        deleteButton.setAttribute("onclick",`deleteTest(${index})`)
+
+        
         item.appendChild(titulo)
         item.appendChild(codigo)
         item.appendChild(itemStatus)
+        item.appendChild(deleteButton)
         lista.appendChild(item)
     })
 }

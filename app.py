@@ -125,6 +125,14 @@ def getAutomatedTests():
     elementype = request.args.get("elementType")
     return bd.getAutomatedTests(name, elementype)
 
+@app.route("/deleteTest",methods=["POST"])
+def deleteTest():
+    name = request.json["elementName"]
+    elementType = request.json["elementType"]
+    test = request.json["test"]
+    bd.deleteTest(name, elementType, test)
+    return "teste deletado com sucesso no back"
+
 @socketio.on('atualizar')
 def atualizar():
     # Execute a atualização dos dados aqui, se necessário
