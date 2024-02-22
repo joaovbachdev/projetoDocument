@@ -250,5 +250,17 @@
         "name": "xParaFecharConversasAtivas/telaControleDoSono",
         "tags": [],
         "testes": []
+    },
+    "rankingHeader/modalRanking": {
+        "positions": [
+            -100,
+            3500,
+            -3610,
+            2250
+        ],
+        "description": "sua descricao aqui",
+        "name": "rankingHeader/modalRanking",
+        "tags": [],
+        "testes": []
     }
 }

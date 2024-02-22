@@ -407,5 +407,10 @@
         {
             "resultado": "sucesso"
         }
+    ],
+    "botaoSuporteControleDoSono": [
+        {
+            "resultado": "erro"
+        }
     ]
 }

@@ -11,7 +11,30 @@
             "campoDigitavel",
             "login"
         ],
-        "testes": []
+        "testes": [
+            {
+                "teste": "digitar varios caracteres para ver se tem um limite",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "testar entrar caracteres especiais",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "colocar apenas espacos",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
+        "bugs": []
     },
     "inputSenha": {
         "position": [
@@ -25,7 +48,8 @@
             "campoDigitavel",
             "login"
         ],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "botaoEntrar": {
         "position": [
@@ -39,7 +63,8 @@
             "botao",
             "login"
         ],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "erroLogin": {
         "position": [
@@ -52,7 +77,30 @@
         "tags": [
             "login"
         ],
-        "testes": []
+        "testes": [
+            {
+                "teste": "clicar em confirmar com senha invalida",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "clicar em confirmar com usuario invalido deve aparecer a mensagem de erro",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "clicar em confirmar com usuario e senha validos nao deve aparecer a mensagem",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
+        "bugs": []
     },
     "botaoPoliticas": {
         "position": [
@@ -72,7 +120,8 @@
                     "page.goto('dasdasd://gdfbgjdfbdfgdf.com')"
                 ]
             }
-        ]
+        ],
+        "bugs": []
     },
     "modalTopDrivers": {
         "position": [
@@ -86,7 +135,8 @@
             "modal",
             "topDriver"
         ],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "xFecharModalTopDriver": {
         "position": [
@@ -99,7 +149,8 @@
         "tags": [
             "topDriver"
         ],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "botaoTamoJunto": {
         "position": [
@@ -113,7 +164,8 @@
             "topDriver",
             "botao"
         ],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "sinoNotificacaoHeader": {
         "position": [
@@ -124,7 +176,16 @@
         "name": "sinoNotificacaoHeader",
         "interageCom": "TelaCentralNotificacoes",
         "tags": [],
-        "testes": []
+        "testes": [
+            {
+                "teste": "clicar deve redirecionanr para a central de notificacoes",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
+        "bugs": []
     },
     "chatHeader": {
         "position": [
@@ -135,7 +196,8 @@
         "name": "chatHeader",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "atalhoMatrixPay": {
         "position": [
@@ -146,7 +208,8 @@
         "name": "atalhoMatrixPay",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "rankingHeader": {
         "position": [
@@ -155,9 +218,18 @@
         ],
         "description": "botao de ranking que abre uma modal do ranking dos motoristas",
         "name": "rankingHeader",
-        "interageCom": "",
+        "interageCom": "modalRanking",
         "tags": [],
-        "testes": []
+        "testes": [
+            {
+                "teste": "clicar deve aparecer a modal do ranking",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
+        "bugs": []
     },
     "inicioRodape": {
         "position": [
@@ -168,7 +240,8 @@
         "name": "inicioRodape",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "agendaRodape": {
         "position": [
@@ -179,7 +252,8 @@
         "name": "agendaRodape",
         "interageCom": "telaAgenda",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "viagensRodape": {
         "position": [
@@ -190,7 +264,8 @@
         "name": "viagensRodape",
         "interageCom": "telaViagens",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "menuRodape": {
         "position": [
@@ -201,7 +276,8 @@
         "name": "menuRodape",
         "interageCom": "telaMenu",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "3pontinhosLocalizacao": {
         "position": [
@@ -212,7 +288,8 @@
         "name": "3pontinhosLocalizacao",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "telaViagens": {
         "position": [
@@ -223,7 +300,8 @@
         "name": "telaViagens",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "telaAgenda": {
         "position": [
@@ -234,7 +312,8 @@
         "name": "telaAgenda",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "telaMenu": {
         "position": [
@@ -245,7 +324,8 @@
         "name": "telaMenu",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "telaLogin": {
         "position": [
@@ -259,7 +339,8 @@
             "tela",
             "login"
         ],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "botaoSairDoAplicativo": {
         "position": [
@@ -272,7 +353,8 @@
         "tags": [
             "login"
         ],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "modalRanking": {
         "position": [
@@ -283,7 +365,8 @@
         "name": "modalRanking",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "botaoVerRankingMotoristas": {
         "position": [
@@ -294,7 +377,16 @@
         "name": "botaoVerRankingMotoristas",
         "interageCom": "telaMatrixTopDriver",
         "tags": [],
-        "testes": []
+        "testes": [
+            {
+                "teste": "clicar deve redirecionar para a tela de matrix top driver",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
+        "bugs": []
     },
     "teste": {
         "position": [
@@ -305,7 +397,8 @@
         "name": "teste",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "atalhoFlutuanteChat": {
         "position": [
@@ -316,7 +409,8 @@
         "name": "atalhoFlutuanteChat",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "botaoMeusVeiculos]": {
         "position": [
@@ -327,7 +421,8 @@
         "name": "botaoMeusVeiculos]",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "botaoMeusDados": {
         "position": [
@@ -338,7 +433,8 @@
         "name": "botaoMeusDados",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "botaoCentralDeNoificacoes": {
         "position": [
@@ -349,7 +445,8 @@
         "name": "botaoCentralDeNoificacoes",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "botaoComissoes": {
         "position": [
@@ -360,7 +457,8 @@
         "name": "botaoComissoes",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "botaoMeusComprovantes": {
         "position": [
@@ -371,7 +469,8 @@
         "name": "botaoMeusComprovantes",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "botaoChecklist": {
         "position": [
@@ -382,7 +481,8 @@
         "name": "botaoChecklist",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "botaoPrimeirosPassos": {
         "position": [
@@ -393,7 +493,8 @@
         "name": "botaoPrimeirosPassos",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "botaoMenuPolicaPrivacidade": {
         "position": [
@@ -404,7 +505,8 @@
         "name": "botaoMenuPolicaPrivacidade",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "botaoDenunciar": {
         "position": [
@@ -415,7 +517,8 @@
         "name": "botaoDenunciar",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "xParaFecharMenu": {
         "position": [
@@ -426,7 +529,8 @@
         "name": "xParaFecharMenu",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "botaoAgendaAvancarmes": {
         "position": [
@@ -437,7 +541,8 @@
         "name": "botaoAgendaAvancarmes",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "botaoAgendaVoltarMes": {
         "position": [
@@ -448,7 +553,8 @@
         "name": "botaoAgendaVoltarMes",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "botaoAgendaAdicionarCompromisso": {
         "position": [
@@ -459,7 +565,8 @@
         "name": "botaoAgendaAdicionarCompromisso",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "botaoAgendaDiasDoMes": {
         "position": [
@@ -470,7 +577,8 @@
         "name": "botaoAgendaDiasDoMes",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "agendaDiasDoMesSelecionado": {
         "position": [
@@ -481,7 +589,8 @@
         "name": "agendaDiasDoMesSelecionado",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "botaoViagensAgendadas": {
         "position": [
@@ -492,7 +601,8 @@
         "name": "botaoViagensAgendadas",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "botaoViagensEmAceite": {
         "position": [
@@ -503,7 +613,8 @@
         "name": "botaoViagensEmAceite",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "botaoViagensConluidas": {
         "position": [
@@ -514,7 +625,8 @@
         "name": "botaoViagensConluidas",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "atalhoChatTelaViagens": {
         "position": [
@@ -525,7 +637,8 @@
         "name": "atalhoChatTelaViagens",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "botaoVerifiacrhistoricoDePontuacao": {
         "position": [
@@ -536,7 +649,16 @@
         "name": "botaoVerifiacrhistoricoDePontuacao",
         "interageCom": "modalHistoricoPontuacao",
         "tags": [],
-        "testes": []
+        "testes": [
+            {
+                "teste": "clicar deve mostrar a modal de historico de pontuacao do motorista",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
+        "bugs": []
     },
     "xFecharModalRanking": {
         "position": [
@@ -547,7 +669,16 @@
         "name": "xFecharModalRanking",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [
+            {
+                "teste": "clicar deve fechar a modal",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
+        "bugs": []
     },
     "botaoFecharModalRanking": {
         "position": [
@@ -558,7 +689,16 @@
         "name": "botaoFecharModalRanking",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [
+            {
+                "teste": "clicar deve ffechar a modal de ranking",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
+        "bugs": []
     },
     "botaoCompartilharModalRRanking": {
         "position": [
@@ -569,7 +709,16 @@
         "name": "botaoCompartilharModalRRanking",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [
+            {
+                "teste": "clicar deve aparecer opcoes do celular para compartilhar",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
+        "bugs": []
     },
     "setVoltarMatrixTopDriver": {
         "position": [
@@ -580,7 +729,16 @@
         "name": "setVoltarMatrixTopDriver",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [
+            {
+                "teste": "clicar deve volar para a home do app",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
+        "bugs": []
     },
     "setaVoltaarCentralNotificacoes": {
         "position": [
@@ -591,7 +749,8 @@
         "name": "setaVoltaarCentralNotificacoes",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "telaMatrixTopDriver": {
         "position": [
@@ -602,7 +761,8 @@
         "name": "telaMatrixTopDriver",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "TelaCentralNotificacoes": {
         "position": [
@@ -613,7 +773,8 @@
         "name": "TelaCentralNotificacoes",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "modalHistoricoPontuacao": {
         "position": [
@@ -624,7 +785,8 @@
         "name": "modalHistoricoPontuacao",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "xFechaModalHistoricoPpntuacao": {
         "position": [
@@ -635,7 +797,16 @@
         "name": "xFechaModalHistoricoPpntuacao",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [
+            {
+                "teste": "clicar deve fechar a modal e ir para home",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
+        "bugs": []
     },
     "botaoVerMaisHistorico": {
         "position": [
@@ -646,7 +817,23 @@
         "name": "botaoVerMaisHistorico",
         "interageCom": "cardAbrtoHistoricoPontuacao",
         "tags": [],
-        "testes": []
+        "testes": [
+            {
+                "teste": "clicar deve expandir o item mostranho mais detalhes",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "ao clicar este botao deve virar \"mostrar menos\"",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
+        "bugs": []
     },
     "botaoVerMenosHistoricoPontuaca": {
         "position": [
@@ -657,7 +844,23 @@
         "name": "botaoVerMenosHistoricoPontuaca",
         "interageCom": "cardFechadoHistorcoPontuacao",
         "tags": [],
-        "testes": []
+        "testes": [
+            {
+                "teste": "clicar deve recolher o conteudo detalhado do item",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "ao clicar este botao deve virar \"mostrar mais\"",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
+        "bugs": []
     },
     "cardFechadoHistorcoPontuacao": {
         "position": [
@@ -668,7 +871,8 @@
         "name": "cardFechadoHistorcoPontuacao",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "cardAbrtoHistoricoPontuacao": {
         "position": [
@@ -679,7 +883,8 @@
         "name": "cardAbrtoHistoricoPontuacao",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "botaoVoltarHistoricoPontucao": {
         "position": [
@@ -690,7 +895,16 @@
         "name": "botaoVoltarHistoricoPontucao",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [
+            {
+                "teste": "clicar deve fechar a modal de historico e voltar para modal de ranking do motorista",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
+        "bugs": []
     },
     "inputDataControleDoSono": {
         "position": [
@@ -718,7 +932,8 @@
                     "page.goto()"
                 ]
             }
-        ]
+        ],
+        "bugs": []
     },
     "inputHorarioControleDoSono": {
         "position": [
@@ -747,7 +962,8 @@
                     ""
                 ]
             }
-        ]
+        ],
+        "bugs": []
     },
     "botaoConfirmarControleDoSono": {
         "position": [
@@ -782,7 +998,8 @@
                     ""
                 ]
             }
-        ]
+        ],
+        "bugs": []
     },
     "botaoSuporteControleDoSono": {
         "position": [
@@ -803,7 +1020,8 @@
                     "page.goto()"
                 ]
             }
-        ]
+        ],
+        "bugs": []
     },
     "telaControleDoSono": {
         "position": [
@@ -845,7 +1063,8 @@
                     ""
                 ]
             }
-        ]
+        ],
+        "bugs": []
     },
     "telaConversasAtivas": {
         "position": [
@@ -858,7 +1077,8 @@
         "tags": [
             "controleSono"
         ],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "telaViageComSeguranca": {
         "position": [
@@ -871,7 +1091,8 @@
         "tags": [
             "controleSono"
         ],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "botaoTamoJuntoViageComSeguranca": {
         "position": [
@@ -886,20 +1107,14 @@
         ],
         "testes": [
             {
-                "teste": "clicar deve finalizar e redirecionar para tela inicial",
-                "status": "realizado",
-                "automacao": [
-                    "page.goto()"
-                ]
-            },
-            {
                 "teste": "ao clicar deve salvar no banco os dados inputados",
                 "status": "realizado",
                 "automacao": [
                     "page.goto()"
                 ]
             }
-        ]
+        ],
+        "bugs": []
     },
     "horarioDeEncerramentoDasAtiviidades": {
         "position": [
@@ -920,7 +1135,8 @@
                     ""
                 ]
             }
-        ]
+        ],
+        "bugs": []
     },
     "telaInicial": {
         "position": [
@@ -933,7 +1149,8 @@
         "tags": [
             "controleSono"
         ],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "xParaFecharConversasAtivas": {
         "position": [
@@ -954,6 +1171,7 @@
                     ""
                 ]
             }
-        ]
+        ],
+        "bugs": []
     }
 }

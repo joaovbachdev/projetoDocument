@@ -91,8 +91,25 @@ function setTestList(data){
 
     lista = document.getElementById("listaDeTestes")
     data.forEach((element, index)=>{
+
+        itemPai = document.createElement("div")//CRIO E ESTILIZO A DIV PAI DE UM ITEM DA LISTA DE TESTES AUTOMATIZADOS
+        itemPai.setAttribute("class","itemPai")
+
+        divNewBug = document.createElement("div")   //AQUI EU CRIO A DIV QUE VAI TER OS ELEMENTOS PARA CADASTRAR UM BUG
+        divNewBug.setAttribute("class","divNewBug")
+
+        inputNewBug = document.createElement("input")
+        inputNewBug.setAttribute("type","text")
+
+        buttonNewBug = document.createElement("button")
+        buttonNewBug.textContent = "addBug"
+
         item = document.createElement("div")
         item.setAttribute("class","testItem")
+
+
+        infoItemDiv = document.createElement("div")
+        infoItemDiv.setAttribute("class","infoItemDiv")
         titulo = document.createElement("h3")
         titulo.textContent = element["teste"]
 
@@ -119,11 +136,20 @@ function setTestList(data){
         executarButton.setAttribute("onclick","")
         executarButton.setAttribute("class","executar")
 
-        item.appendChild(executarButton)
-        item.appendChild(titulo)
-        item.appendChild(codigo)
-        item.appendChild(itemStatus)
-        item.appendChild(deleteButton)
+
+        divNewBug.appendChild(inputNewBug)
+        divNewBug.appendChild(buttonNewBug)
+
+
+        infoItemDiv.appendChild(executarButton)
+        infoItemDiv.appendChild(titulo)
+        infoItemDiv.appendChild(codigo)
+        infoItemDiv.appendChild(itemStatus)
+        infoItemDiv.appendChild(deleteButton)
+
+        item.appendChild(infoItemDiv)
+        item.appendChild(divNewBug)
+
         lista.appendChild(item)
     })
 }
