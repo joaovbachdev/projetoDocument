@@ -28,11 +28,32 @@ URL_criaViagem = "https://comprova-matrix-homol.matrixcargo.com.br/public/viagem
 URL_mandaComprovante = "https://comprova-matrix-homol.matrixcargo.com.br/public/viagem/{}/comprovante"
 URL_status = "https://comprova-matrix-homol.matrixcargo.com.br/viagens/{}"
 
-TOKEN = "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJvNnAzNFZTZURNMnVoWTNueXg4dFFxNGJQN1EtQzBBcUxfelV1WFF6Q0xjIn0.eyJleHAiOjE3MDg4ODI5OTMsImlhdCI6MTcwODAxODk5MywianRpIjoiOTM1NGZiZjYtZjJmYy00ZTFiLWFiZmItMmY4MDlhOTljMTNjIiwiaXNzIjoiaHR0cHM6Ly9hdXRoLWhvbW9sLm1hdHJpeGNhcmdvLmNvbS5ici9yZWFsbXMvbWF0cml4Y2FyZ28iLCJhdWQiOlsicmVhbG0tbWFuYWdlbWVudCIsImJyb2tlciIsImFjY291bnQiXSwic3ViIjoiNjg4MjUwYjMtZGM2NS00ZDI0LWI1YzEtY2ZmZmMyYzBhZmY2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiY29tcHJvdmEtbWF0cml4LWFwaSIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1tYXRyaXhjYXJnbyIsIkZGX0ZST05UX1NPUlQiLCJvZmZsaW5lX2FjY2VzcyIsImFkbWluIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJyZWFsbS1tYW5hZ2VtZW50Ijp7InJvbGVzIjpbInZpZXctZXZlbnRzIiwicXVlcnktY2xpZW50cyJdfSwiYnJva2VyIjp7InJvbGVzIjpbInJlYWQtdG9rZW4iXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJ2aWV3LWFwcGxpY2F0aW9ucyIsInZpZXctY29uc2VudCIsInZpZXctZ3JvdXBzIiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJtYW5hZ2UtY29uc2VudCIsImRlbGV0ZS1hY2NvdW50Iiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCB0ZW5hbnQgcHJvZmlsZSByb2xlcyIsImNsaWVudElkIjoiY29tcHJvdmEtbWF0cml4LWFwaSIsImNsaWVudEhvc3QiOiIxNzcuOTIuNDguOSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJzZXJ2aWNlLWFjY291bnQtY29tcHJvdmEtbWF0cml4LWFwaSIsImdpdmVuX25hbWUiOiIiLCJmYW1pbHlfbmFtZSI6IiIsImNsaWVudEFkZHJlc3MiOiIxNzcuOTIuNDguOSJ9.gqaxp7I1msuKKDxYyS7-aLsbIK5hADJ1gTUqB4DS4Gwu-GxVcDCBt0GDB1uVbzIYcCKRlnXOZGSDxiUPtQ9rYk3Puv-STvm5VyCMOGDQgWJqnhzevd88tsf6VtRnIAdXzudYPWvORBidUi3BMpOfQ1VE_njxLuge26rxpRij7Fmtu2lD062tlxx2uLbPLM5Yn7lQSe9vi8N9DWcU5_xdg5kMpG_iMLl2A_08BvxwodeigL58QAwDgsvclxKSwrfNI4n6VfOgOmWQNwIG_VlqLwzVDyogl_aEn9xS3uQBM5mCSgiYV07kBYjLXq3JjsuT8SlClm1zP1NYBy2x7S5OVw"
+TOKEN = "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJvNnAzNFZTZURNMnVoWTNueXg4dFFxNGJQN1EtQzBBcUxfelV1WFF6Q0xjIn0.eyJleHAiOjE3MDk5MjQ4ODUsImlhdCI6MTcwOTA2MDg4NSwianRpIjoiOTUzMzQ0ZTctYjAzNS00MzFhLWE5M2MtZjhlYWE2MGVmNzlhIiwiaXNzIjoiaHR0cHM6Ly9hdXRoLWhvbW9sLm1hdHJpeGNhcmdvLmNvbS5ici9yZWFsbXMvbWF0cml4Y2FyZ28iLCJhdWQiOlsicmVhbG0tbWFuYWdlbWVudCIsImJyb2tlciIsImFjY291bnQiXSwic3ViIjoiNjg4MjUwYjMtZGM2NS00ZDI0LWI1YzEtY2ZmZmMyYzBhZmY2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiY29tcHJvdmEtbWF0cml4LWFwaSIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1tYXRyaXhjYXJnbyIsIkZGX0ZST05UX1NPUlQiLCJvZmZsaW5lX2FjY2VzcyIsImFkbWluIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJyZWFsbS1tYW5hZ2VtZW50Ijp7InJvbGVzIjpbInZpZXctZXZlbnRzIiwicXVlcnktY2xpZW50cyJdfSwiYnJva2VyIjp7InJvbGVzIjpbInJlYWQtdG9rZW4iXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJ2aWV3LWFwcGxpY2F0aW9ucyIsInZpZXctY29uc2VudCIsInZpZXctZ3JvdXBzIiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJtYW5hZ2UtY29uc2VudCIsImRlbGV0ZS1hY2NvdW50Iiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCB0ZW5hbnQgcHJvZmlsZSByb2xlcyIsImNsaWVudElkIjoiY29tcHJvdmEtbWF0cml4LWFwaSIsImNsaWVudEhvc3QiOiIxOC4yMTMuMjMwLjIzIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsInByZWZlcnJlZF91c2VybmFtZSI6InNlcnZpY2UtYWNjb3VudC1jb21wcm92YS1tYXRyaXgtYXBpIiwiZ2l2ZW5fbmFtZSI6IiIsImZhbWlseV9uYW1lIjoiIiwiY2xpZW50QWRkcmVzcyI6IjE4LjIxMy4yMzAuMjMifQ.i7r_REeTb4Cmz-9GdOi1QmsZ-Fgx0pJT6_jv711IWlnPuSJGjxx1Jv1ArHdFueykOevhF0iWLHZ_3EjmdvhSA_bmeJcfhWKdiY9X0A-BKqiaVur1BXja_UTdB-Z4z4JtGbSN_jmWEULBS_-KidppecHQmMqi7VyGPIKeNGTN6pQiC2SEATtAEW0VMmYmCAL0YLZeYTEEAFpiJvf2glpLaVriz7102vzWJAwTzeuKRyFmfewIdZ78IySILkaaI7I2aOBI0Eo7ymcSxiugeu9e-HCn_NJoZ2nf3jVrLCm0OBD_Nsj2tWdiHO_IeJbOxGl2mIgGnCIulFX8w4cRWfjFWg"
 TOKEN_STATUS = "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJvNnAzNFZTZURNMnVoWTNueXg4dFFxNGJQN1EtQzBBcUxfelV1WFF6Q0xjIn0.eyJleHAiOjE3MDkyMzQ5MjMsImlhdCI6MTcwODM3MDkyMywianRpIjoiODg3NzNmZTItYjk0NC00ZWNjLThhNTAtMzc2NWRkZDM2Yzg5IiwiaXNzIjoiaHR0cHM6Ly9hdXRoLWhvbW9sLm1hdHJpeGNhcmdvLmNvbS5ici9yZWFsbXMvbWF0cml4Y2FyZ28iLCJhdWQiOlsicmVhbG0tbWFuYWdlbWVudCIsImJyb2tlciIsImFjY291bnQiXSwic3ViIjoiNjg4MjUwYjMtZGM2NS00ZDI0LWI1YzEtY2ZmZmMyYzBhZmY2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiY29tcHJvdmEtbWF0cml4LWFwaSIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1tYXRyaXhjYXJnbyIsIkZGX0ZST05UX1NPUlQiLCJvZmZsaW5lX2FjY2VzcyIsImFkbWluIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJyZWFsbS1tYW5hZ2VtZW50Ijp7InJvbGVzIjpbInZpZXctZXZlbnRzIiwicXVlcnktY2xpZW50cyJdfSwiYnJva2VyIjp7InJvbGVzIjpbInJlYWQtdG9rZW4iXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJ2aWV3LWFwcGxpY2F0aW9ucyIsInZpZXctY29uc2VudCIsInZpZXctZ3JvdXBzIiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJtYW5hZ2UtY29uc2VudCIsImRlbGV0ZS1hY2NvdW50Iiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCB0ZW5hbnQgcHJvZmlsZSByb2xlcyIsImNsaWVudElkIjoiY29tcHJvdmEtbWF0cml4LWFwaSIsImNsaWVudEhvc3QiOiIxODkuMTIzLjIzMC42NCIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJzZXJ2aWNlLWFjY291bnQtY29tcHJvdmEtbWF0cml4LWFwaSIsImdpdmVuX25hbWUiOiIiLCJmYW1pbHlfbmFtZSI6IiIsImNsaWVudEFkZHJlc3MiOiIxODkuMTIzLjIzMC42NCJ9.GjWmQq1fv2JSpYU2w4KhNIhdGJImCtGZcRsBOo1iskEU3XmDWR4MJIyZOQtClpzWSKHGl2EeX4ShFw6tOihNueQKx4TmL9pyyyY8c6BOuH6s3BAvgjUtm2RErHgzD7zPogGPqYE3F6uFeokIF9fdeqBLafG06zRcygwXm69g5kEX9S88ZMnmWJmhg3SmXOzxkoiUh3eqOIxwm4Zk_7lEtU6JUXHtzU0YntI01aAfpFY7unGVwpXdG0e48q2fBp0yi9zwsjC9NDjz_a2dOmM2x8EIZTegflL0SnYhBesHaGFDc3nD3RAOWtWjEsJftk0ij2GRxyvXlSeBva6fVwWTkA" 
 HEADERS = {"Authorization":f"Bearer {TOKEN}",'Content-Type': 'application/json'}
-HEADERS_STATUS = {"Authorization":f"Bearer {TOKEN_STATUS}",'Content-Type': 'application/json'}
 ultimoId = 0
+
+cte_codes = ["35230982270711002194570000001026501015786859","35230982270711002194570000001026491015196953","35230982270711002194570000001026471364878117",
+"35240282270711002003570000003562621018311627","35240282270711002003570000003562701902662504","35240282270711002003570000003570001125801980",
+"35240282270711002003570000003570071114772380","35240182270711002194570000001129831314108368","35240182270711002194570000001129791742491280",
+"43240282270711000736570000001108001277589861","35230982270711002194570000001023721866890942",
+"41240182270711000140570000002105661199828950","35240282270711002003570000003552531246205755",
+"35230782270711002194570000000969371034775358","43240282270711000736570000001107481319614417",
+"35230782270711002194570000000976831825585008","35230782270711002194570000000990851198978873",
+"35240282270711002003570000003548311996523428","35240282270711002194570000001167321130580260",
+"35240282270711002194570000001168601603156584","35240282270711002003570000003554061479382421"]
+
+cte_code_analise = ["35240282270711002003570000003531551352419380","35240282270711002003570000003531541475338888",
+"35240282270711002003570000003579841540070091","35240282270711002003570000003579861218403511",
+"35240282270711002003570000003579801311297340","35240182270711002003570000003472111435142124"]
+
+nf_codes = ["31240201998585002006550010000309981449332492","35240260857349002110550010000382172140127254",
+"35240260857349002110550010000382242283620404","35240202481644000174550020002310701935901391",
+"35231059275792000150550040031451371401756276","35240260857349001571550010003647871913884255",
+"35231261381323000248550010004940561362246001","35231261381323000248550010004940701966766360",
+"35231261381323000248550010004940601151707834","35240202481644000174550020002310051708549435",
+"35240202481644000174550020002309421456401860","35240210795959000114550010000192861000192876",
+"35240210795959000114550010000192871000192881"]
 
 def getExternalId():
     with open("automacoes/testeApiComprova/payloads/dataController.json","r+") as f:
@@ -64,6 +85,7 @@ def criaViagem(tipos,codigos):
         response = requests.post(URL_criaViagem, json = data, headers={"Authorization":f"Bearer: {TOKEN}"})
 
         ultimoId = response.json()["id"]
+        #print(response.json())
         
 
 def getBase(arq):
@@ -79,14 +101,15 @@ def setComprovante(arq, tipo):
         f.seek(0)
         json.dump(data,f,indent=4)
         f.truncate()
+        response = requests.post(URL_mandaComprovante.format(getExternalId()), json=data, headers=HEADERS)
+        print(getExternalId())
         
     
 def enviaComprovante():
     with open("automacoes/testeApiComprova/payloads/comprovante.json","r+") as f:
         data = json.loads(f.read())
-        response = requests.post(URL_mandaComprovante.format(getExternalId()), json=data, headers=HEADERS)
-        
-
+        #response = requests.post(URL_mandaComprovante.format(getExternalId()), json=data, headers=HEADERS)
+    
 
 
 
@@ -96,7 +119,8 @@ def executaCenario(dadosViagens, dadosComprovantes):
         for i in dadosComprovantes:
                 setComprovante(i[0],i[1])
                 enviaComprovante()
-        time.sleep(6)
+        time.sleep(8)
+        #print(requests.get(URL_status.format(ultimoId),headers=HEADERS).json())
         print(getExternalId(),f"deve estar arquivado e esta {requests.get(URL_status.format(ultimoId),headers=HEADERS).json()['status']}")
         updateExternalId()
 
@@ -107,6 +131,16 @@ for i in [i["id"] for i in requests.get("https://comprova-matrix-homol.matrixcar
      r = requests.get(f"https://comprova-matrix-homol.matrixcargo.com.br/viagens/{i}",headers=HEADERS).json()
      print(r["rejeitada_em"] is not None and r["aprovada_em"] is not None, r["id_externo"])
 '''
+#for index,i in enumerate(cte_codes):
+    #executaCenario([["cte"],[i]],[[f'cteAprovados/cte{index}.jpeg','cte']])
+
+for index,i in enumerate(cte_code_analise):
+    executaCenario([["cte"],[i]],[[f'cteAnalise/cte{index}.jpeg','cte']])
+
+#for index,i in enumerate(nf_codes):
+    #executaCenario([["nf"],[i]],[[f'nf_aprova/nf{index}.jpeg','nf']])
+
+#executaCenario([["nf"],["42191157475747770000000000005747711457550477"]],[["nf_cardTeste.png","nf"]]) 
 
 #executaCenario([["cte"],["35220882270711002194570000000707921426247610"]],[["cte_completo.jpeg","cte"]]) #VIAGEM ESPERANDO 1 CTE, RECEBE 1 CTE QUE APROVA AUTOMATICO
 
