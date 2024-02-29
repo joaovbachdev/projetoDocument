@@ -1,5 +1,5 @@
 {
-    "id_externo": "2121662",
+    "id_externo": "2121908",
     "motorista": {
         "cpf": "111111111111",
         "nome": "bach Teste"
@@ -19,8 +19,8 @@
             },
             "documentos_para_comprovacao": [
                 {
-                    "chave": "35240182270711002003570000003472111435142124",
-                    "tipo": "cte"
+                    "chave": "35240261064838008975550010003964401637706660",
+                    "tipo": "nf"
                 }
             ]
         }

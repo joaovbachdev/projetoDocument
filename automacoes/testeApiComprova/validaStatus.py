@@ -43,9 +43,11 @@ cte_codes = ["35230982270711002194570000001026501015786859","3523098227071100219
 "35240282270711002003570000003548311996523428","35240282270711002194570000001167321130580260",
 "35240282270711002194570000001168601603156584","35240282270711002003570000003554061479382421"]
 
-cte_code_analise = ["35240282270711002003570000003531551352419380","35240282270711002003570000003531541475338888",
-"35240282270711002003570000003579841540070091","35240282270711002003570000003579861218403511",
-"35240282270711002003570000003579801311297340","35240182270711002003570000003472111435142124"]
+cte_code_analise = ["41240282270711000817570000002431121066906369","35240282270711002003570000003579841540070091",
+                    "35240282270711002003570000003579861218403511","35240282270711002003570000003579821047920313",
+                    "35240282270711002003570000003579851632249427","41240282270711000817570000002430751522096403",
+                    "41240282270711000817570000002430741516732754","41240282270711000817570000002430731561250766",
+                    "35240282270711002003570000003577291888780059","35240282270711002003570000003579561015147090"]
 
 nf_codes = ["31240201998585002006550010000309981449332492","35240260857349002110550010000382172140127254",
 "35240260857349002110550010000382242283620404","35240202481644000174550020002310701935901391",
@@ -53,9 +55,19 @@ nf_codes = ["31240201998585002006550010000309981449332492","35240260857349002110
 "35231261381323000248550010004940561362246001","35231261381323000248550010004940701966766360",
 "35231261381323000248550010004940601151707834","35240202481644000174550020002310051708549435",
 "35240202481644000174550020002309421456401860","35240210795959000114550010000192861000192876",
-"35240210795959000114550010000192871000192881"]
+"35240210795959000114550010000192871000192881","35240259275792000150550040032226731905072470",
+"35240259275792000826550080014723211934609923"]
 
-ric_code = ["MRKU1006305"]
+nf_analise = ["43240259275792009610550080011556321038981514","35240260857349001571550010003657951275705102",
+              "35240259275792000826550080014724421109150581","35240259275792000826550080014724431116107952",
+              "35240259275792000150550040032237521951607070","35240259275792000150550040032241481305100625",
+              "35240259275792003680550080008537461441619875","35240260857349002381550010000028801984355153",
+              "35240260857349002381550010000028791285329853","35240260857349002039550010000152731450557449",
+              "35240260857349002039550010000152731450557449","35240260857349002039550010000153071716177375",
+              "35240260857349002039550010000152701762813627","35240261064838008975550010003964401637706660"]
+
+ric_code = ["MRKU1006305","MRKU1006305","MSDU2890536","HLXU8074573","MRKU4028524","FBIU5262167",
+            "MEAS2023080","CAIU6894167","DFSU2887710","MEAS2023080","MRKU6189662"]
 
 def getExternalId():
     with open("automacoes/testeApiComprova/payloads/dataController.json","r+") as f:
@@ -104,7 +116,7 @@ def setComprovante(arq, tipo):
         json.dump(data,f,indent=4)
         f.truncate()
         response = requests.post(URL_mandaComprovante.format(getExternalId()), json=data, headers=HEADERS)
-        print(getExternalId())
+        #print(getExternalId())
         
     
 def enviaComprovante():
@@ -116,14 +128,14 @@ def enviaComprovante():
 
 
 
-def executaCenario(dadosViagens, dadosComprovantes):
+def executaCenario(dadosViagens, dadosComprovantes,esperado,tipo,contador):
         criaViagem(dadosViagens[0], dadosViagens[1])
         for i in dadosComprovantes:
                 setComprovante(i[0],i[1])
                 enviaComprovante()
         time.sleep(8)
         #print(requests.get(URL_status.format(ultimoId),headers=HEADERS).json())
-        print(getExternalId(),f"deve estar arquivado e esta {requests.get(URL_status.format(ultimoId),headers=HEADERS).json()['status']}")
+        print(str(contador)+"-  "+getExternalId(),f"{tipo} deve estar {esperado} e esta {requests.get(URL_status.format(ultimoId),headers=HEADERS).json()['status']}")
         updateExternalId()
 
 
@@ -133,15 +145,45 @@ for i in [i["id"] for i in requests.get("https://comprova-matrix-homol.matrixcar
      r = requests.get(f"https://comprova-matrix-homol.matrixcargo.com.br/viagens/{i}",headers=HEADERS).json()
      print(r["rejeitada_em"] is not None and r["aprovada_em"] is not None, r["id_externo"])
 '''
-#for index,i in enumerate(cte_codes):
-    #executaCenario([["cte"],[i]],[[f'cteAprovados/cte{index}.jpeg','cte']])
+
+
+
+
+
+
+#-----------------------------------------------------------------------------VALIDACAO DE STATUS------------------------------------------------------------------------------------
+contador = 0
+#print(len(cte_code_analise)+len(cte_codes)+len(nf_codes)+len(ric_code))
+
+for index,i in enumerate(cte_codes):
+    executaCenario([["cte"],[i]],[[f'cteAprovados/cte{index}.jpeg','cte']],'arquivada',f'{index}-cte',contador)#CTE QUE DEVEM APROVAR
+    contador+=1
 
 for index,i in enumerate(cte_code_analise):
-    executaCenario([["cte"],[i]],[[f'cteAnalise/cte{index}.jpeg','cte']])
+    executaCenario([["cte"],[i]],[[f'cteAnalise/cte{index}.jpeg','cte']],'em analise',f'{index}-cte',contador)#CTE QUE DEVEM FICAR EM ANALISE
+    contador+=1
 
-#for index,i in enumerate(nf_codes):
-    #executaCenario([["nf"],[i]],[[f'nf_aprova/nf{index}.jpeg','nf']])
+for index,i in enumerate(nf_codes):
+    executaCenario([["nf"],[i]],[[f'nf_aprova/nf{index}.jpeg','nf']],'arquivada',f'{index}-nf',contador)#NF QUE DEVEM APROVAR
+    contador+=1
 
+for index,i in enumerate(ric_code):
+    executaCenario([["ric"],[i]],[[f'ricAprova/ric{index}.jpeg','ric']],'arquivada',f'{index}-ric',contador)#RIC QUE DEVEM APROVAR
+    contador+=1
+
+for index,i in enumerate(nf_analise):
+    executaCenario([["nf"],[i]],[[f'nfAnalise/nf{index}.jpeg','nf']],'em analise',f'{index}-nf',contador)#NF QUE DEVEM FICAR EM ANALISE
+    contador+=1
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+#---------------------------------------------------------------TESTES DE EXCLUSAO DE COMPROVANTES SOBRANDO---------------------------------------------------------------------------
 #executaCenario([["nf"],["42191157475747770000000000005747711457550477"]],[["nf_cardTeste.png","nf"]]) 
 
 #executaCenario([["cte"],["35220882270711002194570000000707921426247610"]],[["cte_completo.jpeg","cte"]]) #VIAGEM ESPERANDO 1 CTE, RECEBE 1 CTE QUE APROVA AUTOMATICO
@@ -183,3 +225,4 @@ for index,i in enumerate(cte_code_analise):
 #ENVIAR UM DOC ACESSORIO EM UMA VIAGEM QUE POSSUI UM CTE REJEITADO
 
 #ENVIAR UM DOC ACESSORIOI EM UMA VIAGEM QUE POSSUI 1 CTE REJEITADO E 1 CTE APROVADO
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
