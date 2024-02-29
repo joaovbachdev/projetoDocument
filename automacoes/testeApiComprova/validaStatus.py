@@ -69,6 +69,17 @@ nf_analise = ["43240259275792009610550080011556321038981514","352402608573490015
 ric_code = ["MRKU1006305","MRKU1006305","MSDU2890536","HLXU8074573","MRKU4028524","FBIU5262167",
             "MEAS2023080","CAIU6894167","DFSU2887710","MEAS2023080","MRKU6189662"]
 
+cte_rejeitado = ["35240282270711002003570000003582961082199180","35240282270711002003570000003580251589558165",
+                "35240282270711002003570000003578221201432812","43240282270711000736570000001109821469581312",
+                "35240282270711002003570000003580251589558165","43240282270711000736570000001109821469581312"]
+
+ric_rejeitado = ["TCNU9854520","TCNU9854520","TCLU2510296","DRYU4212818"]
+
+nf_rejeitada = ["43240202591818000585550010003130571313393512","35240259160069000125550040002684131217736644",
+"35240260857349002110550010000389251923799386","35240260857349001571550010003657581454001149",
+"35240259275792000826550080014726301763952969","35240200384369000145550020001396881499601369",
+"35240260857349002110550010000389191659227266"]
+
 def getExternalId():
     with open("automacoes/testeApiComprova/payloads/dataController.json","r+") as f:
         return str(json.load(f)["externalId"])
@@ -150,33 +161,45 @@ for i in [i["id"] for i in requests.get("https://comprova-matrix-homol.matrixcar
 
 
 
-
+#executaCenario([["nf"],["35240208279845000170550030000277131211396842"]],[['testeVictor/nf0.jpeg','nf']],'rejeitado','nf',0)
+#time.sleep(50)
 #-----------------------------------------------------------------------------VALIDACAO DE STATUS------------------------------------------------------------------------------------
 contador = 0
 #print(len(cte_code_analise)+len(cte_codes)+len(nf_codes)+len(ric_code))
-
+'''
 for index,i in enumerate(cte_codes):
-    executaCenario([["cte"],[i]],[[f'cteAprovados/cte{index}.jpeg','cte']],'arquivada',f'{index}-cte',contador)#CTE QUE DEVEM APROVAR
+    executaCenario([["cte"],[i]],[[f'cteAprovados/cte{index}.jpeg','cte']],'aprovado','cte',contador)#CTE QUE DEVEM APROVAR
     contador+=1
 
 for index,i in enumerate(cte_code_analise):
-    executaCenario([["cte"],[i]],[[f'cteAnalise/cte{index}.jpeg','cte']],'em analise',f'{index}-cte',contador)#CTE QUE DEVEM FICAR EM ANALISE
+    executaCenario([["cte"],[i]],[[f'cteAnalise/cte{index}.jpeg','cte']],'em analise','cte',contador)#CTE QUE DEVEM FICAR EM ANALISE
     contador+=1
 
 for index,i in enumerate(nf_codes):
-    executaCenario([["nf"],[i]],[[f'nf_aprova/nf{index}.jpeg','nf']],'arquivada',f'{index}-nf',contador)#NF QUE DEVEM APROVAR
+    executaCenario([["nf"],[i]],[[f'nf_aprova/nf{index}.jpeg','nf']],'aprovada','nf',contador)#NF QUE DEVEM APROVAR
     contador+=1
 
 for index,i in enumerate(ric_code):
-    executaCenario([["ric"],[i]],[[f'ricAprova/ric{index}.jpeg','ric']],'arquivada',f'{index}-ric',contador)#RIC QUE DEVEM APROVAR
+    executaCenario([["ric"],[i]],[[f'ricAprova/ric{index}.jpeg','ric']],'aprovado','ric',contador)#RIC QUE DEVEM APROVAR
     contador+=1
 
 for index,i in enumerate(nf_analise):
-    executaCenario([["nf"],[i]],[[f'nfAnalise/nf{index}.jpeg','nf']],'em analise',f'{index}-nf',contador)#NF QUE DEVEM FICAR EM ANALISE
+    executaCenario([["nf"],[i]],[[f'nfAnalise/nf{index}.jpeg','nf']],'em analise','nf',contador)#NF QUE DEVEM FICAR EM ANALISE
     contador+=1
 
-#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+for index,i in enumerate(cte_rejeitado):
+    executaCenario([["cte"],[i]],[[f'cteRejeitado/cte{index}.jpeg','cte']],'rejeitado','cte',contador)#CTE DEVEM ESTAR REJEITADOS
+    contador+=1
 
+for index,i in enumerate(nf_rejeitada):
+    executaCenario([["nf"],[i]],[[f'nfRejeitada/nf{index}.jpeg','nf']],'rejeitada','nf',contador)#NF QUE DEVEM FICAR REJEITADAS
+    contador+=1
+
+for index,i in enumerate(ric_rejeitado):
+    executaCenario([["ric"],[i]],[[f'ricRejeitado/ric{index}.jpeg','ric']],'rejeitado','ric',contador)#RIC DEVE ESTAR REJEITADOS
+    contador+=1
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+'''
 
 
 
@@ -184,7 +207,7 @@ for index,i in enumerate(nf_analise):
 
 
 #---------------------------------------------------------------TESTES DE EXCLUSAO DE COMPROVANTES SOBRANDO---------------------------------------------------------------------------
-#executaCenario([["nf"],["42191157475747770000000000005747711457550477"]],[["nf_cardTeste.png","nf"]]) 
+executaCenario([["nf"],["42191157475747770000000000005747711457550477"]],[["nf_cardTeste.png","nf"]],'aprovada','n',contador) 
 
 #executaCenario([["cte"],["35220882270711002194570000000707921426247610"]],[["cte_completo.jpeg","cte"]]) #VIAGEM ESPERANDO 1 CTE, RECEBE 1 CTE QUE APROVA AUTOMATICO
 
