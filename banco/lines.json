@@ -262,5 +262,113 @@
         "name": "rankingHeader/modalRanking",
         "tags": [],
         "testes": []
+    },
+    "chatHeader/telaConversasAtivas": {
+        "positions": [
+            420,
+            3550,
+            5363.224257358817,
+            1513.9356649785293
+        ],
+        "description": "sua descricao aqui",
+        "name": "chatHeader/telaConversasAtivas",
+        "tags": [],
+        "testes": []
+    },
+    "atalhoFlutuanteChat/telaConversasAtivas": {
+        "positions": [
+            370.11688760733887,
+            4476.68410781121,
+            5363.224257358817,
+            1513.9356649785293
+        ],
+        "description": "sua descricao aqui",
+        "name": "atalhoFlutuanteChat/telaConversasAtivas",
+        "tags": [],
+        "testes": []
+    },
+    "atalhoChatTelaViagens/telaConversasAtivas": {
+        "positions": [
+            -1155.962638174748,
+            2301.7773035155783,
+            5363.224257358817,
+            1513.9356649785293
+        ],
+        "description": "sua descricao aqui",
+        "name": "atalhoChatTelaViagens/telaConversasAtivas",
+        "tags": [],
+        "testes": []
+    },
+    "telaComissoes/botaoComissoes": {
+        "positions": [
+            6352.85896907988,
+            3505.481445943188,
+            1502.5184653425608,
+            3977.8690894291017
+        ],
+        "description": "sua descricao aqui",
+        "name": "telaComissoes/botaoComissoes",
+        "tags": [],
+        "testes": []
+    },
+    "telaMeusVeiculos/botaoMeusVeiculos": {
+        "positions": [
+            6351.540187346632,
+            5507.027910286584,
+            1453.3904924199483,
+            3662.897600752719
+        ],
+        "description": "sua descricao aqui",
+        "name": "telaMeusVeiculos/botaoMeusVeiculos",
+        "tags": [],
+        "testes": []
+    },
+    "telaMeusComprovantes/botaoMeusComprovantes": {
+        "positions": [
+            5358.616255046441,
+            7012.683138383062,
+            1525.9724633835258,
+            4083.454767172903
+        ],
+        "description": "sua descricao aqui",
+        "name": "telaMeusComprovantes/botaoMeusComprovantes",
+        "tags": [],
+        "testes": []
+    },
+    "telaInicioChecklist/botaoChecklist": {
+        "positions": [
+            4354.4940573352005,
+            9013.878686747574,
+            1510.2153050157883,
+            4183.611534504034
+        ],
+        "description": "sua descricao aqui",
+        "name": "telaInicioChecklist/botaoChecklist",
+        "tags": [],
+        "testes": []
+    },
+    "botaoAgendaAdicionarCompromisso/telaAdicionarCompromisso": {
+        "positions": [
+            958.2708550002421,
+            6260.709162599548,
+            -447.7469969339654,
+            5209.932393740553
+        ],
+        "description": "sua descricao aqui",
+        "name": "botaoAgendaAdicionarCompromisso/telaAdicionarCompromisso",
+        "tags": [],
+        "testes": []
+    },
+    "botaoEscolherLocalDoEvento/telaSelecionarEnderecoMapa": {
+        "positions": [
+            -87.2720062890387,
+            5852.291545111037,
+            -1499.0927109617764,
+            5209.119603454774
+        ],
+        "description": "sua descricao aqui",
+        "name": "botaoEscolherLocalDoEvento/telaSelecionarEnderecoMapa",
+        "tags": [],
+        "testes": []
     }
 }

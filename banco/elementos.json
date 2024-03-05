@@ -14,21 +14,21 @@
         "testes": [
             {
                 "teste": "digitar varios caracteres para ver se tem um limite",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [
                     ""
                 ]
             },
             {
                 "teste": "testar entrar caracteres especiais",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [
                     ""
                 ]
             },
             {
                 "teste": "colocar apenas espacos",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [
                     ""
                 ]
@@ -48,7 +48,29 @@
             "campoDigitavel",
             "login"
         ],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "preencher com varios caracteres",
+                "status": "realizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "apagar tudo que oi preenchido",
+                "status": "realizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "tentar digitar caracteres especiais",
+                "status": "realizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
         "bugs": []
     },
     "botaoEntrar": {
@@ -63,7 +85,29 @@
             "botao",
             "login"
         ],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "clicar",
+                "status": "realizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "clicar varias vezes",
+                "status": "realizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "segurar o clique",
+                "status": "realizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
         "bugs": []
     },
     "erroLogin": {
@@ -80,21 +124,21 @@
         "testes": [
             {
                 "teste": "clicar em confirmar com senha invalida",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [
                     ""
                 ]
             },
             {
                 "teste": "clicar em confirmar com usuario invalido deve aparecer a mensagem de erro",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [
                     ""
                 ]
             },
             {
                 "teste": "clicar em confirmar com usuario e senha validos nao deve aparecer a mensagem",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [
                     ""
                 ]
@@ -149,7 +193,15 @@
         "tags": [
             "topDriver"
         ],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "ao clicar deve fechar a modal",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
         "bugs": []
     },
     "botaoTamoJunto": {
@@ -164,7 +216,15 @@
             "topDriver",
             "botao"
         ],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "ao clicar deve fechar a modal",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
         "bugs": []
     },
     "sinoNotificacaoHeader": {
@@ -175,10 +235,12 @@
         "description": "botao de sino que redireiona para a central de notificacoes",
         "name": "sinoNotificacaoHeader",
         "interageCom": "TelaCentralNotificacoes",
-        "tags": [],
+        "tags": [
+            "home"
+        ],
         "testes": [
             {
-                "teste": "clicar deve redirecionanr para a central de notificacoes",
+                "teste": "clicar deve abrir a central de notifica\u00e7oes",
                 "status": "naoRealizado",
                 "automacao": [
                     ""
@@ -194,9 +256,20 @@
         ],
         "description": "botao de chat que redireciona para a tela de minhas conversas",
         "name": "chatHeader",
-        "interageCom": "",
-        "tags": [],
-        "testes": [],
+        "interageCom": "telaConversasAtivas",
+        "tags": [
+            "home",
+            "redirectChat"
+        ],
+        "testes": [
+            {
+                "teste": "clicar deve redirecioanar para o chat",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
         "bugs": []
     },
     "atalhoMatrixPay": {
@@ -208,7 +281,15 @@
         "name": "atalhoMatrixPay",
         "interageCom": "",
         "tags": [],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "clicar deve redirecionar para o matrixpay",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
         "bugs": []
     },
     "rankingHeader": {
@@ -219,10 +300,12 @@
         "description": "botao de ranking que abre uma modal do ranking dos motoristas",
         "name": "rankingHeader",
         "interageCom": "modalRanking",
-        "tags": [],
+        "tags": [
+            "home"
+        ],
         "testes": [
             {
-                "teste": "clicar deve aparecer a modal do ranking",
+                "teste": "clicar deve abrir modal do perfil do motora no ranking",
                 "status": "naoRealizado",
                 "automacao": [
                     ""
@@ -239,8 +322,18 @@
         "description": "botao que redireciona o usuario para a tela de inicio do app",
         "name": "inicioRodape",
         "interageCom": "",
-        "tags": [],
-        "testes": [],
+        "tags": [
+            "home"
+        ],
+        "testes": [
+            {
+                "teste": "clicar deve ir para home e dar um refresh",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
         "bugs": []
     },
     "agendaRodape": {
@@ -251,8 +344,18 @@
         "description": "botao que redireciona o usuario para a tela de agenda",
         "name": "agendaRodape",
         "interageCom": "telaAgenda",
-        "tags": [],
-        "testes": [],
+        "tags": [
+            "home"
+        ],
+        "testes": [
+            {
+                "teste": "clicar deve redirecionar para a agenda",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
         "bugs": []
     },
     "viagensRodape": {
@@ -263,8 +366,18 @@
         "description": "botao que redireciona o usuario para a tela de viagens",
         "name": "viagensRodape",
         "interageCom": "telaViagens",
-        "tags": [],
-        "testes": [],
+        "tags": [
+            "home"
+        ],
+        "testes": [
+            {
+                "teste": "clicar deve redirecionar para a tela de minhas viagens",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
         "bugs": []
     },
     "menuRodape": {
@@ -275,8 +388,18 @@
         "description": "botao que abre o menu do aplicativo",
         "name": "menuRodape",
         "interageCom": "telaMenu",
-        "tags": [],
-        "testes": [],
+        "tags": [
+            "home"
+        ],
+        "testes": [
+            {
+                "teste": "clicar deve abrir o menu lateral",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
         "bugs": []
     },
     "3pontinhosLocalizacao": {
@@ -287,8 +410,18 @@
         "description": "botao que da opcoes para o motorista editar sua localizacao",
         "name": "3pontinhosLocalizacao",
         "interageCom": "",
-        "tags": [],
-        "testes": [],
+        "tags": [
+            "home"
+        ],
+        "testes": [
+            {
+                "teste": "clicar deve abrir op\u00e7oes de localiza\u00e7\u00e3o",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
         "bugs": []
     },
     "telaViagens": {
@@ -351,9 +484,18 @@
         "name": "botaoSairDoAplicativo",
         "interageCom": "telaLogin",
         "tags": [
-            "login"
+            "login",
+            "menu"
         ],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "clicar deve ir para tela de login",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
         "bugs": []
     },
     "modalRanking": {
@@ -364,7 +506,9 @@
         "description": "botao que faz logou do motorista e redireciona o usuario para a tela de login",
         "name": "modalRanking",
         "interageCom": "",
-        "tags": [],
+        "tags": [
+            "ranking"
+        ],
         "testes": [],
         "bugs": []
     },
@@ -376,28 +520,18 @@
         "description": "botao que faz logou do motorista e redireciona o usuario para a tela de login",
         "name": "botaoVerRankingMotoristas",
         "interageCom": "telaMatrixTopDriver",
-        "tags": [],
+        "tags": [
+            "ranking"
+        ],
         "testes": [
             {
                 "teste": "clicar deve redirecionar para a tela de matrix top driver",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [
                     ""
                 ]
             }
         ],
-        "bugs": []
-    },
-    "teste": {
-        "position": [
-            -659.0502486349842,
-            1330.2853583964902
-        ],
-        "description": "cria via  auxiliar",
-        "name": "teste",
-        "interageCom": "",
-        "tags": [],
-        "testes": [],
         "bugs": []
     },
     "atalhoFlutuanteChat": {
@@ -407,21 +541,42 @@
         ],
         "description": "cria via  auxiliar",
         "name": "atalhoFlutuanteChat",
-        "interageCom": "",
-        "tags": [],
-        "testes": [],
+        "interageCom": "telaConversasAtivas",
+        "tags": [
+            "home",
+            "redirectChat"
+        ],
+        "testes": [
+            {
+                "teste": "clicar deve redirecionar para minhas conversas ativas",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
         "bugs": []
     },
-    "botaoMeusVeiculos]": {
+    "botaoMeusVeiculos": {
         "position": [
             1453.3904924199483,
             3662.897600752719
         ],
         "description": "cria via  auxiliar",
-        "name": "botaoMeusVeiculos]",
+        "name": "botaoMeusVeiculos",
         "interageCom": "",
-        "tags": [],
-        "testes": [],
+        "tags": [
+            "menu"
+        ],
+        "testes": [
+            {
+                "teste": "clicar deve redirecionar",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
         "bugs": []
     },
     "botaoMeusDados": {
@@ -432,8 +587,18 @@
         "description": "cria via  auxiliar",
         "name": "botaoMeusDados",
         "interageCom": "",
-        "tags": [],
-        "testes": [],
+        "tags": [
+            "menu"
+        ],
+        "testes": [
+            {
+                "teste": "clicar deve redirecionar",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
         "bugs": []
     },
     "botaoCentralDeNoificacoes": {
@@ -444,8 +609,18 @@
         "description": "cria via  auxiliar",
         "name": "botaoCentralDeNoificacoes",
         "interageCom": "",
-        "tags": [],
-        "testes": [],
+        "tags": [
+            "menu"
+        ],
+        "testes": [
+            {
+                "teste": "clicar deve redirecionar",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
         "bugs": []
     },
     "botaoComissoes": {
@@ -456,8 +631,18 @@
         "description": "cria via  auxiliar",
         "name": "botaoComissoes",
         "interageCom": "",
-        "tags": [],
-        "testes": [],
+        "tags": [
+            "menu"
+        ],
+        "testes": [
+            {
+                "teste": "clicar deve redirecionar",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
         "bugs": []
     },
     "botaoMeusComprovantes": {
@@ -469,7 +654,15 @@
         "name": "botaoMeusComprovantes",
         "interageCom": "",
         "tags": [],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "clicar deve redirecionar",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
         "bugs": []
     },
     "botaoChecklist": {
@@ -480,8 +673,18 @@
         "description": "cria via  auxiliar",
         "name": "botaoChecklist",
         "interageCom": "",
-        "tags": [],
-        "testes": [],
+        "tags": [
+            "menu"
+        ],
+        "testes": [
+            {
+                "teste": "clicar deve redirecionar",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
         "bugs": []
     },
     "botaoPrimeirosPassos": {
@@ -493,7 +696,15 @@
         "name": "botaoPrimeirosPassos",
         "interageCom": "",
         "tags": [],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "clicar deve redirecionar",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
         "bugs": []
     },
     "botaoMenuPolicaPrivacidade": {
@@ -504,8 +715,18 @@
         "description": "cria via  auxiliar",
         "name": "botaoMenuPolicaPrivacidade",
         "interageCom": "",
-        "tags": [],
-        "testes": [],
+        "tags": [
+            "menu"
+        ],
+        "testes": [
+            {
+                "teste": "clicar deve redirecionar",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
         "bugs": []
     },
     "botaoDenunciar": {
@@ -516,8 +737,18 @@
         "description": "cria via  auxiliar",
         "name": "botaoDenunciar",
         "interageCom": "",
-        "tags": [],
-        "testes": [],
+        "tags": [
+            "menu"
+        ],
+        "testes": [
+            {
+                "teste": "clicar deve redirecionar",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
         "bugs": []
     },
     "xParaFecharMenu": {
@@ -528,8 +759,18 @@
         "description": "cria via  auxiliar",
         "name": "xParaFecharMenu",
         "interageCom": "",
-        "tags": [],
-        "testes": [],
+        "tags": [
+            "menu"
+        ],
+        "testes": [
+            {
+                "teste": "clicar deve ir para home",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
         "bugs": []
     },
     "botaoAgendaAvancarmes": {
@@ -563,7 +804,7 @@
         ],
         "description": "cria via  auxiliar",
         "name": "botaoAgendaAdicionarCompromisso",
-        "interageCom": "",
+        "interageCom": "telaAdicionarCompromisso",
         "tags": [],
         "testes": [],
         "bugs": []
@@ -601,7 +842,15 @@
         "name": "botaoViagensAgendadas",
         "interageCom": "",
         "tags": [],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "clicar deve mostrar todas as viagens agendadas do motorista",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
         "bugs": []
     },
     "botaoViagensEmAceite": {
@@ -613,7 +862,15 @@
         "name": "botaoViagensEmAceite",
         "interageCom": "",
         "tags": [],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "clicar deve mostrar todas as viagens em aceite do mostorista",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
         "bugs": []
     },
     "botaoViagensConluidas": {
@@ -625,7 +882,15 @@
         "name": "botaoViagensConluidas",
         "interageCom": "",
         "tags": [],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "clicar deve mostrar todas as vaigens concluidas do motorista",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
         "bugs": []
     },
     "atalhoChatTelaViagens": {
@@ -635,9 +900,19 @@
         ],
         "description": "cria via  auxiliar",
         "name": "atalhoChatTelaViagens",
-        "interageCom": "",
-        "tags": [],
-        "testes": [],
+        "interageCom": "telaConversasAtivas",
+        "tags": [
+            "redirectChat"
+        ],
+        "testes": [
+            {
+                "teste": "clicar deve redirecionar para o chat",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
         "bugs": []
     },
     "botaoVerifiacrhistoricoDePontuacao": {
@@ -648,11 +923,13 @@
         "description": "cria via  auxiliar",
         "name": "botaoVerifiacrhistoricoDePontuacao",
         "interageCom": "modalHistoricoPontuacao",
-        "tags": [],
+        "tags": [
+            "ranking"
+        ],
         "testes": [
             {
                 "teste": "clicar deve mostrar a modal de historico de pontuacao do motorista",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [
                     ""
                 ]
@@ -668,11 +945,13 @@
         "description": "cria via  auxiliar",
         "name": "xFecharModalRanking",
         "interageCom": "",
-        "tags": [],
+        "tags": [
+            "ranking"
+        ],
         "testes": [
             {
                 "teste": "clicar deve fechar a modal",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [
                     ""
                 ]
@@ -688,11 +967,13 @@
         "description": "cria via  auxiliar",
         "name": "botaoFecharModalRanking",
         "interageCom": "",
-        "tags": [],
+        "tags": [
+            "ranking"
+        ],
         "testes": [
             {
                 "teste": "clicar deve ffechar a modal de ranking",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [
                     ""
                 ]
@@ -708,11 +989,13 @@
         "description": "cria via  auxiliar",
         "name": "botaoCompartilharModalRRanking",
         "interageCom": "",
-        "tags": [],
+        "tags": [
+            "ranking"
+        ],
         "testes": [
             {
                 "teste": "clicar deve aparecer opcoes do celular para compartilhar",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [
                     ""
                 ]
@@ -728,11 +1011,13 @@
         "description": "cria via  auxiliar",
         "name": "setVoltarMatrixTopDriver",
         "interageCom": "",
-        "tags": [],
+        "tags": [
+            "ranking"
+        ],
         "testes": [
             {
                 "teste": "clicar deve volar para a home do app",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [
                     ""
                 ]
@@ -760,7 +1045,9 @@
         "description": "cria via  auxiliar",
         "name": "telaMatrixTopDriver",
         "interageCom": "",
-        "tags": [],
+        "tags": [
+            "ranking"
+        ],
         "testes": [],
         "bugs": []
     },
@@ -796,11 +1083,13 @@
         "description": "cria via  auxiliar",
         "name": "xFechaModalHistoricoPpntuacao",
         "interageCom": "",
-        "tags": [],
+        "tags": [
+            "ranking"
+        ],
         "testes": [
             {
                 "teste": "clicar deve fechar a modal e ir para home",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [
                     ""
                 ]
@@ -816,18 +1105,20 @@
         "description": "cria via  auxiliar",
         "name": "botaoVerMaisHistorico",
         "interageCom": "cardAbrtoHistoricoPontuacao",
-        "tags": [],
+        "tags": [
+            "ranking"
+        ],
         "testes": [
             {
                 "teste": "clicar deve expandir o item mostranho mais detalhes",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [
                     ""
                 ]
             },
             {
                 "teste": "ao clicar este botao deve virar \"mostrar menos\"",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [
                     ""
                 ]
@@ -843,18 +1134,20 @@
         "description": "cria via  auxiliar",
         "name": "botaoVerMenosHistoricoPontuaca",
         "interageCom": "cardFechadoHistorcoPontuacao",
-        "tags": [],
+        "tags": [
+            "ranking"
+        ],
         "testes": [
             {
                 "teste": "clicar deve recolher o conteudo detalhado do item",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [
                     ""
                 ]
             },
             {
                 "teste": "ao clicar este botao deve virar \"mostrar mais\"",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [
                     ""
                 ]
@@ -870,7 +1163,9 @@
         "description": "cria via  auxiliar",
         "name": "cardFechadoHistorcoPontuacao",
         "interageCom": "",
-        "tags": [],
+        "tags": [
+            "ranking"
+        ],
         "testes": [],
         "bugs": []
     },
@@ -882,7 +1177,9 @@
         "description": "cria via  auxiliar",
         "name": "cardAbrtoHistoricoPontuacao",
         "interageCom": "",
-        "tags": [],
+        "tags": [
+            "ranking"
+        ],
         "testes": [],
         "bugs": []
     },
@@ -894,11 +1191,13 @@
         "description": "cria via  auxiliar",
         "name": "botaoVoltarHistoricoPontucao",
         "interageCom": "",
-        "tags": [],
+        "tags": [
+            "ranking"
+        ],
         "testes": [
             {
                 "teste": "clicar deve fechar a modal de historico e voltar para modal de ranking do motorista",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [
                     ""
                 ]
@@ -931,6 +1230,13 @@
                 "automacao": [
                     "page.goto()"
                 ]
+            },
+            {
+                "teste": "n\u00e3o deve ser possivel limpar o campo ap\u00f3s ser preenchido",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
             }
         ],
         "bugs": []
@@ -955,10 +1261,9 @@
                 ]
             },
             {
-                "teste": "teste",
+                "teste": "nao deve ser possivel limpar o campo ap\u00f3s ser preenchido",
                 "status": "naoRealizado",
                 "automacao": [
-                    "teste",
                     ""
                 ]
             }
@@ -997,6 +1302,13 @@
                 "automacao": [
                     ""
                 ]
+            },
+            {
+                "teste": "clicar sem data nem hora preenchidos",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
             }
         ],
         "bugs": []
@@ -1010,7 +1322,8 @@
         "name": "botaoSuporteControleDoSono",
         "interageCom": "telaConversasAtivas",
         "tags": [
-            "controleSono"
+            "controleSono",
+            "redirectChat"
         ],
         "testes": [
             {
@@ -1044,7 +1357,7 @@
             },
             {
                 "teste": "apos ter realizado ela deve aparecer novamente a partir de 4h do dia seguinte",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [
                     "page.goto()"
                 ]
@@ -1173,5 +1486,157 @@
             }
         ],
         "bugs": []
+    },
+    "botaoAbrirChatHome": {
+        "position": [
+            -66.4340284231755,
+            4112.783114990434
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoAbrirChatHome",
+        "interageCom": "",
+        "tags": [
+            "home"
+        ],
+        "testes": [
+            {
+                "teste": "clicar deve ir para o fluxo de chat",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ]
+    },
+    "botaoVerViagemHome": {
+        "position": [
+            322.4129777884068,
+            4103.298863860973
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoVerViagemHome",
+        "interageCom": "",
+        "tags": [
+            "home"
+        ],
+        "testes": [
+            {
+                "teste": "clicar deve entrar no fluxo da viagem",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ]
+    },
+    "telaComissoes": {
+        "position": [
+            6352.85896907988,
+            3505.481445943188
+        ],
+        "description": "cria via  auxiliar",
+        "name": "telaComissoes",
+        "interageCom": "botaoComissoes",
+        "tags": [],
+        "testes": []
+    },
+    "telaMeusVeiculos": {
+        "position": [
+            6351.540187346632,
+            5507.027910286584
+        ],
+        "description": "cria via  auxiliar",
+        "name": "telaMeusVeiculos",
+        "interageCom": "botaoMeusVeiculos",
+        "tags": [],
+        "testes": []
+    },
+    "telaMeusComprovantes": {
+        "position": [
+            5358.616255046441,
+            7012.683138383062
+        ],
+        "description": "cria via  auxiliar",
+        "name": "telaMeusComprovantes",
+        "interageCom": "botaoMeusComprovantes",
+        "tags": [],
+        "testes": []
+    },
+    "telaInicioChecklist": {
+        "position": [
+            4354.4940573352005,
+            9013.878686747574
+        ],
+        "description": "cria via  auxiliar",
+        "name": "telaInicioChecklist",
+        "interageCom": "botaoChecklist",
+        "tags": [],
+        "testes": []
+    },
+    "telaAdicionarCompromisso": {
+        "position": [
+            -447.7469969339654,
+            5209.932393740553
+        ],
+        "description": "cria via  auxiliar",
+        "name": "telaAdicionarCompromisso",
+        "interageCom": "",
+        "tags": [],
+        "testes": []
+    },
+    "telaSelecionarEnderecoMapa": {
+        "position": [
+            -1499.0927109617764,
+            5209.119603454774
+        ],
+        "description": "cria via  auxiliar",
+        "name": "telaSelecionarEnderecoMapa",
+        "interageCom": "",
+        "tags": [],
+        "testes": []
+    },
+    "botaoEcooupado": {
+        "position": [
+            -407.6998134562666,
+            5519.132593985111
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoEcooupado",
+        "interageCom": "",
+        "tags": [],
+        "testes": []
+    },
+    "botaoVeiculoEmManutencao": {
+        "position": [
+            -409.1270897027771,
+            5624.2338279125015
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoVeiculoEmManutencao",
+        "interageCom": "",
+        "tags": [],
+        "testes": []
+    },
+    "botaoolga": {
+        "position": [
+            -408.05286847675006,
+            5725.737295318757
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoolga",
+        "interageCom": "",
+        "tags": [],
+        "testes": []
+    },
+    "botaoEscolherLocalDoEvento": {
+        "position": [
+            -87.2720062890387,
+            5852.291545111037
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoEscolherLocalDoEvento",
+        "interageCom": "telaSelecionarEnderecoMapa",
+        "tags": [],
+        "testes": []
     }
 }

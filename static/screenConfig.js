@@ -81,7 +81,11 @@ addNewImage(-500,3400,1300,1300,'static/telaInicial.jpeg')
 
 addNewImage(800,3400,1300,1300,'static/telaMenu.jpeg')
 addNewImage(1500,3400,1300,1300,'static/telaMenu2.jpeg')
+
 addNewImage(150,5200,1300,1300,'static/telaAgenda.jpeg')
+addNewImage(-800,5200,1300,1300,'static/telaAdicionarCompromisso.jpeg')
+addNewImage(-1850,5200,1300,1300,'static/telaSelecionarEnderecoMapa.jpeg')
+
 addNewImage(-2000,1200,1300,1300,'static/telaViagens.jpeg')
 
 addNewImage(-4000,2000,1300,1300,'static/modalRanking.png')
@@ -97,4 +101,12 @@ addNewImage(3000,0,1300,1300,'static/telaControleDoSono.jpg')
 addNewImage(3800,0,1300,1300,'static/telaViageComSeguranca.jpg')
 
 addNewImage(5000,1500,1300,1300,'static/telaConversasAtivas.jpg')
+
+addNewImage(6000,5500,1300,1300,'static/telaMeusVeiculos.jpeg')
+
+addNewImage(6000,3500,1300,1300,'static/telaComissoes.jpeg')
+
+addNewImage(5000,7000,1300,1300,'static/telaMeusComprovantes.jpeg')
+
+addNewImage(4000,9000,1300,1300,'static/telaChecklist.jpeg')
 
