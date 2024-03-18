@@ -370,5 +370,197 @@
         "name": "botaoEscolherLocalDoEvento/telaSelecionarEnderecoMapa",
         "tags": [],
         "testes": []
+    },
+    "botaoContinuarBemVindoChecklist/listaTiposDeChecklist": {
+        "positions": [
+            4451.654553611703,
+            10171.658103308066,
+            5613.738982168484,
+            9982.609918414273
+        ],
+        "description": "sua descricao aqui",
+        "name": "botaoContinuarBemVindoChecklist/listaTiposDeChecklist",
+        "tags": [],
+        "testes": []
+    },
+    "itemChecklist/telaItemChecklist": {
+        "positions": [
+            6450.625085633393,
+            9150.8756323087,
+            7063.163454223255,
+            9028.431241622762
+        ],
+        "description": "sua descricao aqui",
+        "name": "itemChecklist/telaItemChecklist",
+        "tags": [],
+        "testes": []
+    },
+    "statusItemChecklistPendente/checklistBotaoAvancarDesativado": {
+        "positions": [
+            5996.284597033723,
+            9143.445347383682,
+            6086.336503201057,
+            10169.290240196844
+        ],
+        "description": "sua descricao aqui",
+        "name": "statusItemChecklistPendente/checklistBotaoAvancarDesativado",
+        "tags": [],
+        "testes": []
+    },
+    "botaoReprovadoDesativado/fotoAnexadaItemChecklist": {
+        "positions": [
+            7016.36153591205,
+            10187.480153425098,
+            8087.429136519851,
+            9385.525012299453
+        ],
+        "description": "sua descricao aqui",
+        "name": "botaoReprovadoDesativado/fotoAnexadaItemChecklist",
+        "tags": [],
+        "testes": []
+    },
+    "botaoAprovadoDesativado/fotoAnexadaItemChecklist": {
+        "positions": [
+            7289.029919708986,
+            10182.178384737224,
+            8087.429136519851,
+            9385.525012299453
+        ],
+        "description": "sua descricao aqui",
+        "name": "botaoAprovadoDesativado/fotoAnexadaItemChecklist",
+        "tags": [],
+        "testes": []
+    },
+    "lixeiraExcluirFotoItemChecklist/fotoAnexadaItemChecklist": {
+        "positions": [
+            8110.295162387388,
+            9595.477086821675,
+            8087.429136519851,
+            9385.525012299453
+        ],
+        "description": "sua descricao aqui",
+        "name": "lixeiraExcluirFotoItemChecklist/fotoAnexadaItemChecklist",
+        "tags": [],
+        "testes": []
+    },
+    "botaoPendentesCheckList/listaItensPendentesChecklist": {
+        "positions": [
+            8441.668214440004,
+            9277.044827249163,
+            6274.684713076697,
+            9111.690564231008
+        ],
+        "description": "sua descricao aqui",
+        "name": "botaoPendentesCheckList/listaItensPendentesChecklist",
+        "tags": [],
+        "testes": []
+    },
+    "botaoConcluidosChecklist/listaItensConcluidosChecklist": {
+        "positions": [
+            8836.065916763708,
+            9283.414709674447,
+            9443.073826657579,
+            9126.548132399144
+        ],
+        "description": "sua descricao aqui",
+        "name": "botaoConcluidosChecklist/listaItensConcluidosChecklist",
+        "tags": [],
+        "testes": []
+    },
+    "botaoAprovadoAtivo/statusItemChecklistFinalizado": {
+        "positions": [
+            8114.342055905108,
+            10171.23949825921,
+            9197.618328460674,
+            9157.372748951742
+        ],
+        "description": "sua descricao aqui",
+        "name": "botaoAprovadoAtivo/statusItemChecklistFinalizado",
+        "tags": [],
+        "testes": []
+    },
+    "botaoVerConversasFinalizadas/telaConversasFinalizadas": {
+        "positions": [
+            6509.155049062925,
+            1740.218579528968,
+            9664.670370393575,
+            1524.5553055070077
+        ],
+        "description": "sua descricao aqui",
+        "name": "botaoVerConversasFinalizadas/telaConversasFinalizadas",
+        "tags": [],
+        "testes": []
+    },
+    "botaoIniciarNovaConversa/listaDeAssuntos": {
+        "positions": [
+            6653.569385769697,
+            2659.7901509380254,
+            6989.159057853896,
+            1773.7594799924948
+        ],
+        "description": "sua descricao aqui",
+        "name": "botaoIniciarNovaConversa/listaDeAssuntos",
+        "tags": [],
+        "testes": []
+    },
+    "itemListaAssutosPrincipais/itemSubAssuntos": {
+        "positions": [
+            7431.728984388075,
+            1812.0755922672502,
+            8268.951395655562,
+            2079.173950972964
+        ],
+        "description": "sua descricao aqui",
+        "name": "itemListaAssutosPrincipais/itemSubAssuntos",
+        "tags": [],
+        "testes": []
+    },
+    "botaoCancelarNovaConversa/telaConversasAtivas": {
+        "positions": [
+            7387.055163180421,
+            2642.6344104690047,
+            5363.224257358817,
+            1513.9356649785293
+        ],
+        "description": "sua descricao aqui",
+        "name": "botaoCancelarNovaConversa/telaConversasAtivas",
+        "tags": [],
+        "testes": []
+    },
+    "subAssuntoSelecionado/botaoIniciarConversa": {
+        "positions": [
+            9053.578856633867,
+            2076.637907992296,
+            9022.444503414818,
+            2344.3649476579126
+        ],
+        "description": "sua descricao aqui",
+        "name": "subAssuntoSelecionado/botaoIniciarConversa",
+        "tags": [],
+        "testes": []
+    },
+    "campoDeBuscaConversasFinalizadas/itemConversasFinalizadas": {
+        "positions": [
+            9852.643205422995,
+            1738.070605295252,
+            9846.406556985494,
+            1839.520059785414
+        ],
+        "description": "sua descricao aqui",
+        "name": "campoDeBuscaConversasFinalizadas/itemConversasFinalizadas",
+        "tags": [],
+        "testes": []
+    },
+    "meusVeiculosBotaoVoltar/telaMenu": {
+        "positions": [
+            6690.0835309449985,
+            6625.39164213505,
+            1150,
+            3390
+        ],
+        "description": "sua descricao aqui",
+        "name": "meusVeiculosBotaoVoltar/telaMenu",
+        "tags": [],
+        "testes": []
     }
 }

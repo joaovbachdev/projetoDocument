@@ -1638,5 +1638,970 @@
         "interageCom": "telaSelecionarEnderecoMapa",
         "tags": [],
         "testes": []
+    },
+    "inputPlacaChecklist": {
+        "position": [
+            4821.4740602911315,
+            10070.676239532711
+        ],
+        "description": "cria via  auxiliar",
+        "name": "inputPlacaChecklist",
+        "interageCom": "",
+        "tags": [],
+        "testes": [
+            {
+                "teste": "digitar letras devem ficar todas em maiusuclo",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "tentar adicionar mais que 7 caracteres nao deve ser possivel",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ]
+    },
+    "botaoContinuarBemVindoChecklist": {
+        "position": [
+            4451.654553611703,
+            10171.658103308066
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoContinuarBemVindoChecklist",
+        "interageCom": "listaTiposDeChecklist",
+        "tags": [],
+        "testes": [
+            {
+                "teste": "clicar em continuar tendo uma placa valida deve aparecer os tipos",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "clicar em continuar tendo uma placa invalida deve retornar um erro",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "clicar em continuar com o campo vazio deve retornar um erro",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ]
+    },
+    "botaoEngate": {
+        "position": [
+            5560.269375971387,
+            10075.113755765258
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoEngate",
+        "interageCom": "",
+        "tags": [],
+        "testes": [
+            {
+                "teste": "clicar em engate deve avan\u00e7ar com o processo",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ]
+    },
+    "botaoDesengate": {
+        "position": [
+            5497.925879083439,
+            10180.768222647783
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoDesengate",
+        "interageCom": "",
+        "tags": [],
+        "testes": [
+            {
+                "teste": "clicar em desengate deve avan\u00e7ar com o processo",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ]
+    },
+    "itemChecklist": {
+        "position": [
+            6450.625085633393,
+            9150.8756323087
+        ],
+        "description": "cria via  auxiliar",
+        "name": "itemChecklist",
+        "interageCom": "telaItemChecklist",
+        "tags": [],
+        "testes": [
+            {
+                "teste": "clicar deve navegar para o conteudo deste item",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "clicar em um item com status pendente, deve ser possivel mexer no item",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "clicar em um item rejeitado/aprovado, deve ser possivel mexer neste item",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ]
+    },
+    "statusItemChecklistPendente": {
+        "position": [
+            5996.284597033723,
+            9143.445347383682
+        ],
+        "description": "cria via  auxiliar",
+        "name": "statusItemChecklistPendente",
+        "interageCom": "checklistBotaoAvancarDesativado",
+        "tags": [],
+        "testes": [
+            {
+                "teste": "se o item nao for aprovado nem rejeitado deve ficar amarelo pendente",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "ir na aba de pendente, deve aparecer apenas itens com status amarelo",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "itens com o status amarelo deve aparecer apenas na aba de pendentes",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "aprovar/rejeitar um item pendente, este deve trocar de aba e de status",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ]
+    },
+    "checklistBotaoAvancarDesativado": {
+        "position": [
+            6086.336503201057,
+            10169.290240196844
+        ],
+        "description": "cria via  auxiliar",
+        "name": "checklistBotaoAvancarDesativado",
+        "interageCom": "",
+        "tags": [],
+        "testes": [
+            {
+                "teste": "clicar em anva\u00e7ar desativado nao deve acontecer nada",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ]
+    },
+    "inputFotoItemChecklist": {
+        "position": [
+            7163.281953662101,
+            9494.527785866867
+        ],
+        "description": "cria via  auxiliar",
+        "name": "inputFotoItemChecklist",
+        "interageCom": "",
+        "tags": [],
+        "testes": [
+            {
+                "teste": "clicar deve ser possivel tirar uma foto",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "deve ser possivel anexar fotos",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ]
+    },
+    "inputObservacoesItemChecklist": {
+        "position": [
+            7204.7672121331,
+            9999.31612692339
+        ],
+        "description": "cria via  auxiliar",
+        "name": "inputObservacoesItemChecklist",
+        "interageCom": "",
+        "tags": [],
+        "testes": [
+            {
+                "teste": "deve ser possivel digitar neste texto",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "adicionar varios caracteres, nao deve quebrar nada",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "adicionar uma observacao e sair do item, ao voltar deve estar salvo o que foi escrito",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ]
+    },
+    "botaoReprovadoDesativado": {
+        "position": [
+            7016.36153591205,
+            10187.480153425098
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoReprovadoDesativado",
+        "interageCom": "fotoAnexadaItemChecklist",
+        "tags": [],
+        "testes": [
+            {
+                "teste": "clicar em reprovado desativado nao deve ser possivel",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ]
+    },
+    "botaoAprovadoDesativado": {
+        "position": [
+            7289.029919708986,
+            10182.178384737224
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoAprovadoDesativado",
+        "interageCom": "fotoAnexadaItemChecklist",
+        "tags": [],
+        "testes": [
+            {
+                "teste": "clicar em aprovado desativado nao deve ser possivel",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ]
+    },
+    "fotoAnexadaItemChecklist": {
+        "position": [
+            8087.429136519851,
+            9385.525012299453
+        ],
+        "description": "cria via  auxiliar",
+        "name": "fotoAnexadaItemChecklist",
+        "interageCom": "",
+        "tags": [],
+        "testes": [
+            {
+                "teste": "ao anexar uma foto esta deve aparecer no front",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "ter muitas fotos adicionadas nao deve quebrar nada no front",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ]
+    },
+    "lixeiraExcluirFotoItemChecklist": {
+        "position": [
+            8110.295162387388,
+            9595.477086821675
+        ],
+        "description": "cria via  auxiliar",
+        "name": "lixeiraExcluirFotoItemChecklist",
+        "interageCom": "fotoAnexadaItemChecklist",
+        "tags": [],
+        "testes": [
+            {
+                "teste": "clicar na lixeira de uma foto deve exlcuir esta foto do item",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "excluir uma foto, sair do item e voltar, esta deve ter sumido de fato",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "excluir todas as fotos anexadas, deve desativas os botao de aprovado e rejeitado",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ]
+    },
+    "botaoReprovadoAtivado": {
+        "position": [
+            7829.424952143955,
+            10186.21290889177
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoReprovadoAtivado",
+        "interageCom": "",
+        "tags": [],
+        "testes": [
+            {
+                "teste": "clicar em rejeitado deve migrar o item para concluidos e ter o status vermelho",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ]
+    },
+    "botaoAprovadoAtivo": {
+        "position": [
+            8114.342055905108,
+            10171.23949825921
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoAprovadoAtivo",
+        "interageCom": "statusItemChecklistFinalizado",
+        "tags": [],
+        "testes": [
+            {
+                "teste": "clicar em aprovado deve migrar o item para concluidos com o staus verde",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ]
+    },
+    "botaoPendentesCheckList": {
+        "position": [
+            8441.668214440004,
+            9277.044827249163
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoPendentesCheckList",
+        "interageCom": "listaItensPendentesChecklist",
+        "tags": [],
+        "testes": [
+            {
+                "teste": "clicar deve listar todos os itens com o status amarelo",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ]
+    },
+    "botaoConcluidosChecklist": {
+        "position": [
+            8836.065916763708,
+            9283.414709674447
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoConcluidosChecklist",
+        "interageCom": "listaItensConcluidosChecklist",
+        "tags": [],
+        "testes": [
+            {
+                "teste": "clicar deve listar todos os items com status vermlho/verde",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ]
+    },
+    "botaoFinalizarChecklist": {
+        "position": [
+            8834.918488828494,
+            10155.647749630858
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoFinalizarChecklist",
+        "interageCom": "",
+        "tags": [],
+        "testes": [
+            {
+                "teste": "clicar deve concluir o checklist com sucesso",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ]
+    },
+    "statusItemChecklistFinalizado": {
+        "position": [
+            9197.618328460674,
+            9157.372748951742
+        ],
+        "description": "cria via  auxiliar",
+        "name": "statusItemChecklistFinalizado",
+        "interageCom": "",
+        "tags": [],
+        "testes": []
+    },
+    "meusComprovantesBotaoPendentes": {
+        "position": [
+            5520.674165902715,
+            7179.38453094493
+        ],
+        "description": "cria via  auxiliar",
+        "name": "meusComprovantesBotaoPendentes",
+        "interageCom": "",
+        "tags": [],
+        "testes": []
+    },
+    "meusComprovantesBotaoEmAnalise": {
+        "position": [
+            5688.693237765867,
+            7187.562519919631
+        ],
+        "description": "cria via  auxiliar",
+        "name": "meusComprovantesBotaoEmAnalise",
+        "interageCom": "",
+        "tags": [],
+        "testes": []
+    },
+    "meusComprovantesBotaoRejeitados": {
+        "position": [
+            5847.98722247269,
+            7179.969599541645
+        ],
+        "description": "cria via  auxiliar",
+        "name": "meusComprovantesBotaoRejeitados",
+        "interageCom": "",
+        "tags": [],
+        "testes": []
+    },
+    "meusVeiculosBotaoVoltar": {
+        "position": [
+            6690.0835309449985,
+            6625.39164213505
+        ],
+        "description": "cria via  auxiliar",
+        "name": "meusVeiculosBotaoVoltar",
+        "interageCom": "telaMenu",
+        "tags": [],
+        "testes": [
+            {
+                "teste": "clicar deve voltar para o menu",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ]
+    },
+    "comissoesBotaoPrevistas": {
+        "position": [
+            6632.409890059003,
+            3676.9288480285504
+        ],
+        "description": "cria via  auxiliar",
+        "name": "comissoesBotaoPrevistas",
+        "interageCom": "",
+        "tags": [],
+        "testes": []
+    },
+    "comissoesBotaoFechadas": {
+        "position": [
+            6886.05463114068,
+            3685.3124846725464
+        ],
+        "description": "cria via  auxiliar",
+        "name": "comissoesBotaoFechadas",
+        "interageCom": "",
+        "tags": [],
+        "testes": []
+    },
+    "botaoVerConversasFinalizadas": {
+        "position": [
+            6509.155049062925,
+            1740.218579528968
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoVerConversasFinalizadas",
+        "interageCom": "telaConversasFinalizadas",
+        "tags": [],
+        "testes": [
+            {
+                "teste": "clicar deve abrir tela com lista de conversas finalizadas",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ]
+    },
+    "listaTiposDeChecklist": {
+        "position": [
+            5613.738982168484,
+            9982.609918414273
+        ],
+        "description": "cria via  auxiliar",
+        "name": "listaTiposDeChecklist",
+        "interageCom": "",
+        "tags": [],
+        "testes": []
+    },
+    "telaItemChecklist": {
+        "position": [
+            7063.163454223255,
+            9028.431241622762
+        ],
+        "description": "cria via  auxiliar",
+        "name": "telaItemChecklist",
+        "interageCom": "",
+        "tags": [],
+        "testes": []
+    },
+    "listaItensPendentesChecklist": {
+        "position": [
+            6274.684713076697,
+            9111.690564231008
+        ],
+        "description": "cria via  auxiliar",
+        "name": "listaItensPendentesChecklist",
+        "interageCom": "",
+        "tags": [],
+        "testes": []
+    },
+    "listaItensConcluidosChecklist": {
+        "position": [
+            9443.073826657579,
+            9126.548132399144
+        ],
+        "description": "cria via  auxiliar",
+        "name": "listaItensConcluidosChecklist",
+        "interageCom": "",
+        "tags": [],
+        "testes": []
+    },
+    "itemConversaAtiva": {
+        "position": [
+            6673.026899851525,
+            1832.158899943398
+        ],
+        "description": "cria via  auxiliar",
+        "name": "itemConversaAtiva",
+        "interageCom": "",
+        "tags": [],
+        "testes": [
+            {
+                "teste": "clicar deve abrir esta conversa",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ]
+    },
+    "botaoIniciarNovaConversa": {
+        "position": [
+            6653.569385769697,
+            2659.7901509380254
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoIniciarNovaConversa",
+        "interageCom": "listaDeAssuntos",
+        "tags": [],
+        "testes": [
+            {
+                "teste": "clicar deve abrir lista de assuntos para selecionar",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ]
+    },
+    "itemListaAssutosPrincipais": {
+        "position": [
+            7431.728984388075,
+            1812.0755922672502
+        ],
+        "description": "cria via  auxiliar",
+        "name": "itemListaAssutosPrincipais",
+        "interageCom": "itemSubAssuntos",
+        "tags": [],
+        "testes": [
+            {
+                "teste": "ao clicar deve marcar a opcap",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "se o assunto ter subassuntos ao clicar deve abrir embaixo uma lista de subassnuntos",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "se nao ter subassuntos ao clicar deve liberar o botao de inciar conversa",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "clicar em um assunto ja selecionado nao deve desmarcar",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "caso tenha outro assunto selecionado ao clicar deve tirar o antigo e marcar este",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ]
+    },
+    "botaoCancelarNovaConversa": {
+        "position": [
+            7387.055163180421,
+            2642.6344104690047
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoCancelarNovaConversa",
+        "interageCom": "telaConversasAtivas",
+        "tags": [],
+        "testes": [
+            {
+                "teste": "ter um assunto sem subassuntos selecionado deve sumir este botao",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "ter um assunto seleciono que tem subassunto deslecionado deve aparecer este botao",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "ter assunto e subassunto selecionado deve sumir este botao",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "nao ter nada selecionado deve aparecer este botao",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ]
+    },
+    "itemSubAssuntos": {
+        "position": [
+            8268.951395655562,
+            2079.173950972964
+        ],
+        "description": "cria via  auxiliar",
+        "name": "itemSubAssuntos",
+        "interageCom": "",
+        "tags": [],
+        "testes": [
+            {
+                "teste": "ao selecionar um assunto que tem subassuntos este item deve aparecer",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "selecionar um assunto que nao tem subassunto nao deve aparecer nada",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "clicar neste item deve ser possivel selecionar",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ]
+    },
+    "subAssuntoSelecionado": {
+        "position": [
+            9053.578856633867,
+            2076.637907992296
+        ],
+        "description": "cria via  auxiliar",
+        "name": "subAssuntoSelecionado",
+        "interageCom": "botaoIniciarConversa",
+        "tags": [],
+        "testes": []
+    },
+    "AssuntoPrincipalSelecionado": {
+        "position": [
+            8275.69251120885,
+            1982.0873091921083
+        ],
+        "description": "cria via  auxiliar",
+        "name": "AssuntoPrincipalSelecionado",
+        "interageCom": "",
+        "tags": [],
+        "testes": [
+            {
+                "teste": "clicar nao deve tirar a sele\u00e7ao",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ]
+    },
+    "botaoIniciarConversa": {
+        "position": [
+            9022.444503414818,
+            2344.3649476579126
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoIniciarConversa",
+        "interageCom": "",
+        "tags": [],
+        "testes": [
+            {
+                "teste": "ter assunto e subassunto selecionado deve aparecer",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "ter assunto selecionado e subassunto sem selecionar nao deve aparecer este botao",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "ter assunto sem subassunto selecionado deve aparecer este botao",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "nao ter nada selecionado nao deve aparecer este botao",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "clicar deve gerar uma nova conversa com sucesso",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "ao criar uma nova conversa esta deve aparecer na lista de conversas ativas",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ]
+    },
+    "itemConversasFinalizadas": {
+        "position": [
+            9846.406556985494,
+            1839.520059785414
+        ],
+        "description": "cria via  auxiliar",
+        "name": "itemConversasFinalizadas",
+        "interageCom": "",
+        "tags": [],
+        "testes": [
+            {
+                "teste": "clicar deve abrir a conversa",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ]
+    },
+    "campoDeBuscaConversasFinalizadas": {
+        "position": [
+            9852.643205422995,
+            1738.070605295252
+        ],
+        "description": "cria via  auxiliar",
+        "name": "campoDeBuscaConversasFinalizadas",
+        "interageCom": "itemConversasFinalizadas",
+        "tags": [],
+        "testes": [
+            {
+                "teste": "deve ser possivel digitar qualquer caractere",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "nao deve ter limite de caracteres",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "filtrar com o campo vazio deve trazer tudo",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "filtrar com algo no campo deve trazer uma nova lista baseada no filtro",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ]
+    },
+    "telaConversasFinalizadas": {
+        "position": [
+            9664.670370393575,
+            1524.5553055070077
+        ],
+        "description": "cria via  auxiliar",
+        "name": "telaConversasFinalizadas",
+        "interageCom": "",
+        "tags": [],
+        "testes": []
+    },
+    "listaDeAssuntos": {
+        "position": [
+            6989.159057853896,
+            1773.7594799924948
+        ],
+        "description": "cria via  auxiliar",
+        "name": "listaDeAssuntos",
+        "interageCom": "",
+        "tags": [],
+        "testes": []
+    },
+    "contadorConversasFinalizadas": {
+        "position": [
+            6638.78405634307,
+            1763.5458302593613
+        ],
+        "description": "cria via  auxiliar",
+        "name": "contadorConversasFinalizadas",
+        "interageCom": "",
+        "tags": [],
+        "testes": [
+            {
+                "teste": "o numero do contador deve ser igual a quantidade total de conversas finalizadas",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "finalizar uma conversa ativa deve somar 1 no contador",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "reabrir uma conversa nao deve subtrair 1 do total",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "ter 0 conversas ativar n\u00e3o deve aparecer o contador",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "adicionar mais de 10 conversas finalizadas nao deve quebrar",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "adicionar mais de 100 conversas finalizadas nao deve quebrar",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ]
     }
 }

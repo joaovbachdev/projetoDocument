@@ -101,6 +101,11 @@ addNewImage(3000,0,1300,1300,'static/telaControleDoSono.jpg')
 addNewImage(3800,0,1300,1300,'static/telaViageComSeguranca.jpg')
 
 addNewImage(5000,1500,1300,1300,'static/telaConversasAtivas.jpg')
+addNewImage(5800,1500,1300,1300,'static/listaConversasAtivas.jpg')
+addNewImage(6600,1500,1300,1300,'static/listaAssuntosPrincipais.jpg')
+addNewImage(7400,1500,1300,1300,'static/listaSubAssuntos.jpg')
+addNewImage(8200,1500,1300,1300,'static/assuntoSubAssuntoSelecionados.jpg')
+addNewImage(9000,1500,1300,1300,'static/telaConversasFinalizadas.jpg')
 
 addNewImage(6000,5500,1300,1300,'static/telaMeusVeiculos.jpeg')
 
@@ -109,4 +114,10 @@ addNewImage(6000,3500,1300,1300,'static/telaComissoes.jpeg')
 addNewImage(5000,7000,1300,1300,'static/telaMeusComprovantes.jpeg')
 
 addNewImage(4000,9000,1300,1300,'static/telaChecklist.jpeg')
+addNewImage(4800,9000,1300,1300,'static/telaCheklistEngateDesengate.jpg')
+addNewImage(5600,9000,1300,1300,'static/checkListbotaoAvancarDesativado.jpg')
+addNewImage(6400,9000,1300,1300,'static/conteudoItemChecklistVazio.jpg')
+addNewImage(7200,9000,1300,1300,'static/conteudoItemChecklistPreenchido.jpg')
+addNewImage(8000,9000,1300,1300,'static/itensChecklistFinalizados.jpg')
+addNewImage(8800,9000,1300,1300,'static/listItensChecklistFinalizados.jpg')
 
