@@ -84,6 +84,7 @@ function setStatusElement(data){
     }
 }
 function setTestList(data){
+    
 
     document.querySelectorAll("div[class='testItem']").forEach(element=>{
         element.remove()
@@ -100,9 +101,15 @@ function setTestList(data){
 
         inputNewBug = document.createElement("input")
         inputNewBug.setAttribute("type","text")
+        inputNewBug.setAttribute('id','newBugInput')
 
         buttonNewBug = document.createElement("button")
         buttonNewBug.textContent = "addBug"
+        buttonNewBug.setAttribute('onclick','addBug()')
+
+        divBugList = document.createElement('div')
+        divBugList.setAttribute('id','divBugList')
+
 
         item = document.createElement("div")
         item.setAttribute("class","testItem")
@@ -139,6 +146,7 @@ function setTestList(data){
 
         divNewBug.appendChild(inputNewBug)
         divNewBug.appendChild(buttonNewBug)
+        divNewBug.appendChild(divBugList)
 
 
         infoItemDiv.appendChild(executarButton)
@@ -151,5 +159,20 @@ function setTestList(data){
         item.appendChild(divNewBug)
 
         lista.appendChild(item)
+    })
+}
+
+function setBugList(data){
+    divBugList = document.getElementById('divBugList')
+
+    document.querySelectorAll("p[class='itemBug']").forEach(element=>{
+        element.remove()
+    })
+    
+    data.forEach(element=>{
+        newItem = document.createElement('p')
+        newItem.setAttribute('class','itemBug')
+        newItem.textContent = element
+        divBugList.appendChild(newItem)
     })
 }

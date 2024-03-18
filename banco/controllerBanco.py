@@ -193,6 +193,19 @@ class ControllerBanco:
             json.dump(data,f,indent=4)
             f.truncate()
 
+    def createNewBug(self, elementName, elementType, bug):
+        with open(f'banco/{elementType}.json','r+') as f:
+            data = json.load(f)
+            data[elementName]['bugs'].append(bug)
+            f.seek(0)
+            json.dump(data,f,indent=4)
+            f.truncate()
+
+    def getBugs(self, name, _type):
+        with open(f'banco/{_type}.json') as f:
+            data = json.load(f)
+            return data[name]['bugs']
+
 #ControllerBanco().getAllElementstestStatus()
 
 

@@ -472,8 +472,18 @@
             "tela",
             "login"
         ],
-        "testes": [],
-        "bugs": []
+        "testes": [
+            {
+                "teste": "teste",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
+        "bugs": [
+
+        ]
     },
     "botaoSairDoAplicativo": {
         "position": [
@@ -1427,7 +1437,15 @@
                 ]
             }
         ],
-        "bugs": []
+        "bugs": [
+            "teste",
+            "teste",
+            "teste3",
+            "teste",
+            "teste",
+            "teste",
+            "teste"
+        ]
     },
     "horarioDeEncerramentoDasAtiviidades": {
         "position": [

@@ -87,3 +87,40 @@ function checkTodoNewAutomation(index, status){
     });
 
  }
+
+ function addBug(){
+    elementName = document.getElementById("infos").getAttribute("elementName")
+    elementType = document.getElementById("infos").getAttribute("elementType")
+    bugElement = document.getElementById('newBugInput').value
+
+    $.ajax({
+        url:'/addBug',
+        type:'POST',
+        data:JSON.stringify({'elementName':elementName, 'elementType':elementType, 'bug':bugElement}),
+        contentType:'application/json',
+        success:function(response){
+            setBugList(response)
+            console.log(response)
+        },
+        error:function(error){
+            console.log(error)
+        }
+    })
+ }
+ function getBugs(callback){
+    elementName = document.getElementById("infos").getAttribute("elementName")
+    elementType = document.getElementById("infos").getAttribute("elementType")
+
+    $.ajax({
+        url:`/getBugs?name=${elementName}&type=${elementType}`,
+        type:'GET',
+        contentType:'application/json',
+        success:function(response){
+            callback(response)
+        },
+        error:function(error){
+            console.log(error)
+        }
+
+    })
+ }

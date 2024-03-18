@@ -133,6 +133,21 @@ def deleteTest():
     bd.deleteTest(name, elementType, test)
     return "teste deletado com sucesso no back"
 
+@app.route('/addBug', methods=['POST'])
+def addNewBug():
+    name = request.json['elementName']
+    elementType = request.json['elementType']
+    bug = request.json['bug']
+    bd.createNewBug(name,elementType, bug)
+    return bd.getBugs(name,elementType)
+
+@app.route('/getBugs')
+def getBugs():
+    elementName = request.args.get("name")
+    elementType = request.args.get("type")
+
+    return bd.getBugs(elementName, elementType)
+
 @socketio.on('atualizar')
 def atualizar():
     # Execute a atualização dos dados aqui, se necessário
