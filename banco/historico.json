@@ -369,6 +369,12 @@
         },
         {
             "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "erro"
         }
     ],
     "botaoSairDoAplicativo/telaLogin": [
@@ -411,6 +417,11 @@
     "botaoSuporteControleDoSono": [
         {
             "resultado": "erro"
+        }
+    ],
+    "checklistBotaoAvancarDesativado": [
+        {
+            "resultado": "sucesso"
         }
     ]
 }

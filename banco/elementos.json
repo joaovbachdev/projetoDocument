@@ -475,15 +475,21 @@
         "testes": [
             {
                 "teste": "teste",
+                "status": "realizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "teste",
                 "status": "naoRealizado",
                 "automacao": [
+                    "page.goto(\"github.com\")",
                     ""
                 ]
             }
         ],
-        "bugs": [
-
-        ]
+        "bugs": []
     },
     "botaoSairDoAplicativo": {
         "position": [
@@ -1437,15 +1443,7 @@
                 ]
             }
         ],
-        "bugs": [
-            "teste",
-            "teste",
-            "teste3",
-            "teste",
-            "teste",
-            "teste",
-            "teste"
-        ]
+        "bugs": []
     },
     "horarioDeEncerramentoDasAtiviidades": {
         "position": [
@@ -1524,7 +1522,8 @@
                     ""
                 ]
             }
-        ]
+        ],
+        "bugs": []
     },
     "botaoVerViagemHome": {
         "position": [
@@ -1545,7 +1544,8 @@
                     ""
                 ]
             }
-        ]
+        ],
+        "bugs": []
     },
     "telaComissoes": {
         "position": [
@@ -1556,7 +1556,8 @@
         "name": "telaComissoes",
         "interageCom": "botaoComissoes",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "telaMeusVeiculos": {
         "position": [
@@ -1567,7 +1568,8 @@
         "name": "telaMeusVeiculos",
         "interageCom": "botaoMeusVeiculos",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "telaMeusComprovantes": {
         "position": [
@@ -1578,7 +1580,8 @@
         "name": "telaMeusComprovantes",
         "interageCom": "botaoMeusComprovantes",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "telaInicioChecklist": {
         "position": [
@@ -1589,7 +1592,8 @@
         "name": "telaInicioChecklist",
         "interageCom": "botaoChecklist",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "telaAdicionarCompromisso": {
         "position": [
@@ -1600,7 +1604,8 @@
         "name": "telaAdicionarCompromisso",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "telaSelecionarEnderecoMapa": {
         "position": [
@@ -1611,7 +1616,8 @@
         "name": "telaSelecionarEnderecoMapa",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "botaoEcooupado": {
         "position": [
@@ -1622,7 +1628,8 @@
         "name": "botaoEcooupado",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "botaoVeiculoEmManutencao": {
         "position": [
@@ -1633,7 +1640,8 @@
         "name": "botaoVeiculoEmManutencao",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "botaoolga": {
         "position": [
@@ -1644,7 +1652,8 @@
         "name": "botaoolga",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "botaoEscolherLocalDoEvento": {
         "position": [
@@ -1655,7 +1664,8 @@
         "name": "botaoEscolherLocalDoEvento",
         "interageCom": "telaSelecionarEnderecoMapa",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "inputPlacaChecklist": {
         "position": [
@@ -1681,7 +1691,8 @@
                     ""
                 ]
             }
-        ]
+        ],
+        "bugs": []
     },
     "botaoContinuarBemVindoChecklist": {
         "position": [
@@ -1714,7 +1725,8 @@
                     ""
                 ]
             }
-        ]
+        ],
+        "bugs": []
     },
     "botaoEngate": {
         "position": [
@@ -1733,7 +1745,8 @@
                     ""
                 ]
             }
-        ]
+        ],
+        "bugs": []
     },
     "botaoDesengate": {
         "position": [
@@ -1752,7 +1765,8 @@
                     ""
                 ]
             }
-        ]
+        ],
+        "bugs": []
     },
     "itemChecklist": {
         "position": [
@@ -1785,7 +1799,8 @@
                     ""
                 ]
             }
-        ]
+        ],
+        "bugs": []
     },
     "statusItemChecklistPendente": {
         "position": [
@@ -1825,7 +1840,8 @@
                     ""
                 ]
             }
-        ]
+        ],
+        "bugs": []
     },
     "checklistBotaoAvancarDesativado": {
         "position": [
@@ -1839,12 +1855,13 @@
         "testes": [
             {
                 "teste": "clicar em anva\u00e7ar desativado nao deve acontecer nada",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [
                     ""
                 ]
             }
-        ]
+        ],
+        "bugs": []
     },
     "inputFotoItemChecklist": {
         "position": [
@@ -1870,7 +1887,8 @@
                     ""
                 ]
             }
-        ]
+        ],
+        "bugs": []
     },
     "inputObservacoesItemChecklist": {
         "position": [
@@ -1903,7 +1921,8 @@
                     ""
                 ]
             }
-        ]
+        ],
+        "bugs": []
     },
     "botaoReprovadoDesativado": {
         "position": [
@@ -1922,7 +1941,8 @@
                     ""
                 ]
             }
-        ]
+        ],
+        "bugs": []
     },
     "botaoAprovadoDesativado": {
         "position": [
@@ -1941,7 +1961,8 @@
                     ""
                 ]
             }
-        ]
+        ],
+        "bugs": []
     },
     "fotoAnexadaItemChecklist": {
         "position": [
@@ -1967,7 +1988,8 @@
                     ""
                 ]
             }
-        ]
+        ],
+        "bugs": []
     },
     "lixeiraExcluirFotoItemChecklist": {
         "position": [
@@ -2000,7 +2022,8 @@
                     ""
                 ]
             }
-        ]
+        ],
+        "bugs": []
     },
     "botaoReprovadoAtivado": {
         "position": [
@@ -2019,7 +2042,8 @@
                     ""
                 ]
             }
-        ]
+        ],
+        "bugs": []
     },
     "botaoAprovadoAtivo": {
         "position": [
@@ -2038,7 +2062,8 @@
                     ""
                 ]
             }
-        ]
+        ],
+        "bugs": []
     },
     "botaoPendentesCheckList": {
         "position": [
@@ -2057,7 +2082,8 @@
                     ""
                 ]
             }
-        ]
+        ],
+        "bugs": []
     },
     "botaoConcluidosChecklist": {
         "position": [
@@ -2076,7 +2102,8 @@
                     ""
                 ]
             }
-        ]
+        ],
+        "bugs": []
     },
     "botaoFinalizarChecklist": {
         "position": [
@@ -2095,7 +2122,8 @@
                     ""
                 ]
             }
-        ]
+        ],
+        "bugs": []
     },
     "statusItemChecklistFinalizado": {
         "position": [
@@ -2106,7 +2134,8 @@
         "name": "statusItemChecklistFinalizado",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "meusComprovantesBotaoPendentes": {
         "position": [
@@ -2117,7 +2146,8 @@
         "name": "meusComprovantesBotaoPendentes",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "meusComprovantesBotaoEmAnalise": {
         "position": [
@@ -2128,7 +2158,8 @@
         "name": "meusComprovantesBotaoEmAnalise",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "meusComprovantesBotaoRejeitados": {
         "position": [
@@ -2139,7 +2170,8 @@
         "name": "meusComprovantesBotaoRejeitados",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "meusVeiculosBotaoVoltar": {
         "position": [
@@ -2158,7 +2190,8 @@
                     ""
                 ]
             }
-        ]
+        ],
+        "bugs": []
     },
     "comissoesBotaoPrevistas": {
         "position": [
@@ -2169,7 +2202,8 @@
         "name": "comissoesBotaoPrevistas",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "comissoesBotaoFechadas": {
         "position": [
@@ -2180,7 +2214,8 @@
         "name": "comissoesBotaoFechadas",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "botaoVerConversasFinalizadas": {
         "position": [
@@ -2199,7 +2234,8 @@
                     ""
                 ]
             }
-        ]
+        ],
+        "bugs": []
     },
     "listaTiposDeChecklist": {
         "position": [
@@ -2210,7 +2246,8 @@
         "name": "listaTiposDeChecklist",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "telaItemChecklist": {
         "position": [
@@ -2221,7 +2258,8 @@
         "name": "telaItemChecklist",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "listaItensPendentesChecklist": {
         "position": [
@@ -2232,7 +2270,8 @@
         "name": "listaItensPendentesChecklist",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "listaItensConcluidosChecklist": {
         "position": [
@@ -2243,7 +2282,8 @@
         "name": "listaItensConcluidosChecklist",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "itemConversaAtiva": {
         "position": [
@@ -2262,7 +2302,8 @@
                     ""
                 ]
             }
-        ]
+        ],
+        "bugs": []
     },
     "botaoIniciarNovaConversa": {
         "position": [
@@ -2281,7 +2322,8 @@
                     ""
                 ]
             }
-        ]
+        ],
+        "bugs": []
     },
     "itemListaAssutosPrincipais": {
         "position": [
@@ -2295,40 +2337,41 @@
         "testes": [
             {
                 "teste": "ao clicar deve marcar a opcap",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [
                     ""
                 ]
             },
             {
                 "teste": "se o assunto ter subassuntos ao clicar deve abrir embaixo uma lista de subassnuntos",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [
                     ""
                 ]
             },
             {
                 "teste": "se nao ter subassuntos ao clicar deve liberar o botao de inciar conversa",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [
                     ""
                 ]
             },
             {
                 "teste": "clicar em um assunto ja selecionado nao deve desmarcar",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [
                     ""
                 ]
             },
             {
                 "teste": "caso tenha outro assunto selecionado ao clicar deve tirar o antigo e marcar este",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [
                     ""
                 ]
             }
-        ]
+        ],
+        "bugs": []
     },
     "botaoCancelarNovaConversa": {
         "position": [
@@ -2368,7 +2411,8 @@
                     ""
                 ]
             }
-        ]
+        ],
+        "bugs": []
     },
     "itemSubAssuntos": {
         "position": [
@@ -2401,7 +2445,8 @@
                     ""
                 ]
             }
-        ]
+        ],
+        "bugs": []
     },
     "subAssuntoSelecionado": {
         "position": [
@@ -2412,7 +2457,8 @@
         "name": "subAssuntoSelecionado",
         "interageCom": "botaoIniciarConversa",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "AssuntoPrincipalSelecionado": {
         "position": [
@@ -2431,7 +2477,8 @@
                     ""
                 ]
             }
-        ]
+        ],
+        "bugs": []
     },
     "botaoIniciarConversa": {
         "position": [
@@ -2485,7 +2532,8 @@
                     ""
                 ]
             }
-        ]
+        ],
+        "bugs": []
     },
     "itemConversasFinalizadas": {
         "position": [
@@ -2504,7 +2552,8 @@
                     ""
                 ]
             }
-        ]
+        ],
+        "bugs": []
     },
     "campoDeBuscaConversasFinalizadas": {
         "position": [
@@ -2544,7 +2593,8 @@
                     ""
                 ]
             }
-        ]
+        ],
+        "bugs": []
     },
     "telaConversasFinalizadas": {
         "position": [
@@ -2555,7 +2605,8 @@
         "name": "telaConversasFinalizadas",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "listaDeAssuntos": {
         "position": [
@@ -2566,7 +2617,8 @@
         "name": "listaDeAssuntos",
         "interageCom": "",
         "tags": [],
-        "testes": []
+        "testes": [],
+        "bugs": []
     },
     "contadorConversasFinalizadas": {
         "position": [
@@ -2620,6 +2672,606 @@
                     ""
                 ]
             }
+        ],
+        "bugs": []
+    },
+    "telaIniciarViagem": {
+        "position": [
+            -3627.4123972883503,
+            -2766.7971522869702
+        ],
+        "description": "cria via  auxiliar",
+        "name": "telaIniciarViagem",
+        "interageCom": "botaoVerViagemHome",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "botaoIniciarViagem": {
+        "position": [
+            -3209.510236490096,
+            -1706.9244466555929
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoIniciarViagem",
+        "interageCom": "",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "3PontinhosColeta": {
+        "position": [
+            -3845.9449744236135,
+            -2720.4321152853868
+        ],
+        "description": "cria via  auxiliar",
+        "name": "3PontinhosColeta",
+        "interageCom": "",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "botaoNavegarColeta": {
+        "position": [
+            -4184.734259571575,
+            -2135.448467889394
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoNavegarColeta",
+        "interageCom": "",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "botaoEstouAquiColeta": {
+        "position": [
+            -3946.880019582335,
+            -2130.989599130683
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoEstouAquiColeta",
+        "interageCom": "",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "telaInicialColeta": {
+        "position": [
+            -4441.644913189542,
+            -2797.0764045193973
+        ],
+        "description": "cria via  auxiliar",
+        "name": "telaInicialColeta",
+        "interageCom": "botaoIniciarViagem",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "opcoes3PontinhosColeta": {
+        "position": [
+            -4141.073576362785,
+            -4229.755876491472
+        ],
+        "description": "cria via  auxiliar",
+        "name": "opcoes3PontinhosColeta",
+        "interageCom": "3PontinhosColeta",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "coletaRotasDeViagem": {
+        "position": [
+            -3894.1511434739555,
+            -4221.581283767169
+        ],
+        "description": "cria via  auxiliar",
+        "name": "coletaRotasDeViagem",
+        "interageCom": "",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "coletaColetaNaoREalizada": {
+        "position": [
+            -3902.3273829735854,
+            -4143.105193613861
+        ],
+        "description": "cria via  auxiliar",
+        "name": "coletaColetaNaoREalizada",
+        "interageCom": "",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "modalColetaNaoRealizada": {
+        "position": [
+            -5213.796198714257,
+            -4028.6608954736203
+        ],
+        "description": "cria via  auxiliar",
+        "name": "modalColetaNaoRealizada",
+        "interageCom": "coletaColetaNaoREalizada",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "naoColetarModal": {
+        "position": [
+            -4813.160463232381,
+            -3572.5186214575183
+        ],
+        "description": "cria via  auxiliar",
+        "name": "naoColetarModal",
+        "interageCom": "",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "botaoVoltarNaoColetarModal": {
+        "position": [
+            -4924.357320427351,
+            -3458.074323317278
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoVoltarNaoColetarModal",
+        "interageCom": "telaInicialColeta",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "etapaLocalDeColetaFechado": {
+        "position": [
+            -4705.993764941646,
+            -2416.070893864765
+        ],
+        "description": "cria via  auxiliar",
+        "name": "etapaLocalDeColetaFechado",
+        "interageCom": "botaoEstouAquiColeta",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "botaoIniciarCarregamentoColeta": {
+        "position": [
+            -4752.959561854474,
+            -2042.7107466128296
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoIniciarCarregamentoColeta",
+        "interageCom": "",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "botaoIniciarCarregamentoModal": {
+        "position": [
+            -5643.018688714647,
+            -1937.3376926407657
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoIniciarCarregamentoModal",
+        "interageCom": "botaoFinzalizarCarregamentoColeta",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "modalIniciarCarregamento": {
+        "position": [
+            -6020.732262366827,
+            -2496.1332292778407
+        ],
+        "description": "cria via  auxiliar",
+        "name": "modalIniciarCarregamento",
+        "interageCom": "botaoIniciarCarregamentoColeta",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "botaoVoltarModalIniciarCarregamento": {
+        "position": [
+            -5706.569740760864,
+            -1856.8302181264908
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoVoltarModalIniciarCarregamento",
+        "interageCom": "",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "botaoFinzalizarCarregamentoColeta": {
+        "position": [
+            -6350.761577993295,
+            -2050.3498190665487
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoFinzalizarCarregamentoColeta",
+        "interageCom": "",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "etapaCarregamentoColetaFechado": {
+        "position": [
+            -7137.7545614102455,
+            -2267.692939858378
+        ],
+        "description": "cria via  auxiliar",
+        "name": "etapaCarregamentoColetaFechado",
+        "interageCom": "botaoFinzalizarCarregamentoColeta",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "abrirOpcoesDeLeituraNf": {
+        "position": [
+            -7215.50185211071,
+            -2072.5706808717377
+        ],
+        "description": "cria via  auxiliar",
+        "name": "abrirOpcoesDeLeituraNf",
+        "interageCom": "",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "botaoIniciarLeituraColeta": {
+        "position": [
+            -7499.517465077718,
+            -2075.7434005300574
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoIniciarLeituraColeta",
+        "interageCom": "modalQuantidadeNf",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "botaoRegistrarOcorrencia": {
+        "position": [
+            -7244.062081347614,
+            -1715.6259776765128
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoRegistrarOcorrencia",
+        "interageCom": "",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "telaEscaniarQRcode": {
+        "position": [
+            -10040.081901377607,
+            -2796.6631982691842
+        ],
+        "description": "cria via  auxiliar",
+        "name": "telaEscaniarQRcode",
+        "interageCom": "",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "botaoDeAjudaCameraNf": {
+        "position": [
+            -9840.581657586628,
+            -1686.4734730279479
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoDeAjudaCameraNf",
+        "interageCom": "",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "botaoNaoInformarNfe": {
+        "position": [
+            -7214.871493252256,
+            -3506.4904121662676
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoNaoInformarNfe",
+        "interageCom": "abrirOpcoesDeLeituraNf",
+        "tags": [],
+        "testes": [
+            {
+                "teste": "teste",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
+        "bugs": [
+            "teste",
+            "testett"
         ]
+    },
+    "modalNaoInformarNfe": {
+        "position": [
+            -7614.645007114172,
+            -5413.759163907394
+        ],
+        "description": "cria via  auxiliar",
+        "name": "modalNaoInformarNfe",
+        "interageCom": "botaoNaoInformarNfe",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "botaoConfirmarNaoEnviarNfe": {
+        "position": [
+            -7247.383194680786,
+            -5028.512903154792
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoConfirmarNaoEnviarNfe",
+        "interageCom": "",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "botaoCAncelarNaoEnviarNfe": {
+        "position": [
+            -7302.77350081828,
+            -4929.793548836938
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoCAncelarNaoEnviarNfe",
+        "interageCom": "",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "modalQuantidadeNf": {
+        "position": [
+            -8408.60135904911,
+            -2457.791482446295
+        ],
+        "description": "cria via  auxiliar",
+        "name": "modalQuantidadeNf",
+        "interageCom": "",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "botaoDiminuirQuantidadeNf": {
+        "position": [
+            -8299.51532722704,
+            -2106.6948483039682
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoDiminuirQuantidadeNf",
+        "interageCom": "nfAnexadas/totalEsperado",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "botaoAumentarQuantidadeNf": {
+        "position": [
+            -8014.652212954514,
+            -2115.0960465579974
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoAumentarQuantidadeNf",
+        "interageCom": "nfAnexadas/totalEsperado",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "modalQUantidadeNfBotaoConfirmar": {
+        "position": [
+            -8028.580337639723,
+            -1983.5791408921746
+        ],
+        "description": "cria via  auxiliar",
+        "name": "modalQUantidadeNfBotaoConfirmar",
+        "interageCom": "listaNfAnexadas",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "modalQuantidadeNfBotaoCancelar": {
+        "position": [
+            -8113.078883271781,
+            -1880.999048121479
+        ],
+        "description": "cria via  auxiliar",
+        "name": "modalQuantidadeNfBotaoCancelar",
+        "interageCom": "",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "botaoIncluirNf": {
+        "position": [
+            -8850.230453486374,
+            -1860.539112237881
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoIncluirNf",
+        "interageCom": "",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "botaoEnviarNotasDesativado": {
+        "position": [
+            -8858.421026488759,
+            -1715.868133228597
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoEnviarNotasDesativado",
+        "interageCom": "",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "nfAnexadas/totalEsperado": {
+        "position": [
+            -8747.848290956572,
+            -2627.6361761938124
+        ],
+        "description": "cria via  auxiliar",
+        "name": "nfAnexadas/totalEsperado",
+        "interageCom": "listaNfAnexadas",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "botaoEnviarNotasAtivado": {
+        "position": [
+            -8862.516312989956,
+            -3224.233224565668
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoEnviarNotasAtivado",
+        "interageCom": "",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "3pontinhosItemNfAnexada": {
+        "position": [
+            -8739.657717954187,
+            -4020.0088416656
+        ],
+        "description": "cria via  auxiliar",
+        "name": "3pontinhosItemNfAnexada",
+        "interageCom": "botaoExcluirNotaAnexada",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "botaoExcluirNotaAnexada": {
+        "position": [
+            -8891.183318498297,
+            -3961.3215577278716
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoExcluirNotaAnexada",
+        "interageCom": "itemNfAnexada",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "botaoAvancarTelaEscaneieNf": {
+        "position": [
+            -10450.220008672364,
+            -1690.3531682139605
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoAvancarTelaEscaneieNf",
+        "interageCom": "",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "botaoTirarFotoTelaEscaneieNf": {
+        "position": [
+            -11333.396786849313,
+            -1729.9105048535312
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoTirarFotoTelaEscaneieNf",
+        "interageCom": "telaFotoNfTirada",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "botaoUsarEstaImagem": {
+        "position": [
+            -11959.312713793192,
+            -1624.3072256757682
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoUsarEstaImagem",
+        "interageCom": "itemNfAnexada",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "botaoParaTirarOutraFotoNf": {
+        "position": [
+            -12339.501443960347,
+            -1625.3963722557246
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoParaTirarOutraFotoNf",
+        "interageCom": "",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "itemNfAnexada": {
+        "position": [
+            -9179.666369857518,
+            -4038.2824233162555
+        ],
+        "description": "cria via  auxiliar",
+        "name": "itemNfAnexada",
+        "interageCom": "",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "telaFotoNfTirada": {
+        "position": [
+            -12442.277788376443,
+            -2796.4565963264527
+        ],
+        "description": "cria via  auxiliar",
+        "name": "telaFotoNfTirada",
+        "interageCom": "",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "telaTirarFotoNf": {
+        "position": [
+            -11661.174114562062,
+            -2792.8923542471757
+        ],
+        "description": "cria via  auxiliar",
+        "name": "telaTirarFotoNf",
+        "interageCom": "botaoAvancarTelaEscaneieNf",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "telaEscanearNfApos20Segundos": {
+        "position": [
+            -10842.0348509876,
+            -2801.309086631387
+        ],
+        "description": "cria via  auxiliar",
+        "name": "telaEscanearNfApos20Segundos",
+        "interageCom": "telaEscaniarQRcode",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "modalDicasFoto": {
+        "position": [
+            -11613.302959145583,
+            -4041.5061491228685
+        ],
+        "description": "cria via  auxiliar",
+        "name": "modalDicasFoto",
+        "interageCom": "botaoDeAjudaCameraNf",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "listaNfAnexadas": {
+        "position": [
+            -9221.324446377337,
+            -2634.7426022296195
+        ],
+        "description": "cria via  auxiliar",
+        "name": "listaNfAnexadas",
+        "interageCom": "",
+        "tags": [],
+        "testes": [],
+        "bugs": []
     }
 }

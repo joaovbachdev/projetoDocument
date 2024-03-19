@@ -214,10 +214,10 @@ class ControllerBanco:
 #ControllerBanco().createLines()
     
 '''
-with open("banco/lines.json","r+") as f:
+with open("banco/elementos.json","r+") as f:
     data = json.load(f)
     for i in data.keys():
-        data[i]["tags"] = []
+        data[i]["bugs"] = []
     f.seek(0)
     json.dump(data,f,indent=4)
     f.truncate

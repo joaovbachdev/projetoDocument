@@ -114,10 +114,33 @@ addNewImage(6000,3500,1300,1300,'static/telaComissoes.jpeg')
 addNewImage(5000,7000,1300,1300,'static/telaMeusComprovantes.jpeg')
 
 addNewImage(4000,9000,1300,1300,'static/telaChecklist.jpeg')
-addNewImage(4800,9000,1300,1300,'static/telaCheklistEngateDesengate.jpg')
-addNewImage(5600,9000,1300,1300,'static/checkListbotaoAvancarDesativado.jpg')
+addNewImage(4800,9000,1300,1300,'static/TelaCheklistEngateDesengate.jpg')
+addNewImage(5600,9000,1300,1300,'static/checkListBotaoAvancarDesativado.jpg')
 addNewImage(6400,9000,1300,1300,'static/conteudoItemChecklistVazio.jpg')
 addNewImage(7200,9000,1300,1300,'static/conteudoItemChecklistPreenchido.jpg')
 addNewImage(8000,9000,1300,1300,'static/itensChecklistFinalizados.jpg')
 addNewImage(8800,9000,1300,1300,'static/listItensChecklistFinalizados.jpg')
+
+
+
+addNewImage(-4000,-2800,1300,1300,'static/imgProcessoViagem/iniciarViagem.png')
+addNewImage(-4800,-2800,1300,1300,'static/imgProcessoViagem/telaColetaInicio.png')
+addNewImage(-4800,-4300,1300,1300,'static/imgProcessoViagem/3pontinhosColeta.png')
+addNewImage(-5600,-4300,1300,1300,'static/imgProcessoViagem/modalColetaNaoRealizada.png')
+addNewImage(-5600,-2800,1300,1300,'static/imgProcessoViagem/coletaIniciarCarregamento.jpeg')
+addNewImage(-6400,-2800,1300,1300,'static/imgProcessoViagem/modalIniciarCarregamento.jpeg')
+addNewImage(-7200,-2800,1300,1300,'static/imgProcessoViagem/etapaFinalizarCarregamento.jpeg')
+addNewImage(-8000,-2800,1300,1300,'static/imgProcessoViagem/etapaIniciarLeitura.jpeg')
+addNewImage(-8000,-4300,1300,1300,'static/imgProcessoViagem/botaoNaoInformarNf.jpeg')
+addNewImage(-8800,-2800,1300,1300,'static/imgProcessoViagem/modalQuantidadeNf.jpeg')
+addNewImage(-8000,-5800,1300,1300,'static/imgProcessoViagem/modalNaoInformarNf.jpeg')
+addNewImage(-9600,-2800,1300,1300,'static/imgProcessoViagem/telaLeituraDeNf.jpeg')
+addNewImage(-9600,-4300,1300,1300,'static/imgProcessoViagem/itemListaDeNfAnexada.jpeg')
+addNewImage(-10400,-2800,1300,1300,'static/imgProcessoViagem/telaEscaneioOQRcode.jpeg')
+addNewImage(-11200,-2800,1300,1300,'static/imgProcessoViagem/escaneieOQRcodeAvancar.jpeg')
+addNewImage(-12000,-2800,1300,1300,'static/imgProcessoViagem/telaFotoDaNf.jpeg')
+addNewImage(-12000,-4300,1300,1300,'static/imgProcessoViagem/pontoInterrogacaoCameraNf.jpeg')
+addNewImage(-12800,-2800,1300,1300,'static/imgProcessoViagem/telaFotoNfTirada.jpeg')
+
+
 

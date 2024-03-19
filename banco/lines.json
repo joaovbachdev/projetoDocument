@@ -562,5 +562,281 @@
         "name": "meusVeiculosBotaoVoltar/telaMenu",
         "tags": [],
         "testes": []
+    },
+    "telaIniciarViagem/botaoVerViagemHome": {
+        "positions": [
+            -3627.4123972883503,
+            -2766.7971522869702,
+            322.4129777884068,
+            4103.298863860973
+        ],
+        "description": "sua descricao aqui",
+        "name": "telaIniciarViagem/botaoVerViagemHome",
+        "tags": [],
+        "testes": []
+    },
+    "telaInicialColeta/botaoIniciarViagem": {
+        "positions": [
+            -4441.644913189542,
+            -2797.0764045193973,
+            -3209.510236490096,
+            -1706.9244466555929
+        ],
+        "description": "sua descricao aqui",
+        "name": "telaInicialColeta/botaoIniciarViagem",
+        "tags": [],
+        "testes": []
+    },
+    "modalColetaNaoRealizada/coletaColetaNaoREalizada": {
+        "positions": [
+            -5213.796198714257,
+            -4028.6608954736203,
+            -3902.3273829735854,
+            -4143.105193613861
+        ],
+        "description": "sua descricao aqui",
+        "name": "modalColetaNaoRealizada/coletaColetaNaoREalizada",
+        "tags": [],
+        "testes": []
+    },
+    "botaoVoltarNaoColetarModal/telaInicialColeta": {
+        "positions": [
+            -4924.357320427351,
+            -3458.074323317278,
+            -4441.644913189542,
+            -2797.0764045193973
+        ],
+        "description": "sua descricao aqui",
+        "name": "botaoVoltarNaoColetarModal/telaInicialColeta",
+        "tags": [],
+        "testes": []
+    },
+    "opcoes3PontinhosColeta/3PontinhosColeta": {
+        "positions": [
+            -4141.073576362785,
+            -4229.755876491472,
+            -3845.9449744236135,
+            -2720.4321152853868
+        ],
+        "description": "sua descricao aqui",
+        "name": "opcoes3PontinhosColeta/3PontinhosColeta",
+        "tags": [],
+        "testes": []
+    },
+    "etapaLocalDeColetaFechado/botaoEstouAquiColeta": {
+        "positions": [
+            -4705.993764941646,
+            -2416.070893864765,
+            -3946.880019582335,
+            -2130.989599130683
+        ],
+        "description": "sua descricao aqui",
+        "name": "etapaLocalDeColetaFechado/botaoEstouAquiColeta",
+        "tags": [],
+        "testes": []
+    },
+    "modalIniciarCarregamento/botaoIniciarCarregamentoColeta": {
+        "positions": [
+            -6020.732262366827,
+            -2496.1332292778407,
+            -4752.959561854474,
+            -2042.7107466128296
+        ],
+        "description": "sua descricao aqui",
+        "name": "modalIniciarCarregamento/botaoIniciarCarregamentoColeta",
+        "tags": [],
+        "testes": []
+    },
+    "etapaCarregamentoColetaFechado/botaoFinzalizarCarregamentoColeta": {
+        "positions": [
+            -7137.7545614102455,
+            -2267.692939858378,
+            -6350.761577993295,
+            -2050.3498190665487
+        ],
+        "description": "sua descricao aqui",
+        "name": "etapaCarregamentoColetaFechado/botaoFinzalizarCarregamentoColeta",
+        "tags": [],
+        "testes": []
+    },
+    "botaoNaoInformarNfe/abrirOpcoesDeLeituraNf": {
+        "positions": [
+            -7214.871493252256,
+            -3506.4904121662676,
+            -7215.50185211071,
+            -2072.5706808717377
+        ],
+        "description": "sua descricao aqui",
+        "name": "botaoNaoInformarNfe/abrirOpcoesDeLeituraNf",
+        "tags": [],
+        "testes": []
+    },
+    "modalNaoInformarNfe/botaoNaoInformarNfe": {
+        "positions": [
+            -7614.645007114172,
+            -5413.759163907394,
+            -7214.871493252256,
+            -3506.4904121662676
+        ],
+        "description": "sua descricao aqui",
+        "name": "modalNaoInformarNfe/botaoNaoInformarNfe",
+        "tags": [],
+        "testes": []
+    },
+    "3pontinhosItemNfAnexada/botaoExcluirNotaAnexada": {
+        "positions": [
+            -8739.657717954187,
+            -4020.0088416656,
+            -8891.183318498297,
+            -3961.3215577278716
+        ],
+        "description": "sua descricao aqui",
+        "name": "3pontinhosItemNfAnexada/botaoExcluirNotaAnexada",
+        "tags": [],
+        "testes": []
+    },
+    "botaoExcluirNotaAnexada/itemNfAnexada": {
+        "positions": [
+            -8891.183318498297,
+            -3961.3215577278716,
+            -9179.666369857518,
+            -4038.2824233162555
+        ],
+        "description": "sua descricao aqui",
+        "name": "botaoExcluirNotaAnexada/itemNfAnexada",
+        "tags": [],
+        "testes": []
+    },
+    "botaoTirarFotoTelaEscaneieNf/telaFotoNfTirada": {
+        "positions": [
+            -11333.396786849313,
+            -1729.9105048535312,
+            -12442.277788376443,
+            -2796.4565963264527
+        ],
+        "description": "sua descricao aqui",
+        "name": "botaoTirarFotoTelaEscaneieNf/telaFotoNfTirada",
+        "tags": [],
+        "testes": []
+    },
+    "botaoUsarEstaImagem/itemNfAnexada": {
+        "positions": [
+            -11959.312713793192,
+            -1624.3072256757682,
+            -9179.666369857518,
+            -4038.2824233162555
+        ],
+        "description": "sua descricao aqui",
+        "name": "botaoUsarEstaImagem/itemNfAnexada",
+        "tags": [],
+        "testes": []
+    },
+    "telaTirarFotoNf/botaoAvancarTelaEscaneieNf": {
+        "positions": [
+            -11661.174114562062,
+            -2792.8923542471757,
+            -10450.220008672364,
+            -1690.3531682139605
+        ],
+        "description": "sua descricao aqui",
+        "name": "telaTirarFotoNf/botaoAvancarTelaEscaneieNf",
+        "tags": [],
+        "testes": []
+    },
+    "telaEscanearNfApos20Segundos/telaEscaniarQRcode": {
+        "positions": [
+            -10842.0348509876,
+            -2801.309086631387,
+            -10040.081901377607,
+            -2796.6631982691842
+        ],
+        "description": "sua descricao aqui",
+        "name": "telaEscanearNfApos20Segundos/telaEscaniarQRcode",
+        "tags": [],
+        "testes": []
+    },
+    "modalDicasFoto/botaoDeAjudaCameraNf": {
+        "positions": [
+            -11613.302959145583,
+            -4041.5061491228685,
+            -9840.581657586628,
+            -1686.4734730279479
+        ],
+        "description": "sua descricao aqui",
+        "name": "modalDicasFoto/botaoDeAjudaCameraNf",
+        "tags": [],
+        "testes": []
+    },
+    "botaoIniciarLeituraColeta/modalQuantidadeNf": {
+        "positions": [
+            -7499.517465077718,
+            -2075.7434005300574,
+            -8408.60135904911,
+            -2457.791482446295
+        ],
+        "description": "sua descricao aqui",
+        "name": "botaoIniciarLeituraColeta/modalQuantidadeNf",
+        "tags": [],
+        "testes": []
+    },
+    "botaoDiminuirQuantidadeNf/nfAnexadas/totalEsperado": {
+        "positions": [
+            -8299.51532722704,
+            -2106.6948483039682,
+            -8747.848290956572,
+            -2627.6361761938124
+        ],
+        "description": "sua descricao aqui",
+        "name": "botaoDiminuirQuantidadeNf/nfAnexadas/totalEsperado",
+        "tags": [],
+        "testes": []
+    },
+    "botaoAumentarQuantidadeNf/nfAnexadas/totalEsperado": {
+        "positions": [
+            -8014.652212954514,
+            -2115.0960465579974,
+            -8747.848290956572,
+            -2627.6361761938124
+        ],
+        "description": "sua descricao aqui",
+        "name": "botaoAumentarQuantidadeNf/nfAnexadas/totalEsperado",
+        "tags": [],
+        "testes": []
+    },
+    "modalQUantidadeNfBotaoConfirmar/listaNfAnexadas": {
+        "positions": [
+            -8028.580337639723,
+            -1983.5791408921746,
+            -9221.324446377337,
+            -2634.7426022296195
+        ],
+        "description": "sua descricao aqui",
+        "name": "modalQUantidadeNfBotaoConfirmar/listaNfAnexadas",
+        "tags": [],
+        "testes": []
+    },
+    "nfAnexadas/totalEsperado/listaNfAnexadas": {
+        "positions": [
+            -8747.848290956572,
+            -2627.6361761938124,
+            -9221.324446377337,
+            -2634.7426022296195
+        ],
+        "description": "sua descricao aqui",
+        "name": "nfAnexadas/totalEsperado/listaNfAnexadas",
+        "tags": [],
+        "testes": []
+    },
+    "botaoIniciarCarregamentoModal/botaoFinzalizarCarregamentoColeta": {
+        "positions": [
+            -5643.018688714647,
+            -1937.3376926407657,
+            -6350.761577993295,
+            -2050.3498190665487
+        ],
+        "description": "sua descricao aqui",
+        "name": "botaoIniciarCarregamentoModal/botaoFinzalizarCarregamentoColeta",
+        "tags": [],
+        "testes": []
     }
 }

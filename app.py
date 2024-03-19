@@ -66,7 +66,8 @@ def auxCriaElemento():
             'name':request.json['name'],
             'interageCom':"",
             'tags':[],
-            'testes':[]
+            'testes':[],
+            'bugs':[]
         }
         f.seek(0)
         json.dump(data,f,indent=4)
