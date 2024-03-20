@@ -122,3 +122,10 @@ button:hover {
 .testItem label{
     white-space: pre-wrap;
 }
+#divBugs{
+    border: 2px solid #ff0000;
+    overflow-y: scroll;
+    width: 500px;
+    height: 300px;
+    max-height: 300px;
+}

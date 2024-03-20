@@ -34,7 +34,10 @@
                 ]
             }
         ],
-        "bugs": []
+        "bugs": [
+            "TESTE",
+            "teste"
+        ]
     },
     "inputSenha": {
         "position": [
@@ -489,7 +492,10 @@
                 ]
             }
         ],
-        "bugs": []
+        "bugs": [
+            "teste",
+            "teste"
+        ]
     },
     "botaoSairDoAplicativo": {
         "position": [
@@ -3007,8 +3013,44 @@
         "name": "botaoConfirmarNaoEnviarNfe",
         "interageCom": "",
         "tags": [],
-        "testes": [],
-        "bugs": []
+        "testes": [
+            {
+                "teste": "teste cadastro bug",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "teste sla oq",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
+        "bugs": [
+            "teste",
+            "testeteste",
+            "teste",
+            "teste",
+            "teste",
+            "teste",
+            "teste",
+            "teste",
+            "teste",
+            "teste",
+            "teste",
+            "teste",
+            "teste",
+            "teste",
+            "teste2",
+            "teste2",
+            "",
+            "",
+            "",
+            ""
+        ]
     },
     "botaoCAncelarNaoEnviarNfe": {
         "position": [
