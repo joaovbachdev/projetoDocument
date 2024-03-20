@@ -166,7 +166,7 @@ for i in [i["id"] for i in requests.get("https://comprova-matrix-homol.matrixcar
 #-----------------------------------------------------------------------------VALIDACAO DE STATUS------------------------------------------------------------------------------------
 contador = 0
 #print(len(cte_code_analise)+len(cte_codes)+len(nf_codes)+len(ric_code))
-
+'''
 for index,i in enumerate(cte_codes):
     executaCenario([["cte"],[i]],[[f'cteAprovados/cte{index}.jpeg','cte']],'aprovado','cte',contador)#CTE QUE DEVEM APROVAR
     contador+=1
@@ -199,14 +199,14 @@ for index,i in enumerate(ric_rejeitado):
     executaCenario([["ric"],[i]],[[f'ricRejeitado/ric{index}.jpeg','ric']],'rejeitado','ric',contador)#RIC DEVE ESTAR REJEITADOS
     contador+=1
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+'''
 
 
 
 
 
 #---------------------------------------------------------------TESTES DE EXCLUSAO DE COMPROVANTES SOBRANDO---------------------------------------------------------------------------
-executaCenario([["nf"],["42191157475747770000000000005747711457550477"]],[["nf_cardTeste.png","nf"]],'aprovada','n',contador) 
+#executaCenario([["nf"],["42191157475747770000000000005747711457550477"]],[["nf_cardTeste.png","nf"]],'aprovada','n',contador) 
 
 #executaCenario([["cte"],["35220882270711002194570000000707921426247610"]],[["cte_completo.jpeg","cte"]]) #VIAGEM ESPERANDO 1 CTE, RECEBE 1 CTE QUE APROVA AUTOMATICO
 
@@ -229,9 +229,9 @@ executaCenario([["nf"],["42191157475747770000000000005747711457550477"]],[["nf_c
 
 #executaCenario([["cte"],["35220882270711002194570000000707921426247610"]],[["cte_completo.jpeg","cte"],["cte_completo.jpeg","ric"]])  #ESPERA CTE, RECEBE 1 CTTE QUE APROVA E 1 RIC QUE REJEITA, ARQUIVADA E DELETAR O RIC
 
-#executaCenario([["nf"],["35240212475660000108550010001298291412507339"]],[["nf_aprova.jpeg","nf"],["cte_completo.jpeg","nf"]]) #ESPERA NF, RECEBE 1 QUE APROVA E UMA QUE REJEITA, DEVE APROVAR E APAGAR A REJEITADA
-#executaCenario([["nf"],["35240212475660000108550010001298291412507339"]],[["cte_completo.jpeg","nf"],["nf_aprova.jpeg","nf"]])
-#executaCenario([["ric"],["TCLU5927621"]],[["ric_aprova.jpeg","ric"],["cte_completo.jpeg","ric"]]) #ESPERA RIC, RECEBE 1 RIIC QUE APROVA E 1 RIC QUE REJEITA, DEVE ARQUIVAR E DELETAR OO REJEITADO
+executaCenario([["nf"],["35240212475660000108550010001298291412507339"]],[["nf_aprova.jpeg","nf"],["cte_completo.jpeg","nf"]],'none','none',contador) #ESPERA NF, RECEBE 1 QUE APROVA E UMA QUE REJEITA, DEVE APROVAR E APAGAR A REJEITADA
+executaCenario([["nf"],["35240212475660000108550010001298291412507339"]],[["cte_completo.jpeg","nf"],["nf_aprova.jpeg","nf"]],'none','none',contador)
+executaCenario([["ric"],["TCLU5927621"]],[["ric_aprova.jpeg","ric"],["cte_completo.jpeg","ric"]],'none','none',contador) #ESPERA RIC, RECEBE 1 RIIC QUE APROVA E 1 RIC QUE REJEITA, DEVE ARQUIVAR E DELETAR OO REJEITADO
 
 #executaCenario([["ric"],["TCLU5927621"]],[["nf_aprova.jpeg","ric"],["cte_completo.jpeg","cte"],["ric_aprova.jpeg","ric"]])  #ESPERA RIIC, RECEBE 1 RIC QUE APROVA E 1 CTE QUE REJEITA, DEVE IR PARA ARQUIVADA E DELETAR O CTE
 

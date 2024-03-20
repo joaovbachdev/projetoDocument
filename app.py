@@ -149,6 +149,14 @@ def getBugs():
 
     return bd.getBugs(elementName, elementType)
 
+@app.route('/deleteBug', methods=['POST'])
+def deleteBug():
+
+    elementName = request.json['name']
+    elementType = request.json['type']
+    bugName = request.json['bugName']
+
+    return bd.deleteBug(elementName, elementType, bugName)
 @socketio.on('atualizar')
 def atualizar():
     # Execute a atualização dos dados aqui, se necessário

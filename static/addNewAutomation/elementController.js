@@ -153,15 +153,26 @@ function setTestList(data){
 }
 
 function setBugList(data){
-
+    console.log(data)
     lista = document.getElementById('bugList')
-    
-
+    Array.from(document.getElementsByClassName('bugItem')).forEach(element=>{
+        element.remove()
+    })
     data.forEach(bug=>{
+        divNewItem = document.createElement('div')
+        divNewItem.setAttribute('class','bugItem')
+
         newItem = document.createElement('p')
-        newItem.setAttribute('class','bugItem')
         newItem.textContent = bug
-        lista.appendChild(newItem)
+
+        bugButton = document.createElement('button')
+        bugButton.textContent = 'deletar'
+        bugButton.setAttribute('onclick',`deleteBug("${bug}")`)
+
+        
+        divNewItem.append(newItem)
+        divNewItem.append(bugButton)
+        lista.appendChild(divNewItem)
     })
 
 }

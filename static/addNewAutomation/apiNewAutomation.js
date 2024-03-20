@@ -124,3 +124,23 @@ function checkTodoNewAutomation(index, status){
 
     })
  }
+
+ function deleteBug(name){
+    elementName = document.getElementById("infos").getAttribute("elementName")
+    elementType = document.getElementById("infos").getAttribute("elementType")
+
+    $.ajax({
+        url:`/deleteBug?`,
+        type:'POST',
+        data:JSON.stringify({'name':elementName,'type':elementType,'bugName':name}),
+        contentType:'application/json',
+        success:function(response){
+            setBugList(response)
+            console.log('deletado')
+        },
+        error:function(error){
+            console.log(error)
+        }
+
+    })
+ }

@@ -492,10 +492,7 @@
                 ]
             }
         ],
-        "bugs": [
-            "teste",
-            "teste"
-        ]
+        "bugs": []
     },
     "botaoSairDoAplicativo": {
         "position": [
