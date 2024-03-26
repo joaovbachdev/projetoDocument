@@ -375,6 +375,54 @@
         },
         {
             "resultado": "erro"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
         }
     ],
     "botaoSairDoAplicativo/telaLogin": [
@@ -420,6 +468,50 @@
         }
     ],
     "checklistBotaoAvancarDesativado": [
+        {
+            "resultado": "sucesso"
+        }
+    ],
+    "botaoNaoInformarNfe": [
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "erro"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "erro"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "erro"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
         {
             "resultado": "sucesso"
         }

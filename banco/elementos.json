@@ -480,15 +480,14 @@
                 "teste": "teste",
                 "status": "realizado",
                 "automacao": [
-                    ""
+                    "page.goto(\"https://github.com\")"
                 ]
             },
             {
-                "teste": "teste",
+                "teste": "tese3",
                 "status": "naoRealizado",
                 "automacao": [
-                    "page.goto(\"github.com\")",
-                    ""
+                    "page.goto(\"https://google.com\")"
                 ]
             }
         ],
@@ -2978,15 +2977,21 @@
         "testes": [
             {
                 "teste": "teste",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [
                     ""
+                ]
+            },
+            {
+                "teste": "testeAutomacao",
+                "status": "realizado",
+                "automacao": [
+                    "page.goto(\"https://github.com\")"
                 ]
             }
         ],
         "bugs": [
-            "teste",
-            "testett"
+            "teste"
         ]
     },
     "modalNaoInformarNfe": {
@@ -3311,6 +3316,34 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
+        "bugs": []
+    },
+    "apiCriaViagem": {
+        "position": [
+            7569.446300560809,
+            -11451.820888850521
+        ],
+        "description": "cria via  auxiliar",
+        "name": "apiCriaViagem",
+        "interageCom": "",
+        "tags": [],
+        "testes": [
+            {
+                "teste": "teste2",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "teste": "teste3",
+                "status": "naoRealizado",
+                "automacao": [
+                    "teste",
+                    ""
+                ]
+            }
+        ],
         "bugs": []
     }
 }

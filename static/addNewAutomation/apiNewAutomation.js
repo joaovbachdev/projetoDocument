@@ -1,3 +1,6 @@
+var socket = io.connect('http://' + document.domain + ':' + location.port);
+
+
 function addNewAutomation_api(data){
    console.log("to aqui")
     $.ajax({
@@ -130,7 +133,7 @@ function checkTodoNewAutomation(index, status){
     elementType = document.getElementById("infos").getAttribute("elementType")
 
     $.ajax({
-        url:`/deleteBug?`,
+        url:`/deleteBug`,
         type:'POST',
         data:JSON.stringify({'name':elementName,'type':elementType,'bugName':name}),
         contentType:'application/json',
@@ -144,3 +147,37 @@ function checkTodoNewAutomation(index, status){
 
     })
  }
+ function executeTeste(testeName){
+     console.log(testeName)
+    elementName = document.getElementById("infos").getAttribute("elementName")
+    elementType = document.getElementById("infos").getAttribute("elementType")
+
+    $.ajax({
+        url:`/executaTesteEsp`,
+        type:'POST',
+        data:JSON.stringify({'name':elementName,'type':elementType,'testName':testeName}),
+        contentType:'application/json',
+        success:function(response){
+            console.log(response)
+        },
+        error:function(error){
+            console.log(error)
+        }
+
+    })
+ }
+
+
+ 
+socket.on('atualizaTesteEsp', function(data) {
+
+    element = document.querySelectorAll('input[type="checkbox"]')[data['index']]
+
+    if(data['status']=='realizado'){
+        element.checked = true
+    }else{
+        element.checked = false
+    }
+    //checkTodoNewAutomation(data['index'], data['status'])
+
+});

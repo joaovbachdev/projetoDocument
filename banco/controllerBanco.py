@@ -143,6 +143,11 @@ class ControllerBanco:
             json.dump(data,f,indent=4)
             f.truncate()
 
+    def getTestsNames(self, name,type):
+         with open(f"banco/{type}.json","r+") as f:
+            data = json.load(f)
+            return [i["teste"] for i in data[name]["testes"]]
+
     def getElementTests(self, name,type):
         with open(f"banco/{type}.json","r+") as f:
             data = json.load(f)

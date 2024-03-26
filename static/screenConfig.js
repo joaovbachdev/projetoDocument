@@ -143,4 +143,7 @@ addNewImage(-12000,-4300,1300,1300,'static/imgProcessoViagem/pontoInterrogacaoCa
 addNewImage(-12800,-2800,1300,1300,'static/imgProcessoViagem/telaFotoNfTirada.jpeg')
 
 
+addNewImage(8000,-12800,3800,3800,'static/apilogo.png')
+addNewImage(6000,-12800,3800,3800,'static/API_viagem.png')
+
 

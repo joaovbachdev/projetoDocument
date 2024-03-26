@@ -131,7 +131,7 @@ function setTestList(data){
 
         executarButton = document.createElement("button")
         executarButton.textContent = "executar" 
-        executarButton.setAttribute("onclick","")
+        executarButton.setAttribute("onclick",`executeTeste("${element["teste"]}")`)
         executarButton.setAttribute("class","executar")
 
 

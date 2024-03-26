@@ -136,7 +136,16 @@ def enviaComprovante():
         #response = requests.post(URL_mandaComprovante.format(getExternalId()), json=data, headers=HEADERS)
     
 
-
+def enviaDocEsperado(code):
+    with open("automacoes/testeApiComprova/payloads/docEsperado.json","r+") as f:
+        data = json.load(f)
+        data['id_externo'] = getExternalId()
+        data['chave'] = code
+        f.seek(0)
+        json.dump(data,f,indent=4)
+        f.truncate()
+        response = requests.post('https://comprova-matrix-homol.matrixcargo.com.br/viagens/atualiza_documentos_esperados',json=data,headers=HEADERS)
+        print(response.json())
 
 
 def executaCenario(dadosViagens, dadosComprovantes,esperado,tipo,contador):
@@ -229,9 +238,9 @@ for index,i in enumerate(ric_rejeitado):
 
 #executaCenario([["cte"],["35220882270711002194570000000707921426247610"]],[["cte_completo.jpeg","cte"],["cte_completo.jpeg","ric"]])  #ESPERA CTE, RECEBE 1 CTTE QUE APROVA E 1 RIC QUE REJEITA, ARQUIVADA E DELETAR O RIC
 
-executaCenario([["nf"],["35240212475660000108550010001298291412507339"]],[["nf_aprova.jpeg","nf"],["cte_completo.jpeg","nf"]],'none','none',contador) #ESPERA NF, RECEBE 1 QUE APROVA E UMA QUE REJEITA, DEVE APROVAR E APAGAR A REJEITADA
-executaCenario([["nf"],["35240212475660000108550010001298291412507339"]],[["cte_completo.jpeg","nf"],["nf_aprova.jpeg","nf"]],'none','none',contador)
-executaCenario([["ric"],["TCLU5927621"]],[["ric_aprova.jpeg","ric"],["cte_completo.jpeg","ric"]],'none','none',contador) #ESPERA RIC, RECEBE 1 RIIC QUE APROVA E 1 RIC QUE REJEITA, DEVE ARQUIVAR E DELETAR OO REJEITADO
+#executaCenario([["nf"],["35240212475660000108550010001298291412507339"]],[],'none','none',contador) #ESPERA NF, RECEBE 1 QUE APROVA E UMA QUE REJEITA, DEVE APROVAR E APAGAR A REJEITADA
+#executaCenario([["nf"],["35240212475660000108550010111111111111111111"]],[["nf_aprova.jpeg","nf"]],'none','none',contador)
+#executaCenario([["ric"],["TCLU5927621"]],[["ric_aprova.jpeg","ric"],["cte_completo.jpeg","ric"]],'none','none',contador) #ESPERA RIC, RECEBE 1 RIIC QUE APROVA E 1 RIC QUE REJEITA, DEVE ARQUIVAR E DELETAR OO REJEITADO
 
 #executaCenario([["ric"],["TCLU5927621"]],[["nf_aprova.jpeg","ric"],["cte_completo.jpeg","cte"],["ric_aprova.jpeg","ric"]])  #ESPERA RIIC, RECEBE 1 RIC QUE APROVA E 1 CTE QUE REJEITA, DEVE IR PARA ARQUIVADA E DELETAR O CTE
 
@@ -248,3 +257,6 @@ executaCenario([["ric"],["TCLU5927621"]],[["ric_aprova.jpeg","ric"],["cte_comple
 
 #ENVIAR UM DOC ACESSORIOI EM UMA VIAGEM QUE POSSUI 1 CTE REJEITADO E 1 CTE APROVADO
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+enviaDocEsperado("35240212475660000108550010001298291412507339")
+#35240212475660000108550010001298291412507339

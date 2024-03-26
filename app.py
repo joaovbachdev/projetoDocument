@@ -1,10 +1,17 @@
+from binascii import rledecode_hqx
+from operator import methodcaller
 from unicodedata import name
+from urllib.robotparser import RequestRate
 from flask import Flask, render_template, request
 import json
 from banco.controllerBanco import ControllerBanco
 from automacoes.main import Main
 from automacoes.cenarios import Cenarios
 from flask_socketio import SocketIO
+import webbrowser
+import http.server
+import socketserver
+import threading
 
 app = Flask("app")
 bd = ControllerBanco()
@@ -55,7 +62,30 @@ def executa():
     return "executado"
 
 
+@app.route('/executaTesteEsp', methods=['POST'])
+def executaTesteEsp():
+    
+    
+    index = bd.getTestsNames(request.json['name'],request.json['type']).index(request.json['testName'])
+    teste = bd.getAutomatedTests(request.json['name'],request.json['type'])[index]['automacao']
+    
+    try:
+        main.start('\n'.join(teste))
+        bd.setTodo(request.json["name"],request.json["type"],index,"realizado")
+        bd.saveHistorico(request.json["name"], "sucesso")
+        socketio.emit('atualizar',{'name':request.json["name"],'type':request.json["type"],'index':index,'status':"realizado"})
+        print("deu certo")
+    except:
+        bd.setTodo(request.json["name"],request.json["type"],index,"naoRealizado")
+        bd.saveHistorico(request.json["name"], "erro")
+        socketio.emit('atualizar',{'name':request.json["name"],'type':request.json["type"],'index':index,'status':"naoRealizado"})
+        print("deu erro")
 
+    socketio.emit("atualizaTesteEsp", {'status':bd.getAutomatedTests(request.json['name'],request.json['type'])[index]['status'],'index':index})
+    #socketio.emit("desativarSpiner",request.json["name"])
+
+    return 'executado'
+        
 @app.route("/auxCriaElemento", methods=["POST"])
 def auxCriaElemento():
     with open("banco/elementos.json", "r+") as f:
@@ -163,7 +193,8 @@ def atualizar():
     socketio.emit('atualizar')
 
 
-
+#webbrowser.open('http://127.0.0.1:5000')
 app.run(host='0.0.0.0', port=5000, debug=True)
+
 
 #socketio.runapp.run(debug=True)

@@ -1,5 +1,5 @@
 {
-    "id_externo": "395",
+    "id_externo": "406",
     "motorista": {
         "cpf": "111111111111",
         "nome": "bach Teste"
@@ -19,8 +19,8 @@
             },
             "documentos_para_comprovacao": [
                 {
-                    "chave": "TCLU5927621",
-                    "tipo": "ric"
+                    "chave": "35240212475660000108550010111111111111111111",
+                    "tipo": "nf"
                 }
             ]
         }
