@@ -1,0 +1,106 @@
+{
+    "external_id": "231",
+    "deleted": false,
+    "finished": false,
+    "ready": true,
+    "comex": true,
+    "total_time": 36480,
+    "total_distance": 836410,
+    "route_polyline": "xpfqCflpyGnzBicC~c@mf@_`AbWudMtvDqeEtsExQ~`A{cBfoAys@vvCuH|wBvtCnmCvdBh`Bqr@dpBr{AxvC{Bjv@cUr[fF{dAkh@iR|H~m@i~Ad[etB`sA}kG`ZwdE|xB}lCpa@de@dtCsUn~@|c@dw@dNbxBpbD`yJtjA~{ApUptA_`@~_Ie}@phC{gAt[csBxdAir@bnCq~@x_BqkCuh@qvGrhBopEvw@mkByN}|AsqAmhCek@u{B|c@owBz`@w|C_XyrAm}@aR|qQjhAraI{zBlxDakBhjAmxB||Fm`Ad{B}}AljB~@bcD~Gf|Aqv@j_Bgj@t{CqUtjHxPddE{X~xBu`AniFolD`pTedBzaNswCx~JiyBx|Hm^``IihBj`Fmd@bnJ{~Av_P}gBtaEuc@~}Nwq@ho\\mrBrpO_uBjcEkoAheC{GxtBhf@d`AgUzyA_iCn_IkrEbaTm}@bmFe}C~jFmiBhLivA`eCmiCc[ygNmkE_nLijFotBhh@gdAz~BwwBniAilDxzEqrFrmCimCbxAyjC|yDecHndLujHruJavDt_EkcAxe@_zBxoEugKdpOagAwaAgk@ceCcm@qiGkzB}hCg}A~WsoBhfBm|FnzAc`DjWsgFtfAo~@_tI_GsaBvt@a\\dnEsK`yDwoAfqBotAzpHkJntCqq@tjHhw@rhFteMloAe{ArmBmoDjgAyR~iFguGpuFksHbvG}wK~vCo}DtnCstAbwBshBbgDe`BlvDodEjmAgtAndByyAvcCxg@dvD`eBbbT~xGfyBn~@`e@geBpnAcpA|oAoFvbBwcC|gBspGdxAemInpBkkJrsCkmInTqpCy\\qu@rb@qaDj_E{bIla@c`E~`A}lJnY_lPze@ebPfPspFty@}vCvzActFxUelEzk@kkLnaA}iF|pAmrDd`@cuIlnD{qJzcCg}LvxDsmUrwA__Mna@orC_RqwCvNwzEvKqpCvdA_nDlIu~G|fBoaCvbAgyCrx@yvCh}CgjCp|BwlDiG_rCslAqbK|c@yuJxfD~m@duBnIfvAsg@ltCqK`iBti@doBblArnBzA~hC`HpvC_oA~y@pJ~kBelAzmBf\\h|Ai|A|r@epCfqB{fAjiAe[jpAkxDSexDlIa}C{iAoeAyxBagIkoBgzGrd@ytB{z@{w@nlCgu@piE{|BlnG_[plBybA`a@{@tQu^v_A}^aNc^b_@xSiIfeAfHqTrc@}^{r@kcC_w@up@d|@yuAxVi]wu@up@o}C_hBo`AsfCnFmnAmx@`D",
+    "has_dangerous_load": false,
+    "operation": "300",
+    "observations": [],
+    "driver_cpf": "08163060956",
+    "cost_center": "205002",
+    "result_center": "53",
+    "customer_cnpj": [
+        "61064911001734"
+    ],
+    "vehicles": [
+        {
+            "fleet_code": "A3090",
+            "license_plate": "BCZ9H81"
+        },
+        {
+            "fleet_code": "J3114",
+            "license_plate": "AYF3A25"
+        }
+    ],
+    "trip_stops": [
+        {
+            "pickup": true,
+            "delivery": false,
+            "sequence": 0,
+            "weight": 3,
+            "volume_m3": 3,
+            "distance_next_stop": 431970,
+            "travel_time_next_stop": 18840,
+            "time_window_start": "2024-09-24T20:00:00-03:00",
+            "time_window_end": "2024-09-24T22:00:00-03:00",
+            "service_point_cnpj": "02762121000953",
+            "service_point_name": "SANTOS BRASIL PARTICIPACOES SA",
+            "address": {
+                "street": "Avenida Santos Dumont, 929",
+                "number": "929",
+                "complement": "",
+                "neighborhood": "S\u00edtio Paecara",
+                "city": "Guaruj\u00e1",
+                "state": "SP",
+                "zipcode": "11460970",
+                "latitude": "-23.9587574000",
+                "longitude": "-46.2942791000"
+            },
+            "has_load": true
+        },
+        {
+            "pickup": false,
+            "delivery": true,
+            "sequence": 1,
+            "weight": 1,
+            "volume_m3": 1,
+            "distance_next_stop": 404440,
+            "travel_time_next_stop": 17640,
+            "time_window_start": "2024-09-25T14:30:00-03:00",
+            "time_window_end": "2024-09-25T17:30:00-03:00",
+            "service_point_cnpj": "29307609000190",
+            "service_point_name": "VOLVO EQUIPAMENTOS DE CONSTRUCAO LATIN AMERICA LTDA",
+            "address": {
+                "street": "AVENIDA LIONS CLUB",
+                "number": "2470",
+                "complement": "",
+                "neighborhood": "Centro",
+                "city": "Pederneiras",
+                "state": "SP",
+                "zipcode": "17280000",
+                "latitude": "-22.3396720000",
+                "longitude": "-48.7972570000"
+            },
+            "has_load": true
+        },
+        {
+            "pickup": false,
+            "delivery": true,
+            "sequence": 2,
+            "weight": 1,
+            "volume_m3": 1,
+            "distance_next_stop": 404440,
+            "travel_time_next_stop": 17640,
+            "time_window_start": "2024-09-25T14:30:00-03:00",
+            "time_window_end": "2024-09-25T17:30:00-03:00",
+            "service_point_cnpj": "29307609000190",
+            "service_point_name": "VOLVO EQUIPAMENTOS DE CONSTRUCAO LATIN AMERICA LTDA",
+            "address": {
+                "street": "AVENIDA LIONS CLUB",
+                "number": "2470",
+                "complement": "",
+                "neighborhood": "Centro",
+                "city": "Pederneiras",
+                "state": "SP",
+                "zipcode": "17280000",
+                "latitude": "-22.3396720000",
+                "longitude": "-48.7972570000"
+            },
+            "has_load": true
+        }
+    ]
+}

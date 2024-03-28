@@ -1,5 +1,7 @@
 from binascii import rledecode_hqx
+from crypt import methods
 from operator import methodcaller
+from sched import scheduler
 from unicodedata import name
 from urllib.robotparser import RequestRate
 from flask import Flask, render_template, request
@@ -12,10 +14,18 @@ import webbrowser
 import http.server
 import socketserver
 import threading
+from apscheduler.schedulers.background import BackgroundScheduler
+import random
+import threading
+import time
 
 app = Flask("app")
 bd = ControllerBanco()
-main = Main(Cenarios())
+main = Main(Cenarios(), ControllerBanco)
+scheduler = BackgroundScheduler()
+
+
+
 socketio = SocketIO(app)
 
 @app.route('/')
@@ -40,19 +50,18 @@ def getLineInformation():
  
 @app.route("/executar", methods=["POST"])
 def executa():
-
     for index,i in enumerate(bd.getElementTests(request.json["name"],request.json["type"])):
         try:
             main.start('\n'.join(i))
             bd.setTodo(request.json["name"],request.json["type"],index,"realizado")
             bd.saveHistorico(request.json["name"], "sucesso")
             socketio.emit('atualizar',{'name':request.json["name"],'type':request.json["type"],'index':index,'status':"realizado"})
-            print("deu certo")
+           
         except:
             bd.setTodo(request.json["name"],request.json["type"],index,"naoRealizado")
             bd.saveHistorico(request.json["name"], "erro")
             socketio.emit('atualizar',{'name':request.json["name"],'type':request.json["type"],'index':index,'status':"naoRealizado"})
-            print("deu erro")
+        
         
 
     socketio.emit("atualizarStatus",bd.getAllElementstestStatus())
@@ -65,7 +74,7 @@ def executa():
 @app.route('/executaTesteEsp', methods=['POST'])
 def executaTesteEsp():
     
-    
+
     index = bd.getTestsNames(request.json['name'],request.json['type']).index(request.json['testName'])
     teste = bd.getAutomatedTests(request.json['name'],request.json['type'])[index]['automacao']
     
@@ -193,7 +202,45 @@ def atualizar():
     socketio.emit('atualizar')
 
 
-#webbrowser.open('http://127.0.0.1:5000')
+@app.route('/setExecuaoAleatoria',methods=['POST'])
+def setExesetExecuaoAleatoria():
+    dados = bd.getAllTests()
+    nome = random.choice(list(dados.keys()))
+    index = nome.split('-')[1]
+    testes = '\n'.join(dados[nome])
+
+    #minha_tarefa(nome.split('-')[0],index, testes)
+    return {'nome':nome.split('-')[0],'index':index,'testes':testes}
+
+@app.route('/executaTesteAleatorio', methods=['POST'])
+def minha_tarefa():
+
+    nome = request.json['nome']
+    index = request.json['index']
+    testes = request.json['testes']
+    #nome = 'apiCriaViagem-0'
+    #index = 0
+    #testes = '\n'.join(dados[nome])
+    #print(dados[nome],"TAAAAAAAAAAAAAA AAAAAAAAAQUI O NOMEEEEEEEE")
+    
+    try:
+        main.start(testes)
+        bd.setTodo(nome.split('-')[0],'elementos',int(index),"realizado")
+        bd.saveHistorico(nome.split('-')[0], "sucesso")
+        socketio.emit('atualizar',{'name':nome.split('-')[0],'type':'elementos','index':int(index),'status':"realizado"})
+        print("deu certo automatco", nome.split('-')[0],index,testes) 
+    except:
+        bd.setTodo(nome.split('-')[0],'elementos',int(index),"naoRealizado")
+        bd.saveHistorico(nome.split('-')[0], "erro")
+        socketio.emit('atualizar',{'name':nome.split('-')[0],'type':'elementos','index':int(index),'status':"naoRealizado"})
+        print("deu errado automatico", nome.split('-')[0],index,testes)
+        
+    socketio.emit("atualizarStatus",bd.getAllElementstestStatus())
+    socketio.emit("desativarSpiner",nome.split('-')[0])
+    #socketio.emit("atualizaTesteEsp", {'status':bd.getAutomatedTests(nome.split('-')[0],'elementos')[index]['status'],'index':index})
+    return "executado aleatorio com sucesso"
+
+
 app.run(host='0.0.0.0', port=5000, debug=True)
 
 

@@ -13,24 +13,10 @@
         ],
         "testes": [
             {
-                "teste": "digitar varios caracteres para ver se tem um limite",
+                "teste": "teste3",
                 "status": "realizado",
                 "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "testar entrar caracteres especiais",
-                "status": "realizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "colocar apenas espacos",
-                "status": "realizado",
-                "automacao": [
-                    ""
+                    "page.goto(\"https://github.com\")"
                 ]
             }
         ],
@@ -53,24 +39,10 @@
         ],
         "testes": [
             {
-                "teste": "preencher com varios caracteres",
-                "status": "realizado",
+                "teste": "teste5",
+                "status": "naoRealizado",
                 "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "apagar tudo que oi preenchido",
-                "status": "realizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "tentar digitar caracteres especiais",
-                "status": "realizado",
-                "automacao": [
-                    ""
+                    "oage.goto(\"https://github.com\")"
                 ]
             }
         ],
@@ -88,29 +60,7 @@
             "botao",
             "login"
         ],
-        "testes": [
-            {
-                "teste": "clicar",
-                "status": "realizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "clicar varias vezes",
-                "status": "realizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "segurar o clique",
-                "status": "realizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "erroLogin": {
@@ -124,29 +74,7 @@
         "tags": [
             "login"
         ],
-        "testes": [
-            {
-                "teste": "clicar em confirmar com senha invalida",
-                "status": "realizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "clicar em confirmar com usuario invalido deve aparecer a mensagem de erro",
-                "status": "realizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "clicar em confirmar com usuario e senha validos nao deve aparecer a mensagem",
-                "status": "realizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "botaoPoliticas": {
@@ -158,16 +86,7 @@
         "name": "botaoPoliticas",
         "interageCom": "",
         "tags": [],
-        "testes": [
-            {
-                "teste": "clicar deve redirecionar para pagnina de politicas",
-                "status": "realizado",
-                "automacao": [
-                    "page.goto('https://github.com')",
-                    "page.goto('dasdasd://gdfbgjdfbdfgdf.com')"
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "modalTopDrivers": {
@@ -196,15 +115,7 @@
         "tags": [
             "topDriver"
         ],
-        "testes": [
-            {
-                "teste": "ao clicar deve fechar a modal",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "botaoTamoJunto": {
@@ -219,15 +130,7 @@
             "topDriver",
             "botao"
         ],
-        "testes": [
-            {
-                "teste": "ao clicar deve fechar a modal",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "sinoNotificacaoHeader": {
@@ -241,15 +144,7 @@
         "tags": [
             "home"
         ],
-        "testes": [
-            {
-                "teste": "clicar deve abrir a central de notifica\u00e7oes",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "chatHeader": {
@@ -264,15 +159,7 @@
             "home",
             "redirectChat"
         ],
-        "testes": [
-            {
-                "teste": "clicar deve redirecioanar para o chat",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "atalhoMatrixPay": {
@@ -284,15 +171,7 @@
         "name": "atalhoMatrixPay",
         "interageCom": "",
         "tags": [],
-        "testes": [
-            {
-                "teste": "clicar deve redirecionar para o matrixpay",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "rankingHeader": {
@@ -306,15 +185,7 @@
         "tags": [
             "home"
         ],
-        "testes": [
-            {
-                "teste": "clicar deve abrir modal do perfil do motora no ranking",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "inicioRodape": {
@@ -328,15 +199,7 @@
         "tags": [
             "home"
         ],
-        "testes": [
-            {
-                "teste": "clicar deve ir para home e dar um refresh",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "agendaRodape": {
@@ -350,15 +213,7 @@
         "tags": [
             "home"
         ],
-        "testes": [
-            {
-                "teste": "clicar deve redirecionar para a agenda",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "viagensRodape": {
@@ -372,15 +227,7 @@
         "tags": [
             "home"
         ],
-        "testes": [
-            {
-                "teste": "clicar deve redirecionar para a tela de minhas viagens",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "menuRodape": {
@@ -394,15 +241,7 @@
         "tags": [
             "home"
         ],
-        "testes": [
-            {
-                "teste": "clicar deve abrir o menu lateral",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "3pontinhosLocalizacao": {
@@ -416,15 +255,7 @@
         "tags": [
             "home"
         ],
-        "testes": [
-            {
-                "teste": "clicar deve abrir op\u00e7oes de localiza\u00e7\u00e3o",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "telaViagens": {
@@ -477,17 +308,17 @@
         ],
         "testes": [
             {
-                "teste": "teste",
+                "teste": "teste1",
                 "status": "realizado",
                 "automacao": [
                     "page.goto(\"https://github.com\")"
                 ]
             },
             {
-                "teste": "tese3",
-                "status": "naoRealizado",
+                "teste": "teste2",
+                "status": "realizado",
                 "automacao": [
-                    "page.goto(\"https://google.com\")"
+                    "page.goto(\"https://github.com\")"
                 ]
             }
         ],
@@ -505,15 +336,7 @@
             "login",
             "menu"
         ],
-        "testes": [
-            {
-                "teste": "clicar deve ir para tela de login",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "modalRanking": {
@@ -541,15 +364,7 @@
         "tags": [
             "ranking"
         ],
-        "testes": [
-            {
-                "teste": "clicar deve redirecionar para a tela de matrix top driver",
-                "status": "realizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "atalhoFlutuanteChat": {
@@ -564,15 +379,7 @@
             "home",
             "redirectChat"
         ],
-        "testes": [
-            {
-                "teste": "clicar deve redirecionar para minhas conversas ativas",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "botaoMeusVeiculos": {
@@ -586,15 +393,7 @@
         "tags": [
             "menu"
         ],
-        "testes": [
-            {
-                "teste": "clicar deve redirecionar",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "botaoMeusDados": {
@@ -608,15 +407,7 @@
         "tags": [
             "menu"
         ],
-        "testes": [
-            {
-                "teste": "clicar deve redirecionar",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "botaoCentralDeNoificacoes": {
@@ -630,15 +421,7 @@
         "tags": [
             "menu"
         ],
-        "testes": [
-            {
-                "teste": "clicar deve redirecionar",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "botaoComissoes": {
@@ -652,15 +435,7 @@
         "tags": [
             "menu"
         ],
-        "testes": [
-            {
-                "teste": "clicar deve redirecionar",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "botaoMeusComprovantes": {
@@ -672,15 +447,7 @@
         "name": "botaoMeusComprovantes",
         "interageCom": "",
         "tags": [],
-        "testes": [
-            {
-                "teste": "clicar deve redirecionar",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "botaoChecklist": {
@@ -694,15 +461,7 @@
         "tags": [
             "menu"
         ],
-        "testes": [
-            {
-                "teste": "clicar deve redirecionar",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "botaoPrimeirosPassos": {
@@ -714,15 +473,7 @@
         "name": "botaoPrimeirosPassos",
         "interageCom": "",
         "tags": [],
-        "testes": [
-            {
-                "teste": "clicar deve redirecionar",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "botaoMenuPolicaPrivacidade": {
@@ -736,15 +487,7 @@
         "tags": [
             "menu"
         ],
-        "testes": [
-            {
-                "teste": "clicar deve redirecionar",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "botaoDenunciar": {
@@ -758,15 +501,7 @@
         "tags": [
             "menu"
         ],
-        "testes": [
-            {
-                "teste": "clicar deve redirecionar",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "xParaFecharMenu": {
@@ -780,15 +515,7 @@
         "tags": [
             "menu"
         ],
-        "testes": [
-            {
-                "teste": "clicar deve ir para home",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "botaoAgendaAvancarmes": {
@@ -860,15 +587,7 @@
         "name": "botaoViagensAgendadas",
         "interageCom": "",
         "tags": [],
-        "testes": [
-            {
-                "teste": "clicar deve mostrar todas as viagens agendadas do motorista",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "botaoViagensEmAceite": {
@@ -880,15 +599,7 @@
         "name": "botaoViagensEmAceite",
         "interageCom": "",
         "tags": [],
-        "testes": [
-            {
-                "teste": "clicar deve mostrar todas as viagens em aceite do mostorista",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "botaoViagensConluidas": {
@@ -900,15 +611,7 @@
         "name": "botaoViagensConluidas",
         "interageCom": "",
         "tags": [],
-        "testes": [
-            {
-                "teste": "clicar deve mostrar todas as vaigens concluidas do motorista",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "atalhoChatTelaViagens": {
@@ -922,15 +625,7 @@
         "tags": [
             "redirectChat"
         ],
-        "testes": [
-            {
-                "teste": "clicar deve redirecionar para o chat",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "botaoVerifiacrhistoricoDePontuacao": {
@@ -944,15 +639,7 @@
         "tags": [
             "ranking"
         ],
-        "testes": [
-            {
-                "teste": "clicar deve mostrar a modal de historico de pontuacao do motorista",
-                "status": "realizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "xFecharModalRanking": {
@@ -966,15 +653,7 @@
         "tags": [
             "ranking"
         ],
-        "testes": [
-            {
-                "teste": "clicar deve fechar a modal",
-                "status": "realizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "botaoFecharModalRanking": {
@@ -988,15 +667,7 @@
         "tags": [
             "ranking"
         ],
-        "testes": [
-            {
-                "teste": "clicar deve ffechar a modal de ranking",
-                "status": "realizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "botaoCompartilharModalRRanking": {
@@ -1010,15 +681,7 @@
         "tags": [
             "ranking"
         ],
-        "testes": [
-            {
-                "teste": "clicar deve aparecer opcoes do celular para compartilhar",
-                "status": "realizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "setVoltarMatrixTopDriver": {
@@ -1032,15 +695,7 @@
         "tags": [
             "ranking"
         ],
-        "testes": [
-            {
-                "teste": "clicar deve volar para a home do app",
-                "status": "realizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "setaVoltaarCentralNotificacoes": {
@@ -1104,15 +759,7 @@
         "tags": [
             "ranking"
         ],
-        "testes": [
-            {
-                "teste": "clicar deve fechar a modal e ir para home",
-                "status": "realizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "botaoVerMaisHistorico": {
@@ -1126,22 +773,7 @@
         "tags": [
             "ranking"
         ],
-        "testes": [
-            {
-                "teste": "clicar deve expandir o item mostranho mais detalhes",
-                "status": "realizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "ao clicar este botao deve virar \"mostrar menos\"",
-                "status": "realizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "botaoVerMenosHistoricoPontuaca": {
@@ -1155,22 +787,7 @@
         "tags": [
             "ranking"
         ],
-        "testes": [
-            {
-                "teste": "clicar deve recolher o conteudo detalhado do item",
-                "status": "realizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "ao clicar este botao deve virar \"mostrar mais\"",
-                "status": "realizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "cardFechadoHistorcoPontuacao": {
@@ -1212,15 +829,7 @@
         "tags": [
             "ranking"
         ],
-        "testes": [
-            {
-                "teste": "clicar deve fechar a modal de historico e voltar para modal de ranking do motorista",
-                "status": "realizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "inputDataControleDoSono": {
@@ -1234,29 +843,7 @@
         "tags": [
             "controleSono"
         ],
-        "testes": [
-            {
-                "teste": "ao clicar deve abrir um input de data do celular",
-                "status": "realizado",
-                "automacao": [
-                    "page.goto(\"https://github.com\")"
-                ]
-            },
-            {
-                "teste": "nao deve ser possivel adicionar data no futuro",
-                "status": "realizado",
-                "automacao": [
-                    "page.goto()"
-                ]
-            },
-            {
-                "teste": "n\u00e3o deve ser possivel limpar o campo ap\u00f3s ser preenchido",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "inputHorarioControleDoSono": {
@@ -1270,22 +857,7 @@
         "tags": [
             "controleSono"
         ],
-        "testes": [
-            {
-                "teste": "ao clicar deve abrir um input de horario do celular",
-                "status": "realizado",
-                "automacao": [
-                    "page.goto('https://github.com')"
-                ]
-            },
-            {
-                "teste": "nao deve ser possivel limpar o campo ap\u00f3s ser preenchido",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "botaoConfirmarControleDoSono": {
@@ -1299,36 +871,7 @@
         "tags": [
             "controleSono"
         ],
-        "testes": [
-            {
-                "teste": "clicar sem ter data preenchida nao pode seguir",
-                "status": "realizado",
-                "automacao": [
-                    "page.goto()"
-                ]
-            },
-            {
-                "teste": "clicar sem preencher horario nao deve ser possivel",
-                "status": "realizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "clicar com data e horario preenchido deve avancar",
-                "status": "realizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "clicar sem data nem hora preenchidos",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "botaoSuporteControleDoSono": {
@@ -1343,15 +886,7 @@
             "controleSono",
             "redirectChat"
         ],
-        "testes": [
-            {
-                "teste": "clicar deve redirecinar para conversas ativas",
-                "status": "realizado",
-                "automacao": [
-                    "page.goto()"
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "telaControleDoSono": {
@@ -1365,36 +900,7 @@
         "tags": [
             "controleSono"
         ],
-        "testes": [
-            {
-                "teste": "abrir nesta tela e fechar o app sem fazer o registro deve abrir novamente",
-                "status": "realizado",
-                "automacao": [
-                    "page.goto()"
-                ]
-            },
-            {
-                "teste": "apos ter realizado ela deve aparecer novamente a partir de 4h do dia seguinte",
-                "status": "realizado",
-                "automacao": [
-                    "page.goto()"
-                ]
-            },
-            {
-                "teste": "deve ser preenchido apenas uma vez no  dia",
-                "status": "realizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "deve aparecer apenas para motoristas dos tipos disponiveis em driver_weakeup_permissions",
-                "status": "realizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "telaConversasAtivas": {
@@ -1436,15 +942,7 @@
         "tags": [
             "controleSono"
         ],
-        "testes": [
-            {
-                "teste": "ao clicar deve salvar no banco os dados inputados",
-                "status": "realizado",
-                "automacao": [
-                    "page.goto()"
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "horarioDeEncerramentoDasAtiviidades": {
@@ -1458,15 +956,7 @@
         "tags": [
             "controleSono"
         ],
-        "testes": [
-            {
-                "teste": "o valor deve ser de 18h apos a hora entrada pelo usuario",
-                "status": "realizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "telaInicial": {
@@ -1494,15 +984,7 @@
         "tags": [
             "controleSono"
         ],
-        "testes": [
-            {
-                "teste": "se esta tela foi aberta atraves da tela de controle de sono, ao clicar deve voltar para a mesma",
-                "status": "realizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "botaoAbrirChatHome": {
@@ -1516,15 +998,7 @@
         "tags": [
             "home"
         ],
-        "testes": [
-            {
-                "teste": "clicar deve ir para o fluxo de chat",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "botaoVerViagemHome": {
@@ -1538,15 +1012,7 @@
         "tags": [
             "home"
         ],
-        "testes": [
-            {
-                "teste": "clicar deve entrar no fluxo da viagem",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "telaComissoes": {
@@ -1678,22 +1144,7 @@
         "name": "inputPlacaChecklist",
         "interageCom": "",
         "tags": [],
-        "testes": [
-            {
-                "teste": "digitar letras devem ficar todas em maiusuclo",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "tentar adicionar mais que 7 caracteres nao deve ser possivel",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "botaoContinuarBemVindoChecklist": {
@@ -1705,29 +1156,7 @@
         "name": "botaoContinuarBemVindoChecklist",
         "interageCom": "listaTiposDeChecklist",
         "tags": [],
-        "testes": [
-            {
-                "teste": "clicar em continuar tendo uma placa valida deve aparecer os tipos",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "clicar em continuar tendo uma placa invalida deve retornar um erro",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "clicar em continuar com o campo vazio deve retornar um erro",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "botaoEngate": {
@@ -1739,15 +1168,7 @@
         "name": "botaoEngate",
         "interageCom": "",
         "tags": [],
-        "testes": [
-            {
-                "teste": "clicar em engate deve avan\u00e7ar com o processo",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "botaoDesengate": {
@@ -1759,15 +1180,7 @@
         "name": "botaoDesengate",
         "interageCom": "",
         "tags": [],
-        "testes": [
-            {
-                "teste": "clicar em desengate deve avan\u00e7ar com o processo",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "itemChecklist": {
@@ -1779,29 +1192,7 @@
         "name": "itemChecklist",
         "interageCom": "telaItemChecklist",
         "tags": [],
-        "testes": [
-            {
-                "teste": "clicar deve navegar para o conteudo deste item",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "clicar em um item com status pendente, deve ser possivel mexer no item",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "clicar em um item rejeitado/aprovado, deve ser possivel mexer neste item",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "statusItemChecklistPendente": {
@@ -1813,36 +1204,7 @@
         "name": "statusItemChecklistPendente",
         "interageCom": "checklistBotaoAvancarDesativado",
         "tags": [],
-        "testes": [
-            {
-                "teste": "se o item nao for aprovado nem rejeitado deve ficar amarelo pendente",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "ir na aba de pendente, deve aparecer apenas itens com status amarelo",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "itens com o status amarelo deve aparecer apenas na aba de pendentes",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "aprovar/rejeitar um item pendente, este deve trocar de aba e de status",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "checklistBotaoAvancarDesativado": {
@@ -1854,15 +1216,7 @@
         "name": "checklistBotaoAvancarDesativado",
         "interageCom": "",
         "tags": [],
-        "testes": [
-            {
-                "teste": "clicar em anva\u00e7ar desativado nao deve acontecer nada",
-                "status": "realizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "inputFotoItemChecklist": {
@@ -1874,22 +1228,7 @@
         "name": "inputFotoItemChecklist",
         "interageCom": "",
         "tags": [],
-        "testes": [
-            {
-                "teste": "clicar deve ser possivel tirar uma foto",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "deve ser possivel anexar fotos",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "inputObservacoesItemChecklist": {
@@ -1901,29 +1240,7 @@
         "name": "inputObservacoesItemChecklist",
         "interageCom": "",
         "tags": [],
-        "testes": [
-            {
-                "teste": "deve ser possivel digitar neste texto",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "adicionar varios caracteres, nao deve quebrar nada",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "adicionar uma observacao e sair do item, ao voltar deve estar salvo o que foi escrito",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "botaoReprovadoDesativado": {
@@ -1935,15 +1252,7 @@
         "name": "botaoReprovadoDesativado",
         "interageCom": "fotoAnexadaItemChecklist",
         "tags": [],
-        "testes": [
-            {
-                "teste": "clicar em reprovado desativado nao deve ser possivel",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "botaoAprovadoDesativado": {
@@ -1955,15 +1264,7 @@
         "name": "botaoAprovadoDesativado",
         "interageCom": "fotoAnexadaItemChecklist",
         "tags": [],
-        "testes": [
-            {
-                "teste": "clicar em aprovado desativado nao deve ser possivel",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "fotoAnexadaItemChecklist": {
@@ -1975,22 +1276,7 @@
         "name": "fotoAnexadaItemChecklist",
         "interageCom": "",
         "tags": [],
-        "testes": [
-            {
-                "teste": "ao anexar uma foto esta deve aparecer no front",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "ter muitas fotos adicionadas nao deve quebrar nada no front",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "lixeiraExcluirFotoItemChecklist": {
@@ -2002,29 +1288,7 @@
         "name": "lixeiraExcluirFotoItemChecklist",
         "interageCom": "fotoAnexadaItemChecklist",
         "tags": [],
-        "testes": [
-            {
-                "teste": "clicar na lixeira de uma foto deve exlcuir esta foto do item",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "excluir uma foto, sair do item e voltar, esta deve ter sumido de fato",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "excluir todas as fotos anexadas, deve desativas os botao de aprovado e rejeitado",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "botaoReprovadoAtivado": {
@@ -2036,15 +1300,7 @@
         "name": "botaoReprovadoAtivado",
         "interageCom": "",
         "tags": [],
-        "testes": [
-            {
-                "teste": "clicar em rejeitado deve migrar o item para concluidos e ter o status vermelho",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "botaoAprovadoAtivo": {
@@ -2056,15 +1312,7 @@
         "name": "botaoAprovadoAtivo",
         "interageCom": "statusItemChecklistFinalizado",
         "tags": [],
-        "testes": [
-            {
-                "teste": "clicar em aprovado deve migrar o item para concluidos com o staus verde",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "botaoPendentesCheckList": {
@@ -2076,15 +1324,7 @@
         "name": "botaoPendentesCheckList",
         "interageCom": "listaItensPendentesChecklist",
         "tags": [],
-        "testes": [
-            {
-                "teste": "clicar deve listar todos os itens com o status amarelo",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "botaoConcluidosChecklist": {
@@ -2096,15 +1336,7 @@
         "name": "botaoConcluidosChecklist",
         "interageCom": "listaItensConcluidosChecklist",
         "tags": [],
-        "testes": [
-            {
-                "teste": "clicar deve listar todos os items com status vermlho/verde",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "botaoFinalizarChecklist": {
@@ -2116,15 +1348,7 @@
         "name": "botaoFinalizarChecklist",
         "interageCom": "",
         "tags": [],
-        "testes": [
-            {
-                "teste": "clicar deve concluir o checklist com sucesso",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "statusItemChecklistFinalizado": {
@@ -2184,15 +1408,7 @@
         "name": "meusVeiculosBotaoVoltar",
         "interageCom": "telaMenu",
         "tags": [],
-        "testes": [
-            {
-                "teste": "clicar deve voltar para o menu",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "comissoesBotaoPrevistas": {
@@ -2228,15 +1444,7 @@
         "name": "botaoVerConversasFinalizadas",
         "interageCom": "telaConversasFinalizadas",
         "tags": [],
-        "testes": [
-            {
-                "teste": "clicar deve abrir tela com lista de conversas finalizadas",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "listaTiposDeChecklist": {
@@ -2296,15 +1504,7 @@
         "name": "itemConversaAtiva",
         "interageCom": "",
         "tags": [],
-        "testes": [
-            {
-                "teste": "clicar deve abrir esta conversa",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "botaoIniciarNovaConversa": {
@@ -2316,15 +1516,7 @@
         "name": "botaoIniciarNovaConversa",
         "interageCom": "listaDeAssuntos",
         "tags": [],
-        "testes": [
-            {
-                "teste": "clicar deve abrir lista de assuntos para selecionar",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "itemListaAssutosPrincipais": {
@@ -2336,43 +1528,7 @@
         "name": "itemListaAssutosPrincipais",
         "interageCom": "itemSubAssuntos",
         "tags": [],
-        "testes": [
-            {
-                "teste": "ao clicar deve marcar a opcap",
-                "status": "realizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "se o assunto ter subassuntos ao clicar deve abrir embaixo uma lista de subassnuntos",
-                "status": "realizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "se nao ter subassuntos ao clicar deve liberar o botao de inciar conversa",
-                "status": "realizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "clicar em um assunto ja selecionado nao deve desmarcar",
-                "status": "realizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "caso tenha outro assunto selecionado ao clicar deve tirar o antigo e marcar este",
-                "status": "realizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "botaoCancelarNovaConversa": {
@@ -2384,36 +1540,7 @@
         "name": "botaoCancelarNovaConversa",
         "interageCom": "telaConversasAtivas",
         "tags": [],
-        "testes": [
-            {
-                "teste": "ter um assunto sem subassuntos selecionado deve sumir este botao",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "ter um assunto seleciono que tem subassunto deslecionado deve aparecer este botao",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "ter assunto e subassunto selecionado deve sumir este botao",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "nao ter nada selecionado deve aparecer este botao",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "itemSubAssuntos": {
@@ -2425,29 +1552,7 @@
         "name": "itemSubAssuntos",
         "interageCom": "",
         "tags": [],
-        "testes": [
-            {
-                "teste": "ao selecionar um assunto que tem subassuntos este item deve aparecer",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "selecionar um assunto que nao tem subassunto nao deve aparecer nada",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "clicar neste item deve ser possivel selecionar",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "subAssuntoSelecionado": {
@@ -2471,15 +1576,7 @@
         "name": "AssuntoPrincipalSelecionado",
         "interageCom": "",
         "tags": [],
-        "testes": [
-            {
-                "teste": "clicar nao deve tirar a sele\u00e7ao",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "botaoIniciarConversa": {
@@ -2491,50 +1588,7 @@
         "name": "botaoIniciarConversa",
         "interageCom": "",
         "tags": [],
-        "testes": [
-            {
-                "teste": "ter assunto e subassunto selecionado deve aparecer",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "ter assunto selecionado e subassunto sem selecionar nao deve aparecer este botao",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "ter assunto sem subassunto selecionado deve aparecer este botao",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "nao ter nada selecionado nao deve aparecer este botao",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "clicar deve gerar uma nova conversa com sucesso",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "ao criar uma nova conversa esta deve aparecer na lista de conversas ativas",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "itemConversasFinalizadas": {
@@ -2546,15 +1600,7 @@
         "name": "itemConversasFinalizadas",
         "interageCom": "",
         "tags": [],
-        "testes": [
-            {
-                "teste": "clicar deve abrir a conversa",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "campoDeBuscaConversasFinalizadas": {
@@ -2566,36 +1612,7 @@
         "name": "campoDeBuscaConversasFinalizadas",
         "interageCom": "itemConversasFinalizadas",
         "tags": [],
-        "testes": [
-            {
-                "teste": "deve ser possivel digitar qualquer caractere",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "nao deve ter limite de caracteres",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "filtrar com o campo vazio deve trazer tudo",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "filtrar com algo no campo deve trazer uma nova lista baseada no filtro",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "telaConversasFinalizadas": {
@@ -2631,50 +1648,7 @@
         "name": "contadorConversasFinalizadas",
         "interageCom": "",
         "tags": [],
-        "testes": [
-            {
-                "teste": "o numero do contador deve ser igual a quantidade total de conversas finalizadas",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "finalizar uma conversa ativa deve somar 1 no contador",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "reabrir uma conversa nao deve subtrair 1 do total",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "ter 0 conversas ativar n\u00e3o deve aparecer o contador",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "adicionar mais de 10 conversas finalizadas nao deve quebrar",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "adicionar mais de 100 conversas finalizadas nao deve quebrar",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "telaIniciarViagem": {
@@ -2974,22 +1948,7 @@
         "name": "botaoNaoInformarNfe",
         "interageCom": "abrirOpcoesDeLeituraNf",
         "tags": [],
-        "testes": [
-            {
-                "teste": "teste",
-                "status": "realizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "testeAutomacao",
-                "status": "realizado",
-                "automacao": [
-                    "page.goto(\"https://github.com\")"
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": [
             "teste"
         ]
@@ -3015,22 +1974,7 @@
         "name": "botaoConfirmarNaoEnviarNfe",
         "interageCom": "",
         "tags": [],
-        "testes": [
-            {
-                "teste": "teste cadastro bug",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "teste sla oq",
-                "status": "naoRealizado",
-                "automacao": [
-                    ""
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": [
             "teste",
             "testeteste",
@@ -3329,21 +2273,15 @@
         "tags": [],
         "testes": [
             {
-                "teste": "teste2",
+                "teste": "teste1",
                 "status": "naoRealizado",
                 "automacao": [
-                    ""
-                ]
-            },
-            {
-                "teste": "teste3",
-                "status": "naoRealizado",
-                "automacao": [
-                    "teste",
-                    ""
+                    "TesteApi().criaViagem()"
                 ]
             }
         ],
-        "bugs": []
+        "bugs": [
+            "TestesApi().criaViagem()"
+        ]
     }
 }

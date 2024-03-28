@@ -179,14 +179,50 @@ function getElementos(callback)
     });
 
  }
+function setTesteAleatorio(){
+    $.ajax({
+        url:`/setExecuaoAleatoria`,
+        type:'POST',
+        data:JSON.stringify({}),
+        contentType:'application/json',
+        success: function(response){
+            console.log("setei", response['nome'])
+            if(!response['nome'].includes(("/"))){{
+                document.querySelector(`i[elementName='${response['nome']}']`).style.display = 'block'
+                socket.send('start')
+            }}
+            executaTesteAleatorio(response['nome'],response['index'],response['testes'])
+        },
+        error:function(error){
+            console.log("erro ao atualizar todo")
+        }
+    });
+   // setTimeout(setTesteAleatorio, 10000);
+}
 
+function executaTesteAleatorio(nome,index,testes){
+    $.ajax({
+        url:`/executaTesteAleatorio`,
+        type:'POST',
+        data:JSON.stringify({'nome':nome,'index':index,'testes':testes}),
+        contentType:'application/json',
+        success: function(response){
+                console.log("executado com sucesso o aleatorio")
+        },
+        error:function(error){
+            console.log("erro ao atualizar todo")
+        }
+    });
+}
  socket.on('atualizar', function(data) {
-     console.log(document.getElementById("card"))
+    elementos = document.querySelectorAll("input[type='checkbox']")
+    if(elementos.length >0){
      if(data['status'] == "realizado"){
         document.querySelectorAll("input[type='checkbox']")[data["index"]].checked = true
      }else{
         document.querySelectorAll("input[type='checkbox']")[data["index"]].checked = false
      }
+    }
 });
 
 socket.on('atualizarStatus', function(data) {

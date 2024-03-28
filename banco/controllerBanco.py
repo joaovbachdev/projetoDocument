@@ -222,6 +222,26 @@ class ControllerBanco:
             f.truncate()
 
             return data[element]['bugs']
+    
+    def getAllTests(self):
+        with open('banco/elementos.json','r+') as f:
+            data = json.load(f)
+            automacoes = {f'{i}-{index}':j['automacao'] for i in data.keys() for index,j in enumerate(data[i]["testes"]) if j['automacao']!=['']}
+
+        return automacoes
+
+    def limpaTestes(self):
+        with open('banco/elementos.json','r+') as f:
+            data = json.load(f)
+            for i in data.keys():
+                data[i]['testes'] = []
+
+            f.seek(0)
+            json.dump(data,f,indent=4)
+            f.truncate()
+
+#ControllerBanco().limpaTestes()
+#print(ControllerBanco().getAllTests())
 
 #ControllerBanco().getAllElementstestStatus()
 
