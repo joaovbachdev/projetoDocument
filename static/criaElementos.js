@@ -13,7 +13,7 @@ function createLine(items){
         linha.setAttribute('x2', items[Object.keys(items)[i]]['positions'][2]);
         linha.setAttribute('y2', items[Object.keys(items)[i]]['positions'][3]);
         linha.setAttribute("elementName",items[Object.keys(items)[i]]['name'])
-        linha.setAttribute('stroke', '#3498db');
+        linha.setAttribute('stroke', '#99ff33');
         linha.setAttribute('stroke-width', '10');
         linha.setAttribute('lineName',items[Object.keys(items)[i]]['name'])
         linha.setAttribute('onclick',`clickLine("${items[Object.keys(items)[i]]['name']}")`)

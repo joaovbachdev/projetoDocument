@@ -1,6 +1,3 @@
-from binascii import rledecode_hqx
-from crypt import methods
-from operator import methodcaller
 from sched import scheduler
 from unicodedata import name
 from urllib.robotparser import RequestRate
@@ -14,7 +11,6 @@ import webbrowser
 import http.server
 import socketserver
 import threading
-from apscheduler.schedulers.background import BackgroundScheduler
 import random
 import threading
 import time
@@ -22,7 +18,6 @@ import time
 app = Flask("app")
 bd = ControllerBanco()
 main = Main(Cenarios(), ControllerBanco)
-scheduler = BackgroundScheduler()
 
 
 
@@ -240,6 +235,9 @@ def minha_tarefa():
     #socketio.emit("atualizaTesteEsp", {'status':bd.getAutomatedTests(nome.split('-')[0],'elementos')[index]['status'],'index':index})
     return "executado aleatorio com sucesso"
 
+@app.route("/extraiRelatorio")
+def extraiRelatorio():
+    return bd.extraiRelatorio()
 
 app.run(host='0.0.0.0', port=5000, debug=True)
 

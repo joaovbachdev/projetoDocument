@@ -3,10 +3,10 @@
 
 html{
   font-family: "Roboto", sans-serif;
-  overflow: hidden;
+  overflow-y: scroll;
 }
 body{
-    background: linear-gradient(to right, #2b32b2, #1488cc);
+    background: linear-gradient(to right, #000000, #414142);
 }
 #codigoAutomacao{
 
@@ -17,7 +17,6 @@ body{
     width: 300px;
     min-height: 100px;
     margin-bottom: 50px;
-    
 
 }
 .line{
@@ -73,6 +72,7 @@ button:hover {
 .testItem{
     display: flex;
     margin-top: 10px;
+
     
 }
 .infoItemDiv input{
@@ -101,21 +101,27 @@ button:hover {
     position: relative;
     padding-bottom: 10px;
     padding-left: 5px;
-    border-radius: 2px;
+    border-radius: 10px;
     margin-left: 5px;
   }
 .divNewBug{
     width: 200px;
+    
 }
   .deleteTest{
       position: absolute;
-      right:0;
+      left:88%;
       bottom: 0;
       margin: 5px;  
+      background-color: #ff4d4d;
+      color: #fff;
+  }
+  .deleteTest:hover{
+    background-color: #cc0000;
   }
 .executar{
     position: absolute;
-    left: 82%;
+    left: 75%;
     bottom: 0%;
     margin: 5px;  
 }
@@ -123,9 +129,41 @@ button:hover {
     white-space: pre-wrap;
 }
 #divBugs{
-    border: 2px solid #ff0000;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
     overflow-y: scroll;
     width: 500px;
     height: 300px;
     max-height: 300px;
+    margin-top: 10px;
+}
+#bugList {
+    padding: 10px;
+    position: relative;
+}
+.bugItem {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    display: flex;
+}
+.bugItem p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+    
+}
+.bugItem button {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    left: 80%;
+    position: absolute;
+}
+.bugItem button:hover {
+    background-color: #cc0000;
 }

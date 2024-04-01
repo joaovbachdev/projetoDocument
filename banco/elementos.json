@@ -13,17 +13,22 @@
         ],
         "testes": [
             {
-                "teste": "teste3",
-                "status": "realizado",
-                "automacao": [
-                    "page.goto(\"https://github.com\")"
-                ]
+                "teste": "deve aceitar apenas numeros",
+                "status": "naoRealizado",
+                "automacao": []
+            },
+            {
+                "teste": "deve ter um limite de 11 digitos",
+                "status": "naoRealizado",
+                "automacao": []
+            },
+            {
+                "teste": "copiar um texto de fora e colar no campo deve ser possivel",
+                "status": "naoRealizado",
+                "automacao": []
             }
         ],
-        "bugs": [
-            "TESTE",
-            "teste"
-        ]
+        "bugs": []
     },
     "inputSenha": {
         "position": [
@@ -39,11 +44,19 @@
         ],
         "testes": [
             {
-                "teste": "teste5",
+                "teste": "deve aceitar todo tipo de caractere",
                 "status": "naoRealizado",
-                "automacao": [
-                    "oage.goto(\"https://github.com\")"
-                ]
+                "automacao": []
+            },
+            {
+                "teste": "ao digitar algo todo caractere deve ficar escondido",
+                "status": "naoRealizado",
+                "automacao": []
+            },
+            {
+                "teste": "nao deve ter um limite de caracteres",
+                "status": "naoRealizado",
+                "automacao": []
             }
         ],
         "bugs": []
@@ -60,7 +73,33 @@
             "botao",
             "login"
         ],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "clicar deve validar o login",
+                "status": "naoRealizado",
+                "automacao": []
+            },
+            {
+                "teste": "clicar com login valido deve redirecionar para a home do app",
+                "status": "naoRealizado",
+                "automacao": []
+            },
+            {
+                "teste": "clicar em login invalido deve retornar uma mensagem de erro e nao logar",
+                "status": "naoRealizado",
+                "automacao": []
+            },
+            {
+                "teste": "este botao deve ficar sempre ativo",
+                "status": "naoRealizado",
+                "automacao": []
+            },
+            {
+                "teste": "enquanto valida o login deve ficar um spin no botao",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "erroLogin": {
@@ -74,7 +113,28 @@
         "tags": [
             "login"
         ],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "tentar avan\u00e7ar com usuario invalido e senha invalida",
+                "status": "naoRealizado",
+                "automacao": []
+            },
+            {
+                "teste": "tentar avan\u00e7ar com usuario invalido e senha valida",
+                "status": "naoRealizado",
+                "automacao": []
+            },
+            {
+                "teste": "tentar avan\u00e7ar com usuario e senha invalidos",
+                "status": "naoRealizado",
+                "automacao": []
+            },
+            {
+                "teste": "tentar avan\u00e7ar com usuario e senha vazios",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "botaoPoliticas": {
@@ -101,7 +161,23 @@
             "modal",
             "topDriver"
         ],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "esta modal deve aparecer quando \u00e9 feito o login no app",
+                "status": "naoRealizado",
+                "automacao": []
+            },
+            {
+                "teste": "dar um refresh na home nao deve aparecer novamente",
+                "status": "naoRealizado",
+                "automacao": []
+            },
+            {
+                "teste": "fazer logout e logar novamente, deve aparecer",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "xFecharModalTopDriver": {
@@ -115,7 +191,13 @@
         "tags": [
             "topDriver"
         ],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "clicar deve fechar a modal",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "botaoTamoJunto": {
@@ -130,7 +212,13 @@
             "topDriver",
             "botao"
         ],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "clicar deve fechar a modal",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "sinoNotificacaoHeader": {
@@ -144,7 +232,13 @@
         "tags": [
             "home"
         ],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "clicar deve redirecionar para a central de notificacoes",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "chatHeader": {
@@ -159,7 +253,13 @@
             "home",
             "redirectChat"
         ],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "clicar deve redirecionar para a tela de meus chats",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "atalhoMatrixPay": {
@@ -185,7 +285,18 @@
         "tags": [
             "home"
         ],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "clicar deve aparecer a modal do ranking",
+                "status": "naoRealizado",
+                "automacao": []
+            },
+            {
+                "teste": "este campo deve ser sempre clicavel",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "inicioRodape": {
@@ -199,7 +310,13 @@
         "tags": [
             "home"
         ],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "clicar deve levar para a home e dar um resfreh no app",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "agendaRodape": {
@@ -213,7 +330,13 @@
         "tags": [
             "home"
         ],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "clicar deve levar para a tela de agenda",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "viagensRodape": {
@@ -227,7 +350,13 @@
         "tags": [
             "home"
         ],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "clicar deve levar para a tela de minhas viagens",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "menuRodape": {
@@ -241,7 +370,13 @@
         "tags": [
             "home"
         ],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "clicar deve levar para o menu lateral",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "3pontinhosLocalizacao": {
@@ -255,7 +390,13 @@
         "tags": [
             "home"
         ],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "clicar deve abrir opcoes de adi\u00e7ao de localizacao",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "telaViagens": {
@@ -306,22 +447,7 @@
             "tela",
             "login"
         ],
-        "testes": [
-            {
-                "teste": "teste1",
-                "status": "realizado",
-                "automacao": [
-                    "page.goto(\"https://github.com\")"
-                ]
-            },
-            {
-                "teste": "teste2",
-                "status": "realizado",
-                "automacao": [
-                    "page.goto(\"https://github.com\")"
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "botaoSairDoAplicativo": {
@@ -379,7 +505,38 @@
             "home",
             "redirectChat"
         ],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "clicar deve levar para a tela de meus chats",
+                "status": "naoRealizado",
+                "automacao": []
+            },
+            {
+                "teste": "deve ser possivel arrastar este elemento",
+                "status": "naoRealizado",
+                "automacao": []
+            },
+            {
+                "teste": "enquanto estiver sendo arrastado deve aparecer um X no topo da home",
+                "status": "naoRealizado",
+                "automacao": []
+            },
+            {
+                "teste": "arrastar este item no X deve fechar",
+                "status": "naoRealizado",
+                "automacao": []
+            },
+            {
+                "teste": "caso este item ter sido fechado ao dar refresh deve reaparecer",
+                "status": "naoRealizado",
+                "automacao": []
+            },
+            {
+                "teste": "se nao foi fechado ao dar refresh deve voltar a posicao inicial",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "botaoMeusVeiculos": {
@@ -393,7 +550,13 @@
         "tags": [
             "menu"
         ],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "clicar deve levar para a tela de meus veiculos",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "botaoMeusDados": {
@@ -407,7 +570,13 @@
         "tags": [
             "menu"
         ],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "clicar deve levar para a area de meus dados",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "botaoCentralDeNoificacoes": {
@@ -421,7 +590,13 @@
         "tags": [
             "menu"
         ],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "clicar deve levar para a central de notifica\u00e7oes",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "botaoComissoes": {
@@ -435,7 +610,13 @@
         "tags": [
             "menu"
         ],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "clicar deve levar para a tela de comissoes",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "botaoMeusComprovantes": {
@@ -447,7 +628,13 @@
         "name": "botaoMeusComprovantes",
         "interageCom": "",
         "tags": [],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "clicar deve levar para a tela de meus comprovantes",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "botaoChecklist": {
@@ -461,7 +648,13 @@
         "tags": [
             "menu"
         ],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "clicar deve levar para o fluxo de checklist",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "botaoPrimeirosPassos": {
@@ -970,7 +1163,18 @@
         "tags": [
             "controleSono"
         ],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "ao realizar o login deve abrir esta tela",
+                "status": "naoRealizado",
+                "automacao": []
+            },
+            {
+                "teste": "ao clicar na casinha da home deve abrir esta tela",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "xParaFecharConversasAtivas": {
@@ -998,7 +1202,13 @@
         "tags": [
             "home"
         ],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "clicar deve levar para a tela de meus chats",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "botaoVerViagemHome": {
@@ -1012,7 +1222,13 @@
         "tags": [
             "home"
         ],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "clicar deve levar para o fluxo de viagem",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "telaComissoes": {
@@ -2273,15 +2489,31 @@
         "tags": [],
         "testes": [
             {
-                "teste": "teste1",
+                "teste": "mandar uma integra\u00e7ao de viagem deve criar uma vaigem no app",
                 "status": "naoRealizado",
                 "automacao": [
                     "TesteApi().criaViagem()"
                 ]
             }
         ],
-        "bugs": [
-            "TestesApi().criaViagem()"
-        ]
+        "bugs": []
+    },
+    "cardDeViagemHome": {
+        "position": [
+            -93.9575460604974,
+            3947.4339999933004
+        ],
+        "description": "cria via  auxiliar",
+        "name": "cardDeViagemHome",
+        "interageCom": "apiCriaViagem",
+        "tags": [],
+        "testes": [
+            {
+                "teste": "se o motora ter viagens aguardando inicio ou em andamente deve aparercer este elemento",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
+        "bugs": []
     }
 }

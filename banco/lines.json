@@ -838,5 +838,17 @@
         "name": "botaoIniciarCarregamentoModal/botaoFinzalizarCarregamentoColeta",
         "tags": [],
         "testes": []
+    },
+    "cardDeViagemHome/apiCriaViagem": {
+        "positions": [
+            -93.9575460604974,
+            3947.4339999933004,
+            7569.446300560809,
+            -11451.820888850521
+        ],
+        "description": "sua descricao aqui",
+        "name": "cardDeViagemHome/apiCriaViagem",
+        "tags": [],
+        "testes": []
     }
 }

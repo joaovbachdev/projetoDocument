@@ -214,6 +214,21 @@ function executaTesteAleatorio(nome,index,testes){
         }
     });
 }
+
+
+function extraiRelatorio(){
+    $.ajax({
+        url:`/extraiRelatorio`,
+        type:'GET',
+        contentType:'application/json',
+        success: function(response){
+                console.log("ESTA AQUI O RELATOCIO", response)
+        },
+        error:function(error){
+            console.log("erro ao atualizar todo")
+        }
+    });
+}
  socket.on('atualizar', function(data) {
     elementos = document.querySelectorAll("input[type='checkbox']")
     if(elementos.length >0){

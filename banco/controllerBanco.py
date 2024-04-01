@@ -240,6 +240,26 @@ class ControllerBanco:
             json.dump(data,f,indent=4)
             f.truncate()
 
+    def extraiRelatorio(self):
+        data = {}
+        with open('banco/elementos.json','r+') as f:
+            dadosElementos = json.load(f)
+            data['quantidadeElementos'] = len(list(dadosElementos.keys()))
+            data['testesAprovados'] = len([dadosElementos[i] for i in dadosElementos.keys() for j in dadosElementos[i]['testes'] if j['status'] == 'realizado'])
+            data['testesPendentes/reprovados'] = len([dadosElementos[i] for i in dadosElementos.keys() for j in dadosElementos[i]['testes'] if j['status'] == 'naoRealizado'])
+            data['elementosSemTeste'] = len([1 for i in dadosElementos.keys() if len(dadosElementos[i]['testes']) == 0])
+            data['elementosComTestes'] = len([1 for i in dadosElementos.keys() if len(dadosElementos[i]['testes']) > 0])
+            data['testesEscritos'] = data['testesAprovados'] + data['testesPendentes/reprovados'] 
+            data['interacoes'] = len([1 for i in dadosElementos.keys() if dadosElementos[i]['interageCom'] != ""])
+            data['testesComAutomacao'] = len([1 for i in dadosElementos.keys() for j in dadosElementos[i]['testes'] if len(j['automacao'])>0])
+            data['testeSemAutomacao'] = len([1 for i in dadosElementos.keys() for j in dadosElementos[i]['testes'] if len(j['automacao'])==0])
+            
+        with open('banco/historico.json','r+') as d:
+            dadosHistorico = json.load(d)
+            data['testesAutomaticosRealizados'] = sum([len(dadosHistorico[i]) for i in dadosHistorico.keys()])
+            data['testesAutomaticosComSucesso'] = len([1 for i in dadosHistorico.keys() for j in dadosHistorico[i] if j['resultado']=='sucesso'])
+            data['testesAutomaticosComErro'] = len([1 for i in dadosHistorico.keys() for j in dadosHistorico[i] if j['resultado']=='erro'])
+        return data
 #ControllerBanco().limpaTestes()
 #print(ControllerBanco().getAllTests())
 
@@ -249,7 +269,7 @@ class ControllerBanco:
 #ControllerBanco().getAllTags()
 
 #ControllerBanco().createLines()
-    
+print(ControllerBanco().extraiRelatorio())  
 '''
 with open("banco/elementos.json","r+") as f:
     data = json.load(f)

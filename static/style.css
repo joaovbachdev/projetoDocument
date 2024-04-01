@@ -13,7 +13,7 @@ body {
     margin: 0;
     overflow: hidden;
     position: relative;
-    background: linear-gradient(to right, #2b32b2, #1488cc);
+    background: linear-gradient(to right, #000000, #414142);
     display: flex;
     flex-wrap: wrap;
   }
@@ -92,12 +92,13 @@ body {
 }
 .tag {
   display: inline-block;
-  background:  #1488cc;
+  background:  #6fff00;
   padding-left: 18px;
   padding-right: 10px;
   margin: 10px;
   width: fit-content;
   border-radius: 8px;
+  color: black;
 }
 
 .deleteTag {
@@ -127,9 +128,9 @@ body {
 
   border-radius: 4px; /* Adiciona cantos arredondados */
   padding: 8px;
-  background-color: #007bff;
+  background-color: #6fff00;
   border: none;
-  color: white;
+  color: rgb(0, 0, 0);
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -143,9 +144,9 @@ body {
 #executarCard{
   border-radius: 4px; /* Adiciona cantos arredondados */
   padding: 8px;
-  background-color: #007bff;
+  background-color: #6fff00;
   border: none;
-  color: white;
+  color: rgb(0, 0, 0);
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -203,9 +204,9 @@ body {
 }
 
 #tagFilterApply {
-  background-color: #007bff;
+  background-color: #6fff00;
   border: none;
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -213,6 +214,7 @@ body {
   font-size: 16px;
   border-radius: 5px;
   cursor: pointer;
+
 }
 #tagFilterApply:focus, #tagFilterApply:hover {
   background-color: #0056b3;

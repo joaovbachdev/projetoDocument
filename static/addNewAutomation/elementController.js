@@ -5,7 +5,9 @@ function adicionar(name,type){
     var acoes = []
 
     document.querySelectorAll("input[class='linhaCodigo']").forEach(element=>{
+        if(element.value != ''){
         acoes.push(element.value)
+        }
     })
     newData['teste'] = nameAutomation
     newData['status'] = status
