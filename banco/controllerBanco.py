@@ -1,5 +1,6 @@
 import json
 from os import stat
+import requests
 
 class ControllerBanco:
     def __init__(self) -> None:
@@ -260,6 +261,68 @@ class ControllerBanco:
             data['testesAutomaticosComSucesso'] = len([1 for i in dadosHistorico.keys() for j in dadosHistorico[i] if j['resultado']=='sucesso'])
             data['testesAutomaticosComErro'] = len([1 for i in dadosHistorico.keys() for j in dadosHistorico[i] if j['resultado']=='erro'])
         return data
+
+    def getMobileTestsAreas(self):
+        with open('automacoes/testesYaml/dicionario.json','r+') as f:
+            return [i for i in json.load(f).keys()]
+    def getMobileAreaComands(self, area):
+        print("AREAAAAAAAAAAAAAAAAAA",area)
+        with open('automacoes/testesYaml/dicionario.json','r+') as f:
+            return json.load(f)[area]
+
+    def verifica_weakup_record_criado(self):
+        url = "https://back-homologacao.matrixcargo.com.br/graphql"
+        token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJkODM3N2Q3NS1lYTlkLTQ3YmUtYmFiMS00MWQyYjY2MmY2NjYiLCJkYXRhIjp7ImNvbXBhbnkiOiJjYXJnb2xpZnQifSwiaWF0IjoxNzEwMjY4NzExfQ.MGEr3tSuMfQ5LTEztk6cHQ0BUct2aZmfw0FeBHWl0FI"
+        headers = {
+            "Authorization": f"Bearer {token}",
+            "Content-Type": "application/json"
+        }
+        query_variables = {
+            "select": {
+                "pagination": {
+                    "page": 1,
+                    "limit": 20,
+                    "orderBy": "recommended_rest_datetime,asc"
+                },
+                "filters": {
+                    "situation": "em_analise",
+                    "driver_type": "todos"
+                }
+            }
+        }
+
+        graphql_query = '''
+        query getAllDriverWakeupRecords($select: GetAllRecordsParams) {
+        getAllDriverWakeupRecords(select: $select) {
+            itens {
+            id
+            motorista
+            data_hora_do_registro
+            data_hora_despertou
+            data_hora_recomendada_descanso
+            tempo_decorrido
+            vinculo
+            status
+            analisado_em
+            }
+            pagination {
+            totalItens
+            totalPages
+            page
+            limit
+            }
+        }
+        }
+        '''
+        query = {
+            "operationName": "getAllDriverWakeupRecords",
+            "variables": query_variables,
+            "query": graphql_query
+        }
+        response = requests.post(url, headers=headers, json=json.loads(json.dumps(query)))
+
+        formated = json.dumps(response.json(), indent=2)
+        print(formated)
 #ControllerBanco().limpaTestes()
 #print(ControllerBanco().getAllTests())
 
@@ -269,7 +332,15 @@ class ControllerBanco:
 #ControllerBanco().getAllTags()
 
 #ControllerBanco().createLines()
-print(ControllerBanco().extraiRelatorio())  
+#print(ControllerBanco().extraiRelatorio())  
+
+#ControllerBanco().verifica_weakup_record_criado()
+
+
+#ControllerBanco().getMobileTestsAreas()
+#print(ControllerBanco().getMobileAreaComands('checklist'))
+
+
 '''
 with open("banco/elementos.json","r+") as f:
     data = json.load(f)

@@ -147,3 +147,6 @@ addNewImage(8000,-12800,3800,3800,'static/apilogo.png')
 addNewImage(6000,-12800,3800,3800,'static/API_viagem.png')
 
 
+
+addNewImage(-10000,-14500,3800,3800,'static/bancoElemento.png')
+addNewImage(-10000,-13400,3800,3800,'static/driver_weakup_records.png')

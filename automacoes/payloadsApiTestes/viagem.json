@@ -1,106 +1,81 @@
 {
-    "external_id": "231",
+    "external_id": "93131722",
     "deleted": false,
     "finished": false,
-    "ready": true,
-    "comex": true,
-    "total_time": 36480,
-    "total_distance": 836410,
-    "route_polyline": "xpfqCflpyGnzBicC~c@mf@_`AbWudMtvDqeEtsExQ~`A{cBfoAys@vvCuH|wBvtCnmCvdBh`Bqr@dpBr{AxvC{Bjv@cUr[fF{dAkh@iR|H~m@i~Ad[etB`sA}kG`ZwdE|xB}lCpa@de@dtCsUn~@|c@dw@dNbxBpbD`yJtjA~{ApUptA_`@~_Ie}@phC{gAt[csBxdAir@bnCq~@x_BqkCuh@qvGrhBopEvw@mkByN}|AsqAmhCek@u{B|c@owBz`@w|C_XyrAm}@aR|qQjhAraI{zBlxDakBhjAmxB||Fm`Ad{B}}AljB~@bcD~Gf|Aqv@j_Bgj@t{CqUtjHxPddE{X~xBu`AniFolD`pTedBzaNswCx~JiyBx|Hm^``IihBj`Fmd@bnJ{~Av_P}gBtaEuc@~}Nwq@ho\\mrBrpO_uBjcEkoAheC{GxtBhf@d`AgUzyA_iCn_IkrEbaTm}@bmFe}C~jFmiBhLivA`eCmiCc[ygNmkE_nLijFotBhh@gdAz~BwwBniAilDxzEqrFrmCimCbxAyjC|yDecHndLujHruJavDt_EkcAxe@_zBxoEugKdpOagAwaAgk@ceCcm@qiGkzB}hCg}A~WsoBhfBm|FnzAc`DjWsgFtfAo~@_tI_GsaBvt@a\\dnEsK`yDwoAfqBotAzpHkJntCqq@tjHhw@rhFteMloAe{ArmBmoDjgAyR~iFguGpuFksHbvG}wK~vCo}DtnCstAbwBshBbgDe`BlvDodEjmAgtAndByyAvcCxg@dvD`eBbbT~xGfyBn~@`e@geBpnAcpA|oAoFvbBwcC|gBspGdxAemInpBkkJrsCkmInTqpCy\\qu@rb@qaDj_E{bIla@c`E~`A}lJnY_lPze@ebPfPspFty@}vCvzActFxUelEzk@kkLnaA}iF|pAmrDd`@cuIlnD{qJzcCg}LvxDsmUrwA__Mna@orC_RqwCvNwzEvKqpCvdA_nDlIu~G|fBoaCvbAgyCrx@yvCh}CgjCp|BwlDiG_rCslAqbK|c@yuJxfD~m@duBnIfvAsg@ltCqK`iBti@doBblArnBzA~hC`HpvC_oA~y@pJ~kBelAzmBf\\h|Ai|A|r@epCfqB{fAjiAe[jpAkxDSexDlIa}C{iAoeAyxBagIkoBgzGrd@ytB{z@{w@nlCgu@piE{|BlnG_[plBybA`a@{@tQu^v_A}^aNc^b_@xSiIfeAfHqTrc@}^{r@kcC_w@up@d|@yuAxVi]wu@up@o}C_hBo`AsfCnFmnAmx@`D",
+    "ready": false,
+    "comex": false,
+    "total_time": 19200,
+    "total_distance": 416750,
+    "route_polyline": "zwtwC|s`qHaN~Cgb@}WyyAiiBieAir@o_CcOarA_SibAw`@ks@ue@_|@aUmcBgtBodAw}AoiAqtAmrB}kAmsDcgA{cDcw@mdCfWss@yCoq@id@anAit@u^yDu_Dk|A_yGedA{sBeTaaAk\\oqDmUmdEckBusEeeAaBu]}h@o_@e_A|Mst@{_@cQ{Wyv@lDm{@ck@sm@{yAkv@qoBynCqiAmTqeAqiA_c@k}@xPsn@cf@{xAtJoiAbiAwx@tF{m@iNoc@cl@mb@`Fye@e]yGmuAkPsw@c[h@wz@ejB{nAcg@cw@kRgOyu@csAakAud@yh@wa@qdAsyAetAe{A}{@i}@mYwb@spAyIah@cNeNxCskAoUoW_bA}NyXigBur@ylAq{@oh@dFe[_@aYyiAb[mf@kDuF}k@yOujAeV_nAen@iRg]_Pq[`Oy]wSsd@s^rWc_@xEgz@i]ey@i_A_p@}rAwb@{]}r@{{@qj@w{AkqB_Gg~C{F{dC~b@md@{b@m`@cTqw@zF{mCiSwkBe@sv@ln@o[rMwb@k[cS{K{[tPgq@zYeMtHuTmP{o@eIay@iKc~@siAsjC{b@w|@lTspCph@adDoCwqC{eAmtBew@saEeFgq@qbAyYyMkv@l]sjC|WkeA{HicA}c@{pA{XefA`HyvA|Q_yBtMa|AeYc~@st@o{Bop@ykDwoCusDogDidEynAgvAwt@wUyq@{mAwD{h@wGgl@aiAmn@z]owB|jAszDcMcr@dDwaAkjAmvBeo@ws@aj@szBk{AsgAkMyhAmDsnGug@eiCyVclB|j@uk@dLa~Cbm@kaDqHiyDxOkwB}N_h@}S{e@dc@_oAnhBqrD|a@ckA{Do}@jDa_BiZakAta@}cB}QwnA~P}~ExiBi{Fzp@_dEwfCsiAwqByy@}r@eNod@mDs]ah@q}@_iCgaBwRax@gwAopBikAsxAikC}tAm`BcM{oCsfBcxAumA_v@uiAgsByoCui@cfAgDwqAqr@{m@ww@qs@r@ytBc\\isC_QuaCyJacA`Gsf@r[gbCxWaiC{vFuuBa|GqW{uF_XcoBv`@eo@jAq|@__@s]uq@ap@uFabAyy@mzDcxAcxLiAm~@pMym@a]g`DgW_{Cil@moBuq@{fCfj@etBjTaaGqp@uwCmp@qeBqmAwlBQuwB{o@woDtOktAr~@wqA~_@s_C`v@wgAce@geEwr@m}DmaDcrEi@uaAu`AsYaq@kk@cw@`Gwb@_NsjAta@mj@}FiSgf@yDfTpEds@w_@~PyXw@_HrK",
     "has_dangerous_load": false,
-    "operation": "300",
+    "operation": "821_FTL",
     "observations": [],
     "driver_cpf": "08163060956",
-    "cost_center": "205002",
-    "result_center": "53",
+    "cost_center": "207033",
+    "result_center": "76",
     "customer_cnpj": [
-        "61064911001734"
+      "13114506000173"
     ],
     "vehicles": [
-        {
-            "fleet_code": "A3090",
-            "license_plate": "BCZ9H81"
-        },
-        {
-            "fleet_code": "J3114",
-            "license_plate": "AYF3A25"
-        }
+      {
+        "fleet_code": "A2187",
+        "license_plate": "SEH9D67"
+      },
+      {
+        "fleet_code": "D3365",
+        "license_plate": "BCY8H81"
+      }
     ],
     "trip_stops": [
-        {
-            "pickup": true,
-            "delivery": false,
-            "sequence": 0,
-            "weight": 3,
-            "volume_m3": 3,
-            "distance_next_stop": 431970,
-            "travel_time_next_stop": 18840,
-            "time_window_start": "2024-09-24T20:00:00-03:00",
-            "time_window_end": "2024-09-24T22:00:00-03:00",
-            "service_point_cnpj": "02762121000953",
-            "service_point_name": "SANTOS BRASIL PARTICIPACOES SA",
-            "address": {
-                "street": "Avenida Santos Dumont, 929",
-                "number": "929",
-                "complement": "",
-                "neighborhood": "S\u00edtio Paecara",
-                "city": "Guaruj\u00e1",
-                "state": "SP",
-                "zipcode": "11460970",
-                "latitude": "-23.9587574000",
-                "longitude": "-46.2942791000"
-            },
-            "has_load": true
+      {
+        "pickup": true,
+        "delivery": false,
+        "sequence": 0,
+        "weight": 24000,
+        "volume_m3": 90,
+        "distance_next_stop": 416750,
+        "travel_time_next_stop": 19200,
+        "time_window_start": "2024-05-12T10:00:00-03:00",
+        "time_window_end": "2024-05-12T12:00:00-03:00",
+        "service_point_cnpj": "13114506000173",
+        "service_point_name": "DAF CAMINHOES BRASIL INDUSTRIA LTDA.",
+        "address": {
+          "street": "Avenida Senador Flávio Carvalho Guimarães - de 3001/3002 ao fim",
+          "number": "6000",
+          "complement": "",
+          "neighborhood": "Boa Vista",
+          "city": "Ponta Grossa",
+          "state": "PR",
+          "zipcode": "84072190",
+          "latitude": "-25.0153522400",
+          "longitude": "-50.1433143600"
         },
-        {
-            "pickup": false,
-            "delivery": true,
-            "sequence": 1,
-            "weight": 1,
-            "volume_m3": 1,
-            "distance_next_stop": 404440,
-            "travel_time_next_stop": 17640,
-            "time_window_start": "2024-09-25T14:30:00-03:00",
-            "time_window_end": "2024-09-25T17:30:00-03:00",
-            "service_point_cnpj": "29307609000190",
-            "service_point_name": "VOLVO EQUIPAMENTOS DE CONSTRUCAO LATIN AMERICA LTDA",
-            "address": {
-                "street": "AVENIDA LIONS CLUB",
-                "number": "2470",
-                "complement": "",
-                "neighborhood": "Centro",
-                "city": "Pederneiras",
-                "state": "SP",
-                "zipcode": "17280000",
-                "latitude": "-22.3396720000",
-                "longitude": "-48.7972570000"
-            },
-            "has_load": true
+        "has_load": true
+      },
+      {
+        "pickup": false,
+        "delivery": true,
+        "sequence": 1,
+        "weight": 24000,
+        "volume_m3": 90,
+        "distance_next_stop": 0,
+        "travel_time_next_stop": 0,
+        "time_window_start": "2024-05-13T09:00:00-03:00",
+        "time_window_end": "2024-05-13T11:00:00-03:00",
+        "service_point_cnpj": "60857349002624",
+        "service_point_name": "ZF AUTOMOTIVE BRASIL LTDA.",
+        "address": {
+          "street": "AV CONDE ZEPPELIN",
+          "number": "1935",
+          "complement": "",
+          "neighborhood": "EDEN",
+          "city": "Sorocaba",
+          "state": "SP",
+          "zipcode": "18103905",
+          "latitude": "-23.4298896700",
+          "longitude": "-47.3939743000"
         },
-        {
-            "pickup": false,
-            "delivery": true,
-            "sequence": 2,
-            "weight": 1,
-            "volume_m3": 1,
-            "distance_next_stop": 404440,
-            "travel_time_next_stop": 17640,
-            "time_window_start": "2024-09-25T14:30:00-03:00",
-            "time_window_end": "2024-09-25T17:30:00-03:00",
-            "service_point_cnpj": "29307609000190",
-            "service_point_name": "VOLVO EQUIPAMENTOS DE CONSTRUCAO LATIN AMERICA LTDA",
-            "address": {
-                "street": "AVENIDA LIONS CLUB",
-                "number": "2470",
-                "complement": "",
-                "neighborhood": "Centro",
-                "city": "Pederneiras",
-                "state": "SP",
-                "zipcode": "17280000",
-                "latitude": "-22.3396720000",
-                "longitude": "-48.7972570000"
-            },
-            "has_load": true
-        }
+        "has_load": true
+      }
     ]
-}
+  }

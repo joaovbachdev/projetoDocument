@@ -13,7 +13,6 @@ class TestesApi:
         with open('automacoes/payloadsApiTestes/viagem.json','r+') as f:
             data = json.load(f)
             response = requests.post(self.urlViagem, json=data,headers=self.headerAcelerador)
-        print(response.status_code)
         return response.status_code
 
-TestesApi().criaViagem()
+#TestesApi().criaViagem()

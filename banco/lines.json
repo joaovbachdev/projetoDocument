@@ -850,5 +850,17 @@
         "name": "cardDeViagemHome/apiCriaViagem",
         "tags": [],
         "testes": []
+    },
+    "banco_driver_weakup_records/botaoConfirmarControleDoSono": {
+        "positions": [
+            -8415.30398946,
+            -11797.446474505497,
+            3790.4681052641445,
+            918.9487192104464
+        ],
+        "description": "sua descricao aqui",
+        "name": "banco_driver_weakup_records/botaoConfirmarControleDoSono",
+        "tags": [],
+        "testes": []
     }
 }

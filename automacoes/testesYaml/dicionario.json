@@ -1,0 +1,10 @@
+{
+    "telaLogin":[
+        "-tapOn: 'CPF'",
+        "-inputText: 123123123"
+    ],
+    "checklist":[
+        "-tapOn: 'CPF2'",
+        "-inputText: 123123123"
+    ]
+}

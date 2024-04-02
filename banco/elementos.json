@@ -447,7 +447,22 @@
             "tela",
             "login"
         ],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "sdsdf",
+                "status": "naoRealizado",
+                "automacao": [
+                    "teste"
+                ]
+            },
+            {
+                "teste": "3123sdsdf",
+                "status": "naoRealizado",
+                "automacao": [
+                    "teste3123"
+                ]
+            }
+        ],
         "bugs": []
     },
     "botaoSairDoAplicativo": {
@@ -720,7 +735,23 @@
         "name": "botaoAgendaAvancarmes",
         "interageCom": "",
         "tags": [],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "clicar deve avan\u00e7ar um mes no calendario",
+                "status": "naoRealizado",
+                "automacao": []
+            },
+            {
+                "teste": "estar em dezembro e clicar deve adicionar um ano e ir para janeiro",
+                "status": "naoRealizado",
+                "automacao": []
+            },
+            {
+                "teste": "segurar o clique nao deve subir varios meses, apenas 1",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "botaoAgendaVoltarMes": {
@@ -732,7 +763,23 @@
         "name": "botaoAgendaVoltarMes",
         "interageCom": "",
         "tags": [],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "clicar deve voltar um mes no calendario",
+                "status": "naoRealizado",
+                "automacao": []
+            },
+            {
+                "teste": "estar em janeiro e clicar deve subtrair um ano e ir para dezembro",
+                "status": "naoRealizado",
+                "automacao": []
+            },
+            {
+                "teste": "segurar o clique nao deve voltar varios meses, apenas 1",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "botaoAgendaAdicionarCompromisso": {
@@ -744,7 +791,18 @@
         "name": "botaoAgendaAdicionarCompromisso",
         "interageCom": "telaAdicionarCompromisso",
         "tags": [],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "deve estar sempre habilitado",
+                "status": "naoRealizado",
+                "automacao": []
+            },
+            {
+                "teste": "clicar deve levar para a tela de cadastro de novo compromisso",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "botaoAgendaDiasDoMes": {
@@ -756,7 +814,23 @@
         "name": "botaoAgendaDiasDoMes",
         "interageCom": "",
         "tags": [],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "deve ser clicavel",
+                "status": "naoRealizado",
+                "automacao": []
+            },
+            {
+                "teste": "ao clicar deve desmarcar o dia selecionado anterior e marcar este",
+                "status": "naoRealizado",
+                "automacao": []
+            },
+            {
+                "teste": "tento este marcado clicar, nada deve recarregar ou mudar",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "agendaDiasDoMesSelecionado": {
@@ -768,7 +842,23 @@
         "name": "agendaDiasDoMesSelecionado",
         "interageCom": "",
         "tags": [],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "o ultimo dia clicado deve estar em evidencia",
+                "status": "naoRealizado",
+                "automacao": []
+            },
+            {
+                "teste": "deve exibir a lista de compromissos que tem neste dia",
+                "status": "naoRealizado",
+                "automacao": []
+            },
+            {
+                "teste": "nao deve ser possivel marcar mais de um dia ao mesmo tempo",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "botaoViagensAgendadas": {
@@ -1036,7 +1126,23 @@
         "tags": [
             "controleSono"
         ],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "clicar deve abrir um input de data",
+                "status": "naoRealizado",
+                "automacao": []
+            },
+            {
+                "teste": "nao deve ser possivel selecionar uma data de 2 dias atras",
+                "status": "naoRealizado",
+                "automacao": []
+            },
+            {
+                "teste": "nao deve ser possivel escolher uma data no futuro",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "inputHorarioControleDoSono": {
@@ -1050,7 +1156,23 @@
         "tags": [
             "controleSono"
         ],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "deve abrir um input de horario",
+                "status": "naoRealizado",
+                "automacao": []
+            },
+            {
+                "teste": "nao deve ser possivel selecionar uma data mais de 24h atras",
+                "status": "naoRealizado",
+                "automacao": []
+            },
+            {
+                "teste": "nao deve ser possivel marcar uma data no futuro",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "botaoConfirmarControleDoSono": {
@@ -1064,7 +1186,28 @@
         "tags": [
             "controleSono"
         ],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "caso nao ter data ou horario preenchido nao deve ser possivel clicar",
+                "status": "naoRealizado",
+                "automacao": []
+            },
+            {
+                "teste": "se ter data e hora selecionado deve ser possivel clicar",
+                "status": "naoRealizado",
+                "automacao": []
+            },
+            {
+                "teste": "clicar deve seguir no fluxo",
+                "status": "naoRealizado",
+                "automacao": []
+            },
+            {
+                "teste": "ao clicar deve criar um registro no banco",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "botaoSuporteControleDoSono": {
@@ -1079,7 +1222,13 @@
             "controleSono",
             "redirectChat"
         ],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "clciar deve levar para a tela de conversas ativas",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "telaControleDoSono": {
@@ -1135,7 +1284,13 @@
         "tags": [
             "controleSono"
         ],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "tamo junto deve concluir o fluxo da gestao do sono",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "horarioDeEncerramentoDasAtiviidades": {
@@ -1149,7 +1304,13 @@
         "tags": [
             "controleSono"
         ],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "este valor deve ser sempre 18h a frente da hora selecionada na etapa anterior",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "telaInicial": {
@@ -1188,7 +1349,13 @@
         "tags": [
             "controleSono"
         ],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "ao fechar esta tela caso veio da gestao do sono deve voltar para a gestao do sono",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "botaoAbrirChatHome": {
@@ -1312,7 +1479,28 @@
         "name": "botaoEcooupado",
         "interageCom": "",
         "tags": [],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "estes elementos deve ser sempre clicaveis",
+                "status": "naoRealizado",
+                "automacao": []
+            },
+            {
+                "teste": "ao clicar deve deixar o checkbox marcado",
+                "status": "naoRealizado",
+                "automacao": []
+            },
+            {
+                "teste": "ao dlicar deve desmarcar o anterior se houver e marcar o novo",
+                "status": "naoRealizado",
+                "automacao": []
+            },
+            {
+                "teste": "clicar em um que ja esta marcado nada deve acontecer",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "botaoVeiculoEmManutencao": {
@@ -1348,7 +1536,13 @@
         "name": "botaoEscolherLocalDoEvento",
         "interageCom": "telaSelecionarEnderecoMapa",
         "tags": [],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "ao clicar deve abrir o mapa para marcar o endereco",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "inputPlacaChecklist": {
@@ -1588,7 +1782,13 @@
         "name": "meusComprovantesBotaoPendentes",
         "interageCom": "",
         "tags": [],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "deve listar todas as viagens pendentes do motorista",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "meusComprovantesBotaoEmAnalise": {
@@ -1600,7 +1800,13 @@
         "name": "meusComprovantesBotaoEmAnalise",
         "interageCom": "",
         "tags": [],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "deve listar todas as viagens em analise do motorista",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "meusComprovantesBotaoRejeitados": {
@@ -1612,7 +1818,13 @@
         "name": "meusComprovantesBotaoRejeitados",
         "interageCom": "",
         "tags": [],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "deve mostrar todas as viagens rejeitadas do motorista",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "meusVeiculosBotaoVoltar": {
@@ -1624,7 +1836,13 @@
         "name": "meusVeiculosBotaoVoltar",
         "interageCom": "telaMenu",
         "tags": [],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "deve fechar a tela de meus veiculos e voltar para o menu",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "comissoesBotaoPrevistas": {
@@ -1636,7 +1854,13 @@
         "name": "comissoesBotaoPrevistas",
         "interageCom": "",
         "tags": [],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "deve exibir as comissoes abertas",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "comissoesBotaoFechadas": {
@@ -1648,7 +1872,13 @@
         "name": "comissoesBotaoFechadas",
         "interageCom": "",
         "tags": [],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "deve exibir as comissoes fechadas",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "botaoVerConversasFinalizadas": {
@@ -1660,7 +1890,13 @@
         "name": "botaoVerConversasFinalizadas",
         "interageCom": "telaConversasFinalizadas",
         "tags": [],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "clicar deve atualizar a lista exibindo a lista de conversas finalizadas",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "listaTiposDeChecklist": {
@@ -1720,7 +1956,13 @@
         "name": "itemConversaAtiva",
         "interageCom": "",
         "tags": [],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "clicar deve abrir a conversa aberta em questao",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "botaoIniciarNovaConversa": {
@@ -1732,7 +1974,13 @@
         "name": "botaoIniciarNovaConversa",
         "interageCom": "listaDeAssuntos",
         "tags": [],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "deve entrar no fluxo de nova conversa mostrando a lista de assuntos",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "itemListaAssutosPrincipais": {
@@ -1744,7 +1992,23 @@
         "name": "itemListaAssutosPrincipais",
         "interageCom": "itemSubAssuntos",
         "tags": [],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "deve ser sempre clicavel",
+                "status": "naoRealizado",
+                "automacao": []
+            },
+            {
+                "teste": "deve sempre poder escolher apenas 1 assunto principal",
+                "status": "naoRealizado",
+                "automacao": []
+            },
+            {
+                "teste": "ao selecionar um principal deve abrir uma lista de sub-assuntos se existir",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "botaoCancelarNovaConversa": {
@@ -1756,7 +2020,13 @@
         "name": "botaoCancelarNovaConversa",
         "interageCom": "telaConversasAtivas",
         "tags": [],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "clicar deve voltar para a tela de conversas ativas",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "itemSubAssuntos": {
@@ -1768,7 +2038,18 @@
         "name": "itemSubAssuntos",
         "interageCom": "",
         "tags": [],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "deve abrir uma lista de sub-assuntos do assunto principal selecionado",
+                "status": "naoRealizado",
+                "automacao": []
+            },
+            {
+                "teste": "ao selecionar um outro assunto principal essta lista deve ser fechada ou atualizada",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "subAssuntoSelecionado": {
@@ -1804,7 +2085,28 @@
         "name": "botaoIniciarConversa",
         "interageCom": "",
         "tags": [],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "ter um assunto selecionado sem sub-assuntos, deve ser possivel clicar",
+                "status": "naoRealizado",
+                "automacao": []
+            },
+            {
+                "teste": "ter um assunto principal selecionado que tem su-assuntos mas nenhum marcado, nao deve ser possivel clicar",
+                "status": "naoRealizado",
+                "automacao": []
+            },
+            {
+                "teste": "ter um assunto principal selecionado e um sub-assunto selecionado, deve ser possivel clicar",
+                "status": "naoRealizado",
+                "automacao": []
+            },
+            {
+                "teste": "clicar deve ir para dentro da nova conversa criada",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "itemConversasFinalizadas": {
@@ -1852,7 +2154,13 @@
         "name": "listaDeAssuntos",
         "interageCom": "",
         "tags": [],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "deve conter apenas assuntos principais",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "contadorConversasFinalizadas": {
@@ -1864,7 +2172,18 @@
         "name": "contadorConversasFinalizadas",
         "interageCom": "",
         "tags": [],
-        "testes": [],
+        "testes": [
+            {
+                "teste": "o contador deve ser exatamente a quantidade de conversas finalizadas",
+                "status": "naoRealizado",
+                "automacao": []
+            },
+            {
+                "teste": "finalizar uma conversa deve somar 1 no contador",
+                "status": "naoRealizado",
+                "automacao": []
+            }
+        ],
         "bugs": []
     },
     "telaIniciarViagem": {
@@ -2490,13 +2809,18 @@
         "testes": [
             {
                 "teste": "mandar uma integra\u00e7ao de viagem deve criar uma vaigem no app",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [
-                    "TesteApi().criaViagem()"
+                    "page.goto(\"https://github.com\")"
                 ]
             }
         ],
-        "bugs": []
+        "bugs": [
+            "teste",
+            "testetest",
+            "da",
+            "date"
+        ]
     },
     "cardDeViagemHome": {
         "position": [
@@ -2514,6 +2838,18 @@
                 "automacao": []
             }
         ],
+        "bugs": []
+    },
+    "banco_driver_weakup_records": {
+        "position": [
+            -8415.30398946,
+            -11797.446474505497
+        ],
+        "description": "cria via  auxiliar",
+        "name": "banco_driver_weakup_records",
+        "interageCom": "botaoConfirmarControleDoSono",
+        "tags": [],
+        "testes": [],
         "bugs": []
     }
 }

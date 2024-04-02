@@ -1,6 +1,7 @@
 from sched import scheduler
 from unicodedata import name
 from urllib.robotparser import RequestRate
+from wsgiref.util import request_uri
 from flask import Flask, render_template, request
 import json
 from banco.controllerBanco import ControllerBanco
@@ -14,6 +15,7 @@ import threading
 import random
 import threading
 import time
+import subprocess
 
 app = Flask("app")
 bd = ControllerBanco()
@@ -45,9 +47,10 @@ def getLineInformation():
  
 @app.route("/executar", methods=["POST"])
 def executa():
+    plataforma = request.json['plataforma']
     for index,i in enumerate(bd.getElementTests(request.json["name"],request.json["type"])):
         try:
-            main.start('\n'.join(i))
+            main.start('\n'.join(i), plataforma)
             bd.setTodo(request.json["name"],request.json["type"],index,"realizado")
             bd.saveHistorico(request.json["name"], "sucesso")
             socketio.emit('atualizar',{'name':request.json["name"],'type':request.json["type"],'index':index,'status':"realizado"})
@@ -72,18 +75,19 @@ def executaTesteEsp():
 
     index = bd.getTestsNames(request.json['name'],request.json['type']).index(request.json['testName'])
     teste = bd.getAutomatedTests(request.json['name'],request.json['type'])[index]['automacao']
-    
+    plataforma = request.json['plataforma']
+
     try:
-        main.start('\n'.join(teste))
+        main.start('\n'.join(teste),plataforma)
         bd.setTodo(request.json["name"],request.json["type"],index,"realizado")
         bd.saveHistorico(request.json["name"], "sucesso")
         socketio.emit('atualizar',{'name':request.json["name"],'type':request.json["type"],'index':index,'status':"realizado"})
         print("deu certo")
-    except:
+    except Exception as e:
         bd.setTodo(request.json["name"],request.json["type"],index,"naoRealizado")
         bd.saveHistorico(request.json["name"], "erro")
         socketio.emit('atualizar',{'name':request.json["name"],'type':request.json["type"],'index':index,'status':"naoRealizado"})
-        print("deu erro")
+        print("deu erro", e)
 
     socketio.emit("atualizaTesteEsp", {'status':bd.getAutomatedTests(request.json['name'],request.json['type'])[index]['status'],'index':index})
     #socketio.emit("desativarSpiner",request.json["name"])
@@ -213,13 +217,14 @@ def minha_tarefa():
     nome = request.json['nome']
     index = request.json['index']
     testes = request.json['testes']
+    plataforma = request.json['plataforma']
     #nome = 'apiCriaViagem-0'
     #index = 0
     #testes = '\n'.join(dados[nome])
     #print(dados[nome],"TAAAAAAAAAAAAAA AAAAAAAAAQUI O NOMEEEEEEEE")
     
     try:
-        main.start(testes)
+        main.start(testes, plataforma)
         bd.setTodo(nome.split('-')[0],'elementos',int(index),"realizado")
         bd.saveHistorico(nome.split('-')[0], "sucesso")
         socketio.emit('atualizar',{'name':nome.split('-')[0],'type':'elementos','index':int(index),'status':"realizado"})
@@ -235,9 +240,16 @@ def minha_tarefa():
     #socketio.emit("atualizaTesteEsp", {'status':bd.getAutomatedTests(nome.split('-')[0],'elementos')[index]['status'],'index':index})
     return "executado aleatorio com sucesso"
 
-@app.route("/extraiRelatorio")
-def extraiRelatorio():
-    return bd.extraiRelatorio()
+@app.route('/getMobileTestArea')
+def getMobileTestArea():
+    return bd.getMobileTestsAreas()
+
+@app.route('/getMobileTestes')
+def getMobileTestes():
+    value = request.args.get('value')
+    print("TA AQUI SEM MANCADA",bd.getMobileAreaComands(value))
+    return bd.getMobileAreaComands(value)
+
 
 app.run(host='0.0.0.0', port=5000, debug=True)
 

@@ -68,7 +68,7 @@ function getElementos(callback)
     $.ajax({
         url:`/executar`,
         type:'POST',
-        data:JSON.stringify({"name":name,"type":type}),
+        data:JSON.stringify({"name":name,"type":type,'plataforma':'mobile'}),
         contentType:'application/json',
         success: function(response){
             console.log("executando")
@@ -204,7 +204,7 @@ function executaTesteAleatorio(nome,index,testes){
     $.ajax({
         url:`/executaTesteAleatorio`,
         type:'POST',
-        data:JSON.stringify({'nome':nome,'index':index,'testes':testes}),
+        data:JSON.stringify({'nome':nome,'index':index,'testes':testes,'plataforma':mobile}),
         contentType:'application/json',
         success: function(response){
                 console.log("executado com sucesso o aleatorio")

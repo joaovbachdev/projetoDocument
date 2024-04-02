@@ -178,3 +178,56 @@ function setBugList(data){
     })
 
 }
+
+function setAutomationCode(data){
+
+    listaAutomationCode = document.getElementById('codigoAutomacao')
+    if(data['state'] == true){//TESTE MOBILE
+        document.querySelectorAll('.line').forEach(element=>{
+            element.remove()
+        })
+    divPai = document.createElement('div')
+    divPai.setAttribute('class','testMobileLine')
+    divPai.setAttribute('index','0')
+
+    selectArea = document.createElement('select')
+    selectArea.setAttribute('class','areasSelect')
+
+    data['areas'].forEach(element=>{
+        nvar = newOption = document.createElement('option');
+        newOption.value = element;
+        newOption.textContent = element;
+        selectArea.appendChild(newOption)
+    })
+
+    selectTestes = document.createElement('select')
+    selectTestes.setAttribute('class','mobileTestes')
+
+
+
+    divPai.appendChild(selectArea)
+    divPai.appendChild(selectTestes)
+    listaAutomationCode.appendChild(divPai)
+
+
+    selectArea.addEventListener('change',function(){
+        getMobileAreaTests(this.parentNode,setMobileTests,this.value)
+    })
+    }else{
+        document.querySelectorAll('.testMobileLine').forEach(element=>{
+            element.remove()
+        })
+    }
+}
+function setMobileTests(data){
+    console.log(data)
+    listItem = document.querySelector(`div[index="${data['index']}"]`)
+    select = document.querySelector(`div[index="${data['index']}"] .mobileTestes`)
+
+    data['testes'].forEach(element=>{
+        newOption = document.createElement('option')
+        newOption.value = element
+        newOption.textContent = element
+        select.appendChild(newOption)
+    })
+}

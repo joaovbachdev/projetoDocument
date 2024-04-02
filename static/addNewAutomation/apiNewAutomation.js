@@ -155,7 +155,7 @@ function checkTodoNewAutomation(index, status){
     $.ajax({
         url:`/executaTesteEsp`,
         type:'POST',
-        data:JSON.stringify({'name':elementName,'type':elementType,'testName':testeName}),
+        data:JSON.stringify({'name':elementName,'type':elementType,'testName':testeName,'plataforma':'web'}),
         contentType:'application/json',
         success:function(response){
             console.log(response)
@@ -166,7 +166,36 @@ function checkTodoNewAutomation(index, status){
 
     })
  }
+function getMobileTestArea(callback,state){
+    $.ajax({
+        url:`/getMobileTestArea`,
+        type:'GET',
+        contentType:'application/json',
+        success:function(response){
+            callback({'areas':response,'state':state})
+        },
+        error:function(error){
+            console.log(error)
+        }
+    })
+}
 
+function getMobileAreaTests(pai,callback, value){
+    
+    $.ajax({
+        url:`/getMobileTestes?value=${value}`,
+        type:'GET',
+        contentType:'application/json',
+        success:function(response){
+            console.log(response)
+            callback({'index':pai.getAttribute('index'),'testes':response})
+        },
+        error:function(error){
+            console.log(error)
+        }
+    })
+    
+}
 
  
 socket.on('atualizaTesteEsp', function(data) {
