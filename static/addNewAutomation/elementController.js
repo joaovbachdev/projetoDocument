@@ -176,6 +176,7 @@ function setTestList(data){
         itemStatus = document.createElement("input")
         itemStatus.setAttribute("type","checkBox")
         itemStatus.setAttribute("onclick",`checkTodoNewAutomation(${index},'none')`)
+        itemStatus.setAttribute('class','checkboxTest')
 
         if(element["status"] == "realizado"){
             itemStatus.checked = true

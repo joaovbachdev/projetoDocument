@@ -130,7 +130,7 @@ class ControllerBanco:
         return values
 
     def updateTodo(self, elementName, index, status):
-        print(elementName, index, status, "DADHASHDASHIASHD")
+
         with open("banco/elementos.json","r+") as f:
             data = json.load(f)
             if status == "none":
@@ -155,7 +155,7 @@ class ControllerBanco:
         return [i["automacao"] for i in data[name]["testes"]]
 
     def setTodo(self,elementName,elementType,index,status):
-        print(elementName,elementType,index,status)
+    
         with open(f"banco/{elementType}.json","r+") as f:
             data = json.load(f)
             data[elementName]["testes"][index]["status"] = status
@@ -213,7 +213,7 @@ class ControllerBanco:
             return data[name]['bugs']
 
     def deleteBug(self, element, elementType, bugName):
-        print(bugName)
+       
         with open(f'banco/{elementType}.json', 'r+') as f:
             data = json.load(f) 
         
@@ -266,7 +266,7 @@ class ControllerBanco:
         with open('automacoes/testesYaml/dicionario.json','r+') as f:
             return [i for i in json.load(f).keys()]
     def getMobileAreaComands(self, area):
-        print("AREAAAAAAAAAAAAAAAAAA",area)
+        
         with open('automacoes/testesYaml/dicionario.json','r+') as f:
             return json.load(f)[area]
 

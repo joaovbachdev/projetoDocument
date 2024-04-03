@@ -199,9 +199,9 @@ function getMobileAreaTests(pai,callback, value, index){
 
  
 socket.on('atualizaTesteEsp', function(data) {
-
-    element = document.querySelectorAll('input[type="checkbox"]')[data['index']]
-
+   
+    element = document.querySelectorAll('.checkboxTest')[data['index']]
+   
     if(data['status']=='realizado'){
         element.checked = true
     }else{

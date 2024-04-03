@@ -230,6 +230,7 @@ function extraiRelatorio(){
     });
 }
  socket.on('atualizar', function(data) {
+    console.log("to aqui")
     elementos = document.querySelectorAll("input[type='checkbox']")
     if(elementos.length >0){
      if(data['status'] == "realizado"){

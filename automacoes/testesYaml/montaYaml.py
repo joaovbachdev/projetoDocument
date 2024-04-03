@@ -5,7 +5,7 @@ class MontaYaml:
         pass
 
     def monta(self, data):
-
+        print("TO MONTANDO ISSO DAQUI",data)
         conteudo_yaml = """\
 appId: com.example.app
 ---

@@ -70,25 +70,25 @@ def executa():
 
 
 @app.route('/executaTesteEsp', methods=['POST'])
-def executaTesteEsp():
+def executaTesteEsp(): 
     
     index = bd.getTestsNames(request.json['name'],request.json['type']).index(request.json['testName'])
     teste = bd.getAutomatedTests(request.json['name'],request.json['type'])[index]
     plataforma = teste['plataforma']
     automacao = teste['automacao']
 
-
+    
     try:
-        main.start('\n'.join(automacao),plataforma)
+        main.start(automacao,plataforma)
         bd.setTodo(request.json["name"],request.json["type"],index,"realizado")
         bd.saveHistorico(request.json["name"], "sucesso")
         socketio.emit('atualizar',{'name':request.json["name"],'type':request.json["type"],'index':index,'status':"realizado"})
-        print("deu certo")
+        
     except Exception as e:
         bd.setTodo(request.json["name"],request.json["type"],index,"naoRealizado")
         bd.saveHistorico(request.json["name"], "erro")
         socketio.emit('atualizar',{'name':request.json["name"],'type':request.json["type"],'index':index,'status':"naoRealizado"})
-        print("deu erro", e)
+
 
     socketio.emit("atualizaTesteEsp", {'status':bd.getAutomatedTests(request.json['name'],request.json['type'])[index]['status'],'index':index})
     #socketio.emit("desativarSpiner",request.json["name"])
@@ -149,13 +149,10 @@ def checkTodo():
 
 @app.route("/addNewAutomation")
 def addNewAutomation():
-    print(request.args.get("name"))
-    print(request.args.get("type"))
     return render_template("addAutomation.html",elementName = request.args.get("name"),elementType=request.args.get("type"))
 
 @app.route("/addNewAutomationDb",methods=["POST"])
 def addNewAutomationBd():
-    print(request.json)
     bd.addNewAutomationBd(request.json['elementName'],request.json['elementType'],request.json['data'])
     return "nova automacao salva"
 
@@ -196,6 +193,7 @@ def deleteBug():
     bugName = request.json['bugName']
 
     return bd.deleteBug(elementName, elementType, bugName)
+
 @socketio.on('atualizar')
 def atualizar():
     # Execute a atualização dos dados aqui, se necessário
@@ -222,19 +220,19 @@ def minha_tarefa():
     #nome = 'apiCriaViagem-0'
     #index = 0
     #testes = '\n'.join(dados[nome])
-    #print(dados[nome],"TAAAAAAAAAAAAAA AAAAAAAAAQUI O NOMEEEEEEEE")
+   
     
     try:
         main.start(testes, plataforma)
         bd.setTodo(nome.split('-')[0],'elementos',int(index),"realizado")
         bd.saveHistorico(nome.split('-')[0], "sucesso")
         socketio.emit('atualizar',{'name':nome.split('-')[0],'type':'elementos','index':int(index),'status':"realizado"})
-        print("deu certo automatco", nome.split('-')[0],index,testes) 
+
     except:
         bd.setTodo(nome.split('-')[0],'elementos',int(index),"naoRealizado")
         bd.saveHistorico(nome.split('-')[0], "erro")
         socketio.emit('atualizar',{'name':nome.split('-')[0],'type':'elementos','index':int(index),'status':"naoRealizado"})
-        print("deu errado automatico", nome.split('-')[0],index,testes)
+     
         
     socketio.emit("atualizarStatus",bd.getAllElementstestStatus())
     socketio.emit("desativarSpiner",nome.split('-')[0])
@@ -248,7 +246,7 @@ def getMobileTestArea():
 @app.route('/getMobileTestes')
 def getMobileTestes():
     value = request.args.get('value')
-    print("TA AQUI SEM MANCADA",bd.getMobileAreaComands(value))
+
     return bd.getMobileAreaComands(value)
 
 

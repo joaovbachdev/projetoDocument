@@ -476,7 +476,24 @@
             "tela",
             "login"
         ],
-        "testes": [],
+        "testes": [
+            {
+                "plataforma": "web",
+                "teste": "t",
+                "status": "realizado",
+                "automacao": [
+                    "page.goto(\"https://github.com\")"
+                ]
+            },
+            {
+                "plataforma": "mobile",
+                "teste": "tt",
+                "status": "realizado",
+                "automacao": [
+                    "-inputText: 123123123"
+                ]
+            }
+        ],
         "bugs": []
     },
     "botaoSairDoAplicativo": {
