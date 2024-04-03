@@ -2,11 +2,10 @@ var socket = io.connect('http://' + document.domain + ':' + location.port);
 
 
 function addNewAutomation_api(data){
-   console.log("to aqui")
     $.ajax({
         url:`/addNewAutomationDb`,
         type:'POST',
-        data:JSON.stringify({'elementName':data['elementName'],'elementType':data['elementType'],'data':data['data']}),
+        data:JSON.stringify({'elementName':data['elementName'],'elementType':data['elementType'],'data':data['data'],'plataforma':data['plataforma']}),
         contentType:'application/json',
         success: function(response){
             console.log("teste adicionado com sucesso")
@@ -17,6 +16,7 @@ function addNewAutomation_api(data){
             console.log("falha ao salvar teste")
         }
     });
+   
 }
 function getAutomationTests(callback){
     elementName = document.getElementById("infos").getAttribute("elementName")
@@ -155,7 +155,7 @@ function checkTodoNewAutomation(index, status){
     $.ajax({
         url:`/executaTesteEsp`,
         type:'POST',
-        data:JSON.stringify({'name':elementName,'type':elementType,'testName':testeName,'plataforma':'web'}),
+        data:JSON.stringify({'name':elementName,'type':elementType,'testName':testeName}),
         contentType:'application/json',
         success:function(response){
             console.log(response)

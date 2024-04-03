@@ -15,17 +15,20 @@
             {
                 "teste": "deve aceitar apenas numeros",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             },
             {
                 "teste": "deve ter um limite de 11 digitos",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             },
             {
                 "teste": "copiar um texto de fora e colar no campo deve ser possivel",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -46,17 +49,20 @@
             {
                 "teste": "deve aceitar todo tipo de caractere",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             },
             {
                 "teste": "ao digitar algo todo caractere deve ficar escondido",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             },
             {
                 "teste": "nao deve ter um limite de caracteres",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -77,27 +83,32 @@
             {
                 "teste": "clicar deve validar o login",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             },
             {
                 "teste": "clicar com login valido deve redirecionar para a home do app",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             },
             {
                 "teste": "clicar em login invalido deve retornar uma mensagem de erro e nao logar",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             },
             {
                 "teste": "este botao deve ficar sempre ativo",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             },
             {
                 "teste": "enquanto valida o login deve ficar um spin no botao",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -117,22 +128,26 @@
             {
                 "teste": "tentar avan\u00e7ar com usuario invalido e senha invalida",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             },
             {
                 "teste": "tentar avan\u00e7ar com usuario invalido e senha valida",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             },
             {
                 "teste": "tentar avan\u00e7ar com usuario e senha invalidos",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             },
             {
                 "teste": "tentar avan\u00e7ar com usuario e senha vazios",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -165,17 +180,20 @@
             {
                 "teste": "esta modal deve aparecer quando \u00e9 feito o login no app",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             },
             {
                 "teste": "dar um refresh na home nao deve aparecer novamente",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             },
             {
                 "teste": "fazer logout e logar novamente, deve aparecer",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -195,7 +213,8 @@
             {
                 "teste": "clicar deve fechar a modal",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -216,7 +235,8 @@
             {
                 "teste": "clicar deve fechar a modal",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -236,7 +256,8 @@
             {
                 "teste": "clicar deve redirecionar para a central de notificacoes",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -257,7 +278,8 @@
             {
                 "teste": "clicar deve redirecionar para a tela de meus chats",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -289,12 +311,14 @@
             {
                 "teste": "clicar deve aparecer a modal do ranking",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             },
             {
                 "teste": "este campo deve ser sempre clicavel",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -314,7 +338,8 @@
             {
                 "teste": "clicar deve levar para a home e dar um resfreh no app",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -334,7 +359,8 @@
             {
                 "teste": "clicar deve levar para a tela de agenda",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -354,7 +380,8 @@
             {
                 "teste": "clicar deve levar para a tela de minhas viagens",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -374,7 +401,8 @@
             {
                 "teste": "clicar deve levar para o menu lateral",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -394,7 +422,8 @@
             {
                 "teste": "clicar deve abrir opcoes de adi\u00e7ao de localizacao",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -447,22 +476,7 @@
             "tela",
             "login"
         ],
-        "testes": [
-            {
-                "teste": "sdsdf",
-                "status": "naoRealizado",
-                "automacao": [
-                    "teste"
-                ]
-            },
-            {
-                "teste": "3123sdsdf",
-                "status": "naoRealizado",
-                "automacao": [
-                    "teste3123"
-                ]
-            }
-        ],
+        "testes": [],
         "bugs": []
     },
     "botaoSairDoAplicativo": {
@@ -524,32 +538,38 @@
             {
                 "teste": "clicar deve levar para a tela de meus chats",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             },
             {
                 "teste": "deve ser possivel arrastar este elemento",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             },
             {
                 "teste": "enquanto estiver sendo arrastado deve aparecer um X no topo da home",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             },
             {
                 "teste": "arrastar este item no X deve fechar",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             },
             {
                 "teste": "caso este item ter sido fechado ao dar refresh deve reaparecer",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             },
             {
                 "teste": "se nao foi fechado ao dar refresh deve voltar a posicao inicial",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -569,7 +589,8 @@
             {
                 "teste": "clicar deve levar para a tela de meus veiculos",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -589,7 +610,8 @@
             {
                 "teste": "clicar deve levar para a area de meus dados",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -609,7 +631,8 @@
             {
                 "teste": "clicar deve levar para a central de notifica\u00e7oes",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -629,7 +652,8 @@
             {
                 "teste": "clicar deve levar para a tela de comissoes",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -647,7 +671,8 @@
             {
                 "teste": "clicar deve levar para a tela de meus comprovantes",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -667,7 +692,8 @@
             {
                 "teste": "clicar deve levar para o fluxo de checklist",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -739,17 +765,20 @@
             {
                 "teste": "clicar deve avan\u00e7ar um mes no calendario",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             },
             {
                 "teste": "estar em dezembro e clicar deve adicionar um ano e ir para janeiro",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             },
             {
                 "teste": "segurar o clique nao deve subir varios meses, apenas 1",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -767,17 +796,20 @@
             {
                 "teste": "clicar deve voltar um mes no calendario",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             },
             {
                 "teste": "estar em janeiro e clicar deve subtrair um ano e ir para dezembro",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             },
             {
                 "teste": "segurar o clique nao deve voltar varios meses, apenas 1",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -795,12 +827,14 @@
             {
                 "teste": "deve estar sempre habilitado",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             },
             {
                 "teste": "clicar deve levar para a tela de cadastro de novo compromisso",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -818,17 +852,20 @@
             {
                 "teste": "deve ser clicavel",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             },
             {
                 "teste": "ao clicar deve desmarcar o dia selecionado anterior e marcar este",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             },
             {
                 "teste": "tento este marcado clicar, nada deve recarregar ou mudar",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -846,17 +883,20 @@
             {
                 "teste": "o ultimo dia clicado deve estar em evidencia",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             },
             {
                 "teste": "deve exibir a lista de compromissos que tem neste dia",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             },
             {
                 "teste": "nao deve ser possivel marcar mais de um dia ao mesmo tempo",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -1130,17 +1170,20 @@
             {
                 "teste": "clicar deve abrir um input de data",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             },
             {
                 "teste": "nao deve ser possivel selecionar uma data de 2 dias atras",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             },
             {
                 "teste": "nao deve ser possivel escolher uma data no futuro",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -1160,17 +1203,20 @@
             {
                 "teste": "deve abrir um input de horario",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             },
             {
                 "teste": "nao deve ser possivel selecionar uma data mais de 24h atras",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             },
             {
                 "teste": "nao deve ser possivel marcar uma data no futuro",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -1190,22 +1236,26 @@
             {
                 "teste": "caso nao ter data ou horario preenchido nao deve ser possivel clicar",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             },
             {
                 "teste": "se ter data e hora selecionado deve ser possivel clicar",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             },
             {
                 "teste": "clicar deve seguir no fluxo",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             },
             {
                 "teste": "ao clicar deve criar um registro no banco",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -1226,7 +1276,8 @@
             {
                 "teste": "clciar deve levar para a tela de conversas ativas",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -1288,7 +1339,8 @@
             {
                 "teste": "tamo junto deve concluir o fluxo da gestao do sono",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -1308,7 +1360,8 @@
             {
                 "teste": "este valor deve ser sempre 18h a frente da hora selecionada na etapa anterior",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -1328,12 +1381,14 @@
             {
                 "teste": "ao realizar o login deve abrir esta tela",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             },
             {
                 "teste": "ao clicar na casinha da home deve abrir esta tela",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -1353,7 +1408,8 @@
             {
                 "teste": "ao fechar esta tela caso veio da gestao do sono deve voltar para a gestao do sono",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -1373,7 +1429,8 @@
             {
                 "teste": "clicar deve levar para a tela de meus chats",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -1393,7 +1450,8 @@
             {
                 "teste": "clicar deve levar para o fluxo de viagem",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -1483,22 +1541,26 @@
             {
                 "teste": "estes elementos deve ser sempre clicaveis",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             },
             {
                 "teste": "ao clicar deve deixar o checkbox marcado",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             },
             {
                 "teste": "ao dlicar deve desmarcar o anterior se houver e marcar o novo",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             },
             {
                 "teste": "clicar em um que ja esta marcado nada deve acontecer",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -1540,7 +1602,8 @@
             {
                 "teste": "ao clicar deve abrir o mapa para marcar o endereco",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -1786,7 +1849,8 @@
             {
                 "teste": "deve listar todas as viagens pendentes do motorista",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -1804,7 +1868,8 @@
             {
                 "teste": "deve listar todas as viagens em analise do motorista",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -1822,7 +1887,8 @@
             {
                 "teste": "deve mostrar todas as viagens rejeitadas do motorista",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -1840,7 +1906,8 @@
             {
                 "teste": "deve fechar a tela de meus veiculos e voltar para o menu",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -1858,7 +1925,8 @@
             {
                 "teste": "deve exibir as comissoes abertas",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -1876,7 +1944,8 @@
             {
                 "teste": "deve exibir as comissoes fechadas",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -1894,7 +1963,8 @@
             {
                 "teste": "clicar deve atualizar a lista exibindo a lista de conversas finalizadas",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -1960,7 +2030,8 @@
             {
                 "teste": "clicar deve abrir a conversa aberta em questao",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -1978,7 +2049,8 @@
             {
                 "teste": "deve entrar no fluxo de nova conversa mostrando a lista de assuntos",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -1996,17 +2068,20 @@
             {
                 "teste": "deve ser sempre clicavel",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             },
             {
                 "teste": "deve sempre poder escolher apenas 1 assunto principal",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             },
             {
                 "teste": "ao selecionar um principal deve abrir uma lista de sub-assuntos se existir",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -2024,7 +2099,8 @@
             {
                 "teste": "clicar deve voltar para a tela de conversas ativas",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -2042,12 +2118,14 @@
             {
                 "teste": "deve abrir uma lista de sub-assuntos do assunto principal selecionado",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             },
             {
                 "teste": "ao selecionar um outro assunto principal essta lista deve ser fechada ou atualizada",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -2089,22 +2167,26 @@
             {
                 "teste": "ter um assunto selecionado sem sub-assuntos, deve ser possivel clicar",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             },
             {
                 "teste": "ter um assunto principal selecionado que tem su-assuntos mas nenhum marcado, nao deve ser possivel clicar",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             },
             {
                 "teste": "ter um assunto principal selecionado e um sub-assunto selecionado, deve ser possivel clicar",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             },
             {
                 "teste": "clicar deve ir para dentro da nova conversa criada",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -2158,7 +2240,8 @@
             {
                 "teste": "deve conter apenas assuntos principais",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -2176,12 +2259,14 @@
             {
                 "teste": "o contador deve ser exatamente a quantidade de conversas finalizadas",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             },
             {
                 "teste": "finalizar uma conversa deve somar 1 no contador",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []
@@ -2812,7 +2897,8 @@
                 "status": "realizado",
                 "automacao": [
                     "page.goto(\"https://github.com\")"
-                ]
+                ],
+                "plataforma": "web"
             }
         ],
         "bugs": [
@@ -2835,7 +2921,8 @@
             {
                 "teste": "se o motora ter viagens aguardando inicio ou em andamente deve aparercer este elemento",
                 "status": "naoRealizado",
-                "automacao": []
+                "automacao": [],
+                "plataforma": "web"
             }
         ],
         "bugs": []

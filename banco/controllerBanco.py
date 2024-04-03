@@ -350,5 +350,6 @@ with open("banco/elementos.json","r+") as f:
     json.dump(data,f,indent=4)
     f.truncate
 '''
+
 #ControllerBanco().validateElementTagFilter("geral")
 #ControllerBanco().getElementTests("inputUsuario","elementos")

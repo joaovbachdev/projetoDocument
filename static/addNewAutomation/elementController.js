@@ -1,18 +1,29 @@
 function adicionar(name,type){
+    var plataforma = document.getElementById('isTestMobile').checked
     var newData = {}
     var nameAutomation = document.getElementById("automationName").value
     var status = "naoRealizado"
     var acoes = []
 
-    document.querySelectorAll("input[class='linhaCodigo']").forEach(element=>{
-        if(element.value != ''){
-        acoes.push(element.value)
-        }
-    })
+    if(plataforma == true){
+        document.querySelectorAll('.testMobileLine').forEach(element=>{
+            element.querySelectorAll('.mobileTestes').forEach(testes=>{
+               acoes.push(testes.value)
+            })
+            
+        })
+        newData['plataforma'] = 'mobile'
+        //acoes.push(element.value)
+    }else{
+        document.querySelectorAll('.linhaCodigo').forEach(elemento=>{
+            acoes.push(elemento.value)
+        })
+        newData['plataforma'] = 'web'
+    }
+
     newData['teste'] = nameAutomation
     newData['status'] = status
     newData['automacao'] = acoes
-
     
     addNewAutomation_api({'elementName':name,'elementType':type, 'data':newData})
 }
@@ -95,7 +106,7 @@ function setAddRemoveButton(plataforma){
 
     numOfLines = document.querySelectorAll(plataforma).length
 
-    console.log(numOfLines)
+   
     lines = document.querySelectorAll(plataforma)
 
     lines.forEach(element=>{

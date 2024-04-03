@@ -72,13 +72,14 @@ def executa():
 @app.route('/executaTesteEsp', methods=['POST'])
 def executaTesteEsp():
     
-
     index = bd.getTestsNames(request.json['name'],request.json['type']).index(request.json['testName'])
-    teste = bd.getAutomatedTests(request.json['name'],request.json['type'])[index]['automacao']
-    plataforma = request.json['plataforma']
+    teste = bd.getAutomatedTests(request.json['name'],request.json['type'])[index]
+    plataforma = teste['plataforma']
+    automacao = teste['automacao']
+
 
     try:
-        main.start('\n'.join(teste),plataforma)
+        main.start('\n'.join(automacao),plataforma)
         bd.setTodo(request.json["name"],request.json["type"],index,"realizado")
         bd.saveHistorico(request.json["name"], "sucesso")
         socketio.emit('atualizar',{'name':request.json["name"],'type':request.json["type"],'index':index,'status':"realizado"})
@@ -91,8 +92,8 @@ def executaTesteEsp():
 
     socketio.emit("atualizaTesteEsp", {'status':bd.getAutomatedTests(request.json['name'],request.json['type'])[index]['status'],'index':index})
     #socketio.emit("desativarSpiner",request.json["name"])
-
     return 'executado'
+   
         
 @app.route("/auxCriaElemento", methods=["POST"])
 def auxCriaElemento():

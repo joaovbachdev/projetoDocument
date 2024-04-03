@@ -21,11 +21,11 @@ class Main:
         page = context.new_page()
 
         if plataforma == 'mobile':
-            print("executando mobile",teste)
-            self.testesYaml.monta(['- tapOn: "matrixcargo - Motorista"','- tapOn: "matrixcargo - Motorista"'])
-            response = subprocess.run('maestro test automacoes/testesYaml/arquivo.yaml',shell=True, capture_output=True, text=True)
+            print("EXECUTANDO TESTE MOBILE",teste)
+            #self.testesYaml.monta(['- tapOn: "matrixcargo - Motorista"','- tapOn: "matrixcargo - Motorista"'])
+            #response = subprocess.run('maestro test automacoes/testesYaml/arquivo.yaml',shell=True, capture_output=True, text=True)
         else:
-            print("executando web", teste)
+            print("EXECUTANDO TESTE WEB", teste)
             exec(teste)
 
 
