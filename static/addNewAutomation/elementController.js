@@ -16,65 +16,112 @@ function adicionar(name,type){
     
     addNewAutomation_api({'elementName':name,'elementType':type, 'data':newData})
 }
-function addLine(){
-    var line = document.createElement("div")
+function addLine(data){
+    
+    var listaAutomationCode = document.getElementById("codigoAutomacao")
 
-    line.setAttribute("class","line")
+    if(data['plataforma']=='web'){
+        var numOfLines = document.querySelectorAll("input[class='linhaCodigo']").length
 
-    var newLine = document.createElement("input")
-    var newButton = document.createElement("button")
+        var line = document.createElement("div")
 
-    var numOfLines = document.querySelectorAll("input[class='linhaCodigo']").length
-    var divPai = document.getElementById("codigoAutomacao")
+        line.setAttribute("class","line")
+        line.setAttribute("index",`${numOfLines}`)
 
-    if(document.querySelectorAll("input[class='linhaCodigo']")[numOfLines-1].value != ""){
-    newLine.setAttribute("type","text")
-    newLine.setAttribute("class","linhaCodigo")
-    newLine.setAttribute("index",`${numOfLines}`)
+        var newLine = document.createElement("input")
+        var newButton = document.createElement("button")
 
-    newButton.setAttribute("class","addLine")
-    newButton.setAttribute("index",`${numOfLines}`)
-    newButton.setAttribute("onclick","addLine()")
-    newButton.textContent = "add"
+        
+        newLine.setAttribute("type","text")
+        newLine.setAttribute("class","linhaCodigo")
+        newLine.setAttribute("index",`${numOfLines}`)
 
-    line.appendChild(newLine)
-    line.appendChild(newButton)
-    divPai.appendChild(line)
+        newButton.setAttribute("class","addLine")
+        newButton.setAttribute("index",`${numOfLines}`)
+        newButton.setAttribute("onclick","addLine({'plataforma':'web'})")
+        newButton.textContent = "add"
+
+        line.appendChild(newLine)
+        line.appendChild(newButton)
+        listaAutomationCode.appendChild(line)
     
 
-    var previousButton = document.querySelectorAll(`button[index="${numOfLines-1}"]`)[0]
-    previousButton.textContent = "remove"
-    previousButton.setAttribute("onclick",`removeLine(${numOfLines-1})`)
-    }else{
-        console.log("linha vazia")
-    }
+    //var previousButton = document.querySelectorAll(`button[index="${numOfLines-1}"]`)[0]
+    //previousButton.textContent = "remove"
+    //previousButton.setAttribute("onclick",`removeLine(${numOfLines-1})`)
+    setAddRemoveButton('.line')
+    
+}else{//AQUI DEVE ENTRAR CASO TENHA QUE ADICIONAR UMA LINHA PARA UM TESTE MOBILE
+    
+    numOfLines = document.querySelectorAll('.testMobileLine').length
 
- 
-}
-function removeLine(index){
-    var linhas = document.querySelectorAll("input[class='linhaCodigo']")
-    var botoes = document.querySelectorAll("button[class='addLine']")
+    divPai = document.createElement('div')
+    divPai.setAttribute('class','testMobileLine')
+    divPai.setAttribute('index',numOfLines)
 
-    linhas[index].remove()
-    botoes[index].remove()
-    refreshIndexes()
-}
-function refreshIndexes(){
-    var linhas = document.querySelectorAll("input[class='linhaCodigo']")
-    var botoes = document.querySelectorAll("button[class='addLine']")
+    selectArea = document.createElement('select')
+    selectArea.setAttribute('class','areasSelect')
 
-    linhas.forEach((element,index)=>{
-        element.setAttribute("index",`${index}`)
+    data['areas'].forEach(element=>{
+        nvar = newOption = document.createElement('option');
+        newOption.value = element;
+        newOption.textContent = element;
+        selectArea.appendChild(newOption)
     })
 
-    botoes.forEach((element,index)=>{
-        element.setAttribute("index",`${index}`)
-        if(index == botoes.length-1){
-        element.setAttribute("onclick",`addLine()`)
+    selectTestes = document.createElement('select')
+    selectTestes.setAttribute('class','mobileTestes')
+
+    buttonAdd = document.createElement('button')
+    buttonAdd.textContent = 'add'
+    buttonAdd.setAttribute('class','addLineMobile')
+    buttonAdd.setAttribute('onclick','getMobileTestArea(addLine,"mobile")')
+
+
+    
+    divPai.appendChild(selectArea)
+    divPai.appendChild(selectTestes)
+    divPai.appendChild(buttonAdd)
+    listaAutomationCode.appendChild(divPai)
+
+
+    selectArea.addEventListener('change',function(){
+        getMobileAreaTests(this.parentNode,setMobileTests,this.value,numOfLines)
+    })
+    setAddRemoveButton('.testMobileLine')
+}
+}
+function setAddRemoveButton(plataforma){
+
+    numOfLines = document.querySelectorAll(plataforma).length
+
+    console.log(numOfLines)
+    lines = document.querySelectorAll(plataforma)
+
+    lines.forEach(element=>{
+        if(element.getAttribute('index') < numOfLines-1){
+            console.log(element.getAttribute('index'))
+            element.querySelector('button').textContent = 'remove'
+            element.querySelector('button').setAttribute('onclick',`removeLine(${element.getAttribute('index')},"${plataforma}")`)
         }else{
-            element.setAttribute("onclick",`removeLine(${index})`)
+            element.querySelector('button').textContent = 'add'
         }
     })
+}
+function removeLine(index,plataforma){
+    document.querySelectorAll(plataforma)[index].remove()
+    refreshIndexes(plataforma)
+}
+function refreshIndexes(plataforma){
+    var linhas = document.querySelectorAll("input[class='linhaCodigo']")
+    var botoes = document.querySelectorAll("button[class='addLine']")
+
+    document.querySelectorAll(plataforma).forEach((element,index)=>{
+        element.setAttribute("index",`${index}`)
+    })
+
+    setAddRemoveButton(plataforma)
+        
 }
 function setStatusElement(data){
     if(data.includes('naoRealizado')){
@@ -87,7 +134,7 @@ function setStatusElement(data){
 }
 function setTestList(data){
     
-
+    
     document.querySelectorAll("div[class='testItem']").forEach(element=>{
         element.remove()
     })
@@ -97,8 +144,6 @@ function setTestList(data){
 
         itemPai = document.createElement("div")//CRIO E ESTILIZO A DIV PAI DE UM ITEM DA LISTA DE TESTES AUTOMATIZADOS
         itemPai.setAttribute("class","itemPai")
-
-        
 
 
        
@@ -155,7 +200,6 @@ function setTestList(data){
 }
 
 function setBugList(data){
-    console.log(data)
     lista = document.getElementById('bugList')
     Array.from(document.getElementsByClassName('bugItem')).forEach(element=>{
         element.remove()
@@ -179,53 +223,35 @@ function setBugList(data){
 
 }
 
-function setAutomationCode(data){
+function setAutomationCode(state){
 
-    listaAutomationCode = document.getElementById('codigoAutomacao')
-    if(data['state'] == true){//TESTE MOBILE
+
+    if(state == true){//TESTE MOBILE
         document.querySelectorAll('.line').forEach(element=>{
             element.remove()
         })
-    divPai = document.createElement('div')
-    divPai.setAttribute('class','testMobileLine')
-    divPai.setAttribute('index','0')
-
-    selectArea = document.createElement('select')
-    selectArea.setAttribute('class','areasSelect')
-
-    data['areas'].forEach(element=>{
-        nvar = newOption = document.createElement('option');
-        newOption.value = element;
-        newOption.textContent = element;
-        selectArea.appendChild(newOption)
-    })
-
-    selectTestes = document.createElement('select')
-    selectTestes.setAttribute('class','mobileTestes')
-
-
-
-    divPai.appendChild(selectArea)
-    divPai.appendChild(selectTestes)
-    listaAutomationCode.appendChild(divPai)
-
-
-    selectArea.addEventListener('change',function(){
-        getMobileAreaTests(this.parentNode,setMobileTests,this.value)
-    })
+        getMobileTestArea(addLine,'mobile')
+        //addLine('mobile',data)
     }else{
         document.querySelectorAll('.testMobileLine').forEach(element=>{
             element.remove()
         })
+        addLine({'plataforma':'web'})
     }
 }
 function setMobileTests(data){
-    console.log(data)
+    
     listItem = document.querySelector(`div[index="${data['index']}"]`)
     select = document.querySelector(`div[index="${data['index']}"] .mobileTestes`)
 
+
+    select.querySelectorAll('.testOption').forEach(elemento=>{
+        elemento.remove()
+    })
+   
     data['testes'].forEach(element=>{
         newOption = document.createElement('option')
+        newOption.setAttribute('class','testOption')
         newOption.value = element
         newOption.textContent = element
         select.appendChild(newOption)

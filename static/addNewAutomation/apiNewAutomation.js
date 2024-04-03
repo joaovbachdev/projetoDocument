@@ -166,13 +166,13 @@ function checkTodoNewAutomation(index, status){
 
     })
  }
-function getMobileTestArea(callback,state){
+function getMobileTestArea(callback, plataforma){
     $.ajax({
         url:`/getMobileTestArea`,
         type:'GET',
         contentType:'application/json',
         success:function(response){
-            callback({'areas':response,'state':state})
+            callback({'areas':response,'plataforma':plataforma})
         },
         error:function(error){
             console.log(error)
@@ -180,14 +180,14 @@ function getMobileTestArea(callback,state){
     })
 }
 
-function getMobileAreaTests(pai,callback, value){
+function getMobileAreaTests(pai,callback, value, index){
     
     $.ajax({
         url:`/getMobileTestes?value=${value}`,
         type:'GET',
         contentType:'application/json',
         success:function(response){
-            console.log(response)
+    
             callback({'index':pai.getAttribute('index'),'testes':response})
         },
         error:function(error){

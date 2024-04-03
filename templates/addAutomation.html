@@ -17,9 +17,9 @@
        <label for="input">MOBILE</label>
        <input type="checkbox" id="isTestMobile">
        <div id="codigoAutomacao">
-           <div class="line">
+           <div class="line" index="0">
             <input type="text" class="linhaCodigo" index="0">
-            <button class="addLine" index="0" onclick="addLine()">add</button>
+            <button class="addLine" index="0" onclick="addLine({'plataforma':'web'})">add</button>
            </div>   
 
        </div>
@@ -47,7 +47,8 @@
         getBugs(setBugList)
 
         document.getElementById('isTestMobile').addEventListener('click',function(){
-            getMobileTestArea(setAutomationCode,this.checked)
+            //getMobileTestArea(setAutomationCode,this.checked)
+            setAutomationCode(this.checked)
         })
 
     </script>
