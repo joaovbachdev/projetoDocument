@@ -1842,7 +1842,16 @@
         "name": "statusItemChecklistPendente",
         "interageCom": "checklistBotaoAvancarDesativado",
         "tags": [],
-        "testes": [],
+        "testes": [
+            {
+                "plataforma": "mobile",
+                "teste": "clicar deve abrir a etapa para registrar",
+                "status": "realizado",
+                "automacao": [
+                    "- tapOn: 'FOTO OBRIGAT\u00d3RIA DA PLACA'"
+                ]
+            }
+        ],
         "bugs": []
     },
     "checklistBotaoAvancarDesativado": {

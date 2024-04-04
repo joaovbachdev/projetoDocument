@@ -456,5 +456,10 @@
         {
             "resultado": "sucesso"
         }
+    ],
+    "statusItemChecklistPendente": [
+        {
+            "resultado": "sucesso"
+        }
     ]
 }

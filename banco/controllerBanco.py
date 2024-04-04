@@ -254,7 +254,9 @@ class ControllerBanco:
             data['Interacões'] = len([1 for i in dadosElementos.keys() if dadosElementos[i]['interageCom'] != ""])
             data['Testes Com Automacão'] = len([1 for i in dadosElementos.keys() for j in dadosElementos[i]['testes'] if len(j['automacao'])>0])
             data['Teste Sem Automacão'] = len([1 for i in dadosElementos.keys() for j in dadosElementos[i]['testes'] if len(j['automacao'])==0])
-
+            data['testeMobile'] = len([dadosElementos[i] for i in dadosElementos.keys() for j in dadosElementos[i]['testes'] if j['plataforma'] == 'mobile'])
+            data['testesWeb'] = len([dadosElementos[i] for i in dadosElementos.keys() for j in dadosElementos[i]['testes'] if j['plataforma'] == 'web'])
+            
         with open('banco/historico.json','r+') as d:
             dadosHistorico = json.load(d)
             data['Testes Automaticos Realizados'] = sum([len(dadosHistorico[i]) for i in dadosHistorico.keys()])
@@ -268,7 +270,8 @@ class ControllerBanco:
     def getMobileAreaComands(self, area):
         
         with open('automacoes/testesYaml/dicionario.json','r+') as f:
-            return json.load(f)[area]
+            return [i['automacao'] for i in json.load(f)[area]]
+
 
     def verifica_weakup_record_criado(self):
         url = "https://back-homologacao.matrixcargo.com.br/graphql"
@@ -323,6 +326,9 @@ class ControllerBanco:
 
         formated = json.dumps(response.json(), indent=2)
         print(formated)
+    
+
+
 #ControllerBanco().limpaTestes()
 #print(ControllerBanco().getAllTests())
 
