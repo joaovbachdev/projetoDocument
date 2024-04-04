@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Test Data</title>
+
+</head>
+<style>
+.titulo{
+  color: red;
+}
+</style>
+<body>
+
+{%for i in data.keys()%}
+<h1 class="titulo">{{i}}</h1>
+<p class="resultado" style="color:blue;">{{data[i]}}</p>
+{%endfor%}
+
+
+</div>
+
+</body>
+</html>

@@ -1,4 +1,7 @@
 appId: com.example.app
 ---
-
--inputText: 123123123
+- runFlow:
+    when:
+        visible: Abrir Chat
+    commands:
+        - tapOn: 'Abrir Chat'

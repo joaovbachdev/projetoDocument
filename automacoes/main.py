@@ -21,11 +21,13 @@ class Main:
         page = context.new_page()
 
         if plataforma == 'mobile':
-           # print("EXECUTANDO TESTE MOBILE",teste)
+            print("main.py EXECUTANDO TESTE MOBILE",teste)
             self.testesYaml.monta(teste)
-            #response = subprocess.run('maestro test automacoes/testesYaml/arquivo.yaml',shell=True, capture_output=True, text=True)
+            response = subprocess.run('maestro test automacoes/testesYaml/arquivo.yaml',shell=True, capture_output=True, text=True)
+            print(response.stdout, "SAIDA DO BAGULHO")
+            print(response.stderr, "ERRO DO BAGULHO")
         else:
-            #print("EXECUTANDO TESTE WEB", teste)
+            print("main.py EXECUTANDO TESTE WEB", teste)
             exec('\n'.join(teste))
 
 

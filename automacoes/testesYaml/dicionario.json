@@ -1,10 +1,20 @@
 {
     "telaLogin":[
-        "-tapOn: 'CPF'",
-        "-inputText: 123123123"
+        "- tapOn: CPF",
+        "- tapOn: 'matrixcargo - Motorista'",
+        "- tapOn: 'CPF'",
+        "- inputText: 08163060956",
+        "- tapOn: 'SENHA'",
+        "- inputText: 123",
+        "- tapOn: 'Entrar'",
+        "- hideKeyboard"
     ],
     "checklist":[
         "-tapOn: 'CPF2'",
         "-inputText: 123123123"
+    ],
+    "Home":[
+        "- runFlow:\n    when:\n        visible: Ver viagem\n    commands:\n        - tapOn: 'Ver viagem'",
+        "- runFlow:\n    when:\n        visible: Abrir Chat\n    commands:\n        - tapOn: 'Abrir Chat'"
     ]
 }

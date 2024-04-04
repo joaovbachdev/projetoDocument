@@ -29,6 +29,10 @@ socketio = SocketIO(app)
 def home():
     return render_template('index.html', tags=bd.getAllTags())
 
+@app.route('/relatorio')
+def relatorio():
+    return render_template('testeRelatorio.html', data=bd.extraiRelatorio())
+
 @app.route('/getElementos',methods=['GET'])
 def getElementos():
     return bd.getElementosPositions()
