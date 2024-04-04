@@ -12,7 +12,7 @@
 }
 </style>
 <body>
-
+<button id="voltar"><-</button>
 {%for i in data.keys()%}
 <h1 class="titulo">{{i}}</h1>
 <p class="resultado" style="color:blue;">{{data[i]}}</p>
@@ -20,6 +20,10 @@
 
 
 </div>
-
+<script>
+  document.getElementById("voltar").addEventListener('click',function(){
+    window.location.href = '/'
+  })
+</script>
 </body>
 </html>

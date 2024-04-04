@@ -37,7 +37,7 @@
 
             
         </script>
-        <button>extraiRelatorio</button>
+        <button id="relatorio">RELATORIO</button>
     <button onclick="executaTesteAleatorio()">automatico</button>
     <button onclick="checkTagExists(setFilter)" id="tagFilterApply">Selecionar Filtro</button>
        <select id="tagFilter" name="opcoes">
@@ -119,6 +119,9 @@
                         inputTexto.focus();
 
                     });
+                    document.getElementById('relatorio').addEventListener('click',function(){
+                        window.location.href = '/relatorio'
+                    })
                     //setTesteAleatorio()
                     </script>
         
