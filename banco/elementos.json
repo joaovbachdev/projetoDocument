@@ -357,10 +357,12 @@
         ],
         "testes": [
             {
+                "plataforma": "mobile",
                 "teste": "clicar deve levar para a tela de agenda",
-                "status": "naoRealizado",
-                "automacao": [],
-                "plataforma": "web"
+                "status": "realizado",
+                "automacao": [
+                    "- tapOn: 'Agenda'"
+                ]
             }
         ],
         "bugs": []
@@ -378,10 +380,12 @@
         ],
         "testes": [
             {
+                "plataforma": "mobile",
                 "teste": "clicar deve levar para a tela de minhas viagens",
-                "status": "naoRealizado",
-                "automacao": [],
-                "plataforma": "web"
+                "status": "realizado",
+                "automacao": [
+                    "- tapOn: 'Viagens'"
+                ]
             }
         ],
         "bugs": []
@@ -399,10 +403,12 @@
         ],
         "testes": [
             {
+                "plataforma": "mobile",
                 "teste": "clicar deve levar para o menu lateral",
-                "status": "naoRealizado",
-                "automacao": [],
-                "plataforma": "web"
+                "status": "realizado",
+                "automacao": [
+                    "- tapOn: 'Menu'"
+                ]
             }
         ],
         "bugs": []
@@ -509,7 +515,16 @@
             "login",
             "menu"
         ],
-        "testes": [],
+        "testes": [
+            {
+                "plataforma": "mobile",
+                "teste": "Ao clicar deve sair e voltar para a tela de login",
+                "status": "realizado",
+                "automacao": [
+                    "- tapOn: 'Sair do Aplicativo'"
+                ]
+            }
+        ],
         "bugs": []
     },
     "modalRanking": {
@@ -605,10 +620,12 @@
         ],
         "testes": [
             {
-                "teste": "clicar deve levar para a tela de meus veiculos",
-                "status": "naoRealizado",
-                "automacao": [],
-                "plataforma": "web"
+                "plataforma": "mobile",
+                "teste": "clicar deve levar para tela de meus veiculos",
+                "status": "realizado",
+                "automacao": [
+                    "- tapOn: 'Meus Ve\u00edculos'"
+                ]
             }
         ],
         "bugs": []
@@ -626,10 +643,12 @@
         ],
         "testes": [
             {
+                "plataforma": "mobile",
                 "teste": "clicar deve levar para a area de meus dados",
-                "status": "naoRealizado",
-                "automacao": [],
-                "plataforma": "web"
+                "status": "realizado",
+                "automacao": [
+                    "- tapOn: 'Meus dados'"
+                ]
             }
         ],
         "bugs": []
@@ -647,10 +666,12 @@
         ],
         "testes": [
             {
+                "plataforma": "mobile",
                 "teste": "clicar deve levar para a central de notifica\u00e7oes",
-                "status": "naoRealizado",
-                "automacao": [],
-                "plataforma": "web"
+                "status": "realizado",
+                "automacao": [
+                    "- tapOn: 'Central de notifica\u00e7\u00f5es'"
+                ]
             }
         ],
         "bugs": []
@@ -668,10 +689,12 @@
         ],
         "testes": [
             {
+                "plataforma": "mobile",
                 "teste": "clicar deve levar para a tela de comissoes",
-                "status": "naoRealizado",
-                "automacao": [],
-                "plataforma": "web"
+                "status": "realizado",
+                "automacao": [
+                    "- tapOn: 'Comiss\u00f5es'"
+                ]
             }
         ],
         "bugs": []
@@ -687,10 +710,12 @@
         "tags": [],
         "testes": [
             {
+                "plataforma": "mobile",
                 "teste": "clicar deve levar para a tela de meus comprovantes",
-                "status": "naoRealizado",
-                "automacao": [],
-                "plataforma": "web"
+                "status": "realizado",
+                "automacao": [
+                    "- tapOn: 'Meus Comprovantes'"
+                ]
             }
         ],
         "bugs": []
@@ -708,10 +733,12 @@
         ],
         "testes": [
             {
+                "plataforma": "mobile",
                 "teste": "clicar deve levar para o fluxo de checklist",
-                "status": "naoRealizado",
-                "automacao": [],
-                "plataforma": "web"
+                "status": "realizado",
+                "automacao": [
+                    "- tapOn: 'Checklist'"
+                ]
             }
         ],
         "bugs": []
@@ -725,7 +752,16 @@
         "name": "botaoPrimeirosPassos",
         "interageCom": "",
         "tags": [],
-        "testes": [],
+        "testes": [
+            {
+                "plataforma": "mobile",
+                "teste": "ao clicar deve levar para  a tela de primeiros passos",
+                "status": "realizado",
+                "automacao": [
+                    "- tapOn: 'Primeiros Passos'"
+                ]
+            }
+        ],
         "bugs": []
     },
     "botaoMenuPolicaPrivacidade": {
@@ -1661,7 +1697,32 @@
         "name": "inputPlacaChecklist",
         "interageCom": "",
         "tags": [],
-        "testes": [],
+        "testes": [
+            {
+                "plataforma": "mobile",
+                "teste": "limite",
+                "status": "realizado",
+                "automacao": [
+                    "- tapOn: 'Placa do ve\u00edculo'",
+                    "- inputText: 123123123",
+                    "- eraseText",
+                    "- inputText: 'ABS1234'"
+                ]
+            },
+            {
+                "plataforma": "mobile",
+                "teste": "limite2",
+                "status": "realizado",
+                "automacao": [
+                    "- tapOn: 'Placa do ve\u00edculo'",
+                    "- inputText: 123123123",
+                    "- eraseText",
+                    "- inputText: 'ABS1234'",
+                    "- eraseText",
+                    "- inputText: 'ABS123dsdbajdajsdbasjdasdb4'"
+                ]
+            }
+        ],
         "bugs": []
     },
     "botaoContinuarBemVindoChecklist": {
@@ -1673,7 +1734,41 @@
         "name": "botaoContinuarBemVindoChecklist",
         "interageCom": "listaTiposDeChecklist",
         "tags": [],
-        "testes": [],
+        "testes": [
+            {
+                "plataforma": "mobile",
+                "teste": "placa vazia",
+                "status": "realizado",
+                "automacao": [
+                    "- tapOn: 'Continuar'",
+                    "- runFlow:\n    when:\n        visible: OK\n    commands:\n        - evalScript: ${console.log('NAO CONSEGUIU ENTRAR')}"
+                ]
+            },
+            {
+                "plataforma": "mobile",
+                "teste": "placa valida",
+                "status": "realizado",
+                "automacao": [
+                    "- tapOn: 'Placa do ve\u00edculo'",
+                    "- inputText: 'BCZ9H81'",
+                    "- hideKeyboard",
+                    "- tapOn: 'Continuar'",
+                    "- runFlow:\n    when:\n        visible: OK\n    commands:\n        - evalScript: ${console.log('NAO CONSEGUIU ENTRAR')}"
+                ]
+            },
+            {
+                "plataforma": "mobile",
+                "teste": "placa invalida",
+                "status": "realizado",
+                "automacao": [
+                    "- tapOn: 'Placa do ve\u00edculo'",
+                    "- inputText: 123123123",
+                    "- hideKeyboard",
+                    "- tapOn: 'Continuar'",
+                    "- runFlow:\n    when:\n        visible: OK\n    commands:\n        - evalScript: ${console.log('NAO CONSEGUIU ENTRAR')}"
+                ]
+            }
+        ],
         "bugs": []
     },
     "botaoEngate": {
@@ -1685,7 +1780,16 @@
         "name": "botaoEngate",
         "interageCom": "",
         "tags": [],
-        "testes": [],
+        "testes": [
+            {
+                "plataforma": "mobile",
+                "teste": "clicar deve ser possivel e seguir o fluxo",
+                "status": "realizado",
+                "automacao": [
+                    "- tapOn: 'Engate'"
+                ]
+            }
+        ],
         "bugs": []
     },
     "botaoDesengate": {
@@ -1697,7 +1801,24 @@
         "name": "botaoDesengate",
         "interageCom": "",
         "tags": [],
-        "testes": [],
+        "testes": [
+            {
+                "plataforma": "mobile",
+                "teste": "clicar deve ser possivel e deve seguir o fluxo",
+                "status": "realizado",
+                "automacao": [
+                    "- tapOn: 'Desengate'"
+                ]
+            },
+            {
+                "plataforma": "mobile",
+                "teste": "testeScript",
+                "status": "realizado",
+                "automacao": [
+                    "- runFlow:\n    when:\n        visible: Engate\n    commands:\n        - runScript:\n            file: tratamentoErros.js\n            env:\n                myParameter: 'entrada placa valida'"
+                ]
+            }
+        ],
         "bugs": []
     },
     "itemChecklist": {

@@ -7,16 +7,65 @@
 
 </head>
 <style>
+ @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tac+One&display=swap');
 .titulo{
-  color: red;
+  font-family: "Bebas Neue", sans-serif;
+  color: rgb(255, 255, 255);
 }
+
+.resultado{
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  padding: 5px;
+}
+
+.titiloPrincipal{
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 50px;
+  color: rgb(8, 144, 6);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  padding: 70px;
+}
+
+body{
+  background-color: rgb(0, 0, 0);
+}
+
+h1{
+  margin: 0;
+}
+
+#container{
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.titresul{
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(8, 144, 6);
+  border-radius: 10px;
+}
+
 </style>
 <body>
 <button id="voltar"><-</button>
+<h2 class="titiloPrincipal">Relatório de Testes</h2>
+<div id="container">
 {%for i in data.keys()%}
+<div class="titresul">
 <h1 class="titulo">{{i}}</h1>
-<p class="resultado" style="color:blue;">{{data[i]}}</p>
+<h1 class="resultado" style="color:rgb(0, 0, 0);"><strong>{{data[i]}}</strong></h1>
+</div>
 {%endfor%}
+</div>
 
 
 </div>

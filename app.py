@@ -1,3 +1,4 @@
+from crypt import methods
 from sched import scheduler
 from unicodedata import name
 from urllib.robotparser import RequestRate
@@ -15,7 +16,7 @@ import threading
 import random
 import threading
 import time
-import subprocess
+
 
 app = Flask("app")
 bd = ControllerBanco()
@@ -252,6 +253,12 @@ def getMobileTestes():
     value = request.args.get('value')
 
     return bd.getMobileAreaComands(value)
+
+@app.route('/tratamentoErrosMobile',methods=['POST'])
+def tratamentoErrosMobile():
+    retorno = request.json['retorno']
+    print(retorno, "RETORNOoooooooooooooo")
+    return "recebido"
 
 
 app.run(host='0.0.0.0', port=5000, debug=True)

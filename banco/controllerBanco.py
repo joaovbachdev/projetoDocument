@@ -245,21 +245,21 @@ class ControllerBanco:
         data = {}
         with open('banco/elementos.json','r+') as f:
             dadosElementos = json.load(f)
-            data['quantidadeElementos'] = len(list(dadosElementos.keys()))
-            data['testesAprovados'] = len([dadosElementos[i] for i in dadosElementos.keys() for j in dadosElementos[i]['testes'] if j['status'] == 'realizado'])
-            data['testesPendentes/reprovados'] = len([dadosElementos[i] for i in dadosElementos.keys() for j in dadosElementos[i]['testes'] if j['status'] == 'naoRealizado'])
-            data['elementosSemTeste'] = len([1 for i in dadosElementos.keys() if len(dadosElementos[i]['testes']) == 0])
-            data['elementosComTestes'] = len([1 for i in dadosElementos.keys() if len(dadosElementos[i]['testes']) > 0])
-            data['testesEscritos'] = data['testesAprovados'] + data['testesPendentes/reprovados'] 
-            data['interacoes'] = len([1 for i in dadosElementos.keys() if dadosElementos[i]['interageCom'] != ""])
-            data['testesComAutomacao'] = len([1 for i in dadosElementos.keys() for j in dadosElementos[i]['testes'] if len(j['automacao'])>0])
-            data['testeSemAutomacao'] = len([1 for i in dadosElementos.keys() for j in dadosElementos[i]['testes'] if len(j['automacao'])==0])
-            
+            data['Quantidade Elementos'] = len(list(dadosElementos.keys()))
+            data['Testes Aprovados'] = len([dadosElementos[i] for i in dadosElementos.keys() for j in dadosElementos[i]['testes'] if j['status'] == 'realizado'])
+            data['Testes Pendentes/Reprovados'] = len([dadosElementos[i] for i in dadosElementos.keys() for j in dadosElementos[i]['testes'] if j['status'] == 'naoRealizado'])
+            data['Elementos Sem Teste'] = len([1 for i in dadosElementos.keys() if len(dadosElementos[i]['testes']) == 0])
+            data['Elementos Com Testes'] = len([1 for i in dadosElementos.keys() if len(dadosElementos[i]['testes']) > 0])
+            data['Testes Escritos'] = data['Testes Aprovados'] + data['Testes Pendentes/Reprovados'] 
+            data['Interacões'] = len([1 for i in dadosElementos.keys() if dadosElementos[i]['interageCom'] != ""])
+            data['Testes Com Automacão'] = len([1 for i in dadosElementos.keys() for j in dadosElementos[i]['testes'] if len(j['automacao'])>0])
+            data['Teste Sem Automacão'] = len([1 for i in dadosElementos.keys() for j in dadosElementos[i]['testes'] if len(j['automacao'])==0])
+
         with open('banco/historico.json','r+') as d:
             dadosHistorico = json.load(d)
-            data['testesAutomaticosRealizados'] = sum([len(dadosHistorico[i]) for i in dadosHistorico.keys()])
-            data['testesAutomaticosComSucesso'] = len([1 for i in dadosHistorico.keys() for j in dadosHistorico[i] if j['resultado']=='sucesso'])
-            data['testesAutomaticosComErro'] = len([1 for i in dadosHistorico.keys() for j in dadosHistorico[i] if j['resultado']=='erro'])
+            data['Testes Automaticos Realizados'] = sum([len(dadosHistorico[i]) for i in dadosHistorico.keys()])
+            data['Testes Automaticos Com Sucesso'] = len([1 for i in dadosHistorico.keys() for j in dadosHistorico[i] if j['resultado']=='sucesso'])
+            data['Testes Automaticos Com Erro'] = len([1 for i in dadosHistorico.keys() for j in dadosHistorico[i] if j['resultado']=='erro'])
         return data
 
     def getMobileTestsAreas(self):
@@ -332,7 +332,7 @@ class ControllerBanco:
 #ControllerBanco().getAllTags()
 
 #ControllerBanco().createLines()
-print(ControllerBanco().extraiRelatorio())  
+#print(ControllerBanco().extraiRelatorio())  
 
 #ControllerBanco().verifica_weakup_record_criado()
 

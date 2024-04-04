@@ -10,11 +10,35 @@
         "- hideKeyboard"
     ],
     "checklist":[
-        "-tapOn: 'CPF2'",
-        "-inputText: 123123123"
+        "- tapOn: 'Placa do veículo'",
+        "- inputText: 123123123",
+        "- eraseText",
+        "- inputText: 'ABS1234'",
+        "- inputText: 'ABS123dsdbajdajsdbasjdasdb4'",
+        "- tapOn: 'Continuar'",
+        "- inputText: 'BCZ9H81'",
+        "- tapOn: 'Engate'",
+        "- tapOn: 'Desengate'",
+        "- runFlow:\n    when:\n        visible: OK\n    commands:\n        - evalScript: ${console.log('NAO CONSEGUIU ENTRAR')}",
+        "- runFlow:\n    when:\n        visible: Engate\n    commands:\n        - runScript:\n            file: tratamentoErros.js\n            env:\n                myParameter: 'entrada placa valida'"
     ],
     "Home":[
         "- runFlow:\n    when:\n        visible: Ver viagem\n    commands:\n        - tapOn: 'Ver viagem'",
-        "- runFlow:\n    when:\n        visible: Abrir Chat\n    commands:\n        - tapOn: 'Abrir Chat'"
+        "- runFlow:\n    when:\n        visible: Abrir Chat\n    commands:\n        - tapOn: 'Abrir Chat'",
+        "- tapOn: 'Agenda'",
+        "- tapOn: 'Viagens'",
+        "- tapOn: 'Menu'"
+    ],
+    "Menu":[
+        "- tapOn: 'Meus Comprovantes'",
+        "- tapOn: 'Checklist'",
+        "- tapOn: 'Meus Veículos'",
+        "- tapOn: 'Meus dados'",
+        "- tapOn: 'Central de notificações'",
+        "- tapOn: 'Comissões'",
+        "- tapOn: 'Primeiros Passos'",
+        "- tapOn: 'Política de privacidade'",
+        "- tapOn: 'Denunciar'",
+        "- tapOn: 'Sair do Aplicativo'"
     ]
 }

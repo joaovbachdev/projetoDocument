@@ -14,9 +14,10 @@ body{
     border: 5px solid black;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     margin-top: 15px;
-    width: 300px;
     min-height: 100px;
-    margin-bottom: 50px;
+    width: 800px;
+    
+
 
 }
 .line{
@@ -31,14 +32,14 @@ input[type="text"] {
 
 button{
     padding: 8px 16px;
-    background-color: #007bff;
+    background-color: #20552b;
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 button:hover {
-    background-color: #0056b3;
+    background-color: #2a4127;
 }
 #divHeader{
     background-color: red;
@@ -58,7 +59,7 @@ button:hover {
     
 }
 #listaDeTestes{
-    background: linear-gradient(to right, #5798bd, #3491c7);
+    background: linear-gradient(to right, #414142, #414142);
     padding-bottom: 20px;
     padding-top: 7px;
     margin-top: 80px;
@@ -127,10 +128,27 @@ button:hover {
 }
 .testItem label{
     white-space: pre-wrap;
+    color: rgb(0, 255, 0);
+    background-color: rgba(0, 0, 0, 1.0);
+    display: flex;
+    max-width: 60%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(79, 78, 78, 0.8);
+    
+   
+
+}
+.testItem h3{
+    border-bottom: 1px solid black;
+    font-size: 30px;
+    font-weight: bold;
+   
 }
 #divBugs{
     background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   
+    
     border-radius: 10px;
     overflow-y: scroll;
     width: 500px;
@@ -166,4 +184,19 @@ button:hover {
 }
 .bugItem button:hover {
     background-color: #cc0000;
+}
+
+#isMobile{
+    color:#fff;
+    margin-left: 20px;
+    background-color: #20552b;
+    padding: 6px;
+    border-radius: 10px;
+}
+select{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 16px;
+    margin: 5px;
 }

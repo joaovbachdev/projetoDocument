@@ -2,6 +2,9 @@ appId: com.example.app
 ---
 - runFlow:
     when:
-        visible: Abrir Chat
+        visible: Engate
     commands:
-        - tapOn: 'Abrir Chat'
+        - runScript:
+            file: tratamentoErros.js
+            env:
+                myParameter: 'entrada placa valida'

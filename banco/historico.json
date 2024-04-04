@@ -218,6 +218,18 @@
         },
         {
             "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
         }
     ],
     "inputUsuario": [
@@ -300,6 +312,132 @@
         {
             "resultado": "sucesso"
         },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        }
+    ],
+    "agendaRodape": [
+        {
+            "resultado": "sucesso"
+        }
+    ],
+    "viagensRodape": [
+        {
+            "resultado": "sucesso"
+        }
+    ],
+    "menuRodape": [
+        {
+            "resultado": "sucesso"
+        }
+    ],
+    "botaoMeusVeiculos": [
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        }
+    ],
+    "botaoMeusComprovantes": [
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        }
+    ],
+    "botaoChecklist": [
+        {
+            "resultado": "sucesso"
+        }
+    ],
+    "botaoMeusDados": [
+        {
+            "resultado": "sucesso"
+        }
+    ],
+    "botaoCentralDeNoificacoes": [
+        {
+            "resultado": "sucesso"
+        }
+    ],
+    "botaoComissoes": [
+        {
+            "resultado": "sucesso"
+        }
+    ],
+    "botaoPrimeirosPassos": [
+        {
+            "resultado": "sucesso"
+        }
+    ],
+    "botaoSairDoAplicativo": [
+        {
+            "resultado": "sucesso"
+        }
+    ],
+    "inputPlacaChecklist": [
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        }
+    ],
+    "botaoContinuarBemVindoChecklist": [
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        }
+    ],
+    "botaoEngate": [
+        {
+            "resultado": "sucesso"
+        }
+    ],
+    "botaoDesengate": [
         {
             "resultado": "sucesso"
         },
