@@ -337,7 +337,7 @@ class ControllerBanco:
 
 #ControllerBanco().getAllTags()
 
-#ControllerBanco().createLines()
+ControllerBanco().createLines()
 #print(ControllerBanco().extraiRelatorio())  
 
 #ControllerBanco().verifica_weakup_record_criado()

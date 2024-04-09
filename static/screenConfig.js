@@ -150,3 +150,9 @@ addNewImage(6000,-12800,3800,3800,'static/API_viagem.png')
 
 addNewImage(-10000,-14500,3800,3800,'static/bancoElemento.png')
 addNewImage(-10000,-13400,3800,3800,'static/driver_weakup_records.png')
+
+
+addNewImage(3000,11000,1300,1300,'static/telaMatrixPontuaMeuNivel.jpg')
+addNewImage(3800,11000,1300,1300,'static/matrixPontuaViagemExpandida.jpg')
+addNewImage(4600,11000,1300,1300,'static/matrixPontuaTelaInformacoes.jpg')
+addNewImage(5400,11000,1300,1300,'static/matrixPontuaInformacaoExpandida.jpg')

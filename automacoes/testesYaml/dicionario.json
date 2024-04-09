@@ -126,5 +126,31 @@
         {
             "automacao": "- tapOn: 'Sair do Aplicativo'"
         }
+    ],
+    "matrixPontua":[
+        {
+            "automacao":"- tapOn: 'Meu nível'"
+        },
+        {
+            "automacao":"- tapOn: 'Informações'"
+        },
+        {
+            "automacao":"- tapOn: 'Posso ser classificado em quais níveis?'"
+        },
+        {
+            "automacao": "- tapOn: O que determina cada nível?"
+        },
+        {
+            "automacao": "- runFlow:\n    when:\n        visible: NEO\n    commands:\n        - evalScript: ${console.log('USUARIO NEO')}"
+        },
+        {
+            "automacao": "- runFlow:\n    when:\n        visible: Bronze\n    commands:\n        - evalScript: ${console.log('USUARIO BRONZE')}"
+        },
+        {
+            "automacao": "- runFlow:\n    when:\n        visible: Prata\n    commands:\n        - evalScript: ${console.log('USUARIO PRATA')}"
+        },
+        {
+            "automacao": "- runFlow:\n    when:\n        visible: Ouro\n    commands:\n        - evalScript: ${console.log('USUARIO OURO')}"
+        }
     ]
 }

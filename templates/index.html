@@ -38,13 +38,14 @@
             
         </script>
         <button id="relatorio">RELATORIO</button>
-    <button onclick="executaTesteAleatorio()">automatico</button>
+    
     <button onclick="checkTagExists(setFilter)" id="tagFilterApply">Selecionar Filtro</button>
        <select id="tagFilter" name="opcoes">
         {% for i in tags%}
         <option value={{i}}>{{i}}</option>
         {% endfor %}
       </select>
+      <button onclick="setTesteAleatorio()">automatico</button>
 
         <div id="canvas-container">
             
@@ -72,7 +73,7 @@
                         </div>
                     </div>
                     <button id="executarCard">Executar testes</button>
-                    <button id="addNewAutomation" onclick="addNewAutomation()">addAutomation</button>
+                    <button id="addNewAutomation" onclick="addNewAutomation()">Testes/automaçoes</button>
                     <div id="todoTestes">
 
                     </div>
@@ -123,6 +124,7 @@
                         window.location.href = '/relatorio'
                     })
                     //setTesteAleatorio()
+                    //<button onclick="executaTesteAleatorio()">automatico</button>
                     </script>
         
     </body>

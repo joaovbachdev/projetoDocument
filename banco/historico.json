@@ -306,6 +306,12 @@
         },
         {
             "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
         }
     ],
     "botaoVerViagemHome": [
@@ -413,6 +419,12 @@
         },
         {
             "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
         }
     ],
     "botaoContinuarBemVindoChecklist": [
@@ -458,6 +470,84 @@
         }
     ],
     "statusItemChecklistPendente": [
+        {
+            "resultado": "sucesso"
+        }
+    ],
+    "matrixPontuaAbaMeuNivel": [
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        }
+    ],
+    "matrixPontuaAbaInformacoes": [
+        {
+            "resultado": "sucesso"
+        }
+    ],
+    "matrixPontuaItemDeInformacao": [
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
         {
             "resultado": "sucesso"
         }

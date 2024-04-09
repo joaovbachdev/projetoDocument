@@ -217,32 +217,33 @@ def setExesetExecuaoAleatoria():
 
 @app.route('/executaTesteAleatorio', methods=['POST'])
 def minha_tarefa():
+    print(request.json)
+    #nome = request.json['nome']
+    #index = request.json['index']
+    #testes = request.json['testes']
+    #plataforma = request.json['plataforma']
+    automacao = bd.getAutomatedTests(request.json['nome'],'elementos')[request.json['index']]['automacao']
+    plataforma = bd.getAutomatedTests(request.json['nome'],'elementos')[request.json['index']]['plataforma']
+    print(automacao, plataforma)
 
-    nome = request.json['nome']
-    index = request.json['index']
-    testes = request.json['testes']
-    plataforma = request.json['plataforma']
-    #nome = 'apiCriaViagem-0'
-    #index = 0
-    #testes = '\n'.join(dados[nome])
-   
-    
     try:
-        main.start(testes, plataforma)
-        bd.setTodo(nome.split('-')[0],'elementos',int(index),"realizado")
-        bd.saveHistorico(nome.split('-')[0], "sucesso")
-        socketio.emit('atualizar',{'name':nome.split('-')[0],'type':'elementos','index':int(index),'status':"realizado"})
+        main.start(automacao, plataforma)
+        #bd.setTodo(nome.split('-')[0],'elementos',int(index),"realizado")
+        #bd.saveHistorico(nome.split('-')[0], "sucesso")
+        #socketio.emit('atualizar',{'name':nome.split('-')[0],'type':'elementos','index':int(index),'status':"realizado"})
 
     except:
-        bd.setTodo(nome.split('-')[0],'elementos',int(index),"naoRealizado")
-        bd.saveHistorico(nome.split('-')[0], "erro")
-        socketio.emit('atualizar',{'name':nome.split('-')[0],'type':'elementos','index':int(index),'status':"naoRealizado"})
+        pass
+        #bd.setTodo(nome.split('-')[0],'elementos',int(index),"naoRealizado")
+        #bd.saveHistorico(nome.split('-')[0], "erro")
+        #socketio.emit('atualizar',{'name':nome.split('-')[0],'type':'elementos','index':int(index),'status':"naoRealizado"})
      
         
-    socketio.emit("atualizarStatus",bd.getAllElementstestStatus())
-    socketio.emit("desativarSpiner",nome.split('-')[0])
+    #socketio.emit("atualizarStatus",bd.getAllElementstestStatus())
+    #socketio.emit("desativarSpiner",nome.split('-')[0])
     #socketio.emit("atualizaTesteEsp", {'status':bd.getAutomatedTests(nome.split('-')[0],'elementos')[index]['status'],'index':index})
     return "executado aleatorio com sucesso"
+
 
 @app.route('/getMobileTestArea')
 def getMobileTestArea():

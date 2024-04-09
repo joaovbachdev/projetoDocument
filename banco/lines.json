@@ -862,5 +862,65 @@
         "name": "banco_driver_weakup_records/botaoConfirmarControleDoSono",
         "tags": [],
         "testes": []
+    },
+    "imagemDoNivel/pontuacaoDaViagem": {
+        "positions": [
+            3441.9685892665075,
+            11401.38409997473,
+            3431.605738745896,
+            11620.912877805295
+        ],
+        "description": "sua descricao aqui",
+        "name": "imagemDoNivel/pontuacaoDaViagem",
+        "tags": [],
+        "testes": []
+    },
+    "matrixPontuaViagemExpandida/matrixPontuaItemDeViagem": {
+        "positions": [
+            4207.493724440949,
+            11619.762327842715,
+            3808.706884797529,
+            11592.770830547553
+        ],
+        "description": "sua descricao aqui",
+        "name": "matrixPontuaViagemExpandida/matrixPontuaItemDeViagem",
+        "tags": [],
+        "testes": []
+    },
+    "matrixPontuaInformacaoExpandida/matrixPontuaItemDeInformacao": {
+        "positions": [
+            6264.569558301736,
+            11530.759136613024,
+            5465.170268340677,
+            11489.675049248302
+        ],
+        "description": "sua descricao aqui",
+        "name": "matrixPontuaInformacaoExpandida/matrixPontuaItemDeInformacao",
+        "tags": [],
+        "testes": []
+    },
+    "matrixPontuaTelaDeInformacoes/matrixPontuaAbaInformacoes": {
+        "positions": [
+            5013.845667817418,
+            11286.42973150489,
+            3934.5435765644493,
+            11194.191286057156
+        ],
+        "description": "sua descricao aqui",
+        "name": "matrixPontuaTelaDeInformacoes/matrixPontuaAbaInformacoes",
+        "tags": [],
+        "testes": []
+    },
+    "matrixPontuaTelaDeMeuNivel/matrixPontuaAbaMeuNivel": {
+        "positions": [
+            3385.208790449711,
+            11493.36268553267,
+            3604.137473424404,
+            11194.523779904626
+        ],
+        "description": "sua descricao aqui",
+        "name": "matrixPontuaTelaDeMeuNivel/matrixPontuaAbaMeuNivel",
+        "tags": [],
+        "testes": []
     }
 }

@@ -201,10 +201,12 @@ function setTesteAleatorio(){
 }
 
 function executaTesteAleatorio(nome,index,testes){
+    nome = "matrixPontuaAbaMeuNivel"
+    index = 0
     $.ajax({
         url:`/executaTesteAleatorio`,
         type:'POST',
-        data:JSON.stringify({'nome':nome,'index':index,'testes':testes,'plataforma':mobile}),
+        data:JSON.stringify({'nome':"matrixPontuaAbaMeuNivel",'index':0,'testes':"",'plataforma':'mobile'}),
         contentType:'application/json',
         success: function(response){
                 console.log("executado com sucesso o aleatorio")

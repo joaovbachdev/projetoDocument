@@ -14,19 +14,19 @@
         "testes": [
             {
                 "teste": "deve aceitar apenas numeros",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             },
             {
                 "teste": "deve ter um limite de 11 digitos",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             },
             {
                 "teste": "copiar um texto de fora e colar no campo deve ser possivel",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             }
@@ -48,19 +48,19 @@
         "testes": [
             {
                 "teste": "deve aceitar todo tipo de caractere",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             },
             {
                 "teste": "ao digitar algo todo caractere deve ficar escondido",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             },
             {
                 "teste": "nao deve ter um limite de caracteres",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             }
@@ -82,31 +82,31 @@
         "testes": [
             {
                 "teste": "clicar deve validar o login",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             },
             {
                 "teste": "clicar com login valido deve redirecionar para a home do app",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             },
             {
                 "teste": "clicar em login invalido deve retornar uma mensagem de erro e nao logar",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             },
             {
                 "teste": "este botao deve ficar sempre ativo",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             },
             {
                 "teste": "enquanto valida o login deve ficar um spin no botao",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             }
@@ -127,25 +127,25 @@
         "testes": [
             {
                 "teste": "tentar avan\u00e7ar com usuario invalido e senha invalida",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             },
             {
                 "teste": "tentar avan\u00e7ar com usuario invalido e senha valida",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             },
             {
                 "teste": "tentar avan\u00e7ar com usuario e senha invalidos",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             },
             {
                 "teste": "tentar avan\u00e7ar com usuario e senha vazios",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             }
@@ -179,19 +179,19 @@
         "testes": [
             {
                 "teste": "esta modal deve aparecer quando \u00e9 feito o login no app",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             },
             {
                 "teste": "dar um refresh na home nao deve aparecer novamente",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             },
             {
                 "teste": "fazer logout e logar novamente, deve aparecer",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             }
@@ -212,7 +212,7 @@
         "testes": [
             {
                 "teste": "clicar deve fechar a modal",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             }
@@ -234,7 +234,7 @@
         "testes": [
             {
                 "teste": "clicar deve fechar a modal",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             }
@@ -255,7 +255,7 @@
         "testes": [
             {
                 "teste": "clicar deve redirecionar para a central de notificacoes",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             }
@@ -277,7 +277,7 @@
         "testes": [
             {
                 "teste": "clicar deve redirecionar para a tela de meus chats",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             }
@@ -310,13 +310,13 @@
         "testes": [
             {
                 "teste": "clicar deve aparecer a modal do ranking",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             },
             {
                 "teste": "este campo deve ser sempre clicavel",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             }
@@ -337,7 +337,7 @@
         "testes": [
             {
                 "teste": "clicar deve levar para a home e dar um resfreh no app",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             }
@@ -427,7 +427,7 @@
         "testes": [
             {
                 "teste": "clicar deve abrir opcoes de adi\u00e7ao de localizacao",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             }
@@ -570,37 +570,37 @@
         "testes": [
             {
                 "teste": "clicar deve levar para a tela de meus chats",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             },
             {
                 "teste": "deve ser possivel arrastar este elemento",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             },
             {
                 "teste": "enquanto estiver sendo arrastado deve aparecer um X no topo da home",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             },
             {
                 "teste": "arrastar este item no X deve fechar",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             },
             {
                 "teste": "caso este item ter sido fechado ao dar refresh deve reaparecer",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             },
             {
                 "teste": "se nao foi fechado ao dar refresh deve voltar a posicao inicial",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             }
@@ -818,19 +818,19 @@
         "testes": [
             {
                 "teste": "clicar deve avan\u00e7ar um mes no calendario",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             },
             {
                 "teste": "estar em dezembro e clicar deve adicionar um ano e ir para janeiro",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             },
             {
                 "teste": "segurar o clique nao deve subir varios meses, apenas 1",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             }
@@ -849,19 +849,19 @@
         "testes": [
             {
                 "teste": "clicar deve voltar um mes no calendario",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             },
             {
                 "teste": "estar em janeiro e clicar deve subtrair um ano e ir para dezembro",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             },
             {
                 "teste": "segurar o clique nao deve voltar varios meses, apenas 1",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             }
@@ -880,13 +880,13 @@
         "testes": [
             {
                 "teste": "deve estar sempre habilitado",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             },
             {
                 "teste": "clicar deve levar para a tela de cadastro de novo compromisso",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             }
@@ -905,19 +905,19 @@
         "testes": [
             {
                 "teste": "deve ser clicavel",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             },
             {
                 "teste": "ao clicar deve desmarcar o dia selecionado anterior e marcar este",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             },
             {
                 "teste": "tento este marcado clicar, nada deve recarregar ou mudar",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             }
@@ -936,19 +936,19 @@
         "testes": [
             {
                 "teste": "o ultimo dia clicado deve estar em evidencia",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             },
             {
                 "teste": "deve exibir a lista de compromissos que tem neste dia",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             },
             {
                 "teste": "nao deve ser possivel marcar mais de um dia ao mesmo tempo",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             }
@@ -1223,19 +1223,19 @@
         "testes": [
             {
                 "teste": "clicar deve abrir um input de data",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             },
             {
                 "teste": "nao deve ser possivel selecionar uma data de 2 dias atras",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             },
             {
                 "teste": "nao deve ser possivel escolher uma data no futuro",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             }
@@ -1256,19 +1256,19 @@
         "testes": [
             {
                 "teste": "deve abrir um input de horario",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             },
             {
                 "teste": "nao deve ser possivel selecionar uma data mais de 24h atras",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             },
             {
                 "teste": "nao deve ser possivel marcar uma data no futuro",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             }
@@ -1289,25 +1289,25 @@
         "testes": [
             {
                 "teste": "caso nao ter data ou horario preenchido nao deve ser possivel clicar",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             },
             {
                 "teste": "se ter data e hora selecionado deve ser possivel clicar",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             },
             {
                 "teste": "clicar deve seguir no fluxo",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             },
             {
                 "teste": "ao clicar deve criar um registro no banco",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             }
@@ -1329,7 +1329,7 @@
         "testes": [
             {
                 "teste": "clciar deve levar para a tela de conversas ativas",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             }
@@ -1392,7 +1392,7 @@
         "testes": [
             {
                 "teste": "tamo junto deve concluir o fluxo da gestao do sono",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             }
@@ -1413,7 +1413,7 @@
         "testes": [
             {
                 "teste": "este valor deve ser sempre 18h a frente da hora selecionada na etapa anterior",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             }
@@ -1434,13 +1434,13 @@
         "testes": [
             {
                 "teste": "ao realizar o login deve abrir esta tela",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             },
             {
                 "teste": "ao clicar na casinha da home deve abrir esta tela",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             }
@@ -1461,7 +1461,7 @@
         "testes": [
             {
                 "teste": "ao fechar esta tela caso veio da gestao do sono deve voltar para a gestao do sono",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             }
@@ -1482,7 +1482,7 @@
         "testes": [
             {
                 "teste": "clicar deve levar para a tela de meus chats",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             }
@@ -1681,7 +1681,7 @@
         "testes": [
             {
                 "teste": "ao clicar deve abrir o mapa para marcar o endereco",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             }
@@ -1830,7 +1830,16 @@
         "name": "itemChecklist",
         "interageCom": "telaItemChecklist",
         "tags": [],
-        "testes": [],
+        "testes": [
+            {
+                "plataforma": "web",
+                "teste": "clicar deve abrir o checklist do item clicado",
+                "status": "realizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
         "bugs": []
     },
     "statusItemChecklistPendente": {
@@ -1863,7 +1872,24 @@
         "name": "checklistBotaoAvancarDesativado",
         "interageCom": "",
         "tags": [],
-        "testes": [],
+        "testes": [
+            {
+                "plataforma": "web",
+                "teste": "se ter algum item nao enviado nao deve ser possivel clicar",
+                "status": "realizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "plataforma": "web",
+                "teste": "se todos os itens foram enviados deve ser possivel clicar",
+                "status": "realizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
         "bugs": []
     },
     "inputFotoItemChecklist": {
@@ -1875,7 +1901,16 @@
         "name": "inputFotoItemChecklist",
         "interageCom": "",
         "tags": [],
-        "testes": [],
+        "testes": [
+            {
+                "plataforma": "web",
+                "teste": "clicar deve entrar no flixo para tirar fotos",
+                "status": "realizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
         "bugs": []
     },
     "inputObservacoesItemChecklist": {
@@ -1899,7 +1934,24 @@
         "name": "botaoReprovadoDesativado",
         "interageCom": "fotoAnexadaItemChecklist",
         "tags": [],
-        "testes": [],
+        "testes": [
+            {
+                "plataforma": "web",
+                "teste": "se nao ter nenhuma foto anexada deve ficar desativado",
+                "status": "realizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "plataforma": "web",
+                "teste": "ter no minimo 1 foto anexada deve liberar o botao",
+                "status": "realizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
         "bugs": []
     },
     "botaoAprovadoDesativado": {
@@ -1935,7 +1987,16 @@
         "name": "lixeiraExcluirFotoItemChecklist",
         "interageCom": "fotoAnexadaItemChecklist",
         "tags": [],
-        "testes": [],
+        "testes": [
+            {
+                "plataforma": "web",
+                "teste": "clicar deve apagar a foto anexada",
+                "status": "realizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
         "bugs": []
     },
     "botaoReprovadoAtivado": {
@@ -1971,7 +2032,16 @@
         "name": "botaoPendentesCheckList",
         "interageCom": "listaItensPendentesChecklist",
         "tags": [],
-        "testes": [],
+        "testes": [
+            {
+                "plataforma": "web",
+                "teste": "clicar deve exibit itens pendentes",
+                "status": "realizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
         "bugs": []
     },
     "botaoConcluidosChecklist": {
@@ -1983,7 +2053,16 @@
         "name": "botaoConcluidosChecklist",
         "interageCom": "listaItensConcluidosChecklist",
         "tags": [],
-        "testes": [],
+        "testes": [
+            {
+                "plataforma": "web",
+                "teste": "clicar deve exibir uma lista de itens ja concluidos",
+                "status": "realizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
         "bugs": []
     },
     "botaoFinalizarChecklist": {
@@ -2022,7 +2101,7 @@
         "testes": [
             {
                 "teste": "deve listar todas as viagens pendentes do motorista",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             }
@@ -2041,7 +2120,7 @@
         "testes": [
             {
                 "teste": "deve listar todas as viagens em analise do motorista",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             }
@@ -2060,7 +2139,7 @@
         "testes": [
             {
                 "teste": "deve mostrar todas as viagens rejeitadas do motorista",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             }
@@ -2079,7 +2158,7 @@
         "testes": [
             {
                 "teste": "deve fechar a tela de meus veiculos e voltar para o menu",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             }
@@ -2098,7 +2177,7 @@
         "testes": [
             {
                 "teste": "deve exibir as comissoes abertas",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             }
@@ -2117,7 +2196,7 @@
         "testes": [
             {
                 "teste": "deve exibir as comissoes fechadas",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             }
@@ -2136,7 +2215,7 @@
         "testes": [
             {
                 "teste": "clicar deve atualizar a lista exibindo a lista de conversas finalizadas",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             }
@@ -2203,7 +2282,7 @@
         "testes": [
             {
                 "teste": "clicar deve abrir a conversa aberta em questao",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             }
@@ -2222,7 +2301,7 @@
         "testes": [
             {
                 "teste": "deve entrar no fluxo de nova conversa mostrando a lista de assuntos",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             }
@@ -2241,19 +2320,19 @@
         "testes": [
             {
                 "teste": "deve ser sempre clicavel",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             },
             {
                 "teste": "deve sempre poder escolher apenas 1 assunto principal",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             },
             {
                 "teste": "ao selecionar um principal deve abrir uma lista de sub-assuntos se existir",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             }
@@ -2291,13 +2370,13 @@
         "testes": [
             {
                 "teste": "deve abrir uma lista de sub-assuntos do assunto principal selecionado",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             },
             {
                 "teste": "ao selecionar um outro assunto principal essta lista deve ser fechada ou atualizada",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             }
@@ -2340,25 +2419,25 @@
         "testes": [
             {
                 "teste": "ter um assunto selecionado sem sub-assuntos, deve ser possivel clicar",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             },
             {
                 "teste": "ter um assunto principal selecionado que tem su-assuntos mas nenhum marcado, nao deve ser possivel clicar",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             },
             {
                 "teste": "ter um assunto principal selecionado e um sub-assunto selecionado, deve ser possivel clicar",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             },
             {
                 "teste": "clicar deve ir para dentro da nova conversa criada",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             }
@@ -2413,7 +2492,7 @@
         "testes": [
             {
                 "teste": "deve conter apenas assuntos principais",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             }
@@ -2432,13 +2511,13 @@
         "testes": [
             {
                 "teste": "o contador deve ser exatamente a quantidade de conversas finalizadas",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             },
             {
                 "teste": "finalizar uma conversa deve somar 1 no contador",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             }
@@ -2466,7 +2545,16 @@
         "name": "botaoIniciarViagem",
         "interageCom": "",
         "tags": [],
-        "testes": [],
+        "testes": [
+            {
+                "plataforma": "web",
+                "teste": "clicar deve levar para o primeiro ponto de coleta",
+                "status": "realizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
         "bugs": []
     },
     "3PontinhosColeta": {
@@ -2478,7 +2566,16 @@
         "name": "3PontinhosColeta",
         "interageCom": "",
         "tags": [],
-        "testes": [],
+        "testes": [
+            {
+                "plataforma": "web",
+                "teste": "clicar deve exibir informa\u00e7oes sobre a coleta",
+                "status": "realizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
         "bugs": []
     },
     "botaoNavegarColeta": {
@@ -2490,7 +2587,16 @@
         "name": "botaoNavegarColeta",
         "interageCom": "",
         "tags": [],
-        "testes": [],
+        "testes": [
+            {
+                "plataforma": "web",
+                "teste": "clicar deve abrir opcoes de visualiza\u00e7ao de mapa do celular",
+                "status": "realizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
         "bugs": []
     },
     "botaoEstouAquiColeta": {
@@ -2502,7 +2608,16 @@
         "name": "botaoEstouAquiColeta",
         "interageCom": "",
         "tags": [],
-        "testes": [],
+        "testes": [
+            {
+                "plataforma": "web",
+                "teste": "clicar deve concluir esta etapa da viagem",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
         "bugs": []
     },
     "telaInicialColeta": {
@@ -2550,7 +2665,48 @@
         "name": "coletaColetaNaoREalizada",
         "interageCom": "",
         "tags": [],
-        "testes": [],
+        "testes": [
+            {
+                "plataforma": "web",
+                "teste": "clicar deve finalizar a coleta",
+                "status": "realizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "plataforma": "web",
+                "teste": "finalizar a primeira coleta de uma viagem que tem apenas 1 coleta, deve finalizar a viagem",
+                "status": "realizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "plataforma": "web",
+                "teste": "finalizar a primeira coleta de uma viagem que tem 2, deve seguir para a proxima",
+                "status": "realizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "plataforma": "web",
+                "teste": "reailizar a primeira, nao realizar a segunda deve seguir para as entregas",
+                "status": "realizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "plataforma": "web",
+                "teste": "n\u00e3o realizar todas as coletas de uma viagem deve finalizar ela",
+                "status": "realizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
         "bugs": []
     },
     "modalColetaNaoRealizada": {
@@ -3067,20 +3223,15 @@
         "tags": [],
         "testes": [
             {
+                "plataforma": "web",
                 "teste": "mandar uma integra\u00e7ao de viagem deve criar uma vaigem no app",
                 "status": "realizado",
                 "automacao": [
-                    "page.goto(\"https://github.com\")"
-                ],
-                "plataforma": "web"
+                    "TestesApi().criaViagem()"
+                ]
             }
         ],
-        "bugs": [
-            "teste",
-            "testetest",
-            "da",
-            "date"
-        ]
+        "bugs": []
     },
     "cardDeViagemHome": {
         "position": [
@@ -3094,7 +3245,7 @@
         "testes": [
             {
                 "teste": "se o motora ter viagens aguardando inicio ou em andamente deve aparercer este elemento",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [],
                 "plataforma": "web"
             }
@@ -3109,6 +3260,254 @@
         "description": "cria via  auxiliar",
         "name": "banco_driver_weakup_records",
         "interageCom": "botaoConfirmarControleDoSono",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "imagemDoNivel": {
+        "position": [
+            3441.9685892665075,
+            11401.38409997473
+        ],
+        "description": "cria via  auxiliar",
+        "name": "imagemDoNivel",
+        "interageCom": "pontuacaoDaViagem",
+        "tags": [],
+        "testes": [
+            {
+                "plataforma": "mobile",
+                "teste": "se o score do motorista for entre x e x deve ser bronze",
+                "status": "naoRealizado",
+                "automacao": [
+                    "- runFlow:\n    when:\n        visible: Bronze\n    commands:\n        - evalScript: ${console.log('USUARIO BRONZE')}"
+                ]
+            },
+            {
+                "plataforma": "mobile",
+                "teste": "se o score do motorista for entre x e x deve ser prata",
+                "status": "naoRealizado",
+                "automacao": [
+                    "- runFlow:\n    when:\n        visible: Prata\n    commands:\n        - evalScript: ${console.log('USUARIO PRATA')}"
+                ]
+            },
+            {
+                "plataforma": "mobile",
+                "teste": "se o score do motorista for entre x e x deve ser ouro",
+                "status": "naoRealizado",
+                "automacao": [
+                    "- runFlow:\n    when:\n        visible: Ouro\n    commands:\n        - evalScript: ${console.log('USUARIO OURO')}"
+                ]
+            },
+            {
+                "plataforma": "mobile",
+                "teste": "se o motorista ter menos de 10 viagens deve estar NEO",
+                "status": "naoRealizado",
+                "automacao": [
+                    "- runFlow:\n    when:\n        visible: NEO\n    commands:\n        - evalScript: ${console.log('USUARIO NEO')}"
+                ]
+            }
+        ],
+        "bugs": []
+    },
+    "matrixPontuaItemDeViagem": {
+        "position": [
+            3808.706884797529,
+            11592.770830547553
+        ],
+        "description": "cria via  auxiliar",
+        "name": "matrixPontuaItemDeViagem",
+        "interageCom": "",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "matrixPontuaAbaMeuNivel": {
+        "position": [
+            3604.137473424404,
+            11194.523779904626
+        ],
+        "description": "cria via  auxiliar",
+        "name": "matrixPontuaAbaMeuNivel",
+        "interageCom": "",
+        "tags": [],
+        "testes": [
+            {
+                "plataforma": "mobile",
+                "teste": "estando na tela de meu nivel, clicar deve permanecer na tela",
+                "status": "realizado",
+                "automacao": [
+                    "- tapOn: 'Meu n\u00edvel'",
+                    "- tapOn: 'Meu n\u00edvel'"
+                ]
+            },
+            {
+                "plataforma": "mobile",
+                "teste": "estando na aba de informa\u00e7oes clicar deve mudar para meu nivel",
+                "status": "realizado",
+                "automacao": [
+                    "- tapOn: 'Informa\u00e7\u00f5es'",
+                    "- tapOn: 'Meu n\u00edvel'"
+                ]
+            }
+        ],
+        "bugs": []
+    },
+    "matrixPontuaAbaInformacoes": {
+        "position": [
+            3934.5435765644493,
+            11194.191286057156
+        ],
+        "description": "cria via  auxiliar",
+        "name": "matrixPontuaAbaInformacoes",
+        "interageCom": "",
+        "tags": [],
+        "testes": [
+            {
+                "plataforma": "mobile",
+                "teste": "estando na aba de informacoes, ao clicar deve permanecer",
+                "status": "naoRealizado",
+                "automacao": [
+                    "- tapOn: 'Informa\u00e7\u00f5es'",
+                    "- tapOn: 'Informa\u00e7\u00f5es'"
+                ]
+            },
+            {
+                "plataforma": "mobile",
+                "teste": "estando na aba de meu nivel ao clicar deve mudar para aba de informacoes",
+                "status": "realizado",
+                "automacao": [
+                    "- tapOn: 'Meu n\u00edvel'",
+                    "- tapOn: 'Informa\u00e7\u00f5es'"
+                ]
+            }
+        ],
+        "bugs": []
+    },
+    "matrixPontuaViagemExpandida": {
+        "position": [
+            4207.493724440949,
+            11619.762327842715
+        ],
+        "description": "cria via  auxiliar",
+        "name": "matrixPontuaViagemExpandida",
+        "interageCom": "matrixPontuaItemDeViagem",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "matrixPontuaItemDeInformacao": {
+        "position": [
+            5465.170268340677,
+            11489.675049248302
+        ],
+        "description": "cria via  auxiliar",
+        "name": "matrixPontuaItemDeInformacao",
+        "interageCom": "",
+        "tags": [],
+        "testes": [
+            {
+                "plataforma": "mobile",
+                "teste": "clicar deve abrir as informacoes do item correspondente",
+                "status": "realizado",
+                "automacao": [
+                    "- tapOn: 'Informa\u00e7\u00f5es'",
+                    "- tapOn: 'Posso ser classificado em quais n\u00edveis?'"
+                ]
+            },
+            {
+                "plataforma": "mobile",
+                "teste": "clicar em um item aberto deve fechar",
+                "status": "realizado",
+                "automacao": [
+                    "- tapOn: 'Informa\u00e7\u00f5es'",
+                    "- tapOn: 'Posso ser classificado em quais n\u00edveis?'",
+                    "- tapOn: 'Posso ser classificado em quais n\u00edveis?'"
+                ]
+            },
+            {
+                "plataforma": "mobile",
+                "teste": "abrir um item, sair desta aba ao voltar deves estar todos fechados",
+                "status": "realizado",
+                "automacao": [
+                    "- tapOn: 'Informa\u00e7\u00f5es'",
+                    "- tapOn: 'Posso ser classificado em quais n\u00edveis?'",
+                    "- tapOn: 'Meu n\u00edvel'",
+                    "- tapOn: 'Informa\u00e7\u00f5es'"
+                ]
+            },
+            {
+                "plataforma": "mobile",
+                "teste": "clicar em um item com outro ja aberto nao deve fechar",
+                "status": "naoRealizado",
+                "automacao": [
+                    "- tapOn: 'Informa\u00e7\u00f5es'",
+                    "- tapOn: 'Posso ser classificado em quais n\u00edveis?'",
+                    "- tapOn: O que determina cada n\u00edvel?"
+                ]
+            },
+            {
+                "plataforma": "mobile",
+                "teste": "teste3",
+                "status": "realizado",
+                "automacao": [
+                    "- tapOn: 'Informa\u00e7\u00f5es'"
+                ]
+            },
+            {
+                "plataforma": "mobile",
+                "teste": "teste34",
+                "status": "realizado",
+                "automacao": [
+                    "- tapOn: 'Informa\u00e7\u00f5es'"
+                ]
+            }
+        ],
+        "bugs": []
+    },
+    "matrixPontuaInformacaoExpandida": {
+        "position": [
+            6264.569558301736,
+            11530.759136613024
+        ],
+        "description": "cria via  auxiliar",
+        "name": "matrixPontuaInformacaoExpandida",
+        "interageCom": "matrixPontuaItemDeInformacao",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "matrixPontuaTelaDeInformacoes": {
+        "position": [
+            5013.845667817418,
+            11286.42973150489
+        ],
+        "description": "cria via  auxiliar",
+        "name": "matrixPontuaTelaDeInformacoes",
+        "interageCom": "matrixPontuaAbaInformacoes",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "matrixPontuaTelaDeMeuNivel": {
+        "position": [
+            3385.208790449711,
+            11493.36268553267
+        ],
+        "description": "cria via  auxiliar",
+        "name": "matrixPontuaTelaDeMeuNivel",
+        "interageCom": "matrixPontuaAbaMeuNivel",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "pontuacaoDaViagem": {
+        "position": [
+            3431.605738745896,
+            11620.912877805295
+        ],
+        "description": "cria via  auxiliar",
+        "name": "pontuacaoDaViagem",
+        "interageCom": "",
         "tags": [],
         "testes": [],
         "bugs": []
