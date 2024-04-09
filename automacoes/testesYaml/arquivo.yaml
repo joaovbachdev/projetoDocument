@@ -27,3 +27,4 @@ appId: com.example.app
 - tapOn: 'Finalizar (1)'
 - tapOn: 'Enviar comprovantes'
 - tapOn: 'Concluir a viagem'
+- tapOn: 'Concluir a viagem'
