@@ -1,6 +1,3 @@
-from crypt import methods
-from sched import scheduler
-from unicodedata import name
 from urllib.robotparser import RequestRate
 from wsgiref.util import request_uri
 from flask import Flask, render_template, request
@@ -53,9 +50,11 @@ def getLineInformation():
 @app.route("/executar", methods=["POST"])
 def executa():
     plataforma = request.json['plataforma']
+    
+    
     for index,i in enumerate(bd.getElementTests(request.json["name"],request.json["type"])):
         try:
-            main.start('\n'.join(i), plataforma)
+            main.start(i, bd.getTestPlatform(request.json['name'],index))
             bd.setTodo(request.json["name"],request.json["type"],index,"realizado")
             bd.saveHistorico(request.json["name"], "sucesso")
             socketio.emit('atualizar',{'name':request.json["name"],'type':request.json["type"],'index':index,'status':"realizado"})
@@ -72,6 +71,7 @@ def executa():
 
 
     return "executado"
+
 
 
 @app.route('/executaTesteEsp', methods=['POST'])
@@ -217,25 +217,22 @@ def setExesetExecuaoAleatoria():
 
 @app.route('/executaTesteAleatorio', methods=['POST'])
 def minha_tarefa():
-    print(request.json)
-    #nome = request.json['nome']
-    #index = request.json['index']
-    #testes = request.json['testes']
-    #plataforma = request.json['plataforma']
-    automacao = bd.getAutomatedTests(request.json['nome'],'elementos')[request.json['index']]['automacao']
-    plataforma = bd.getAutomatedTests(request.json['nome'],'elementos')[request.json['index']]['plataforma']
-    print(automacao, plataforma)
+    
+    automacao = bd.getAutomatedTests(request.json['nome'],'elementos')[int(request.json['index'])]['automacao']
+    plataforma = bd.getAutomatedTests(request.json['nome'],'elementos')[int(request.json['index'])]['plataforma']
+
+    #autWeb = bd.getAutomatedTests('inputUsuario','elementos')[int(1)]['automacao']
+    #print(automacao, plataforma)
 
     try:
         main.start(automacao, plataforma)
         #bd.setTodo(nome.split('-')[0],'elementos',int(index),"realizado")
-        #bd.saveHistorico(nome.split('-')[0], "sucesso")
+        bd.saveHistorico(request.json['nome'], "sucesso")
         #socketio.emit('atualizar',{'name':nome.split('-')[0],'type':'elementos','index':int(index),'status':"realizado"})
 
     except:
-        pass
         #bd.setTodo(nome.split('-')[0],'elementos',int(index),"naoRealizado")
-        #bd.saveHistorico(nome.split('-')[0], "erro")
+        bd.saveHistorico(request.json['nome'], "error")
         #socketio.emit('atualizar',{'name':nome.split('-')[0],'type':'elementos','index':int(index),'status':"naoRealizado"})
      
         

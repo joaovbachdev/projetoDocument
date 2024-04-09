@@ -71,7 +71,7 @@ function getElementos(callback)
         data:JSON.stringify({"name":name,"type":type,'plataforma':'mobile'}),
         contentType:'application/json',
         success: function(response){
-            console.log("executando")
+            console.log("executando",response)
         },
         error:function(error){
             console.log(error, "deu ruim")
@@ -191,6 +191,7 @@ function setTesteAleatorio(){
                 document.querySelector(`i[elementName='${response['nome']}']`).style.display = 'block'
                 socket.send('start')
             }}
+            //console.log(response['nome'],response['index'],response['testes'])
             executaTesteAleatorio(response['nome'],response['index'],response['testes'])
         },
         error:function(error){
@@ -201,12 +202,10 @@ function setTesteAleatorio(){
 }
 
 function executaTesteAleatorio(nome,index,testes){
-    nome = "matrixPontuaAbaMeuNivel"
-    index = 0
     $.ajax({
         url:`/executaTesteAleatorio`,
         type:'POST',
-        data:JSON.stringify({'nome':"matrixPontuaAbaMeuNivel",'index':0,'testes':"",'plataforma':'mobile'}),
+        data:JSON.stringify({'nome':nome,'index':index,'testes':"",'plataforma':'mobile'}),
         contentType:'application/json',
         success: function(response){
                 console.log("executado com sucesso o aleatorio")

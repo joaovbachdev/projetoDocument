@@ -93,6 +93,9 @@
         },
         {
             "automacao": "- tapOn: 'Menu'"
+        },
+        {
+            "automacao": "- tapOn: 'Ver viagem'"
         }
     ],
     "Menu": [
@@ -151,6 +154,63 @@
         },
         {
             "automacao": "- runFlow:\n    when:\n        visible: Ouro\n    commands:\n        - evalScript: ${console.log('USUARIO OURO')}"
+        }
+        
+    ],
+    "viagem":[
+        {
+            "automacao": "- tapOn: 'Iniciar viagem'"
+        },
+        {
+            "automacao": "- tapOn: 'Estou aqui'"        
+        },
+        {
+            "automacao": "- tapOn: 'Confirmar'"
+        },
+        {
+            "automacao":"- tapOn: 'Iniciar'"      
+        },
+        {
+            "automacao": "- tapOn: 'Finalizar'"
+        },
+        {
+            "automacao": "- tapOn: '󰅀'"
+        },
+        {
+            "automacao": "- tapOn: 'Não informar NF-e'"  
+        },
+        {
+            "automacao": "- tapOn: 'Próximo'"
+        },
+        {
+            "automacao": "- tapOn:\n    point: '86%,6%'"
+        },
+        {
+            "automacao": "- tapOn: 'Enviar comprovante'"
+        },
+        {
+            "automacao": "- tapOn: 'Adicionar Comprovante'"
+        },
+        {
+            "automacao": "- tapOn: 'Foto do CTe'"
+        },
+        {
+            "automacao": "- tapOn: 'Entendi'"
+        },
+        {
+            "automacao": "- tapOn: ''"
+        },
+        {
+            "automacao": "- tapOn: Salvar e continuar"
+        },
+        {
+            "automacao": "- tapOn: 'Enviar comprovantes'"
+        },
+        {
+            "automacao": "- tapOn: 'Concluir a viagem'"
+        },
+        {
+            "automacao": "- tapOn: 'Finalizar (1)'"
         }
     ]
 }

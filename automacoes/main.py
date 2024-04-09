@@ -16,9 +16,6 @@ class Main:
         self.testesYaml = MontaYaml()
 
     def run(self, playwright: Playwright, teste, plataforma) -> None:
-        browser = playwright.chromium.launch(headless=True)
-        context = browser.new_context()
-        page = context.new_page()
 
         if plataforma == 'mobile':
             print("main.py EXECUTANDO TESTE MOBILE",teste)
@@ -27,6 +24,9 @@ class Main:
             print(response.stdout, "SAIDA DO BAGULHO")
             print(response.stderr, "ERRO DO BAGULHO")
         else:
+            browser = playwright.chromium.launch(headless=False)
+            context = browser.new_context()
+            page = context.new_page()
             print("main.py EXECUTANDO TESTE WEB", teste)
             exec('\n'.join(teste))
 

@@ -230,11 +230,86 @@
         },
         {
             "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
         }
     ],
     "inputUsuario": [
         {
             "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "erro"
         }
     ],
     "apiCriaViagem": [
@@ -345,9 +420,15 @@
     "viagensRodape": [
         {
             "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
         }
     ],
     "menuRodape": [
+        {
+            "resultado": "sucesso"
+        },
         {
             "resultado": "sucesso"
         }
@@ -388,6 +469,9 @@
         }
     ],
     "botaoCentralDeNoificacoes": [
+        {
+            "resultado": "sucesso"
+        },
         {
             "resultado": "sucesso"
         }
@@ -486,6 +570,18 @@
         },
         {
             "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
         }
     ],
     "matrixPontuaAbaInformacoes": [
@@ -548,6 +644,56 @@
         {
             "resultado": "sucesso"
         },
+        {
+            "resultado": "sucesso"
+        }
+    ],
+    "rankingHeader": [
+        {
+            "resultado": "sucesso"
+        }
+    ],
+    "botaoEntrar": [
+        {
+            "resultado": "sucesso"
+        }
+    ],
+    "atalhoFlutuanteChat": [
+        {
+            "resultado": "sucesso"
+        }
+    ],
+    "imagemDoNivel": [
+        {
+            "resultado": "sucesso"
+        }
+    ],
+    "botaoAgendaAdicionarCompromisso": [
+        {
+            "resultado": "sucesso"
+        }
+    ],
+    "sinoNotificacaoHeader": [
+        {
+            "resultado": "sucesso"
+        }
+    ],
+    "botaoAbrirChatHome": [
+        {
+            "resultado": "sucesso"
+        }
+    ],
+    "modalTopDrivers": [
+        {
+            "resultado": "sucesso"
+        }
+    ],
+    "botaoEcooupado": [
+        {
+            "resultado": "sucesso"
+        }
+    ],
+    "botaoAgendaDiasDoMes": [
         {
             "resultado": "sucesso"
         }

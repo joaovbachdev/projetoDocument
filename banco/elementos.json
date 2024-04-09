@@ -13,22 +13,21 @@
         ],
         "testes": [
             {
-                "teste": "deve aceitar apenas numeros",
+                "plataforma": "mobile",
+                "teste": "testeClicaCpf",
                 "status": "realizado",
-                "automacao": [],
-                "plataforma": "web"
+                "automacao": [
+                    "- tapOn: CPF",
+                    "- inputText: 08163060956"
+                ]
             },
             {
-                "teste": "deve ter um limite de 11 digitos",
-                "status": "realizado",
-                "automacao": [],
-                "plataforma": "web"
-            },
-            {
-                "teste": "copiar um texto de fora e colar no campo deve ser possivel",
-                "status": "realizado",
-                "automacao": [],
-                "plataforma": "web"
+                "plataforma": "web",
+                "teste": "testeWeb",
+                "status": "naoRealizado",
+                "automacao": [
+                    "page.goto(\"https.com\")"
+                ]
             }
         ],
         "bugs": []
@@ -498,6 +497,56 @@
                     "- runFlow:\n    when:\n        visible: Localiza\u00e7\u00e3o em segundo plano\n    commands:\n        - tapOn: 'OK'",
                     "- runFlow:\n    when:\n        visible: Matrix Top Drivers\n    commands:\n        - tapOn: 'Tamo Junto!'",
                     "- runFlow:\n    when:\n        visible: Bem-vindo, Motorista!\n    commands:\n        - tapOn: 'Suporte'"
+                ]
+            },
+            {
+                "plataforma": "mobile",
+                "teste": "tetet",
+                "status": "realizado",
+                "automacao": [
+                    "- tapOn: '\udb80\udd40'"
+                ]
+            },
+            {
+                "plataforma": "mobile",
+                "teste": "tettgd",
+                "status": "realizado",
+                "automacao": [
+                    "- tapOn: Finalizar (1)"
+                ]
+            },
+            {
+                "plataforma": "mobile",
+                "teste": "tatadas",
+                "status": "realizado",
+                "automacao": [
+                    "- tapOn: 'Ver viagem'",
+                    "- tapOn: 'Iniciar viagem'",
+                    "- tapOn: 'Estou aqui'",
+                    "- tapOn: 'Confirmar'",
+                    "- tapOn: 'Iniciar'",
+                    "- tapOn: 'Confirmar'",
+                    "- tapOn: 'Finalizar'",
+                    "- tapOn: '\udb80\udd40'",
+                    "- tapOn: 'N\u00e3o informar NF-e'",
+                    "- tapOn: 'Confirmar'",
+                    "- tapOn: 'Pr\u00f3ximo'",
+                    "- tapOn:\n    point: '86%,6%'",
+                    "- tapOn: 'Estou aqui'",
+                    "- tapOn: 'Confirmar'",
+                    "- tapOn: 'Iniciar'",
+                    "- tapOn: 'Confirmar'",
+                    "- tapOn: 'Finalizar'",
+                    "- tapOn: 'Enviar comprovante'",
+                    "- tapOn: 'Adicionar Comprovante'",
+                    "- tapOn: 'Foto do CTe'",
+                    "- tapOn: 'Entendi'",
+                    "- tapOn: '\ue3b0'",
+                    "- tapOn: Salvar e continuar",
+                    "- tapOn: 'Finalizar (1)'",
+                    "- tapOn: 'Enviar comprovantes'",
+                    "- tapOn: 'Concluir a viagem'",
+                    "- tapOn: 'Concluir a viagem'"
                 ]
             }
         ],

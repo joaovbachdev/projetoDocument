@@ -148,6 +148,11 @@ class ControllerBanco:
          with open(f"banco/{type}.json","r+") as f:
             data = json.load(f)
             return [i["teste"] for i in data[name]["testes"]]
+    
+    def getTestPlatform(self,name,index):
+        with open('banco/elementos.json','r+') as f:
+            data = json.load(f)
+            return data[name]['testes'][index]['plataforma']
 
     def getElementTests(self, name,type):
         with open(f"banco/{type}.json","r+") as f:
@@ -227,7 +232,7 @@ class ControllerBanco:
     def getAllTests(self):
         with open('banco/elementos.json','r+') as f:
             data = json.load(f)
-            automacoes = {f'{i}-{index}':j['automacao'] for i in data.keys() for index,j in enumerate(data[i]["testes"]) if j['automacao']!=['']}
+            automacoes = {f'{i}-{index}':j['automacao'] for i in data.keys() for index,j in enumerate(data[i]["testes"]) if j['automacao']!=[] and j['automacao']!=['']}
 
         return automacoes
 
@@ -328,7 +333,8 @@ class ControllerBanco:
         print(formated)
     
 
-
+#print(ControllerBanco().getAllTests())
+#print(ControllerBanco().getTestPlatform('inputUsuario',0))
 #ControllerBanco().limpaTestes()
 #print(ControllerBanco().getAllTests())
 
@@ -337,7 +343,7 @@ class ControllerBanco:
 
 #ControllerBanco().getAllTags()
 
-ControllerBanco().createLines()
+#ControllerBanco().createLines()
 #print(ControllerBanco().extraiRelatorio())  
 
 #ControllerBanco().verifica_weakup_record_criado()
@@ -345,7 +351,7 @@ ControllerBanco().createLines()
 
 #ControllerBanco().getMobileTestsAreas()
 #print(ControllerBanco().getMobileAreaComands('checklist'))
-
+print(ControllerBanco().getInformatios('telaLogin'))
 
 '''
 with open("banco/elementos.json","r+") as f:
