@@ -1,3 +1,4 @@
+from email import header
 import json
 from os import stat
 import requests
@@ -275,7 +276,7 @@ class ControllerBanco:
 
     def getMobileAreaComands(self, area):
         with open('automacoes/testesYaml/dicionario.json','r+') as f:
-            return [i['automacao'] for i in json.load(f)[area]]
+            return [i for i in json.load(f)[area]]
     
     def getMobileTestObject(self, area, teste):
         with open('automacoes/testesYaml/dicionario.json','r+') as f:
@@ -284,6 +285,13 @@ class ControllerBanco:
                 if i['automacao'] == teste:
                     return i
 
+    def ultimasDezViagens(self):
+        url = "https://back-homologacao.matrixcargo.com.br/api/ranking/get_last_goals"
+        headerAcelerador = {'Authorization':f'Bearer {"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxYzI1ODY4MS1mYmUwLTRlNjUtYmJmZi1hNTliMTViODg1YzciLCJkYXRhIjp7ImNvbXBhbnkiOiJjYXJnb2xpZnQifSwiaWF0IjoxNjkyOTY0NDgzfQ.byWzfOhCT_1H2aZgqIXOo4-5dWKUf05Iu1QiR2-JZq4"}',
+                       'Content-Type': 'application/json'}
+        response = requests.get(url,json={'driver_id':'4b973aa2-1a1e-4e8b-b23b-cb593300620e'},headers=headerAcelerador)
+        return [i['internal_id'] for i in response.json()][0]
+        
 
     def verifica_weakup_record_criado(self):
         url = "https://back-homologacao.matrixcargo.com.br/graphql"
@@ -361,6 +369,8 @@ class ControllerBanco:
 #print(ControllerBanco().getInformatios('telaLogin'))
 
 #print(ControllerBanco().getMobileTestObject('telaLogin',0))
+
+#ControllerBanco().ultimasDezViagens()
 
 '''
 with open("banco/elementos.json","r+") as f:

@@ -1,4 +1,7 @@
 appId: com.example.app
 ---
-- tapOn: 'Ver viagem'
-- tapOn: 'Enviar comprovante'
+- runFlow:
+    when:
+        visible: Abrir Chat
+    commands:
+        - tapOn: 'Abrir Chat'

@@ -187,7 +187,7 @@ function getMobileAreaTests(pai,callback, value, index){
         type:'GET',
         contentType:'application/json',
         success:function(response){
-    
+            //console.log(response)
             callback({'index':pai.getAttribute('index'),'testes':response})
         },
         error:function(error){

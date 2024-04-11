@@ -20,10 +20,18 @@ class Main:
         if plataforma == 'mobile':
             print("to aqui")
             print("main.py EXECUTANDO TESTE MOBILE",[i['teste'] for i in teste])
-
+            print(teste)
+            
             for i in teste:
-                print(self.banco.getMobileTestObject(i['area'],i['teste']))
+                obj = self.banco.getMobileTestObject(i['area'],i['teste'])
+                if obj['requisito'] != "":
+                    i['teste'] = i['teste'].format(eval(obj['requisito']))
+           
+            
             self.testesYaml.monta([i['teste'] for i in teste])
+            #self.testesYaml.monta(teste)
+
+
             response = subprocess.run('maestro test automacoes/testesYaml/arquivo.yaml',shell=True, capture_output=True, text=True)
             print(response.stdout, "SAIDA DO BAGULHO")
             print(response.stderr, "ERRO DO BAGULHO")

@@ -10,11 +10,14 @@ function adicionar(name,type){
         document.querySelectorAll('.testMobileLine').forEach(element=>{
             area = element.querySelector('.areasSelect').value
             element.querySelectorAll('.mobileTestes').forEach((testes,index)=>{
-               acoes.push({'area':area,'teste':testes.value})
+                teste = document.querySelector(`option[value='${testes.value}']`).getAttribute('teste')
+                
+               acoes.push({'area':area,'teste':teste})
                
             })
             
         })
+        
         newData['plataforma'] = 'mobile'
         //acoes.push(element.value)
     }else{
@@ -23,7 +26,7 @@ function adicionar(name,type){
         })
         newData['plataforma'] = 'web'
     }
-
+    console.log(acoes, "acoes")
     newData['teste'] = nameAutomation
     newData['status'] = status
     newData['automacao'] = acoes
@@ -75,7 +78,7 @@ function addLine(data){
 
     selectArea = document.createElement('select')
     selectArea.setAttribute('class','areasSelect')
-
+    console.log(data, "to aqui")
     data['areas'].forEach(element=>{
         nvar = newOption = document.createElement('option');
         newOption.value = element;
@@ -173,7 +176,8 @@ function setTestList(data){
         titulo.textContent = element["teste"]
 
         codigo = document.createElement("label")
-        codigo.textContent = element["automacao"].join("\n")
+        //console.log(element["automacao"].map(item=>item.teste).join('\n'))
+        codigo.textContent = element["automacao"].map(item=> item.teste).join('\n')
         
 
         itemStatus = document.createElement("input")
@@ -267,8 +271,9 @@ function setMobileTests(data){
     data['testes'].forEach(element=>{
         newOption = document.createElement('option')
         newOption.setAttribute('class','testOption')
-        newOption.value = element
-        newOption.textContent = element
+        newOption.value = element['nome']
+        newOption.textContent = element['nome']
+        newOption.setAttribute('teste',element['automacao'])
         select.appendChild(newOption)
     })
 }

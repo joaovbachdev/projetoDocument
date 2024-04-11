@@ -73,30 +73,33 @@
         },
         {
             "automacao": "- runFlow:\n    when:\n        visible: OK\n    commands:\n        - evalScript: ${console.log('NAO CONSEGUIU ENTRAR')}"
-        },
-        {
-            "automacao": "- runFlow:\n    when:\n        visible: Engate\n    commands:\n        - runScript:\n            file: tratamentoErros.js\n            env:\n                myParameter: 'entrada placa valida'"
         }
     ],
     "Home": [
         {
-            "automacao": "- runFlow:\n    when:\n        visible: Ver viagem\n    commands:\n        - tapOn: 'Ver viagem'"
+            "automacao": "- runFlow:\n    when:\n        visible: Ver viagem\n    commands:\n        - tapOn: 'Ver viagem'",
+            "nome":"clica em ver viagem no card da viagem",
+            "requisito":""
         },
         {
-            "automacao": "- runFlow:\n    when:\n        visible: Abrir Chat\n    commands:\n        - tapOn: 'Abrir Chat'"
+            "automacao": "- runFlow:\n    when:\n        visible: Abrir Chat\n    commands:\n        - tapOn: 'Abrir Chat'",
+            "nome":"clicar em abrir chat no card de viagem",
+            "requisito":""
         },
         {
-            "automacao": "- tapOn: 'Agenda'"
+            "automacao": "- tapOn: 'Agenda'",
+            "nome":"clica na agenda do rodape",
+            "requisito":""
         },
         {
-            "automacao": "- tapOn: 'Viagens'"
+            "automacao": "- tapOn: 'Viagens'",
+            "nome":"clicar em viagens do rodape",
+            "requisito":""
         },
         {
-            "automacao": "- tapOn: 'Menu'"
-        },
-        {
-            "automacao": "- tapOn: 'Ver viagem'",
-            "requisito":"teste"
+            "automacao": "- tapOn: 'Menu'",
+            "requisito":"clica em menu no rodape",
+            "nome":"teste5"
         }
     ],
     "Menu": [
@@ -155,6 +158,20 @@
         },
         {
             "automacao": "- runFlow:\n    when:\n        visible: Ouro\n    commands:\n        - evalScript: ${console.log('USUARIO OURO')}"
+        },
+        {
+            "automacao": "- tapOn: Viagem {}\n- runFlow:\n    when:\n        visible: Iniciou viagem\n    commands:\n        - runScript:\n            file: tratamentoErros.js\n            env:\n                myParameter: 'viagem expandida com sucesso'",
+            "requisito": "self.banco.ultimasDezViagens()"
+        },
+        {
+            "automacao": "- tapOn: Viagem {}",
+            "requisito":"self.banco.ultimasDezViagens()",
+            "nome":"clicar em uma viagem"
+        },
+        {
+            "automacao": "- runFlow:\n    when:\n        visible: Iniciou viagem\n    commands:\n        - runScript:\n            file: tratamentoErros.js\n            env:\n                myParameter: 'viagem expandida com sucesso'",
+            "requisito":"",
+            "nome":"verifica se a viagem foi expandida"  
         }
         
     ],

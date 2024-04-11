@@ -344,6 +344,57 @@
         },
         {
             "resultado": "sucesso"
+        },
+        {
+            "resultado": "erro"
+        },
+        {
+            "resultado": "erro"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
         }
     ],
     "inputUsuario": [
@@ -781,6 +832,121 @@
         }
     ],
     "botaoAgendaDiasDoMes": [
+        {
+            "resultado": "sucesso"
+        }
+    ],
+    "botaoIniciarNovaConversa": [
+        {
+            "resultado": "erro"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "erro"
+        },
+        {
+            "resultado": "erro"
+        },
+        {
+            "resultado": "erro"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "erro"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "erro"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "erro"
+        },
+        {
+            "resultado": "erro"
+        },
+        {
+            "resultado": "erro"
+        },
+        {
+            "resultado": "sucesso"
+        }
+    ],
+    "matrixPontuaItemDeViagem": [
+        {
+            "resultado": "erro"
+        },
+        {
+            "resultado": "erro"
+        },
+        {
+            "resultado": "erro"
+        },
+        {
+            "resultado": "erro"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "erro"
+        },
+        {
+            "resultado": "erro"
+        },
         {
             "resultado": "sucesso"
         }
