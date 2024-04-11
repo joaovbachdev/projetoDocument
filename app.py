@@ -82,23 +82,25 @@ def executaTesteEsp():
     plataforma = teste['plataforma']
     automacao = teste['automacao']
 
-    
+    #for i in automacao:
+        #print(bd.getMobileTestObject(i['area'],i['teste']))
     try:
         main.start(automacao,plataforma)
         bd.setTodo(request.json["name"],request.json["type"],index,"realizado")
         bd.saveHistorico(request.json["name"], "sucesso")
+        print("tentei")
         socketio.emit('atualizar',{'name':request.json["name"],'type':request.json["type"],'index':index,'status':"realizado"})
         
     except Exception as e:
         bd.setTodo(request.json["name"],request.json["type"],index,"naoRealizado")
         bd.saveHistorico(request.json["name"], "erro")
         socketio.emit('atualizar',{'name':request.json["name"],'type':request.json["type"],'index':index,'status':"naoRealizado"})
-
+        print(e)
 
     socketio.emit("atualizaTesteEsp", {'status':bd.getAutomatedTests(request.json['name'],request.json['type'])[index]['status'],'index':index})
     #socketio.emit("desativarSpiner",request.json["name"])
     return 'executado'
-   
+
         
 @app.route("/auxCriaElemento", methods=["POST"])
 def auxCriaElemento():

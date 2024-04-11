@@ -6,9 +6,12 @@ function adicionar(name,type){
     var acoes = []
 
     if(plataforma == true){
+        var area = ""
         document.querySelectorAll('.testMobileLine').forEach(element=>{
-            element.querySelectorAll('.mobileTestes').forEach(testes=>{
-               acoes.push(testes.value)
+            area = element.querySelector('.areasSelect').value
+            element.querySelectorAll('.mobileTestes').forEach((testes,index)=>{
+               acoes.push({'area':area,'teste':testes.value})
+               
             })
             
         })

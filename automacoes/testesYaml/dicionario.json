@@ -95,7 +95,8 @@
             "automacao": "- tapOn: 'Menu'"
         },
         {
-            "automacao": "- tapOn: 'Ver viagem'"
+            "automacao": "- tapOn: 'Ver viagem'",
+            "requisito":"teste"
         }
     ],
     "Menu": [

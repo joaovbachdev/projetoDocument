@@ -16,10 +16,14 @@ class Main:
         self.testesYaml = MontaYaml()
 
     def run(self, playwright: Playwright, teste, plataforma) -> None:
-
+      
         if plataforma == 'mobile':
-            print("main.py EXECUTANDO TESTE MOBILE",teste)
-            self.testesYaml.monta(teste)
+            print("to aqui")
+            print("main.py EXECUTANDO TESTE MOBILE",[i['teste'] for i in teste])
+
+            for i in teste:
+                print(self.banco.getMobileTestObject(i['area'],i['teste']))
+            self.testesYaml.monta([i['teste'] for i in teste])
             response = subprocess.run('maestro test automacoes/testesYaml/arquivo.yaml',shell=True, capture_output=True, text=True)
             print(response.stdout, "SAIDA DO BAGULHO")
             print(response.stderr, "ERRO DO BAGULHO")

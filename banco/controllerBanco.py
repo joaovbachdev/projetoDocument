@@ -272,10 +272,17 @@ class ControllerBanco:
     def getMobileTestsAreas(self):
         with open('automacoes/testesYaml/dicionario.json','r+') as f:
             return [i for i in json.load(f).keys()]
+
     def getMobileAreaComands(self, area):
-        
         with open('automacoes/testesYaml/dicionario.json','r+') as f:
             return [i['automacao'] for i in json.load(f)[area]]
+    
+    def getMobileTestObject(self, area, teste):
+        with open('automacoes/testesYaml/dicionario.json','r+') as f:
+            data = json.load(f)
+            for i in data[area]:
+                if i['automacao'] == teste:
+                    return i
 
 
     def verifica_weakup_record_criado(self):
@@ -351,7 +358,9 @@ class ControllerBanco:
 
 #ControllerBanco().getMobileTestsAreas()
 #print(ControllerBanco().getMobileAreaComands('checklist'))
-print(ControllerBanco().getInformatios('telaLogin'))
+#print(ControllerBanco().getInformatios('telaLogin'))
+
+#print(ControllerBanco().getMobileTestObject('telaLogin',0))
 
 '''
 with open("banco/elementos.json","r+") as f:

@@ -548,6 +548,29 @@
                     "- tapOn: 'Concluir a viagem'",
                     "- tapOn: 'Concluir a viagem'"
                 ]
+            },
+            {
+                "plataforma": "mobile",
+                "teste": "teste33",
+                "status": "naoRealizado",
+                "automacao": [
+                    "- runFlow:\n    when:\n        visible: Ver viagem\n    commands:\n        - tapOn: 'Ver viagem'"
+                ]
+            },
+            {
+                "plataforma": "mobile",
+                "teste": "ttetefgf",
+                "status": "realizado",
+                "automacao": [
+                    {
+                        "area": "Home",
+                        "teste": "- tapOn: 'Ver viagem'"
+                    },
+                    {
+                        "area": "viagem",
+                        "teste": "- tapOn: 'Enviar comprovante'"
+                    }
+                ]
             }
         ],
         "bugs": []
