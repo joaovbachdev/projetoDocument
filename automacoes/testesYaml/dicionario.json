@@ -27,52 +27,84 @@
     ],
     "checklist": [
         {
-            "automacao": "- tapOn: 'Placa do ve\u00edculo'"
+            "automacao": "- tapOn: 'Placa do ve\u00edculo'",
+            "nome":"clica no input para preenhcer a placa",
+            "requisito":""
         },
         {
-            "automacao": "- inputText: 123123123"
+            "automacao": "- inputText: 123123123",
+            "nome":"digita no campo de placa uma placa invalida",
+            "requisito":""
         },
         {
-            "automacao": "- eraseText"
+            "automacao": "- eraseText",
+            "nome":"limpa texto do input selecionado",
+            "requisito":""
         },
         {
-            "automacao": "- inputText: 'ABS1234'"
+            "automacao": "- inputText: 'ABS1234'",
+            "nome":"digita uma placa valida porem inexistente",
+            "requisito":""
         },
         {
-            "automacao": "- inputText: 'ABS123dsdbajdajsdbasjdasdb4'"
+            "automacao": "- inputText: 'ABS123dsdbajdajsdbasjdasdb4'",
+            "nome":"digita muitos caracteres invalidos no campo de placa",
+            "requisito":""
         },
         {
-            "automacao": "- tapOn: 'Continuar'"
+            "automacao": "- tapOn: 'Continuar'",
+            "nome":"clica no botao continuar",
+            "requisito":""
         },
         {
-            "automacao": "- inputText: 'BCZ9H81'"
+            "automacao": "- inputText: 'BCZ9H81'",
+            "nome":"digita uma placa valida e existente",
+            "requisito":""
         },
         {
-            "automacao": "- tapOn: 'Engate'"
+            "automacao": "- tapOn: 'Engate'",
+            "nome":"clica no botao engate",
+            "requisito":""
         },
         {
-            "automacao": "- tapOn: 'Desengate'"
+            "automacao": "- tapOn: 'Desengate'",
+            "nome":"clica no botao desengate",
+            "requisito":""
         },
         {
-            "automacao": "- tapOn: 'FOTO OBRIGAT\u00d3RIA DA PLACA'"
+            "automacao": "- tapOn: 'FOTO OBRIGAT\u00d3RIA DA PLACA'",
+            "nome":"clica no item de foto obrigatoria da placa",
+            "requisito":""
         },
         {
-            "automacao": "- tapOn: 'FUNILARIA (PINTURA, BORRACHAS DA PORTA, PERFIS, TRINCAS, CHASSI)'"
+            "automacao": "- tapOn: 'FUNILARIA (PINTURA, BORRACHAS DA PORTA, PERFIS, TRINCAS, CHASSI)'",
+            "nome":"clica no item de funilaria",
+            "requisito":""
         },
         {
-            "automacao": "- - tapOn: 'SISTEMA EL\u00c9TRICO (LUZES, LANTERNAS E PISCAS)'"
+            "automacao": "- - tapOn: 'SISTEMA EL\u00c9TRICO (LUZES, LANTERNAS E PISCAS)'",
+            "nome":"clica no item de sistema eletrico",
+            "requisito":""
         },
         {
-            "automacao": "- tapOn: 'PNEUS (VERIFICAR ESTADO, PRESS\u00c3O E STEP)'"
+            "automacao": "- tapOn: 'PNEUS (VERIFICAR ESTADO, PRESS\u00c3O E STEP)'",
+            "nome":"clica no item de pneus",
+            "requisito":""
         },
         {
-            "automacao": "- tapOn: 'KIT 20 CINTAS - ESTOU CIENTE DO PROCEDIMENTO PFR029'"
+            "automacao": "- tapOn: 'KIT 20 CINTAS - ESTOU CIENTE DO PROCEDIMENTO PFR029'",
+            "nome":"clica no item de kit 2- cintas",
+            "requisito":""
         },
         {
-            "automacao": "- tapOn: 'APARENCIA EXTERNA (LIMPEZA)'"
+            "automacao": "- tapOn: 'APARENCIA EXTERNA (LIMPEZA)'",
+            "nome":"clica no item de aparencia externa",
+            "requisito":""
         },
         {
-            "automacao": "- runFlow:\n    when:\n        visible: OK\n    commands:\n        - evalScript: ${console.log('NAO CONSEGUIU ENTRAR')}"
+            "automacao": "- runFlow:\n    when:\n        visible: OK\n    commands:\n        - evalScript: ${console.log('NAO CONSEGUIU ENTRAR')}",
+            "nome":"verifica se a placa entrada existe no sistema",
+            "requisito":""
         }
     ],
     "Home": [
@@ -229,6 +261,43 @@
         },
         {
             "automacao": "- tapOn: 'Finalizar (1)'"
+        }
+    ],
+    "agenda":[
+        {
+            "automacao":"- tapOn: {}",
+            "nome":"clica em um dia aleatorio do calendario",
+            "requisito":"[i for i in range(1,31)].choice()"
+        },
+        {
+            "automacao":"- tapOn: Adicionar compromisso",
+            "nome":"clica em adicionar compromisso",
+            "requisito":""
+        },
+        {
+            "automacao":"- tapOn: Ocupado",
+            "nome":"clica no botao ocupado",
+            "requisito":""
+        },
+        {
+            "automacao":"- tapOn: Veiculo em manutenção",
+            "nome":"clica no botao veiculo em manutencao",
+            "requisito":""
+        },
+        {
+            "automacao":"- tapOn: Folga",
+            "nome":"clica no botao folga",
+            "requisito":""
+        },
+        {
+            "automacao":"- tapOn: Escolher local do evento",
+            "nome":"clica no botao escolher local do evento",
+            "requisito":""
+        },
+        {
+            "automacao":"- tapOn: Observações",
+            "nome":"clica no campo de observações",
+            "requisito":""
         }
     ]
 }
