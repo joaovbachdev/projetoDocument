@@ -2,16 +2,26 @@ import json
 
 
 cenario = []
+indexAtual = 2
+areaAtual = "viagem" 
 
 def getData():
-    with open('dados.json','r+') as f:
+    with open('testesDeLogica/requisitosMobile/dados.json','r+') as f:
         return json.load(f)
     
-def monta(area, index):
-   
-    if getData()[area][index]['prerequisito']['area']!="":
-        pre = getData()[area][index]['prerequisito']
-        cenario.append(getData()[pre['area']][pre['index']]['automacao'])
-        monta(pre['area'],pre['index'])
+def monta(area,index):
+    
+    data = getData()[area][index]
+    requisito = data['requisito']
+    print(area, index, requisito)
+    if requisito > -1:
+        cenario.append(data)
+        monta(area,requisito)
     else:
-        cenario.append(getData()[area][index]['automacao'])
+        cenario.append(data)
+        first = cenario.pop(0)
+        cenario.append(first)
+        print(cenario)
+
+
+monta("viagem",4)

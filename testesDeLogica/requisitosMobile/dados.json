@@ -1,48 +1,72 @@
 {
-    "area1":[
+    "viagem":[
         {
-            "prerequisito":{
-                "area":"area2",
-                "index":0
-            },
-            "automacao":"main1"
+            "automacao":"clica no input de placa",
+            "area":"viagem",
+            "index":0,
+            "requisito":-1
         },
         {
-            "prerequisito":{
-                "area":"area2",
-                "index":1
-            },
-            "automacao":"main2"
+            "automacao":"preenche placa",
+            "area":"viagem",
+            "index":1,
+            "requisito":0
         },
         {
-            "prerequisito":{
-                "area":"area1",
-                "index":2
-            },
-            "automacao":"main3"
+            "automacao":"clica em continuar",
+            "area":"viagem",
+            "index":2,
+            "requisito":1
+        },
+        {
+            "automacao":"clica em engate",
+            "area":"viagem",
+            "index":3,
+            "requisito":2
+        },
+        {
+            "automacao":"clica em item do cheklist",
+            "area":"viagem",
+            "index":4,
+            "requisito":3
+        },
+        {
+            "automacao":"clica para tirar foto",
+            "area":"viagem",
+            "index":5,
+            "requisito":4
         }
     ],
-    "area 2":[
+    "checklist":[
         {
-            "prerequisito":{
-                "area":"area2",
-                "index":0
-            },
-            "automacao":"main4"
+            "automacao":"checklist 0",
+            "area":"checklist",
+            "index":0
         },
         {
-            "prerequisito":{
-                "area":"area1",
-                "index":2
-            },
-            "automacao":"main5"
+            "automacao":"checklist 1",
+            "area":"cheklist",
+            "index":1
         },
         {
-            "prerequisito":{
-                "area":"area1",
-                "index":1
-            },
-            "automacao":"main6"
+            "automacao":"checklist 2",
+            "area":"checklist",
+            "index":2
+        },
+        {
+            "automacao":"checklist 3",
+            "area":"checklist",
+            "index":3
+        },
+        {
+            "automacao":"checklist 4",
+            "area":"checklist",
+            "index":4
+        },
+        {
+            "automacao":"checklist 5",
+            "area":"checklist",
+            "index":5
         }
     ]
 }

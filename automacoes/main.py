@@ -24,6 +24,7 @@ class Main:
             
             for i in teste:
                 obj = self.banco.getMobileTestObject(i['area'],i['teste'])
+                print(obj)
                 if obj['requisito'] != "":
                     i['teste'] = i['teste'].format(eval(obj['requisito']))
            

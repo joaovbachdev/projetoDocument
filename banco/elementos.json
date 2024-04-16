@@ -498,6 +498,33 @@
                     "- runFlow:\n    when:\n        visible: Matrix Top Drivers\n    commands:\n        - tapOn: 'Tamo Junto!'",
                     "- runFlow:\n    when:\n        visible: Bem-vindo, Motorista!\n    commands:\n        - tapOn: 'Suporte'"
                 ]
+            },
+            {
+                "plataforma": "mobile",
+                "teste": "testedsadas",
+                "status": "naoRealizado",
+                "automacao": [
+                    {
+                        "area": "telaLogin",
+                        "teste": "- tapOn: CPF"
+                    },
+                    {
+                        "area": "telaLogin",
+                        "teste": "- inputText: 08163060956"
+                    },
+                    {
+                        "area": "telaLogin",
+                        "teste": "- copyTextFrom: My Field"
+                    },
+                    {
+                        "area": "telaLogin",
+                        "teste": "- tapOn: 'SENHA'"
+                    },
+                    {
+                        "area": "telaLogin",
+                        "teste": "- inputText: ${'Hello ' + maestro.copiedText}"
+                    }
+                ]
             }
         ],
         "bugs": []
@@ -2299,19 +2326,24 @@
         "tags": [],
         "testes": [
             {
-                "teste": "deve entrar no fluxo de nova conversa mostrando a lista de assuntos",
-                "status": "realizado",
-                "automacao": [],
-                "plataforma": "web"
-            },
-            {
                 "plataforma": "mobile",
-                "teste": "testeReq",
+                "teste": "ahha",
                 "status": "realizado",
                 "automacao": [
                     {
                         "area": "Home",
-                        "teste": "- tapOn: Viagem {}"
+                        "teste": "- tapOn: 'Agenda'"
+                    }
+                ]
+            },
+            {
+                "plataforma": "mobile",
+                "teste": "",
+                "status": "realizado",
+                "automacao": [
+                    {
+                        "area": "matrixPontua",
+                        "teste": "- tapOn: Viagem {}\n- runFlow:\n    when:\n        visible: Iniciou viagem\n    commands:\n        - runScript:\n            file: tratamentoErros.js\n            env:\n                myParameter: 'viagem expandida com sucesso'"
                     }
                 ]
             }

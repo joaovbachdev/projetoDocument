@@ -268,6 +268,10 @@ class ControllerBanco:
             data['Testes Automaticos Realizados'] = sum([len(dadosHistorico[i]) for i in dadosHistorico.keys()])
             data['Testes Automaticos Com Sucesso'] = len([1 for i in dadosHistorico.keys() for j in dadosHistorico[i] if j['resultado']=='sucesso'])
             data['Testes Automaticos Com Erro'] = len([1 for i in dadosHistorico.keys() for j in dadosHistorico[i] if j['resultado']=='erro'])
+
+        with open('automacoes/testesYaml/dicionario.json','r+') as f:
+            dadosDicionario = json.load(f)
+            data['testes mobile cadastrado'] = len([1 for i in dadosDicionario.keys() for j in dadosDicionario[i]])
         return data
 
     def getMobileTestsAreas(self):

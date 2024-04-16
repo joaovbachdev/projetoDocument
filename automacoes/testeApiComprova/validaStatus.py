@@ -28,7 +28,7 @@ URL_criaViagem = "https://comprova-matrix-homol.matrixcargo.com.br/public/viagem
 URL_mandaComprovante = "https://comprova-matrix-homol.matrixcargo.com.br/public/viagem/{}/comprovante"
 URL_status = "https://comprova-matrix-homol.matrixcargo.com.br/viagens/{}"
 
-TOKEN = "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJvNnAzNFZTZURNMnVoWTNueXg4dFFxNGJQN1EtQzBBcUxfelV1WFF6Q0xjIn0.eyJleHAiOjE3MTE4MTc4NDksImlhdCI6MTcxMDk1Mzg0OSwianRpIjoiMDhlNWQzYzMtMGJmMS00NWU5LWJhZTEtMTExODU3ZmU2NjdkIiwiaXNzIjoiaHR0cHM6Ly9hdXRoLWhvbW9sLm1hdHJpeGNhcmdvLmNvbS5ici9yZWFsbXMvbWF0cml4Y2FyZ28iLCJhdWQiOlsicmVhbG0tbWFuYWdlbWVudCIsImJyb2tlciIsImFjY291bnQiXSwic3ViIjoiNjg4MjUwYjMtZGM2NS00ZDI0LWI1YzEtY2ZmZmMyYzBhZmY2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiY29tcHJvdmEtbWF0cml4LWFwaSIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1tYXRyaXhjYXJnbyIsIkZGX0ZST05UX1NPUlQiLCJvZmZsaW5lX2FjY2VzcyIsImFkbWluIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJyZWFsbS1tYW5hZ2VtZW50Ijp7InJvbGVzIjpbInZpZXctZXZlbnRzIiwicXVlcnktY2xpZW50cyJdfSwiYnJva2VyIjp7InJvbGVzIjpbInJlYWQtdG9rZW4iXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJ2aWV3LWFwcGxpY2F0aW9ucyIsInZpZXctY29uc2VudCIsInZpZXctZ3JvdXBzIiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJtYW5hZ2UtY29uc2VudCIsImRlbGV0ZS1hY2NvdW50Iiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCB0ZW5hbnQgcHJvZmlsZSByb2xlcyIsImNsaWVudElkIjoiY29tcHJvdmEtbWF0cml4LWFwaSIsImNsaWVudEhvc3QiOiIxOC4yMTMuMjMwLjIzIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsInByZWZlcnJlZF91c2VybmFtZSI6InNlcnZpY2UtYWNjb3VudC1jb21wcm92YS1tYXRyaXgtYXBpIiwiZ2l2ZW5fbmFtZSI6IiIsImZhbWlseV9uYW1lIjoiIiwiY2xpZW50QWRkcmVzcyI6IjE4LjIxMy4yMzAuMjMifQ.NwD_qNK-7sQ7KL573Qb9uO9QO_BF53v3v8QuYFdbMkX7KAYMqmMb4DZQJy14qSLZFiC7Be9zOod8agDhXTjzo-RRc_PuExmVtZPj_pdjs9ffcb4gBdrP6_uqm089299D_84PCQ66Awk3RZqiiV9ACHGSR_OinmusCScE0eEOAR8qVWg2Gf5LFPXVM3DtBY8ByliMEfCs1rqPekm22s4BBoGMtebWwXv4CkL4IeLMidmRrv9zEVKF7rwdH6E8hTH-04m3bg8VgnKX5pk5gcmH15xx1oRsFQFQx3AvNnkzxC8F4OO06qOek96Okt8lrlJo0789tat5T53r9zApEKoMiQ"
+TOKEN = "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJvNnAzNFZTZURNMnVoWTNueXg4dFFxNGJQN1EtQzBBcUxfelV1WFF6Q0xjIn0.eyJleHAiOjE3MTM1MzAzNzYsImlhdCI6MTcxMjY2NjM3NywiYXV0aF90aW1lIjoxNzEyNjY2Mzc2LCJqdGkiOiI3OTYzZDM4OS1hZWY4LTRjZGYtYjNhZi0yNDRhNGMzMmVkYjEiLCJpc3MiOiJodHRwczovL2F1dGgtaG9tb2wubWF0cml4Y2FyZ28uY29tLmJyL3JlYWxtcy9tYXRyaXhjYXJnbyIsInN1YiI6IjVkNTJiMGMzLTBjN2ItNDk3NC1hNjhhLWUyOWZjYWE2NzE2OSIsInR5cCI6IkJlYXJlciIsImF6cCI6ImNvbXByb3ZhLW1hdHJpeC1kYXNoYm9hcmQiLCJub25jZSI6ImY0MjFhZmM1LTYxZmQtNGU4My1hZmZkLWQ0YTUzNDJiNGY4ZiIsInNlc3Npb25fc3RhdGUiOiJjMjlkOGViNS03MTA1LTQ1MTItYjM0ZS1jZDNkYTAxMTdlZWQiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkFETUlOSVNUUkFET1IiLCJkZWZhdWx0LXJvbGVzLW1hdHJpeGNhcmdvIiwiRkZfRlJPTlRfU09SVCIsIlZJU1VBTElaQVJfQ09NUFJPVkFOVEUiLCJBTkFMSVNBUl9DT01QUk9WQU5URSIsIm9mZmxpbmVfYWNjZXNzIiwiSU1QT1JUQVJfQ09NUFJPVkFOVEUiXX0sInNjb3BlIjoib3BlbmlkIGVtYWlsIHByb2ZpbGUiLCJzaWQiOiJjMjlkOGViNS03MTA1LTQ1MTItYjM0ZS1jZDNkYTAxMTdlZWQiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6ImpvYW8gYmFjaCIsInByZWZlcnJlZF91c2VybmFtZSI6ImpvYW8gYmFjaCIsImdpdmVuX25hbWUiOiJqb2FvIiwiZmFtaWx5X25hbWUiOiJiYWNoIiwiZW1haWwiOiJqb2FvLmJhY2hAbWF0cml4Y2FyZ28uY29tLmJyIn0.dIlsggx69G66yb7VvLcQoYVxxWmLkOx_auVBh_plZvLU_qeZsxEfydGQj3FGEijMnJni3sMuaRyJgxmPbw2Asp7dToUnpMqxsVPJ4Ja_yfcRnF-Pio0YPZBBBal0xwuUqHrPfiI5t07hTs5zTqH1lE2ng61rn8UpF6rd3rDDXJ6iFsmCVI-PAyBzFFxeVDxneUCTcJih-buCbi8isTGoqLzJdWQMfZjiZ7W3dxPlcjtTjQSbPKCtbDY8TOVDeM0DpHb0k_1_6wce4j_zCksqyOXABrN4vM-sjqItQaDPHrjFf95lzvZveTdBv-d5FEY8EShOv_piTAYumgPjfUjhDA"
 TOKEN_STATUS = "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJvNnAzNFZTZURNMnVoWTNueXg4dFFxNGJQN1EtQzBBcUxfelV1WFF6Q0xjIn0.eyJleHAiOjE3MDkyMzQ5MjMsImlhdCI6MTcwODM3MDkyMywianRpIjoiODg3NzNmZTItYjk0NC00ZWNjLThhNTAtMzc2NWRkZDM2Yzg5IiwiaXNzIjoiaHR0cHM6Ly9hdXRoLWhvbW9sLm1hdHJpeGNhcmdvLmNvbS5ici9yZWFsbXMvbWF0cml4Y2FyZ28iLCJhdWQiOlsicmVhbG0tbWFuYWdlbWVudCIsImJyb2tlciIsImFjY291bnQiXSwic3ViIjoiNjg4MjUwYjMtZGM2NS00ZDI0LWI1YzEtY2ZmZmMyYzBhZmY2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiY29tcHJvdmEtbWF0cml4LWFwaSIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1tYXRyaXhjYXJnbyIsIkZGX0ZST05UX1NPUlQiLCJvZmZsaW5lX2FjY2VzcyIsImFkbWluIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJyZWFsbS1tYW5hZ2VtZW50Ijp7InJvbGVzIjpbInZpZXctZXZlbnRzIiwicXVlcnktY2xpZW50cyJdfSwiYnJva2VyIjp7InJvbGVzIjpbInJlYWQtdG9rZW4iXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJ2aWV3LWFwcGxpY2F0aW9ucyIsInZpZXctY29uc2VudCIsInZpZXctZ3JvdXBzIiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJtYW5hZ2UtY29uc2VudCIsImRlbGV0ZS1hY2NvdW50Iiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCB0ZW5hbnQgcHJvZmlsZSByb2xlcyIsImNsaWVudElkIjoiY29tcHJvdmEtbWF0cml4LWFwaSIsImNsaWVudEhvc3QiOiIxODkuMTIzLjIzMC42NCIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJzZXJ2aWNlLWFjY291bnQtY29tcHJvdmEtbWF0cml4LWFwaSIsImdpdmVuX25hbWUiOiIiLCJmYW1pbHlfbmFtZSI6IiIsImNsaWVudEFkZHJlc3MiOiIxODkuMTIzLjIzMC42NCJ9.GjWmQq1fv2JSpYU2w4KhNIhdGJImCtGZcRsBOo1iskEU3XmDWR4MJIyZOQtClpzWSKHGl2EeX4ShFw6tOihNueQKx4TmL9pyyyY8c6BOuH6s3BAvgjUtm2RErHgzD7zPogGPqYE3F6uFeokIF9fdeqBLafG06zRcygwXm69g5kEX9S88ZMnmWJmhg3SmXOzxkoiUh3eqOIxwm4Zk_7lEtU6JUXHtzU0YntI01aAfpFY7unGVwpXdG0e48q2fBp0yi9zwsjC9NDjz_a2dOmM2x8EIZTegflL0SnYhBesHaGFDc3nD3RAOWtWjEsJftk0ij2GRxyvXlSeBva6fVwWTkA" 
 HEADERS = {"Authorization":f"Bearer {TOKEN}",'Content-Type': 'application/json'}
 ultimoId = 0
@@ -63,7 +63,7 @@ nf_analise = ["43240259275792009610550080011556321038981514","352402608573490015
               "35240259275792000150550040032237521951607070","35240259275792000150550040032241481305100625",
               "35240259275792003680550080008537461441619875","35240260857349002381550010000028801984355153",
               "35240260857349002381550010000028791285329853","35240260857349002039550010000152731450557449",
-              "35240260857349002039550010000152731450557449","35240260857349002039550010000153071716177375",
+              "35240260857349002039550010000152731450557449","3524026085734900203955001023000153071716177375",
               "35240260857349002039550010000152701762813627","35240261064838008975550010003964401637706660"]
 
 ric_code = ["MRKU1006305","MRKU1006305","MSDU2890536","HLXU8074573","MRKU4028524","FBIU5262167",
@@ -155,7 +155,7 @@ def executaCenario(dadosViagens, dadosComprovantes,esperado,tipo,contador):
                 enviaComprovante()
         time.sleep(8)
         #print(requests.get(URL_status.format(ultimoId),headers=HEADERS).json())
-        print(str(contador)+"-  "+getExternalId(),f"{tipo} deve estar {esperado} e esta {requests.get(URL_status.format(ultimoId),headers=HEADERS).json()['status']}")
+        #print(str(contador)+"-  "+getExternalId(),f"{tipo} deve estar {esperado} e esta {requests.get(URL_status.format(ultimoId),headers=HEADERS).json()['status']}")
         updateExternalId()
 
 
@@ -230,7 +230,7 @@ for index,i in enumerate(ric_rejeitado):
 #executaCenario([["ric"],["8774"]],[["cte_completo.jpeg","ric"]])                                         #VIAGEM ESPERA 1 RIC, RECEBE 1 RIC QUE REJEIT#A
 
 #executaCenario([["cte"],["37368736"]],[["cte_completo.jpeg","cte"],["cte_completo.jpeg","ric"]])              #VIAGEM ESPERA 1 CTE, RECEBE 1 CTE E 1 RIC QUE REJEITA, DEVE ESTAR REJEITADA
-#executaCenario([["cte"],["35220882270711002194570000000707921426247610"]],[["nf_aprova.jpeg","cte"]])
+#executaCenario([["cte"],["35220882270711002194570000000707921426247610"]],[["nf_aprova.jpeg","cte"]],'rejeitada','nf',contador)
 
 #executaCenario([["ric"],["35220882270711002194570000000707921426247610"]],[["cte_completo.jpeg","ric"],["cte_completo.jpeg","cte"]]) #ESPERA 1 RIC E RECEBE CTE E RIC QUE REJEITA, DEVE SER REJEITADO
 
@@ -258,5 +258,5 @@ for index,i in enumerate(ric_rejeitado):
 #ENVIAR UM DOC ACESSORIOI EM UMA VIAGEM QUE POSSUI 1 CTE REJEITADO E 1 CTE APROVADO
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-enviaDocEsperado("35240212475660000108550010001298291412507339")
+#enviaDocEsperado("35240212475660000108550010001298291412507339")
 #35240212475660000108550010001298291412507339

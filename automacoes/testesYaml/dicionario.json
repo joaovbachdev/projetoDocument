@@ -1,105 +1,141 @@
 {
     "telaLogin": [
         {
-            "automacao": "- tapOn: CPF"
+            "automacao": "- tapOn: CPF",
+            "requisito":"",
+            "nome":"clica no campo de CPF"
         },
         {
-            "automacao": "- tapOn: 'matrixcargo - Motorista'"
+            "automacao": "- tapOn: 'matrixcargo - Motorista'",
+            "requisito":"",
+            "nome":"clica em matrixcargo - Motorista" 
         },
         {
-            "automacao": "- tapOn: 'CPF'"
+            "automacao": "- inputText: 08163060956",
+            "requisito":"",
+            "nome":"digita CPF valido" 
         },
         {
-            "automacao": "- inputText: 08163060956"
+            "automacao": "- tapOn: 'SENHA'",
+            "requisito":"",
+            "nome":"clica no campo de senha" 
         },
         {
-            "automacao": "- tapOn: 'SENHA'"
+            "automacao": "- inputText: 123",
+            "requisito":"",
+            "nome":"digita senha valida" 
         },
         {
-            "automacao": "- inputText: 123"
+            "automacao": "- tapOn: 'Entrar'",
+            "requisito":"",
+            "nome":"clica em entrar" 
         },
         {
-            "automacao": "- tapOn: 'Entrar'"
+            "automacao": "- hideKeyboard",
+            "requisito":"",
+            "nome":"esconde o teclado" 
         },
         {
-            "automacao": "- hideKeyboard"
+            "automacao": "- inputText: ${'Hello ' + maestro.copiedText}",
+            "requisito":"",
+            "nome":"digita texto copiado"
+        },
+        {
+            "automacao":"- copyTextFrom: My Field",
+            "requisito":"",
+            "nome":"copia texto"
         }
     ],
     "checklist": [
         {
             "automacao": "- tapOn: 'Placa do ve\u00edculo'",
             "nome":"clica no input para preenhcer a placa",
-            "requisito":""
+            "requisito":"",
+            "trajeto":[]
         },
         {
             "automacao": "- inputText: 123123123",
             "nome":"digita no campo de placa uma placa invalida",
-            "requisito":""
+            "requisito":"",
+            "trajeto":[]
         },
         {
             "automacao": "- eraseText",
             "nome":"limpa texto do input selecionado",
-            "requisito":""
+            "requisito":"",
+            "trajeto":[]
         },
         {
             "automacao": "- inputText: 'ABS1234'",
             "nome":"digita uma placa valida porem inexistente",
-            "requisito":""
+            "requisito":"",
+            "trajeto":[]
         },
         {
             "automacao": "- inputText: 'ABS123dsdbajdajsdbasjdasdb4'",
             "nome":"digita muitos caracteres invalidos no campo de placa",
-            "requisito":""
+            "requisito":"",
+            "trajeto":[]
         },
         {
             "automacao": "- tapOn: 'Continuar'",
             "nome":"clica no botao continuar",
-            "requisito":""
+            "requisito":"",
+            "trajeto":[]
         },
         {
             "automacao": "- inputText: 'BCZ9H81'",
             "nome":"digita uma placa valida e existente",
-            "requisito":""
+            "requisito":"",
+            "trajeto":[]
         },
         {
             "automacao": "- tapOn: 'Engate'",
             "nome":"clica no botao engate",
-            "requisito":""
+            "requisito":"",
+            "trajeto":[]
         },
         {
             "automacao": "- tapOn: 'Desengate'",
             "nome":"clica no botao desengate",
-            "requisito":""
+            "requisito":"",
+            "trajeto":[]
         },
         {
             "automacao": "- tapOn: 'FOTO OBRIGAT\u00d3RIA DA PLACA'",
             "nome":"clica no item de foto obrigatoria da placa",
-            "requisito":""
+            "requisito":"",
+            "trajeto":[]
         },
         {
             "automacao": "- tapOn: 'FUNILARIA (PINTURA, BORRACHAS DA PORTA, PERFIS, TRINCAS, CHASSI)'",
             "nome":"clica no item de funilaria",
-            "requisito":""
+            "requisito":"",
+            "trajeto":[]
         },
         {
             "automacao": "- - tapOn: 'SISTEMA EL\u00c9TRICO (LUZES, LANTERNAS E PISCAS)'",
             "nome":"clica no item de sistema eletrico",
-            "requisito":""
+            "requisito":"",
+            "trajeto":[]
         },
         {
             "automacao": "- tapOn: 'PNEUS (VERIFICAR ESTADO, PRESS\u00c3O E STEP)'",
             "nome":"clica no item de pneus",
-            "requisito":""
+            "requisito":"",
+            "trajeto":[]
         },
         {
             "automacao": "- tapOn: 'KIT 20 CINTAS - ESTOU CIENTE DO PROCEDIMENTO PFR029'",
             "nome":"clica no item de kit 2- cintas",
-            "requisito":""
+            "requisito":"",
+            "trajeto":[]
         },
         {
             "automacao": "- tapOn: 'APARENCIA EXTERNA (LIMPEZA)'",
             "nome":"clica no item de aparencia externa",
-            "requisito":""
+            "requisito":"",
+            "trajeto":[]
         },
         {
             "automacao": "- runFlow:\n    when:\n        visible: OK\n    commands:\n        - evalScript: ${console.log('NAO CONSEGUIU ENTRAR')}",
@@ -131,136 +167,205 @@
         {
             "automacao": "- tapOn: 'Menu'",
             "requisito":"clica em menu no rodape",
-            "nome":"teste5"
+            "nome":"clica em menu"
         }
     ],
     "Menu": [
         {
-            "automacao": "- tapOn: 'Meus Comprovantes'"
+            "automacao": "- tapOn: 'Meus Comprovantes'",
+            "requisito":"",
+            "nome":"clica em meus comprovantes" 
         },
         {
-            "automacao": "- tapOn: 'Checklist'"
+            "automacao": "- tapOn: 'Checklist'",
+            "requisito":"",
+            "nome":"clica em cheklist" 
         },
         {
-            "automacao": "- tapOn: 'Meus Ve\u00edculos'"
+            "automacao": "- tapOn: 'Meus Ve\u00edculos'",
+            "requisito":"",
+            "nome":"clica em meus veiculos" 
         },
         {
-            "automacao": "- tapOn: 'Meus dados'"
+            "automacao": "- tapOn: 'Meus dados'",
+            "requisito":"",
+            "nome":"clica em meus dados" 
         },
         {
-            "automacao": "- tapOn: 'Central de notifica\u00e7\u00f5es'"
+            "automacao": "- tapOn: 'Central de notifica\u00e7\u00f5es'",
+            "requisito":"",
+            "nome":"clica em central de notificaçoes" 
         },
         {
-            "automacao": "- tapOn: 'Comiss\u00f5es'"
+            "automacao": "- tapOn: 'Comiss\u00f5es'",
+            "requisito":"",
+            "nome":"clica em comissoes" 
         },
         {
-            "automacao": "- tapOn: 'Primeiros Passos'"
+            "automacao": "- tapOn: 'Primeiros Passos'",
+            "requisito":"",
+            "nome":"clica em primeiros passo" 
+            
         },
         {
-            "automacao": "- tapOn: 'Pol\u00edtica de privacidade'"
+            "automacao": "- tapOn: 'Pol\u00edtica de privacidade'",
+            "requisito":"",
+            "nome":"clica em politica de privacidade" 
         },
         {
-            "automacao": "- tapOn: 'Denunciar'"
+            "automacao": "- tapOn: 'Denunciar'",
+            "requisito":"",
+            "nome":"clica em denunciar" 
         },
         {
-            "automacao": "- tapOn: 'Sair do Aplicativo'"
+            "automacao": "- tapOn: 'Sair do Aplicativo'",
+            "requisito":"",
+            "nome":"clica em sair do aplicativo" 
         }
     ],
     "matrixPontua":[
         {
-            "automacao":"- tapOn: 'Meu nível'"
+            "automacao":"- tapOn: 'Meu nível'",
+            "requisito":"",
+            "nome":"clica em meu nivel" 
         },
         {
-            "automacao":"- tapOn: 'Informações'"
+            "automacao":"- tapOn: 'Informações'",
+            "requisito":"",
+            "nome":"clica em informaçoes" 
         },
         {
-            "automacao":"- tapOn: 'Posso ser classificado em quais níveis?'"
+            "automacao":"- tapOn: 'Posso ser classificado em quais níveis?'",
+            "requisito":"",
+            "nome":"clica em posso ser classificado em quais niveis" 
         },
         {
-            "automacao": "- tapOn: O que determina cada nível?"
+            "automacao": "- tapOn: O que determina cada nível?",
+            "requisito":"",
+            "nome":"clica em o que determina cada nivel" 
         },
         {
-            "automacao": "- runFlow:\n    when:\n        visible: NEO\n    commands:\n        - evalScript: ${console.log('USUARIO NEO')}"
+            "automacao": "- runFlow:\n    when:\n        visible: NEO\n    commands:\n        - evalScript: ${console.log('USUARIO NEO')}",
+            "requisito": "",
+            "nome":"verifica se usuario é NEO"
         },
         {
-            "automacao": "- runFlow:\n    when:\n        visible: Bronze\n    commands:\n        - evalScript: ${console.log('USUARIO BRONZE')}"
+            "automacao": "- runFlow:\n    when:\n        visible: Bronze\n    commands:\n        - evalScript: ${console.log('USUARIO BRONZE')}",
+            "requisito": "",
+            "nome":"verifica se o usuario é bronze"
         },
         {
-            "automacao": "- runFlow:\n    when:\n        visible: Prata\n    commands:\n        - evalScript: ${console.log('USUARIO PRATA')}"
+            "automacao": "- runFlow:\n    when:\n        visible: Prata\n    commands:\n        - evalScript: ${console.log('USUARIO PRATA')}",
+            "requisito": "",
+            "nome":"verifica se usuario é prata"
         },
         {
-            "automacao": "- runFlow:\n    when:\n        visible: Ouro\n    commands:\n        - evalScript: ${console.log('USUARIO OURO')}"
+            "automacao": "- runFlow:\n    when:\n        visible: Ouro\n    commands:\n        - evalScript: ${console.log('USUARIO OURO')}",
+            "requisito": "",
+            "nome":"verifica se usuario é ouro"
         },
         {
             "automacao": "- tapOn: Viagem {}\n- runFlow:\n    when:\n        visible: Iniciou viagem\n    commands:\n        - runScript:\n            file: tratamentoErros.js\n            env:\n                myParameter: 'viagem expandida com sucesso'",
-            "requisito": "self.banco.ultimasDezViagens()"
-        },
-        {
-            "automacao": "- tapOn: Viagem {}",
-            "requisito":"self.banco.ultimasDezViagens()",
-            "nome":"clicar em uma viagem"
+            "requisito": "self.banco.ultimasDezViagens()",
+            "nome":"expande viagem"
         },
         {
             "automacao": "- runFlow:\n    when:\n        visible: Iniciou viagem\n    commands:\n        - runScript:\n            file: tratamentoErros.js\n            env:\n                myParameter: 'viagem expandida com sucesso'",
             "requisito":"",
-            "nome":"verifica se a viagem foi expandida"  
+            "nome":"verifica se tem uma viagem expandida"  
         }
         
     ],
     "viagem":[
         {
-            "automacao": "- tapOn: 'Iniciar viagem'"
+            "automacao": "- tapOn: 'Iniciar viagem'",
+            "requisito":"",
+            "nome":"clica no botao Iniciar viagem"  
         },
         {
-            "automacao": "- tapOn: 'Estou aqui'"        
+            "automacao": "- tapOn: 'Estou aqui'",
+            "requisito":"",
+            "nome":"clica no botao Estou aqui" 
         },
         {
-            "automacao": "- tapOn: 'Confirmar'"
+            "automacao": "- tapOn: 'Confirmar'",
+            "requisito":"",
+            "nome":"clica no texto confirmar" 
         },
         {
-            "automacao":"- tapOn: 'Iniciar'"      
+            "automacao":"- tapOn: 'Iniciar'",
+            "requisito":"",
+            "nome":"clica no botao iniciar" 
         },
         {
-            "automacao": "- tapOn: 'Finalizar'"
+            "automacao": "- tapOn: 'Finalizar'",
+            "requisito":"",
+            "nome":"clica no botao finalizar" 
         },
         {
-            "automacao": "- tapOn: '󰅀'"
+            "automacao": "- tapOn: '󰅀'",
+            "requisito":"",
+            "nome":"clica na setinha para nao informar nf" 
         },
         {
-            "automacao": "- tapOn: 'Não informar NF-e'"  
+            "automacao": "- tapOn: 'Não informar NF-e'",
+            "requisito":"",
+            "nome":"clica em nao informar nf" 
         },
         {
-            "automacao": "- tapOn: 'Próximo'"
+            "automacao": "- tapOn: 'Próximo'",
+            "requisito":"",
+            "nome":"clica em proximo" 
         },
         {
-            "automacao": "- tapOn:\n    point: '86%,6%'"
+            "automacao": "- tapOn:\n    point: '86%,6%'",
+            "requisito":"",
+            "nome":"clica no x para fechar a modal de avaliacao" 
         },
         {
-            "automacao": "- tapOn: 'Enviar comprovante'"
+            "automacao": "- tapOn: 'Enviar comprovante'",
+            "requisito":"",
+            "nome":"clica em enviar comprovante" 
         },
         {
-            "automacao": "- tapOn: 'Adicionar Comprovante'"
+            "automacao": "- tapOn: 'Adicionar Comprovante'",
+            "requisito":"",
+            "nome":"clica em adicionar comprovante" 
         },
         {
-            "automacao": "- tapOn: 'Foto do CTe'"
+            "automacao": "- tapOn: 'Foto do CTe'",
+            "requisito":"",
+            "nome":"clica em foto do CTe" 
         },
         {
-            "automacao": "- tapOn: 'Entendi'"
+            "automacao": "- tapOn: 'Entendi'",
+            "requisito":"",
+            "nome":"clica em entendi" 
         },
         {
-            "automacao": "- tapOn: ''"
+            "automacao": "- tapOn: ''",
+            "requisito":"",
+            "nome":"clica na camera para tirar foto" 
         },
         {
-            "automacao": "- tapOn: Salvar e continuar"
+            "automacao": "- tapOn: Salvar e continuar",
+            "requisito":"",
+            "nome":"clica em salvar e continuar" 
         },
         {
-            "automacao": "- tapOn: 'Enviar comprovantes'"
+            "automacao": "- tapOn: 'Enviar comprovantes'",
+            "requisito":"",
+            "nome":"clica em enviar comprovantes" 
         },
         {
-            "automacao": "- tapOn: 'Concluir a viagem'"
+            "automacao": "- tapOn: 'Concluir a viagem'",
+            "requisito":"",
+            "nome":"clica em conclur viagem" 
         },
         {
-            "automacao": "- tapOn: 'Finalizar (1)'"
+            "automacao": "- tapOn: 'Finalizar (1)'",
+            "requisito":"",
+            "nome":"clica em finalizar" 
         }
     ],
     "agenda":[

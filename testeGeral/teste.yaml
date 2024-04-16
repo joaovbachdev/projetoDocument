@@ -1,0 +1,56 @@
+appId: com.example.app
+env:
+    INPUT_CPF_EXISTS: false
+    INPUT_SENHA_EXISTS: false
+    BUTTON_ENTRAR_EXISTS: false
+    CPF_LIMIT: nada
+    CPF_CARACTERES: nada
+---
+- runFlow:
+    when:
+        visible: SENHA
+    commands:
+        - evalScript: ${INPUT_SENHA_EXISTS = 'true'}
+
+
+
+- runFlow:
+    when:
+        visible: CPF
+    commands:
+        - evalScript: ${INPUT_CPF_EXISTS = 'true'}
+
+
+
+- runFlow:
+    when:
+        visible: Entrar
+    commands:
+        - evalScript: ${BUTTON_ENTRAR_EXISTS = 'true'}
+
+
+
+- tapOn: CPF
+- inputText: 123456789012
+- copyTextFrom: CPF
+- evalScript: ${CPF_LIMIT = maestro.copiedText}
+
+- eraseText
+
+- tapOn: CPF
+- inputText: djabbsh34
+- copyTextFrom: CPF
+- evalScript: ${CPF_CARACTERES = maestro.copiedText}
+
+
+- runScript:
+    file: erros.js
+    env:
+        inp_cpf: ${'input cpf existe = '+ INPUT_CPF_EXISTS}
+        inp_senha: ${'input senha existe = '+ INPUT_SENHA_EXISTS}
+        bt_entrar: ${'botao entrar existe = '+ BUTTON_ENTRAR_EXISTS}
+        cpf_limit: ${CPF_LIMIT}
+        cpf_caracteres: ${CPF_CARACTERES}
+
+
+

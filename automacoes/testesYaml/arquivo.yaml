@@ -1,7 +1,11 @@
 appId: com.example.app
 ---
+- tapOn: Viagem 96
 - runFlow:
     when:
-        visible: Abrir Chat
+        visible: Iniciou viagem
     commands:
-        - tapOn: 'Abrir Chat'
+        - runScript:
+            file: tratamentoErros.js
+            env:
+                myParameter: 'viagem expandida com sucesso'
