@@ -1,27 +1,30 @@
 appId: com.example.app
 env:
     AREA: tela_login
-    INPUT_USUARIO: false #variavel que controla se o input de usuario existe
-    INPUT_SENHA: false #variavel que controla se o input de senha existe
-    BOTAO_ENTRAR: false #variavel que controla se o botao entrar existe
-    BOTAO_RECUPERAR_SENHA: false #variavel que controle se o botao recuperar senha existe
+    INPUT_USUARIO: 'false' #variavel que controla se o input de usuario existe
+    INPUT_SENHA: 'false' #variavel que controla se o input de senha existe
+    BOTAO_ENTRAR: 'false' #variavel que controla se o botao entrar existe
+    BOTAO_RECUPERAR_SENHA: 'false' #variavel que controle se o botao recuperar senha existe
     CPF_LIMIT: nada #variavel usada para verificar se é possivel digitar mais do que 11 caracteres no input de cpf
     CPF_ONLY_NUMBERS: nada #variavel usada para verificar se é possivel digitar caracteres diferentes de numeros no cpf
     LOGIN_SUCESS: login nao foi realizado #variavel que controla se o login foi feito com suscesso
+    LOGIN_TRY: 'false'
+    LOGIN_INVALIDO: 'problema com mensagem de erro quando senha esta invalida' #variavel que armazena informaçao se é possivel ou nao entrar com login invalido
+    ENTRAR_SOMENTE_COM_CPF: 'problema com mensagem de erro quando tenta entrar somente com cpf' #variavel que armazena inforamcao se o usuario consegue entrar somente com cpf
+    ENTRAR_SOMENTE_COM_SENHA: '' #variavel que armazena inforamcao se o usuario consegue entrar somente com senha
+    ERRO_CPF_APARICAO: 'mensagem de erro aparecendo corretamente' #variavel que armazena informaçao de se as mensagens de erro aparecem corretamente
 ---
 #VERIFICA SE INPUT DE USUARIO EXISTE
 - runFlow:
-    when:- runFlow:
-        encommands:
-            - tap
-        visible: Usuário
+    when:
+        visible: CPF
     commands:
         - evalScript: ${INPUT_USUARIO = 'true'}
 
 #VERIFICA SE INPUT DE SENHA EXISTE
 - runFlow:
     when:
-        visible: Senha
+        visible: SENHA
     commands:
         - evalScript: ${INPUT_SENHA = 'true'}
 
@@ -40,49 +43,238 @@ env:
         - evalScript: ${BOTAO_RECUPERAR_SENHA = 'true'}
 
 
+
+
+
+
+
+
+
+
 #TESTE DE LIMITE DE CARACTERES
 - runFlow:
     when:
-        true: ${INPUT_USUARIO}
+        true: ${INPUT_USUARIO == 'true'}
     commands:
-        - tapOn: Usuário
+        - eraseText
+        - tapOn: CPF
         - inputText: 123456789123
-        - copyTextFrom: Usuário
+        - copyTextFrom: CPF
         - evalScript: ${CPF_LIMIT = maestro.copiedText}
+
+
+
+
+
+
+
+
 
 #TESTE QUE VALIDA SE É POSSIVEL DIGITAR CARACTERES DIFERETNES DE NUMEROS NO INPUT
 - runFlow:
     when:
-        true: ${INPUT_USUARIO}
+        true: ${INPUT_USUARIO == 'true'}
     commands:
-        - tapOn: Usuário
+        - tapOn: CPF
+        - eraseText
         - inputText: avsdsa1234
-        - copyTextFrom: Usuário
+        - copyTextFrom: CPF
         - evalScript: ${CPF_ONLY_NUMBERS = maestro.copiedText}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#TESTE QUE REALIZA UM LOGIN INVALIDO COM SENHA INVALIDA E CPF VALIDO
+- runFlow:
+    when:
+        true: ${INPUT_USUARIO == 'true' && INPUT_SENHA == 'true' && BOTAO_ENTRAR == 'true'}
+    commands:
+        - tapOn: CPF
+        - eraseText
+        - inputText: 08163060956
+        - tapOn: SENHA
+        - eraseText
+        - inputText: 1234
+        - tapOn: Entrar
+        - tapOn: Entrar
+
+- runFlow:
+    when:
+        visible: Usuário ou senha incorretos
+    commands:
+        - evalScript: ${LOGIN_INVALIDO = 'não é possivel entrar com senha invalida CORRETO'}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#TESTE QUE TENTA ENTRAR USANDO SOMENTE O CAMPO CPF
+- runFlow:
+    when:
+        true: ${INPUT_USUARIO == 'true' && INPUT_SENHA == 'true' && BOTAO_ENTRAR == 'true'}
+    commands:
+        - tapOn: CPF
+        - eraseText
+        - inputText: 08163060956
+        - tapOn: SENHA
+        - eraseText
+        - tapOn: Entrar
+        - tapOn: Entrar
+
+- runFlow:
+    when:
+        visible: Por favor informe a sua senha
+    commands:
+        - evalScript: ${ENTRAR_SOMENTE_COM_CPF = 'não é possivel entrar usando apenas cpf CORRETO'}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#TESTE QUE TENTA ENTRAR USANDO SOMENTE O CAMPO SENHA
+- runFlow:
+    when:
+        true: ${INPUT_USUARIO == 'true' && INPUT_SENHA == 'true' && BOTAO_ENTRAR == 'true'}
+    commands:
+        - tapOn: CPF
+        - eraseText
+        - tapOn: SENHA
+        - eraseText
+        - inputText: 123
+        - tapOn: Entrar
+        - tapOn: Entrar
+
+- runFlow:
+    when:
+        visible: Por favor informe o seu CPF
+    commands:
+        - evalScript: ${ENTRAR_SOMENTE_COM_SENHA = 'não é possivel entrar usando apenas senha CORRETO'}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#TESTE QUE VALIDA SE A MENSAGEM DE ERRO SOME AO DIGITAR E SÓ VOLTA QUANDO CLICA EM ENTRAR NOVAMENTE
+
+- runFlow:
+    when:
+        true: ${INPUT_USUARIO == 'true' && INPUT_SENHA == 'true' && BOTAO_ENTRAR == 'true'}
+    commands:
+        - tapOn: CPF
+        - eraseText
+        - tapOn: SENHA
+        - eraseText
+        - inputText: 123
+        - tapOn: Entrar
+
+- runFlow:
+    when:
+        visible: Por favor informe o seu CPF
+    commands:
+        - tapOn: CPF
+        - inputText: 123
+- runFlow:
+    when:
+        visible: Por favor informe o seu CPF
+    commands:
+        - evalScript: ${ERRO_CPF_APARICAO = 'mensagem de erro cpf aparecendo quando nao deve'}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 #TESTE QUE REALIZA UM LOGIN VALIDO
 - runFlow:
     when:
-        true: ${INPUT_USUARIO}
-        true: ${INPUT_SENHA}
-        true: ${BOTAO_ENTRAR}
-        true: ${BOTAO_RECUPERAR_SENHA}
+        true: ${INPUT_USUARIO == 'true' && INPUT_SENHA == 'true' && BOTAO_ENTRAR == 'true'}
     commands:
-        - ereaseText
-        - tapOn: Usuário
+        - tapOn: CPF
+        - eraseText
         - inputText: 08163060956
-        - tapOn: Senha
+        - tapOn: SENHA
+        - eraseText
         - inputText: 123
         - tapOn: Entrar
+        - tapOn: Entrar
+        
+
+- waitForAnimationToEnd:
+    timeout: 10000  
 
 #TESTE QUE VERIFICA SE O LOGIN FOI FEITO COM SUCESSO
 - runFlow:
     when:
-        visible: Buscar Fretes
+        visible: Tamo Junto!
     commands:
         - evalScript: ${LOGIN_SUCESS = 'login realizado com sucesso'}
+
+- runFlow:
+    when:
+        visible: Não utilizar
+    commands:
+        - evalScript: ${LOGIN_SUCESS = 'login realizado com sucesso'}
+
+
+
+
+
+
+
+
 
 
 
@@ -90,10 +282,14 @@ env:
 - runScript:
     file: trataResultados.js
     env:
-        input_cpf: ${INPUT_CPF}
+        input_cpf: ${INPUT_USUARIO}
         input_senha: ${INPUT_SENHA}
         botao_entrar: ${BOTAO_ENTRAR}
         botao_recuperar_senha: ${BOTAO_RECUPERAR_SENHA}
         limite_cpf: ${CPF_LIMIT}
         cpf_only_numbers: ${CPF_ONLY_NUMBERS}
         login_sucess: ${LOGIN_SUCESS}
+        senha_invalida: ${LOGIN_INVALIDO}
+        somente_com_cpf: ${ENTRAR_SOMENTE_COM_CPF}
+        somente_com_senha: ${ENTRAR_SOMENTE_COM_SENHA}
+        erro_cpf_aparicao: ${ERRO_CPF_APARICAO}

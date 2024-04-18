@@ -1,0 +1,60 @@
+appId: com.example.app
+env:
+    AREA: tela_login
+    INPUT_USUARIO: 'true' #variavel que controla se o input de usuario existe
+    INPUT_SENHA: 'true' #variavel que controla se o input de senha existe
+    BOTAO_ENTRAR: 'true' #variavel que controla se o botao entrar existe
+    BOTAO_RECUPERAR_SENHA: 'false' #variavel que controle se o botao recuperar senha existe
+    CPF_LIMIT: nada #variavel usada para verificar se é possivel digitar mais do que 11 caracteres no input de cpf
+    CPF_ONLY_NUMBERS: nada #variavel usada para verificar se é possivel digitar caracteres diferentes de numeros no cpf
+    LOGIN_SUCESS: login nao foi realizado #variavel que controla se o login foi feito com suscesso
+    LOGIN_TRY: 'false'
+    LOGIN_INVALIDO: 'problema com mensagem de erro quando senha esta invalida'
+    ENTRAR_SOMENTE_COM_CPF: 'problema com mensagem de erro quando tenta entrar somente com cpf'
+    ENTRAR_SOMENTE_COM_SENHA: ''
+    ERRO_CPF_APARICAO: 'funcionando'
+---
+
+
+- runFlow:
+    when:
+        true: ${INPUT_USUARIO == 'true' && INPUT_SENHA == 'true' && BOTAO_ENTRAR == 'true'}
+    commands:
+        - tapOn: CPF
+        - eraseText
+        - tapOn: SENHA
+        - eraseText
+        - inputText: 123
+        - tapOn: Entrar
+        - tapOn: Entrar
+
+- runFlow:
+    when:
+        visible: Por favor informe o seu CPF
+    commands:
+        - tapOn: CPF
+        - inputText: 123
+- runFlow:
+    when:
+        visible: Por favor informe o seu CPF
+    commands:
+        - evalScript: ${ERRO_CPF_APARICAO = 'mensagem de erro cpf aparecendo quando nao deve'}
+
+
+#MANDA OS RESULTADOS PARA UM ARQUIVO JS
+- runScript:
+    file: trataResultados.js
+    env:
+        input_cpf: ${INPUT_USUARIO}
+        input_senha: ${INPUT_SENHA}
+        botao_entrar: ${BOTAO_ENTRAR}
+        botao_recuperar_senha: ${BOTAO_RECUPERAR_SENHA}
+        limite_cpf: ${CPF_LIMIT}
+        cpf_only_numbers: ${CPF_ONLY_NUMBERS}
+        login_sucess: ${LOGIN_SUCESS}
+        senha_invalida: ${LOGIN_INVALIDO}
+        somente_com_cpf: ${ENTRAR_SOMENTE_COM_CPF}
+        somente_com_senha: ${ENTRAR_SOMENTE_COM_SENHA}
+        erro_cpf_aparicao: ${ERRO_CPF_APARICAO}
+
+

@@ -7,11 +7,12 @@
 //login_sucess  variavel que diz se o login foi realizado com sucesso -> bool   NAO PRECISA DE TRATATIVA
 
 
+
 //VALIDACAO DO TAMANHO DO CPF
 if(limite_cpf.length > 11){
-    console.log("cpf maior que 11 caracteres")
+    console.log("cpf maior que 11 caracteres",limite_cpf)
 }else{
-    console.log("cpf respeitando o limite")
+    console.log("cpf respeitando o limite",limite_cpf)
 }
 
 
@@ -21,3 +22,10 @@ if(/^\d+$/.test(cpf_only_numbers) == false){
 }else{
     console.log("cpf aceitando apenas numeros")
 }
+
+console.log(login_sucess)
+console.log(senha_invalida)
+console.log(somente_com_cpf)
+console.log(somente_com_senha)
+console.log(erro_cpf_aparicao)
+
