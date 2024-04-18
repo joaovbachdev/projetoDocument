@@ -1,0 +1,99 @@
+appId: com.example.app
+env:
+    AREA: tela_login
+    INPUT_USUARIO: false #variavel que controla se o input de usuario existe
+    INPUT_SENHA: false #variavel que controla se o input de senha existe
+    BOTAO_ENTRAR: false #variavel que controla se o botao entrar existe
+    BOTAO_RECUPERAR_SENHA: false #variavel que controle se o botao recuperar senha existe
+    CPF_LIMIT: nada #variavel usada para verificar se é possivel digitar mais do que 11 caracteres no input de cpf
+    CPF_ONLY_NUMBERS: nada #variavel usada para verificar se é possivel digitar caracteres diferentes de numeros no cpf
+    LOGIN_SUCESS: login nao foi realizado #variavel que controla se o login foi feito com suscesso
+---
+#VERIFICA SE INPUT DE USUARIO EXISTE
+- runFlow:
+    when:- runFlow:
+        encommands:
+            - tap
+        visible: Usuário
+    commands:
+        - evalScript: ${INPUT_USUARIO = 'true'}
+
+#VERIFICA SE INPUT DE SENHA EXISTE
+- runFlow:
+    when:
+        visible: Senha
+    commands:
+        - evalScript: ${INPUT_SENHA = 'true'}
+
+#VERIFICA BOTAO ENTRAR EXISTE
+- runFlow:
+    when:
+        visible: Entrar
+    commands:
+        - evalScript: ${BOTAO_ENTRAR = 'true'}
+
+#VERIFICA SE BOTAO RECUPERAR SENHA EXISTE
+- runFlow:
+    when:
+        visible: Recuperar Senha
+    commands:
+        - evalScript: ${BOTAO_RECUPERAR_SENHA = 'true'}
+
+
+#TESTE DE LIMITE DE CARACTERES
+- runFlow:
+    when:
+        true: ${INPUT_USUARIO}
+    commands:
+        - tapOn: Usuário
+        - inputText: 123456789123
+        - copyTextFrom: Usuário
+        - evalScript: ${CPF_LIMIT = maestro.copiedText}
+
+#TESTE QUE VALIDA SE É POSSIVEL DIGITAR CARACTERES DIFERETNES DE NUMEROS NO INPUT
+- runFlow:
+    when:
+        true: ${INPUT_USUARIO}
+    commands:
+        - tapOn: Usuário
+        - inputText: avsdsa1234
+        - copyTextFrom: Usuário
+        - evalScript: ${CPF_ONLY_NUMBERS = maestro.copiedText}
+
+
+
+#TESTE QUE REALIZA UM LOGIN VALIDO
+- runFlow:
+    when:
+        true: ${INPUT_USUARIO}
+        true: ${INPUT_SENHA}
+        true: ${BOTAO_ENTRAR}
+        true: ${BOTAO_RECUPERAR_SENHA}
+    commands:
+        - ereaseText
+        - tapOn: Usuário
+        - inputText: 08163060956
+        - tapOn: Senha
+        - inputText: 123
+        - tapOn: Entrar
+
+#TESTE QUE VERIFICA SE O LOGIN FOI FEITO COM SUCESSO
+- runFlow:
+    when:
+        visible: Buscar Fretes
+    commands:
+        - evalScript: ${LOGIN_SUCESS = 'login realizado com sucesso'}
+
+
+
+#MANDA OS RESULTADOS PARA UM ARQUIVO JS
+- runScript:
+    file: trataResultados.js
+    env:
+        input_cpf: ${INPUT_CPF}
+        input_senha: ${INPUT_SENHA}
+        botao_entrar: ${BOTAO_ENTRAR}
+        botao_recuperar_senha: ${BOTAO_RECUPERAR_SENHA}
+        limite_cpf: ${CPF_LIMIT}
+        cpf_only_numbers: ${CPF_ONLY_NUMBERS}
+        login_sucess: ${LOGIN_SUCESS}
