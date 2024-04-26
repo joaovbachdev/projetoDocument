@@ -3537,5 +3537,291 @@
         "tags": [],
         "testes": [],
         "bugs": []
+    },
+    "LoginLiteInputUsuario": {
+        "position": [
+            1030.1967709137568,
+            -1570.0258587975102
+        ],
+        "description": "cria via  auxiliar",
+        "name": "LoginLiteInputUsuario",
+        "interageCom": "",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "LoginLiteInputSenha": {
+        "position": [
+            864.5632229608483,
+            -1478.4395634415923
+        ],
+        "description": "cria via  auxiliar",
+        "name": "LoginLiteInputSenha",
+        "interageCom": "",
+        "tags": [
+            "loginLite"
+        ],
+        "testes": [
+            {
+                "plataforma": "mobile",
+                "teste": "digita senha valida",
+                "status": "naoRealizado",
+                "automacao": [
+                    {
+                        "area": "loginLite",
+                        "teste": "- inputText: joaobach"
+                    }
+                ]
+            },
+            {
+                "plataforma": "mobile",
+                "teste": "digita senha invalida",
+                "status": "naoRealizado",
+                "automacao": [
+                    {
+                        "area": "loginLite",
+                        "teste": "- inputText: jfnsd"
+                    }
+                ]
+            }
+        ],
+        "bugs": []
+    },
+    "LoginLiteBotaoEntrar": {
+        "position": [
+            984.4975237596332,
+            -1363.1718748681214
+        ],
+        "description": "cria via  auxiliar",
+        "name": "LoginLiteBotaoEntrar",
+        "interageCom": "LoginLiteInputSenha",
+        "tags": [
+            "loginLite"
+        ],
+        "testes": [
+            {
+                "plataforma": "mobile",
+                "teste": "clicar em entrar",
+                "status": "naoRealizado",
+                "automacao": [
+                    {
+                        "area": "loginLite",
+                        "teste": "- tapOn: Entrar"
+                    }
+                ]
+            },
+            {
+                "plataforma": "mobile",
+                "teste": "usuario invalido + senha valida",
+                "status": "naoRealizado",
+                "automacao": [
+                    {
+                        "area": "loginLite",
+                        "teste": "- tapOn: Usu\u00e1rio"
+                    },
+                    {
+                        "area": "loginLite",
+                        "teste": "- inputText: jfnsd"
+                    },
+                    {
+                        "area": "loginLite",
+                        "teste": "- tapOn: Senha"
+                    },
+                    {
+                        "area": "loginLite",
+                        "teste": "- inputText: joaobach"
+                    },
+                    {
+                        "area": "loginLite",
+                        "teste": "- runFlow:\n    - when\n        visible: Senha inv\u00e1lida\n    - commands:\n        - evalScript: ${ERRO_SENHA_INVALIDA = 'visivel'}"
+                    }
+                ]
+            },
+            {
+                "plataforma": "mobile",
+                "teste": "usuario valido + senha invalida",
+                "status": "naoRealizado",
+                "automacao": [
+                    {
+                        "area": "loginLite",
+                        "teste": "- tapOn: Usu\u00e1rio"
+                    },
+                    {
+                        "area": "loginLite",
+                        "teste": "- inputText: jfnsd"
+                    },
+                    {
+                        "area": "loginLite",
+                        "teste": "- tapOn: Senha"
+                    },
+                    {
+                        "area": "loginLite",
+                        "teste": "- inputText: jfnsd"
+                    },
+                    {
+                        "area": "loginLite",
+                        "teste": "- runFlow:\n    - when\n        visible: Senha inv\u00e1lida\n    - commands:\n        - evalScript: ${ERRO_SENHA_INVALIDA = 'visivel'}"
+                    }
+                ]
+            },
+            {
+                "plataforma": "mobile",
+                "teste": "usuario valido + senha valida",
+                "status": "naoRealizado",
+                "automacao": [
+                    {
+                        "area": "loginLite",
+                        "teste": "- tapOn: Usu\u00e1rio"
+                    },
+                    {
+                        "area": "loginLite",
+                        "teste": "- inputText: jfnsd"
+                    },
+                    {
+                        "area": "loginLite",
+                        "teste": "- tapOn: Senha"
+                    },
+                    {
+                        "area": "loginLite",
+                        "teste": "- inputText: joaobach"
+                    },
+                    {
+                        "area": "loginLite",
+                        "teste": "- runFlow:\n    - when\n        notVisible: Senha inv\u00e1lida\n    - commands:\n        - evalScript: ${ERRO_SENHA_INVALIDA = 'nao existe'}"
+                    },
+                    {
+                        "area": "loginLite",
+                        "teste": "- runFlow:\n    - when\n        notVisible: Redefini\u00e7\u00e3o de senha\n    - commands:\n        - evalScript: ${TELA_REDEFINICAO = 'aberta'}"
+                    }
+                ]
+            }
+        ],
+        "bugs": []
+    },
+    "LoginLiteBotaoRecuperarSenha": {
+        "position": [
+            905.1352525232658,
+            -1265.7581244920184
+        ],
+        "description": "cria via  auxiliar",
+        "name": "LoginLiteBotaoRecuperarSenha",
+        "interageCom": "LoginLiteTelaRedefinicaoSenha",
+        "tags": [
+            "loginLite"
+        ],
+        "testes": [],
+        "bugs": []
+    },
+    "TelaLoginLite": {
+        "position": [
+            511.56876634791763,
+            -2004.7528928080671
+        ],
+        "description": "cria via  auxiliar",
+        "name": "TelaLoginLite",
+        "interageCom": "",
+        "tags": [
+            "loginLite"
+        ],
+        "testes": [],
+        "bugs": []
+    },
+    "LoginLiteSenhaInvalida": {
+        "position": [
+            1400.706215544158,
+            -1405.3167334663394
+        ],
+        "description": "cria via  auxiliar",
+        "name": "LoginLiteSenhaInvalida",
+        "interageCom": "LoginLiteInputSenha",
+        "tags": [
+            "loginLite"
+        ],
+        "testes": [],
+        "bugs": []
+    },
+    "LoginLiteTelaRedefinicaoSenha": {
+        "position": [
+            2204.822449465699,
+            -1981.1153198844365
+        ],
+        "description": "cria via  auxiliar",
+        "name": "LoginLiteTelaRedefinicaoSenha",
+        "interageCom": "",
+        "tags": [
+            "loginLite"
+        ],
+        "testes": [],
+        "bugs": []
+    },
+    "RedefinicaoSenhaUsuario": {
+        "position": [
+            2688.7646417271735,
+            -1233.3848351879908
+        ],
+        "description": "cria via  auxiliar",
+        "name": "RedefinicaoSenhaUsuario",
+        "interageCom": "botaoSolicitarNovaSenha",
+        "tags": [
+            "loginLite"
+        ],
+        "testes": [],
+        "bugs": []
+    },
+    "botaoSolicitarNovaSenha": {
+        "position": [
+            3230.8340069713377,
+            -1064.3959186846412
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoSolicitarNovaSenha",
+        "interageCom": "",
+        "tags": [
+            "loginLite"
+        ],
+        "testes": [],
+        "bugs": []
+    },
+    "SmsEnviadoBotaoConfirmar": {
+        "position": [
+            4790.361470668282,
+            -1121.1645523862708
+        ],
+        "description": "cria via  auxiliar",
+        "name": "SmsEnviadoBotaoConfirmar",
+        "interageCom": "TelaLoginLite",
+        "tags": [
+            "loginLite"
+        ],
+        "testes": [],
+        "bugs": []
+    },
+    "telaConfirmarNumero": {
+        "position": [
+            3715.3419726457523,
+            -1835.3871845848164
+        ],
+        "description": "cria via  auxiliar",
+        "name": "telaConfirmarNumero",
+        "interageCom": "botaoSolicitarNovaSenha",
+        "tags": [
+            "loginLite"
+        ],
+        "testes": [],
+        "bugs": []
+    },
+    "loginLiteEscondeSenha": {
+        "position": [
+            1062.5511939534813,
+            -1462.5153469501004
+        ],
+        "description": "cria via  auxiliar",
+        "name": "loginLiteEscondeSenha",
+        "interageCom": "LoginLiteInputSenha",
+        "tags": [
+            "loginLite"
+        ],
+        "testes": [],
+        "bugs": []
     }
 }

@@ -115,6 +115,7 @@ class ControllerBanco:
                         values["circles"].append([data[i]["name"],"True"])
                     else:
                         values["circles"].append([data[i]["name"],"False"])
+        
 
 
         with open("banco/lines.json","r+") as f:
@@ -362,7 +363,7 @@ class ControllerBanco:
 
 #ControllerBanco().getAllTags()
 
-#ControllerBanco().createLines()
+ControllerBanco().createLines()
 #print(ControllerBanco().extraiRelatorio())  
 
 #ControllerBanco().verifica_weakup_record_criado()
@@ -386,5 +387,5 @@ with open("banco/elementos.json","r+") as f:
     f.truncate
 '''
 
-#ControllerBanco().validateElementTagFilter("geral")
+#print(ControllerBanco().validateElementTagFilter("nada"))
 #ControllerBanco().getElementTests("inputUsuario","elementos")

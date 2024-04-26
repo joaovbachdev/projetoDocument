@@ -79,6 +79,12 @@ addNewImage(150,120,1300,1300,'static/telaLogin.jpeg')
 addNewImage(150,1800,1300,1300,'static/modalTopDrivers.jpeg')
 addNewImage(-500,3400,1300,1300,'static/telaInicial.jpeg')
 
+
+addNewImage(150,-2000,1300,1300,'static/loginPrincipal.png')
+addNewImage(1000,-2000,1300,1300,'static/loginLiteSenhaInvalida.png')
+addNewImage(2200,-2000,1300,1300,'static/loginLiteConfirmarUser.png')
+addNewImage(3700,-2000,1300,1300,'static/loginLiteSMSEnviado.png')
+
 addNewImage(800,3400,1300,1300,'static/telaMenu.jpeg')
 addNewImage(1500,3400,1300,1300,'static/telaMenu2.jpeg')
 
@@ -156,3 +162,4 @@ addNewImage(3000,11000,1300,1300,'static/telaMatrixPontuaMeuNivel.jpg')
 addNewImage(3800,11000,1300,1300,'static/matrixPontuaViagemExpandida.jpg')
 addNewImage(4600,11000,1300,1300,'static/matrixPontuaTelaInformacoes.jpg')
 addNewImage(5400,11000,1300,1300,'static/matrixPontuaInformacaoExpandida.jpg')
+

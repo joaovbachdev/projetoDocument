@@ -404,5 +404,82 @@
             "nome":"clica no campo de observações",
             "requisito":""
         }
+    ],
+    "loginLite":[
+        {
+            "automacao":"- tapOn: Usuário",
+            "nome":"clica no input de Usuário",
+            "requisito":""
+        },
+        {
+            "automacao":"- tapOn: Senha",
+            "nome":"clica no input se senha",
+            "requisito":""
+        },
+        {
+            "automacao":"- tapOn: Entrar",
+            "nome":"clica no botao Entrar",
+            "requisito":""
+        },
+        {
+            "automacao":"- tapOn: Recuperar Senha",
+            "nome":"clica no botao Recuperar Senha",
+            "requisito":""
+        },
+        {
+            "automacao":"- inputText: jfnsd",
+            "nome":"digita uma senha invalida",
+            "requisito":""
+        },
+        {
+            "automacao":"- inputText: jfnsd",
+            "nome":"digita um usuario invalido",
+            "requisito":""
+        },
+        {
+            "automacao":"- inputText: joaobach",
+            "nome":"digita uma senha valida",
+            "requisito":""
+        },
+        {
+            "automacao":"- inputText: jfnsd",
+            "nome":"digita um usuario valido",
+            "requisito":""
+        },
+        {
+            "automacao":"- runFlow:\n    - when\n        visible: Senha inválida\n    - commands:\n        - evalScript: ${ERRO_SENHA_INVALIDA = 'visivel'}",
+            "nome":"verifica se a mensagem de erro de senha invalida existe",
+            "requisito":""
+        },
+        {
+            "automacao":"- runFlow:\n    - when\n        notVisible: Senha inválida\n    - commands:\n        - evalScript: ${ERRO_SENHA_INVALIDA = 'nao existe'}",
+            "nome":"verifica se a mensagem de erro de senha invalida nao existe",
+            "requisito":""
+        },
+        {
+            "automacao":"- tapOn: Solicitar Nova Senha",
+            "nome":"clica no botao solicitar nova senha",
+            "requisito":""
+        },
+        {
+            "automacao":"- tapOn: Confirmar",
+            "nome":"clica no botao Confirmar",
+            "requisito":""
+        },
+        {
+            "automacao":"- runFlow:\n    - when\n        notVisible: Redefinição de senha\n    - commands:\n        - evalScript: ${TELA_REDEFINICAO = 'aberta'}",
+            "nome":"verifica se tela de redefinicao de senha esta aberta",
+            "requisito":""
+        },
+        {
+            "automacao":"- runFlow:\n    - when\n        notVisible: Confirmar Número\n    - commands:\n        - evalScript: ${TELA_CONFIRMAR_NUMERO = 'aberta'}",
+            "nome":"verifica se tela de confirmar numero est aberta",
+            "requisito":""
+        },
+        {
+            "automacao":"- runFlow:\n    - when\n        notVisible: Recuperar Senha\n    - commands:\n        - evalScript: ${TELA_LOGIN = 'aberta'}",
+            "nome":"verifica se tela de login esta aberta",
+            "requisito":""
+        }
     ]
 }
