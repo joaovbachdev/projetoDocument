@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<htmL>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='historicoBug.css') }}">
+    </head>
+    <body>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <img src="{{ url_for('static', filename='grafico_de_pizza.png') }}" id="imagem"></img>
+        <select name="opcao" id="opcoes">
+            <option value="opcao1">Opção 1</option>
+            <option value="opcao2">Opção 2</option>
+          </select>
+        </div>
+        <script src="{{ url_for('static', filename='apiBugs.js') }}"></script>
+        <script>
+            document.getElementById("opcoes").addEventListener('change',function(){
+                atualizaGrafico(document.getElementById("opcoes").value)
+            })
+        </script>
+    </body>
+</htmL>

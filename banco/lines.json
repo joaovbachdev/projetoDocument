@@ -932,9 +932,7 @@
         ],
         "description": "sua descricao aqui",
         "name": "LoginLiteBotaoEntrar/LoginLiteInputSenha",
-        "tags": [
-            "loginLite"
-        ],
+        "tags": [],
         "testes": []
     },
     "LoginLiteBotaoRecuperarSenha/LoginLiteTelaRedefinicaoSenha": {
@@ -946,9 +944,7 @@
         ],
         "description": "sua descricao aqui",
         "name": "LoginLiteBotaoRecuperarSenha/LoginLiteTelaRedefinicaoSenha",
-        "tags": [
-            "loginLite"
-        ],
+        "tags": [],
         "testes": []
     },
     "LoginLiteSenhaInvalida/LoginLiteInputSenha": {
@@ -960,9 +956,7 @@
         ],
         "description": "sua descricao aqui",
         "name": "LoginLiteSenhaInvalida/LoginLiteInputSenha",
-        "tags": [
-            "loginLite"
-        ],
+        "tags": [],
         "testes": []
     },
     "RedefinicaoSenhaUsuario/botaoSolicitarNovaSenha": {
@@ -974,9 +968,7 @@
         ],
         "description": "sua descricao aqui",
         "name": "RedefinicaoSenhaUsuario/botaoSolicitarNovaSenha",
-        "tags": [
-            "loginLite"
-        ],
+        "tags": [],
         "testes": []
     },
     "SmsEnviadoBotaoConfirmar/TelaLoginLite": {
@@ -988,9 +980,7 @@
         ],
         "description": "sua descricao aqui",
         "name": "SmsEnviadoBotaoConfirmar/TelaLoginLite",
-        "tags": [
-            "loginLite"
-        ],
+        "tags": [],
         "testes": []
     },
     "telaConfirmarNumero/botaoSolicitarNovaSenha": {
@@ -1002,9 +992,7 @@
         ],
         "description": "sua descricao aqui",
         "name": "telaConfirmarNumero/botaoSolicitarNovaSenha",
-        "tags": [
-            "loginLite"
-        ],
+        "tags": [],
         "testes": []
     },
     "loginLiteEscondeSenha/LoginLiteInputSenha": {

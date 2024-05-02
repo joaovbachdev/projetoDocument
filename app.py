@@ -1,3 +1,4 @@
+from crypt import methods
 from urllib.robotparser import RequestRate
 from wsgiref.util import request_uri
 from flask import Flask, render_template, request
@@ -13,12 +14,16 @@ import threading
 import random
 import threading
 import time
+import matplotlib
+import matplotlib.pyplot as plt
+import os
+
 
 
 app = Flask("app")
 bd = ControllerBanco()
 main = Main(Cenarios(), ControllerBanco)
-
+matplotlib.use('agg')
 
 
 socketio = SocketIO(app)
@@ -30,6 +35,10 @@ def home():
 @app.route('/relatorio')
 def relatorio():
     return render_template('testeRelatorio.html', data=bd.extraiRelatorio())
+
+@app.route('/graficos')
+def graficos():
+    return render_template('historicoBugs.html')
 
 @app.route('/getElementos',methods=['GET'])
 def getElementos():
@@ -260,6 +269,38 @@ def tratamentoErrosMobile():
     print(retorno, "RETORNOoooooooooooooo")
     return "recebido"
 
+@app.route("/atualizaGrafico",methods=['POST'])
+def atualizaGrafico():
+    labels = []
+    sizes = []
+    opcao = request.json['opcao']
+    index = ''
+    #if os.path.exists('static/grafico_de_pizza.png'):
+        #os.remove('static/grafico_de_pizza.png')
+
+    if opcao == 'opcao1':
+        index = 'grafico_de_pizza.png'
+        print("OPCAO1")
+        labels = ['suporte', 'customizacao', 'bug']
+        sizes = [20, 33, 47]
+        plt.pie(sizes, labels=labels, autopct='%1.1f%%', startangle=140)
+        plt.axis('equal')  # Garante que o gráfico seja um círculo
+        plt.savefig('static/grafico_de_pizza.png')
+        plt.clf()
+       
+    else:
+        index = 'grafico_de_pizza2.png'
+        print("OPCAO2")
+        labels = ['apicativo', 'da', 'acelerador']
+        sizes = [15, 33, 52]
+        plt.pie(sizes, labels=labels, autopct='%1.1f%%', startangle=140)
+        plt.axis('equal')  # Garante que o gráfico seja um círculo
+        plt.savefig('static/grafico_de_pizza.png')
+        plt.clf()
+       
+
+
+    return index
 
 app.run(host='0.0.0.0', port=5000, debug=True)
 

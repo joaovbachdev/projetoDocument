@@ -3823,5 +3823,82 @@
         ],
         "testes": [],
         "bugs": []
+    },
+    "pontuacaoIniciouViagem": {
+        "position": [
+            4704.244873081929,
+            11632.172624364715
+        ],
+        "description": "cria via  auxiliar",
+        "name": "pontuacaoIniciouViagem",
+        "interageCom": "",
+        "tags": [],
+        "testes": [
+            {
+                "plataforma": "web",
+                "teste": "criar uma viagem mas nao iniciar, esta pontuacao deve estar zerada",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "plataforma": "web",
+                "teste": "criar uma viagem e clicar em iniciar, teve pontuar 25",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
+        "bugs": []
+    },
+    "pontuacaoDocumentosEmissao": {
+        "position": [
+            4704.3749128857835,
+            11724.704659370196
+        ],
+        "description": "se o ponto de coleta for uma baseoperacional sempre deve dar os pontos mesmo sem o envio de documentos. Se nao for de base operacional appenas com o envio de documentos ganhara os pontos",
+        "name": "pontuacaoDocumentosEmissao",
+        "interageCom": "",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "pontuacaoComprovantesEnviados": {
+        "position": [
+            4702.297373264811,
+            11781.442851686119
+        ],
+        "description": "se a viagem termina em base operacional nao sera obrigatorio comprovantes, nenste caso precisar dar os pontos. Caso peca qualquer tipo de comprovante SO ganhara os pontos se enviar algum comprovante",
+        "name": "pontuacaoComprovantesEnviados",
+        "interageCom": "",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "pontuacaoComprovantesAprovados": {
+        "position": [
+            4706.382616219579,
+            11834.153962742375
+        ],
+        "description": "este caso so dara pontos quando TODOS os comprovantes forem aprovados. Se a viagem nao pedir comprovantes de entrega estes pontos sao dados automaticamente. Se todos foram aprovados automaticamente ganha 15 pontos, se ao menos 1 foi aprovado manual ganha 10 pontos",
+        "name": "pontuacaoComprovantesAprovados",
+        "interageCom": "",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "totalPontuacao": {
+        "position": [
+            4704.497860742731,
+            11902.013463223942
+        ],
+        "description": "cria via  auxiliar",
+        "name": "totalPontuacao",
+        "interageCom": "",
+        "tags": [],
+        "testes": [],
+        "bugs": []
     }
 }
