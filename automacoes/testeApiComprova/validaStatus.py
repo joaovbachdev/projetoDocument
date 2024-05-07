@@ -84,6 +84,7 @@ def getExternalId():
     with open("automacoes/testeApiComprova/payloads/dataController.json","r+") as f:
         return str(json.load(f)["externalId"])
 
+
 def updateExternalId():
     with open("automacoes/testeApiComprova/payloads/dataController.json","r+") as f:
         data = json.load(f)

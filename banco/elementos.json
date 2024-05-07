@@ -30,7 +30,8 @@
                 ]
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": ["SM1234"]
     },
     "inputSenha": {
         "position": [
@@ -64,7 +65,8 @@
                 "plataforma": "web"
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": ["SM1234"]
     },
     "botaoEntrar": {
         "position": [
@@ -110,7 +112,8 @@
                 "plataforma": "web"
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "erroLogin": {
         "position": [
@@ -149,7 +152,8 @@
                 "plataforma": "web"
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoPoliticas": {
         "position": [
@@ -161,7 +165,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "modalTopDrivers": {
         "position": [
@@ -195,7 +200,8 @@
                 "plataforma": "web"
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "xFecharModalTopDriver": {
         "position": [
@@ -216,7 +222,8 @@
                 "plataforma": "web"
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoTamoJunto": {
         "position": [
@@ -238,7 +245,8 @@
                 "plataforma": "web"
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "sinoNotificacaoHeader": {
         "position": [
@@ -259,7 +267,8 @@
                 "plataforma": "web"
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "chatHeader": {
         "position": [
@@ -281,7 +290,8 @@
                 "plataforma": "web"
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "atalhoMatrixPay": {
         "position": [
@@ -293,7 +303,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "rankingHeader": {
         "position": [
@@ -320,7 +331,8 @@
                 "plataforma": "web"
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "inicioRodape": {
         "position": [
@@ -341,7 +353,8 @@
                 "plataforma": "web"
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "agendaRodape": {
         "position": [
@@ -364,7 +377,8 @@
                 ]
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "viagensRodape": {
         "position": [
@@ -387,7 +401,8 @@
                 ]
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "menuRodape": {
         "position": [
@@ -410,7 +425,8 @@
                 ]
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "3pontinhosLocalizacao": {
         "position": [
@@ -431,7 +447,8 @@
                 "plataforma": "web"
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "telaViagens": {
         "position": [
@@ -443,7 +460,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "telaAgenda": {
         "position": [
@@ -455,7 +473,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "telaMenu": {
         "position": [
@@ -467,7 +486,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "telaLogin": {
         "position": [
@@ -527,7 +547,8 @@
                 ]
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoSairDoAplicativo": {
         "position": [
@@ -551,7 +572,8 @@
                 ]
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "modalRanking": {
         "position": [
@@ -565,7 +587,8 @@
             "ranking"
         ],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoVerRankingMotoristas": {
         "position": [
@@ -579,7 +602,8 @@
             "ranking"
         ],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "atalhoFlutuanteChat": {
         "position": [
@@ -631,7 +655,8 @@
                 "plataforma": "web"
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoMeusVeiculos": {
         "position": [
@@ -654,7 +679,8 @@
                 ]
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoMeusDados": {
         "position": [
@@ -677,7 +703,8 @@
                 ]
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoCentralDeNoificacoes": {
         "position": [
@@ -700,7 +727,8 @@
                 ]
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoComissoes": {
         "position": [
@@ -723,7 +751,8 @@
                 ]
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoMeusComprovantes": {
         "position": [
@@ -744,7 +773,8 @@
                 ]
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoChecklist": {
         "position": [
@@ -767,7 +797,8 @@
                 ]
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoPrimeirosPassos": {
         "position": [
@@ -788,7 +819,8 @@
                 ]
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoMenuPolicaPrivacidade": {
         "position": [
@@ -802,7 +834,8 @@
             "menu"
         ],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoDenunciar": {
         "position": [
@@ -816,7 +849,8 @@
             "menu"
         ],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "xParaFecharMenu": {
         "position": [
@@ -830,7 +864,8 @@
             "menu"
         ],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoAgendaAvancarmes": {
         "position": [
@@ -861,7 +896,8 @@
                 "plataforma": "web"
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoAgendaVoltarMes": {
         "position": [
@@ -892,7 +928,8 @@
                 "plataforma": "web"
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoAgendaAdicionarCompromisso": {
         "position": [
@@ -917,7 +954,8 @@
                 "plataforma": "web"
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoAgendaDiasDoMes": {
         "position": [
@@ -948,7 +986,8 @@
                 "plataforma": "web"
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "agendaDiasDoMesSelecionado": {
         "position": [
@@ -979,7 +1018,8 @@
                 "plataforma": "web"
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoViagensAgendadas": {
         "position": [
@@ -991,7 +1031,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoViagensEmAceite": {
         "position": [
@@ -1003,7 +1044,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoViagensConluidas": {
         "position": [
@@ -1015,7 +1057,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "atalhoChatTelaViagens": {
         "position": [
@@ -1029,7 +1072,8 @@
             "redirectChat"
         ],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoVerifiacrhistoricoDePontuacao": {
         "position": [
@@ -1043,7 +1087,8 @@
             "ranking"
         ],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "xFecharModalRanking": {
         "position": [
@@ -1057,7 +1102,8 @@
             "ranking"
         ],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoFecharModalRanking": {
         "position": [
@@ -1071,7 +1117,8 @@
             "ranking"
         ],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoCompartilharModalRRanking": {
         "position": [
@@ -1085,7 +1132,8 @@
             "ranking"
         ],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "setVoltarMatrixTopDriver": {
         "position": [
@@ -1099,7 +1147,8 @@
             "ranking"
         ],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "setaVoltaarCentralNotificacoes": {
         "position": [
@@ -1111,7 +1160,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "telaMatrixTopDriver": {
         "position": [
@@ -1125,7 +1175,8 @@
             "ranking"
         ],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "TelaCentralNotificacoes": {
         "position": [
@@ -1137,7 +1188,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "modalHistoricoPontuacao": {
         "position": [
@@ -1149,7 +1201,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "xFechaModalHistoricoPpntuacao": {
         "position": [
@@ -1163,7 +1216,8 @@
             "ranking"
         ],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoVerMaisHistorico": {
         "position": [
@@ -1177,7 +1231,8 @@
             "ranking"
         ],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoVerMenosHistoricoPontuaca": {
         "position": [
@@ -1191,7 +1246,8 @@
             "ranking"
         ],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "cardFechadoHistorcoPontuacao": {
         "position": [
@@ -1205,7 +1261,8 @@
             "ranking"
         ],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "cardAbrtoHistoricoPontuacao": {
         "position": [
@@ -1219,7 +1276,8 @@
             "ranking"
         ],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoVoltarHistoricoPontucao": {
         "position": [
@@ -1233,7 +1291,8 @@
             "ranking"
         ],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "inputDataControleDoSono": {
         "position": [
@@ -1266,7 +1325,8 @@
                 "plataforma": "web"
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "inputHorarioControleDoSono": {
         "position": [
@@ -1299,7 +1359,8 @@
                 "plataforma": "web"
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoConfirmarControleDoSono": {
         "position": [
@@ -1338,7 +1399,8 @@
                 "plataforma": "web"
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoSuporteControleDoSono": {
         "position": [
@@ -1360,7 +1422,8 @@
                 "plataforma": "web"
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "telaControleDoSono": {
         "position": [
@@ -1374,7 +1437,8 @@
             "controleSono"
         ],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "telaConversasAtivas": {
         "position": [
@@ -1388,7 +1452,8 @@
             "controleSono"
         ],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "telaViageComSeguranca": {
         "position": [
@@ -1402,7 +1467,8 @@
             "controleSono"
         ],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoTamoJuntoViageComSeguranca": {
         "position": [
@@ -1423,7 +1489,8 @@
                 "plataforma": "web"
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "horarioDeEncerramentoDasAtiviidades": {
         "position": [
@@ -1444,7 +1511,8 @@
                 "plataforma": "web"
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "telaInicial": {
         "position": [
@@ -1471,7 +1539,8 @@
                 "plataforma": "web"
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "xParaFecharConversasAtivas": {
         "position": [
@@ -1492,7 +1561,8 @@
                 "plataforma": "web"
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoAbrirChatHome": {
         "position": [
@@ -1513,7 +1583,8 @@
                 "plataforma": "web"
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoVerViagemHome": {
         "position": [
@@ -1560,7 +1631,8 @@
                 ]
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "telaComissoes": {
         "position": [
@@ -1572,7 +1644,8 @@
         "interageCom": "botaoComissoes",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "telaMeusVeiculos": {
         "position": [
@@ -1584,7 +1657,8 @@
         "interageCom": "botaoMeusVeiculos",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "telaMeusComprovantes": {
         "position": [
@@ -1596,7 +1670,8 @@
         "interageCom": "botaoMeusComprovantes",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "telaInicioChecklist": {
         "position": [
@@ -1608,7 +1683,8 @@
         "interageCom": "botaoChecklist",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "telaAdicionarCompromisso": {
         "position": [
@@ -1620,7 +1696,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "telaSelecionarEnderecoMapa": {
         "position": [
@@ -1632,7 +1709,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoEcooupado": {
         "position": [
@@ -1669,7 +1747,8 @@
                 "plataforma": "web"
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoVeiculoEmManutencao": {
         "position": [
@@ -1681,7 +1760,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoolga": {
         "position": [
@@ -1693,7 +1773,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoEscolherLocalDoEvento": {
         "position": [
@@ -1712,7 +1793,8 @@
                 "plataforma": "web"
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "inputPlacaChecklist": {
         "position": [
@@ -1749,7 +1831,8 @@
                 ]
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoContinuarBemVindoChecklist": {
         "position": [
@@ -1795,7 +1878,8 @@
                 ]
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoEngate": {
         "position": [
@@ -1816,7 +1900,8 @@
                 ]
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoDesengate": {
         "position": [
@@ -1845,7 +1930,8 @@
                 ]
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "itemChecklist": {
         "position": [
@@ -1866,7 +1952,8 @@
                 ]
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "statusItemChecklistPendente": {
         "position": [
@@ -1887,7 +1974,8 @@
                 ]
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "checklistBotaoAvancarDesativado": {
         "position": [
@@ -1916,7 +2004,8 @@
                 ]
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "inputFotoItemChecklist": {
         "position": [
@@ -1937,7 +2026,8 @@
                 ]
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "inputObservacoesItemChecklist": {
         "position": [
@@ -1949,7 +2039,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoReprovadoDesativado": {
         "position": [
@@ -1978,7 +2069,8 @@
                 ]
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoAprovadoDesativado": {
         "position": [
@@ -1990,7 +2082,8 @@
         "interageCom": "fotoAnexadaItemChecklist",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "fotoAnexadaItemChecklist": {
         "position": [
@@ -2002,7 +2095,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "lixeiraExcluirFotoItemChecklist": {
         "position": [
@@ -2023,7 +2117,8 @@
                 ]
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoReprovadoAtivado": {
         "position": [
@@ -2035,7 +2130,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoAprovadoAtivo": {
         "position": [
@@ -2047,7 +2143,8 @@
         "interageCom": "statusItemChecklistFinalizado",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoPendentesCheckList": {
         "position": [
@@ -2068,7 +2165,8 @@
                 ]
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoConcluidosChecklist": {
         "position": [
@@ -2089,7 +2187,8 @@
                 ]
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoFinalizarChecklist": {
         "position": [
@@ -2101,7 +2200,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "statusItemChecklistFinalizado": {
         "position": [
@@ -2113,7 +2213,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "meusComprovantesBotaoPendentes": {
         "position": [
@@ -2132,7 +2233,8 @@
                 "plataforma": "web"
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "meusComprovantesBotaoEmAnalise": {
         "position": [
@@ -2151,7 +2253,8 @@
                 "plataforma": "web"
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "meusComprovantesBotaoRejeitados": {
         "position": [
@@ -2170,7 +2273,8 @@
                 "plataforma": "web"
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "meusVeiculosBotaoVoltar": {
         "position": [
@@ -2189,7 +2293,8 @@
                 "plataforma": "web"
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "comissoesBotaoPrevistas": {
         "position": [
@@ -2208,7 +2313,8 @@
                 "plataforma": "web"
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "comissoesBotaoFechadas": {
         "position": [
@@ -2227,7 +2333,8 @@
                 "plataforma": "web"
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoVerConversasFinalizadas": {
         "position": [
@@ -2246,7 +2353,8 @@
                 "plataforma": "web"
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "listaTiposDeChecklist": {
         "position": [
@@ -2258,7 +2366,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "telaItemChecklist": {
         "position": [
@@ -2270,7 +2379,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "listaItensPendentesChecklist": {
         "position": [
@@ -2282,7 +2392,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "listaItensConcluidosChecklist": {
         "position": [
@@ -2294,7 +2405,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "itemConversaAtiva": {
         "position": [
@@ -2313,7 +2425,8 @@
                 "plataforma": "web"
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoIniciarNovaConversa": {
         "position": [
@@ -2348,7 +2461,8 @@
                 ]
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "itemListaAssutosPrincipais": {
         "position": [
@@ -2379,7 +2493,8 @@
                 "plataforma": "web"
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoCancelarNovaConversa": {
         "position": [
@@ -2398,7 +2513,8 @@
                 "plataforma": "web"
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "itemSubAssuntos": {
         "position": [
@@ -2423,7 +2539,8 @@
                 "plataforma": "web"
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "subAssuntoSelecionado": {
         "position": [
@@ -2435,7 +2552,8 @@
         "interageCom": "botaoIniciarConversa",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "AssuntoPrincipalSelecionado": {
         "position": [
@@ -2447,7 +2565,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoIniciarConversa": {
         "position": [
@@ -2484,7 +2603,8 @@
                 "plataforma": "web"
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "itemConversasFinalizadas": {
         "position": [
@@ -2496,7 +2616,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "campoDeBuscaConversasFinalizadas": {
         "position": [
@@ -2508,7 +2629,8 @@
         "interageCom": "itemConversasFinalizadas",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "telaConversasFinalizadas": {
         "position": [
@@ -2520,7 +2642,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "listaDeAssuntos": {
         "position": [
@@ -2539,7 +2662,8 @@
                 "plataforma": "web"
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "contadorConversasFinalizadas": {
         "position": [
@@ -2564,7 +2688,8 @@
                 "plataforma": "web"
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "telaIniciarViagem": {
         "position": [
@@ -2576,7 +2701,8 @@
         "interageCom": "botaoVerViagemHome",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoIniciarViagem": {
         "position": [
@@ -2597,7 +2723,8 @@
                 ]
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "3PontinhosColeta": {
         "position": [
@@ -2618,7 +2745,8 @@
                 ]
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoNavegarColeta": {
         "position": [
@@ -2639,7 +2767,8 @@
                 ]
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoEstouAquiColeta": {
         "position": [
@@ -2660,7 +2789,8 @@
                 ]
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "telaInicialColeta": {
         "position": [
@@ -2672,7 +2802,8 @@
         "interageCom": "botaoIniciarViagem",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "opcoes3PontinhosColeta": {
         "position": [
@@ -2684,7 +2815,8 @@
         "interageCom": "3PontinhosColeta",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "coletaRotasDeViagem": {
         "position": [
@@ -2696,7 +2828,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "coletaColetaNaoREalizada": {
         "position": [
@@ -2749,7 +2882,8 @@
                 ]
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "modalColetaNaoRealizada": {
         "position": [
@@ -2761,7 +2895,8 @@
         "interageCom": "coletaColetaNaoREalizada",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "naoColetarModal": {
         "position": [
@@ -2773,7 +2908,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoVoltarNaoColetarModal": {
         "position": [
@@ -2785,7 +2921,8 @@
         "interageCom": "telaInicialColeta",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "etapaLocalDeColetaFechado": {
         "position": [
@@ -2797,7 +2934,8 @@
         "interageCom": "botaoEstouAquiColeta",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoIniciarCarregamentoColeta": {
         "position": [
@@ -2809,7 +2947,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoIniciarCarregamentoModal": {
         "position": [
@@ -2821,7 +2960,8 @@
         "interageCom": "botaoFinzalizarCarregamentoColeta",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "modalIniciarCarregamento": {
         "position": [
@@ -2833,7 +2973,8 @@
         "interageCom": "botaoIniciarCarregamentoColeta",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoVoltarModalIniciarCarregamento": {
         "position": [
@@ -2845,7 +2986,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoFinzalizarCarregamentoColeta": {
         "position": [
@@ -2857,7 +2999,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "etapaCarregamentoColetaFechado": {
         "position": [
@@ -2869,7 +3012,8 @@
         "interageCom": "botaoFinzalizarCarregamentoColeta",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "abrirOpcoesDeLeituraNf": {
         "position": [
@@ -2881,7 +3025,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoIniciarLeituraColeta": {
         "position": [
@@ -2893,7 +3038,8 @@
         "interageCom": "modalQuantidadeNf",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoRegistrarOcorrencia": {
         "position": [
@@ -2905,7 +3051,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "telaEscaniarQRcode": {
         "position": [
@@ -2917,7 +3064,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoDeAjudaCameraNf": {
         "position": [
@@ -2929,7 +3077,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoNaoInformarNfe": {
         "position": [
@@ -2943,7 +3092,8 @@
         "testes": [],
         "bugs": [
             "teste"
-        ]
+        ],
+        "historias": []
     },
     "modalNaoInformarNfe": {
         "position": [
@@ -2955,7 +3105,8 @@
         "interageCom": "botaoNaoInformarNfe",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoConfirmarNaoEnviarNfe": {
         "position": [
@@ -2988,7 +3139,8 @@
             "",
             "",
             ""
-        ]
+        ],
+        "historias": []
     },
     "botaoCAncelarNaoEnviarNfe": {
         "position": [
@@ -3000,7 +3152,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "modalQuantidadeNf": {
         "position": [
@@ -3012,7 +3165,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoDiminuirQuantidadeNf": {
         "position": [
@@ -3024,7 +3178,8 @@
         "interageCom": "nfAnexadas/totalEsperado",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoAumentarQuantidadeNf": {
         "position": [
@@ -3036,7 +3191,8 @@
         "interageCom": "nfAnexadas/totalEsperado",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "modalQUantidadeNfBotaoConfirmar": {
         "position": [
@@ -3048,7 +3204,8 @@
         "interageCom": "listaNfAnexadas",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "modalQuantidadeNfBotaoCancelar": {
         "position": [
@@ -3060,7 +3217,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoIncluirNf": {
         "position": [
@@ -3072,7 +3230,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoEnviarNotasDesativado": {
         "position": [
@@ -3084,7 +3243,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "nfAnexadas/totalEsperado": {
         "position": [
@@ -3096,7 +3256,8 @@
         "interageCom": "listaNfAnexadas",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoEnviarNotasAtivado": {
         "position": [
@@ -3108,7 +3269,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "3pontinhosItemNfAnexada": {
         "position": [
@@ -3120,7 +3282,8 @@
         "interageCom": "botaoExcluirNotaAnexada",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoExcluirNotaAnexada": {
         "position": [
@@ -3132,7 +3295,8 @@
         "interageCom": "itemNfAnexada",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoAvancarTelaEscaneieNf": {
         "position": [
@@ -3144,7 +3308,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoTirarFotoTelaEscaneieNf": {
         "position": [
@@ -3156,7 +3321,8 @@
         "interageCom": "telaFotoNfTirada",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoUsarEstaImagem": {
         "position": [
@@ -3168,7 +3334,8 @@
         "interageCom": "itemNfAnexada",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoParaTirarOutraFotoNf": {
         "position": [
@@ -3180,7 +3347,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "itemNfAnexada": {
         "position": [
@@ -3192,7 +3360,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "telaFotoNfTirada": {
         "position": [
@@ -3204,7 +3373,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "telaTirarFotoNf": {
         "position": [
@@ -3216,7 +3386,8 @@
         "interageCom": "botaoAvancarTelaEscaneieNf",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "telaEscanearNfApos20Segundos": {
         "position": [
@@ -3228,7 +3399,8 @@
         "interageCom": "telaEscaniarQRcode",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "modalDicasFoto": {
         "position": [
@@ -3240,7 +3412,8 @@
         "interageCom": "botaoDeAjudaCameraNf",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "listaNfAnexadas": {
         "position": [
@@ -3252,7 +3425,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "apiCriaViagem": {
         "position": [
@@ -3273,7 +3447,8 @@
                 ]
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "cardDeViagemHome": {
         "position": [
@@ -3292,7 +3467,8 @@
                 "plataforma": "web"
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "banco_driver_weakup_records": {
         "position": [
@@ -3304,7 +3480,8 @@
         "interageCom": "botaoConfirmarControleDoSono",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "imagemDoNivel": {
         "position": [
@@ -3349,7 +3526,8 @@
                 ]
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "matrixPontuaItemDeViagem": {
         "position": [
@@ -3377,7 +3555,8 @@
                 ]
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "matrixPontuaAbaMeuNivel": {
         "position": [
@@ -3402,7 +3581,8 @@
                 "automacao": []
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "matrixPontuaAbaInformacoes": {
         "position": [
@@ -3427,7 +3607,8 @@
                 "automacao": []
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "matrixPontuaViagemExpandida": {
         "position": [
@@ -3439,7 +3620,8 @@
         "interageCom": "matrixPontuaItemDeViagem",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "matrixPontuaItemDeInformacao": {
         "position": [
@@ -3488,7 +3670,8 @@
                 "automacao": []
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "matrixPontuaInformacaoExpandida": {
         "position": [
@@ -3500,7 +3683,8 @@
         "interageCom": "matrixPontuaItemDeInformacao",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "matrixPontuaTelaDeInformacoes": {
         "position": [
@@ -3512,7 +3696,8 @@
         "interageCom": "matrixPontuaAbaInformacoes",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "matrixPontuaTelaDeMeuNivel": {
         "position": [
@@ -3524,7 +3709,8 @@
         "interageCom": "matrixPontuaAbaMeuNivel",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "pontuacaoDaViagem": {
         "position": [
@@ -3536,7 +3722,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "LoginLiteInputUsuario": {
         "position": [
@@ -3548,7 +3735,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "LoginLiteInputSenha": {
         "position": [
@@ -3585,7 +3773,8 @@
                 ]
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "LoginLiteBotaoEntrar": {
         "position": [
@@ -3696,7 +3885,8 @@
                 ]
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "LoginLiteBotaoRecuperarSenha": {
         "position": [
@@ -3710,7 +3900,8 @@
             "loginLite"
         ],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "TelaLoginLite": {
         "position": [
@@ -3724,7 +3915,8 @@
             "loginLite"
         ],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "LoginLiteSenhaInvalida": {
         "position": [
@@ -3738,7 +3930,8 @@
             "loginLite"
         ],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "LoginLiteTelaRedefinicaoSenha": {
         "position": [
@@ -3752,7 +3945,8 @@
             "loginLite"
         ],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "RedefinicaoSenhaUsuario": {
         "position": [
@@ -3766,7 +3960,8 @@
             "loginLite"
         ],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "botaoSolicitarNovaSenha": {
         "position": [
@@ -3780,7 +3975,8 @@
             "loginLite"
         ],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "SmsEnviadoBotaoConfirmar": {
         "position": [
@@ -3794,7 +3990,8 @@
             "loginLite"
         ],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "telaConfirmarNumero": {
         "position": [
@@ -3808,7 +4005,8 @@
             "loginLite"
         ],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "loginLiteEscondeSenha": {
         "position": [
@@ -3822,7 +4020,8 @@
             "loginLite"
         ],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "pontuacaoIniciouViagem": {
         "position": [
@@ -3851,7 +4050,8 @@
                 ]
             }
         ],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "pontuacaoDocumentosEmissao": {
         "position": [
@@ -3863,7 +4063,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "pontuacaoComprovantesEnviados": {
         "position": [
@@ -3875,7 +4076,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "pontuacaoComprovantesAprovados": {
         "position": [
@@ -3887,7 +4089,8 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     },
     "totalPontuacao": {
         "position": [
@@ -3899,6 +4102,7 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "historias": []
     }
 }

@@ -2,6 +2,7 @@ from email import header
 import json
 from os import stat
 import requests
+from notionApi import NotionApi
 
 class ControllerBanco:
     def __init__(self) -> None:
@@ -351,6 +352,23 @@ class ControllerBanco:
 
         formated = json.dumps(response.json(), indent=2)
         print(formated)
+
+    def get_hist_tests(self):
+        data = NotionApi().get_pages_info()
+        results = {}
+        for i in data:
+            id = data[i]
+            results[data[i]] = []
+            with open('banco/elementos.json','r+') as f:
+                dados = json.load(f)
+                for j in dados:
+                    for k in dados[j]['historias']:
+                        if k == id:
+                            results[i].append(j)
+        print(results)
+
+
+ControllerBanco().get_hist_tests()
     
 
 #print(ControllerBanco().getAllTests())
@@ -363,7 +381,7 @@ class ControllerBanco:
 
 #ControllerBanco().getAllTags()
 
-ControllerBanco().createLines()
+#ControllerBanco().createLines()
 #print(ControllerBanco().extraiRelatorio())  
 
 #ControllerBanco().verifica_weakup_record_criado()
@@ -381,7 +399,7 @@ ControllerBanco().createLines()
 with open("banco/elementos.json","r+") as f:
     data = json.load(f)
     for i in data.keys():
-        data[i]["bugs"] = []
+        data[i]["historias"] = []
     f.seek(0)
     json.dump(data,f,indent=4)
     f.truncate
