@@ -31,7 +31,9 @@
             }
         ],
         "bugs": [],
-        "historias": ["SM1234"]
+        "historias": [
+            "SM1234"
+        ]
     },
     "inputSenha": {
         "position": [
@@ -66,7 +68,9 @@
             }
         ],
         "bugs": [],
-        "historias": ["SM1234"]
+        "historias": [
+            "SM1234"
+        ]
     },
     "botaoEntrar": {
         "position": [
@@ -548,7 +552,10 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [
+            "TESTE2",
+            "novaPagina4"
+        ]
     },
     "botaoSairDoAplicativo": {
         "position": [

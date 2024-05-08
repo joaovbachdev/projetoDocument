@@ -64,6 +64,13 @@
                 <div class="sidebar" id="card">
                     <button id="closeCard" onclick="closeCard()">X</button>
                     <h1></h1>
+                    <input type="text" placeholder="paginas" id="searchPages" data="{{notionPages}}">
+                    <div id="pageResults">
+                        <div class="pageItem">
+    
+                        </div>
+
+                    </div>
                     <p id="sidebarDescription"></p>
                     
                     <div id="tags">
@@ -123,8 +130,15 @@
                     document.getElementById('relatorio').addEventListener('click',function(){
                         window.location.href = '/relatorio'
                     })
+                    document.getElementById('searchPages').addEventListener('input',function(){
+                        updatePagesSugestions()
+                    })
                     //setTesteAleatorio()
                     //<button onclick="executaTesteAleatorio()">automatico</button>
+                    var notionPages = {{ notionPages | tojson }};
+                    var pagesSelected = {}
+  
+                   
                     </script>
         
     </body>

@@ -2,7 +2,7 @@ from email import header
 import json
 from os import stat
 import requests
-from notionApi import NotionApi
+from .notionApi import NotionApi
 
 class ControllerBanco:
     def __init__(self) -> None:
@@ -364,12 +364,32 @@ class ControllerBanco:
                 for j in dados:
                     for k in dados[j]['historias']:
                         if k == id:
-                            results[i].append(j)
+                            results[data[i]].append(j)
         print(results)
 
+    def get_pages_names(self):
+        return [i for i in NotionApi().get_pages_info().values()]
 
-ControllerBanco().get_hist_tests()
-    
+    def getElementPages(self,name):
+        with open('banco/elementos.json','r+') as f:
+            data = json.load(f)
+            return data[name]['historias']
+        
+    def updatElementHistorys(self, elementName, histName, checked):
+        with open('banco/elementos.json','r+') as f:
+            data = json.load(f)
+            if checked == False:
+                data[elementName]['historias'].remove(histName)
+            else:
+                data[elementName]['historias'].append(histName)
+            
+            f.seek(0)
+            json.dump(data,f,indent=4)
+            f.truncate()
+
+#ControllerBanco().updatElementHistorys('telaLogin','haha', True)
+#ControllerBanco().get_hist_tests()
+#ControllerBanco().get_pages_names()    
 
 #print(ControllerBanco().getAllTests())
 #print(ControllerBanco().getTestPlatform('inputUsuario',0))

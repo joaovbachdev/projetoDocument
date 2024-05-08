@@ -22,6 +22,7 @@ class NotionApi:
             results[i['id']] = i['properties']['Name']['title'][0]['text']['content']
         return results
 
+#print(NotionApi().get_pages_info())
 
 
 

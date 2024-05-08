@@ -230,6 +230,87 @@ function extraiRelatorio(){
         }
     });
 }
+function updatePagesSugestions(){
+    
+    suggestions = document.getElementById('pageResults')
+    data = document.getElementById('searchPages').value
+    newValues = notionPages.filter(function(item){
+        return item.includes(data)
+    })
+
+    Array.from(document.getElementsByClassName('pageItem')).forEach(element=>{
+        element.remove()
+    })
+
+    Array.from(newValues).forEach(val => {
+        newItem = document.createElement('div')
+        newItem.setAttribute('class','pageItem')
+
+        newLabel = document.createElement('label')
+        newLabel.textContent = val
+
+        newCheckBox = document.createElement('input')
+        newCheckBox.type = 'checkbox'
+        newCheckBox.setAttribute('pagename',val)
+
+        if(pagesSelected[val] == true){
+            newCheckBox.checked = true
+        }
+        newCheckBox.addEventListener('click',function(){
+            pagesSelected[this.getAttribute('pagename')] = this.checked
+            elementName = document.getElementById('card').getAttribute('name')
+            histName = this.getAttribute('pageName')
+            checked = this.checked
+            $.ajax({
+                url:'/updatElementHistorys',
+                type:'POST',
+                data:JSON.stringify({'elementName':elementName,'histName':histName,'checked':checked}),
+                contentType:'application/json',
+                success: function(response){
+                        console.log("historia atualizada")
+                },
+                error:function(error){
+                    console.log("erro ao atualizar historia")
+                }
+
+            })           
+        })
+
+        newItem.appendChild(newLabel)
+        newItem.appendChild(newCheckBox)
+        suggestions.append(newItem)
+    })
+}
+function getElementPages(name){
+    data = []
+    $.ajax({
+        url:`/getElementPages`,
+        type:'POST',
+        data:JSON.stringify({'name':name}),
+        contentType:'application/json',
+        success: function(response){
+                data = response
+                make()
+                console.log("paginas no elemento selecionado", response)
+        },
+        error:function(error){
+            console.log("erro ao pegar paginas do elemneto")
+        }
+    });
+    function make(){
+        notionPages.forEach(element => {
+            if(data.includes(element)){
+                pagesSelected[element] = true
+            }else{
+                pagesSelected[element] = false
+            }
+           
+        });
+    }
+
+
+
+}
  socket.on('atualizar', function(data) {
     console.log("to aqui")
     elementos = document.querySelectorAll("input[type='checkbox']")

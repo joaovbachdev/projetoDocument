@@ -1,4 +1,5 @@
 function createCard(informations){
+    getElementPages(informations['name'])
     ele = document.getElementById("card")
     ele.setAttribute("name",informations["name"])
 
@@ -69,11 +70,13 @@ function createCard(informations){
             inp.checked = true
         }
 
+
+
         div.appendChild(lab)
         div.appendChild(inp)
         todo.appendChild(div)
     })
-
+  
     document.getElementById("addNewAutomation").setAttribute("onclick",`addNewAutomation("${informations["name"]}","${elementType}")`)
     
 }

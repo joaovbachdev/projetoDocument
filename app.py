@@ -30,7 +30,7 @@ socketio = SocketIO(app)
 
 @app.route('/')
 def home():
-    return render_template('index.html', tags=bd.getAllTags())
+    return render_template('index.html', tags=bd.getAllTags(), notionPages=bd.get_pages_names())
 
 @app.route('/relatorio')
 def relatorio():
@@ -297,10 +297,25 @@ def atualizaGrafico():
         plt.axis('equal')  # Garante que o gráfico seja um círculo
         plt.savefig('static/grafico_de_pizza.png')
         plt.clf()
-       
-
-
+    
     return index
+
+@app.route('/get_pages_name',methods= ['GET'])
+def get_pages_name():
+    return bd.get_pages_names()
+
+@app.route('/getElementPages', methods=['POST'])
+def getElementPages():
+    elementName = request.json['name']
+    return bd.getElementPages(elementName)
+
+@app.route('/updatElementHistorys', methods=['POST'])
+def updatElementHistorys():
+    elementName = request.json['elementName']
+    histName = request.json['histName']
+    checked = request.json['checked']
+    bd.updatElementHistorys(elementName, histName, checked)
+    return 'historias atualizadas'
 
 app.run(host='0.0.0.0', port=5000, debug=True)
 
