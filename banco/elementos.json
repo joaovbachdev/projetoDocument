@@ -33,7 +33,8 @@
         "bugs": [],
         "historias": [
             "SM1234"
-        ]
+        ],
+        "linkedHistoris": {}
     },
     "inputSenha": {
         "position": [
@@ -70,7 +71,8 @@
         "bugs": [],
         "historias": [
             "SM1234"
-        ]
+        ],
+        "linkedHistoris": {}
     },
     "botaoEntrar": {
         "position": [
@@ -117,7 +119,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "erroLogin": {
         "position": [
@@ -157,7 +160,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoPoliticas": {
         "position": [
@@ -170,7 +174,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "modalTopDrivers": {
         "position": [
@@ -205,7 +210,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "xFecharModalTopDriver": {
         "position": [
@@ -227,7 +233,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoTamoJunto": {
         "position": [
@@ -250,7 +257,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "sinoNotificacaoHeader": {
         "position": [
@@ -272,7 +280,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "chatHeader": {
         "position": [
@@ -295,7 +304,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "atalhoMatrixPay": {
         "position": [
@@ -308,7 +318,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "rankingHeader": {
         "position": [
@@ -336,7 +347,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "inicioRodape": {
         "position": [
@@ -358,7 +370,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "agendaRodape": {
         "position": [
@@ -382,7 +395,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "viagensRodape": {
         "position": [
@@ -406,7 +420,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "menuRodape": {
         "position": [
@@ -430,7 +445,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "3pontinhosLocalizacao": {
         "position": [
@@ -452,7 +468,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "telaViagens": {
         "position": [
@@ -465,7 +482,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "telaAgenda": {
         "position": [
@@ -478,7 +496,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "telaMenu": {
         "position": [
@@ -491,7 +510,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "telaLogin": {
         "position": [
@@ -509,7 +529,7 @@
             {
                 "plataforma": "mobile",
                 "teste": "login valido deve fazer o login com sucesso",
-                "status": "realizado",
+                "status": "naoRealizado",
                 "automacao": [
                     "- tapOn: 'matrixcargo - Motorista'",
                     "- tapOn: 'CPF'",
@@ -553,9 +573,14 @@
         ],
         "bugs": [],
         "historias": [
-            "TESTE2",
-            "novaPagina4"
-        ]
+            "TESTE2"
+        ],
+        "linkedHistoris": {
+            "TESTE2": [
+                "b281576b-37aa-4d3d-a16e-c2b11f4a91b8",
+                "3d736b8f-846d-4c9e-9a21-6f3787ea8773"
+            ]
+        }
     },
     "botaoSairDoAplicativo": {
         "position": [
@@ -580,7 +605,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "modalRanking": {
         "position": [
@@ -595,7 +621,8 @@
         ],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoVerRankingMotoristas": {
         "position": [
@@ -610,7 +637,8 @@
         ],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "atalhoFlutuanteChat": {
         "position": [
@@ -663,7 +691,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoMeusVeiculos": {
         "position": [
@@ -687,7 +716,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoMeusDados": {
         "position": [
@@ -711,7 +741,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoCentralDeNoificacoes": {
         "position": [
@@ -735,7 +766,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoComissoes": {
         "position": [
@@ -759,7 +791,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoMeusComprovantes": {
         "position": [
@@ -781,7 +814,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoChecklist": {
         "position": [
@@ -805,7 +839,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoPrimeirosPassos": {
         "position": [
@@ -827,7 +862,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoMenuPolicaPrivacidade": {
         "position": [
@@ -842,7 +878,8 @@
         ],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoDenunciar": {
         "position": [
@@ -857,7 +894,8 @@
         ],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "xParaFecharMenu": {
         "position": [
@@ -872,7 +910,8 @@
         ],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoAgendaAvancarmes": {
         "position": [
@@ -904,7 +943,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoAgendaVoltarMes": {
         "position": [
@@ -936,7 +976,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoAgendaAdicionarCompromisso": {
         "position": [
@@ -962,7 +1003,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoAgendaDiasDoMes": {
         "position": [
@@ -994,7 +1036,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "agendaDiasDoMesSelecionado": {
         "position": [
@@ -1026,7 +1069,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoViagensAgendadas": {
         "position": [
@@ -1039,7 +1083,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoViagensEmAceite": {
         "position": [
@@ -1052,7 +1097,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoViagensConluidas": {
         "position": [
@@ -1065,7 +1111,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "atalhoChatTelaViagens": {
         "position": [
@@ -1080,7 +1127,8 @@
         ],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoVerifiacrhistoricoDePontuacao": {
         "position": [
@@ -1095,7 +1143,8 @@
         ],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "xFecharModalRanking": {
         "position": [
@@ -1110,7 +1159,8 @@
         ],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoFecharModalRanking": {
         "position": [
@@ -1125,7 +1175,8 @@
         ],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoCompartilharModalRRanking": {
         "position": [
@@ -1140,7 +1191,8 @@
         ],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "setVoltarMatrixTopDriver": {
         "position": [
@@ -1155,7 +1207,8 @@
         ],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "setaVoltaarCentralNotificacoes": {
         "position": [
@@ -1168,7 +1221,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "telaMatrixTopDriver": {
         "position": [
@@ -1183,7 +1237,8 @@
         ],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "TelaCentralNotificacoes": {
         "position": [
@@ -1196,7 +1251,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "modalHistoricoPontuacao": {
         "position": [
@@ -1209,7 +1265,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "xFechaModalHistoricoPpntuacao": {
         "position": [
@@ -1224,7 +1281,8 @@
         ],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoVerMaisHistorico": {
         "position": [
@@ -1239,7 +1297,8 @@
         ],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoVerMenosHistoricoPontuaca": {
         "position": [
@@ -1254,7 +1313,8 @@
         ],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "cardFechadoHistorcoPontuacao": {
         "position": [
@@ -1269,7 +1329,8 @@
         ],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "cardAbrtoHistoricoPontuacao": {
         "position": [
@@ -1284,7 +1345,8 @@
         ],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoVoltarHistoricoPontucao": {
         "position": [
@@ -1299,7 +1361,8 @@
         ],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "inputDataControleDoSono": {
         "position": [
@@ -1333,7 +1396,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "inputHorarioControleDoSono": {
         "position": [
@@ -1367,7 +1431,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoConfirmarControleDoSono": {
         "position": [
@@ -1407,7 +1472,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoSuporteControleDoSono": {
         "position": [
@@ -1430,7 +1496,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "telaControleDoSono": {
         "position": [
@@ -1445,7 +1512,8 @@
         ],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "telaConversasAtivas": {
         "position": [
@@ -1460,7 +1528,8 @@
         ],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "telaViageComSeguranca": {
         "position": [
@@ -1475,7 +1544,8 @@
         ],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoTamoJuntoViageComSeguranca": {
         "position": [
@@ -1497,7 +1567,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "horarioDeEncerramentoDasAtiviidades": {
         "position": [
@@ -1519,7 +1590,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "telaInicial": {
         "position": [
@@ -1547,7 +1619,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "xParaFecharConversasAtivas": {
         "position": [
@@ -1569,7 +1642,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoAbrirChatHome": {
         "position": [
@@ -1591,7 +1665,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoVerViagemHome": {
         "position": [
@@ -1639,7 +1714,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "telaComissoes": {
         "position": [
@@ -1652,7 +1728,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "telaMeusVeiculos": {
         "position": [
@@ -1665,7 +1742,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "telaMeusComprovantes": {
         "position": [
@@ -1678,7 +1756,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "telaInicioChecklist": {
         "position": [
@@ -1691,7 +1770,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "telaAdicionarCompromisso": {
         "position": [
@@ -1704,7 +1784,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "telaSelecionarEnderecoMapa": {
         "position": [
@@ -1717,7 +1798,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoEcooupado": {
         "position": [
@@ -1755,7 +1837,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoVeiculoEmManutencao": {
         "position": [
@@ -1768,7 +1851,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoolga": {
         "position": [
@@ -1781,7 +1865,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoEscolherLocalDoEvento": {
         "position": [
@@ -1801,7 +1886,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "inputPlacaChecklist": {
         "position": [
@@ -1839,7 +1925,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoContinuarBemVindoChecklist": {
         "position": [
@@ -1886,7 +1973,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoEngate": {
         "position": [
@@ -1908,7 +1996,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoDesengate": {
         "position": [
@@ -1938,7 +2027,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "itemChecklist": {
         "position": [
@@ -1960,7 +2050,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "statusItemChecklistPendente": {
         "position": [
@@ -1982,7 +2073,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "checklistBotaoAvancarDesativado": {
         "position": [
@@ -2012,7 +2104,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "inputFotoItemChecklist": {
         "position": [
@@ -2034,7 +2127,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "inputObservacoesItemChecklist": {
         "position": [
@@ -2047,7 +2141,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoReprovadoDesativado": {
         "position": [
@@ -2077,7 +2172,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoAprovadoDesativado": {
         "position": [
@@ -2090,7 +2186,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "fotoAnexadaItemChecklist": {
         "position": [
@@ -2103,7 +2200,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "lixeiraExcluirFotoItemChecklist": {
         "position": [
@@ -2125,7 +2223,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoReprovadoAtivado": {
         "position": [
@@ -2138,7 +2237,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoAprovadoAtivo": {
         "position": [
@@ -2151,7 +2251,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoPendentesCheckList": {
         "position": [
@@ -2173,7 +2274,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoConcluidosChecklist": {
         "position": [
@@ -2195,7 +2297,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoFinalizarChecklist": {
         "position": [
@@ -2208,7 +2311,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "statusItemChecklistFinalizado": {
         "position": [
@@ -2221,7 +2325,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "meusComprovantesBotaoPendentes": {
         "position": [
@@ -2241,7 +2346,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "meusComprovantesBotaoEmAnalise": {
         "position": [
@@ -2261,7 +2367,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "meusComprovantesBotaoRejeitados": {
         "position": [
@@ -2281,7 +2388,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "meusVeiculosBotaoVoltar": {
         "position": [
@@ -2301,7 +2409,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "comissoesBotaoPrevistas": {
         "position": [
@@ -2321,7 +2430,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "comissoesBotaoFechadas": {
         "position": [
@@ -2341,7 +2451,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoVerConversasFinalizadas": {
         "position": [
@@ -2361,7 +2472,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "listaTiposDeChecklist": {
         "position": [
@@ -2374,7 +2486,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "telaItemChecklist": {
         "position": [
@@ -2387,7 +2500,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "listaItensPendentesChecklist": {
         "position": [
@@ -2400,7 +2514,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "listaItensConcluidosChecklist": {
         "position": [
@@ -2413,7 +2528,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "itemConversaAtiva": {
         "position": [
@@ -2433,7 +2549,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoIniciarNovaConversa": {
         "position": [
@@ -2469,7 +2586,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "itemListaAssutosPrincipais": {
         "position": [
@@ -2501,7 +2619,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoCancelarNovaConversa": {
         "position": [
@@ -2521,7 +2640,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "itemSubAssuntos": {
         "position": [
@@ -2547,7 +2667,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "subAssuntoSelecionado": {
         "position": [
@@ -2560,7 +2681,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "AssuntoPrincipalSelecionado": {
         "position": [
@@ -2573,7 +2695,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoIniciarConversa": {
         "position": [
@@ -2611,7 +2734,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "itemConversasFinalizadas": {
         "position": [
@@ -2624,7 +2748,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "campoDeBuscaConversasFinalizadas": {
         "position": [
@@ -2637,7 +2762,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "telaConversasFinalizadas": {
         "position": [
@@ -2650,7 +2776,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "listaDeAssuntos": {
         "position": [
@@ -2670,7 +2797,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "contadorConversasFinalizadas": {
         "position": [
@@ -2696,7 +2824,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "telaIniciarViagem": {
         "position": [
@@ -2709,7 +2838,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoIniciarViagem": {
         "position": [
@@ -2731,7 +2861,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "3PontinhosColeta": {
         "position": [
@@ -2753,7 +2884,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoNavegarColeta": {
         "position": [
@@ -2775,7 +2907,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoEstouAquiColeta": {
         "position": [
@@ -2797,7 +2930,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "telaInicialColeta": {
         "position": [
@@ -2810,7 +2944,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "opcoes3PontinhosColeta": {
         "position": [
@@ -2823,7 +2958,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "coletaRotasDeViagem": {
         "position": [
@@ -2836,7 +2972,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "coletaColetaNaoREalizada": {
         "position": [
@@ -2890,7 +3027,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "modalColetaNaoRealizada": {
         "position": [
@@ -2903,7 +3041,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "naoColetarModal": {
         "position": [
@@ -2916,7 +3055,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoVoltarNaoColetarModal": {
         "position": [
@@ -2929,7 +3069,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "etapaLocalDeColetaFechado": {
         "position": [
@@ -2942,7 +3083,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoIniciarCarregamentoColeta": {
         "position": [
@@ -2955,7 +3097,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoIniciarCarregamentoModal": {
         "position": [
@@ -2968,7 +3111,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "modalIniciarCarregamento": {
         "position": [
@@ -2981,7 +3125,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoVoltarModalIniciarCarregamento": {
         "position": [
@@ -2994,7 +3139,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoFinzalizarCarregamentoColeta": {
         "position": [
@@ -3007,7 +3153,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "etapaCarregamentoColetaFechado": {
         "position": [
@@ -3020,7 +3167,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "abrirOpcoesDeLeituraNf": {
         "position": [
@@ -3033,7 +3181,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoIniciarLeituraColeta": {
         "position": [
@@ -3046,7 +3195,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoRegistrarOcorrencia": {
         "position": [
@@ -3059,7 +3209,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "telaEscaniarQRcode": {
         "position": [
@@ -3072,7 +3223,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoDeAjudaCameraNf": {
         "position": [
@@ -3085,7 +3237,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoNaoInformarNfe": {
         "position": [
@@ -3100,7 +3253,8 @@
         "bugs": [
             "teste"
         ],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "modalNaoInformarNfe": {
         "position": [
@@ -3113,7 +3267,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoConfirmarNaoEnviarNfe": {
         "position": [
@@ -3147,7 +3302,8 @@
             "",
             ""
         ],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoCAncelarNaoEnviarNfe": {
         "position": [
@@ -3160,7 +3316,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "modalQuantidadeNf": {
         "position": [
@@ -3173,7 +3330,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoDiminuirQuantidadeNf": {
         "position": [
@@ -3186,7 +3344,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoAumentarQuantidadeNf": {
         "position": [
@@ -3199,7 +3358,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "modalQUantidadeNfBotaoConfirmar": {
         "position": [
@@ -3212,7 +3372,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "modalQuantidadeNfBotaoCancelar": {
         "position": [
@@ -3225,7 +3386,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoIncluirNf": {
         "position": [
@@ -3238,7 +3400,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoEnviarNotasDesativado": {
         "position": [
@@ -3251,7 +3414,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "nfAnexadas/totalEsperado": {
         "position": [
@@ -3264,7 +3428,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoEnviarNotasAtivado": {
         "position": [
@@ -3277,7 +3442,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "3pontinhosItemNfAnexada": {
         "position": [
@@ -3290,7 +3456,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoExcluirNotaAnexada": {
         "position": [
@@ -3303,7 +3470,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoAvancarTelaEscaneieNf": {
         "position": [
@@ -3316,7 +3484,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoTirarFotoTelaEscaneieNf": {
         "position": [
@@ -3329,7 +3498,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoUsarEstaImagem": {
         "position": [
@@ -3342,7 +3512,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoParaTirarOutraFotoNf": {
         "position": [
@@ -3355,7 +3526,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "itemNfAnexada": {
         "position": [
@@ -3368,7 +3540,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "telaFotoNfTirada": {
         "position": [
@@ -3381,7 +3554,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "telaTirarFotoNf": {
         "position": [
@@ -3394,7 +3568,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "telaEscanearNfApos20Segundos": {
         "position": [
@@ -3407,7 +3582,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "modalDicasFoto": {
         "position": [
@@ -3420,7 +3596,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "listaNfAnexadas": {
         "position": [
@@ -3433,7 +3610,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "apiCriaViagem": {
         "position": [
@@ -3455,7 +3633,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "cardDeViagemHome": {
         "position": [
@@ -3475,7 +3654,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "banco_driver_weakup_records": {
         "position": [
@@ -3488,7 +3668,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "imagemDoNivel": {
         "position": [
@@ -3534,7 +3715,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "matrixPontuaItemDeViagem": {
         "position": [
@@ -3563,7 +3745,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "matrixPontuaAbaMeuNivel": {
         "position": [
@@ -3589,7 +3772,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "matrixPontuaAbaInformacoes": {
         "position": [
@@ -3615,7 +3799,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "matrixPontuaViagemExpandida": {
         "position": [
@@ -3628,7 +3813,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "matrixPontuaItemDeInformacao": {
         "position": [
@@ -3678,7 +3864,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "matrixPontuaInformacaoExpandida": {
         "position": [
@@ -3691,7 +3878,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "matrixPontuaTelaDeInformacoes": {
         "position": [
@@ -3704,7 +3892,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "matrixPontuaTelaDeMeuNivel": {
         "position": [
@@ -3717,7 +3906,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "pontuacaoDaViagem": {
         "position": [
@@ -3730,7 +3920,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "LoginLiteInputUsuario": {
         "position": [
@@ -3743,7 +3934,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "LoginLiteInputSenha": {
         "position": [
@@ -3781,7 +3973,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "LoginLiteBotaoEntrar": {
         "position": [
@@ -3893,7 +4086,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "LoginLiteBotaoRecuperarSenha": {
         "position": [
@@ -3908,7 +4102,8 @@
         ],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "TelaLoginLite": {
         "position": [
@@ -3923,7 +4118,8 @@
         ],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "LoginLiteSenhaInvalida": {
         "position": [
@@ -3938,7 +4134,8 @@
         ],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "LoginLiteTelaRedefinicaoSenha": {
         "position": [
@@ -3953,7 +4150,8 @@
         ],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "RedefinicaoSenhaUsuario": {
         "position": [
@@ -3968,7 +4166,8 @@
         ],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoSolicitarNovaSenha": {
         "position": [
@@ -3983,7 +4182,8 @@
         ],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "SmsEnviadoBotaoConfirmar": {
         "position": [
@@ -3998,7 +4198,8 @@
         ],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "telaConfirmarNumero": {
         "position": [
@@ -4013,7 +4214,8 @@
         ],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "loginLiteEscondeSenha": {
         "position": [
@@ -4028,7 +4230,8 @@
         ],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "pontuacaoIniciouViagem": {
         "position": [
@@ -4058,7 +4261,8 @@
             }
         ],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "pontuacaoDocumentosEmissao": {
         "position": [
@@ -4071,7 +4275,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "pontuacaoComprovantesEnviados": {
         "position": [
@@ -4084,7 +4289,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "pontuacaoComprovantesAprovados": {
         "position": [
@@ -4097,7 +4303,8 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     },
     "totalPontuacao": {
         "position": [
@@ -4110,6 +4317,7 @@
         "tags": [],
         "testes": [],
         "bugs": [],
-        "historias": []
+        "historias": [],
+        "linkedHistoris": {}
     }
 }

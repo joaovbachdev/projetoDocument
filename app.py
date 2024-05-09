@@ -317,6 +317,10 @@ def updatElementHistorys():
     bd.updatElementHistorys(elementName, histName, checked)
     return 'historias atualizadas'
 
+
+
+
+
 app.run(host='0.0.0.0', port=5000, debug=True)
 
 

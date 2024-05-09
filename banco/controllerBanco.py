@@ -378,10 +378,19 @@ class ControllerBanco:
     def updatElementHistorys(self, elementName, histName, checked):
         with open('banco/elementos.json','r+') as f:
             data = json.load(f)
+            testes = [i['teste'] for i in data[elementName]['testes']]
             if checked == False:
                 data[elementName]['historias'].remove(histName)
+                for i in data[elementName]['linkedHistoris'][histName]:
+                    response = NotionApi().delete_block(i)
+                    print(response)
+                del data[elementName]['linkedHistoris'][histName]
             else:
+                data[elementName]['linkedHistoris'][histName] = []
                 data[elementName]['historias'].append(histName)
+                for i in testes:
+                    response = NotionApi().add_to_do(histName,i)
+                    data[elementName]['linkedHistoris'][histName].append(response['results'][0]['id'])
             
             f.seek(0)
             json.dump(data,f,indent=4)
@@ -415,15 +424,15 @@ class ControllerBanco:
 
 #ControllerBanco().ultimasDezViagens()
 
-'''
+
 with open("banco/elementos.json","r+") as f:
     data = json.load(f)
     for i in data.keys():
-        data[i]["historias"] = []
+        data[i]["linkedHistoris"] = {}
     f.seek(0)
     json.dump(data,f,indent=4)
     f.truncate
-'''
+
 
 #print(ControllerBanco().validateElementTagFilter("nada"))
 #ControllerBanco().getElementTests("inputUsuario","elementos")
