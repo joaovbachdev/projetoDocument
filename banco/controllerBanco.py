@@ -383,18 +383,31 @@ class ControllerBanco:
                 data[elementName]['historias'].remove(histName)
                 for i in data[elementName]['linkedHistoris'][histName]:
                     response = NotionApi().delete_block(i)
-                    print(response)
                 del data[elementName]['linkedHistoris'][histName]
             else:
                 data[elementName]['linkedHistoris'][histName] = []
                 data[elementName]['historias'].append(histName)
-                for i in testes:
-                    response = NotionApi().add_to_do(histName,i)
-                    data[elementName]['linkedHistoris'][histName].append(response['results'][0]['id'])
+                for index, i in enumerate(testes):
+                    if data[elementName]['testes'][index]['status'] == 'realizado':
+                        response = NotionApi().add_to_do(histName,i, True)
+                        data[elementName]['linkedHistoris'][histName].append(response['results'][0]['id'])
+                    else:
+                        response = NotionApi().add_to_do(histName,i, False) 
+                        data[elementName]['linkedHistoris'][histName].append(response['results'][0]['id'])
             
             f.seek(0)
             json.dump(data,f,indent=4)
             f.truncate()
+
+    def update_to_do_notion(self, elementName, index):
+        with open('banco/elementos.json','r+') as f:
+            dados = json.load(f)
+            for i in dados[elementName]['linkedHistoris'].keys():
+                if dados[elementName]['testes'][index]['status'] == 'realizado':
+                    data = NotionApi().check_to_do(dados[elementName]['linkedHistoris'][i][index], True)
+                else:
+                    data = NotionApi().check_to_do(dados[elementName]['linkedHistoris'][i][index], False)
+        return data
 
 #ControllerBanco().updatElementHistorys('telaLogin','haha', True)
 #ControllerBanco().get_hist_tests()

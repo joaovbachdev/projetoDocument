@@ -1,4 +1,5 @@
 from crypt import methods
+from tabnanny import check
 from urllib.robotparser import RequestRate
 from wsgiref.util import request_uri
 from flask import Flask, render_template, request
@@ -159,7 +160,10 @@ def checkTodo():
     elementName = request.json["elementName"]
     index = request.json["index"]
     status = request.json["status"]
+    print(status)
+    
     bd.updateTodo(elementName,int(index),status)
+    bd.update_to_do_notion(elementName, index)
     socketio.emit("atualizarStatus",bd.getAllElementstestStatus())
     return "todo atualizado"
 
@@ -316,6 +320,13 @@ def updatElementHistorys():
     checked = request.json['checked']
     bd.updatElementHistorys(elementName, histName, checked)
     return 'historias atualizadas'
+
+@app.route('/updateTodo',methods=['POST'])
+def updateTodo():
+    id = request.json['id']
+    checked = request.json['checked']
+    bd.update_to_do(id, checked)
+    return "toDo checkado"
 
 
 

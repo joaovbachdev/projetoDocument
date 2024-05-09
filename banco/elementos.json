@@ -32,9 +32,15 @@
         ],
         "bugs": [],
         "historias": [
-            "SM1234"
+            "SM1234",
+            "TESTE2"
         ],
-        "linkedHistoris": {}
+        "linkedHistoris": {
+            "TESTE2": [
+                "4fa19fbf-3641-4c94-b173-f5058929a431",
+                "c52c4cb4-2a3c-4e1c-b7b3-64f8a8ac88f1"
+            ]
+        }
     },
     "inputSenha": {
         "position": [
@@ -529,7 +535,7 @@
             {
                 "plataforma": "mobile",
                 "teste": "login valido deve fazer o login com sucesso",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [
                     "- tapOn: 'matrixcargo - Motorista'",
                     "- tapOn: 'CPF'",
@@ -546,7 +552,7 @@
             {
                 "plataforma": "mobile",
                 "teste": "testedsadas",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [
                     {
                         "area": "telaLogin",
@@ -573,12 +579,19 @@
         ],
         "bugs": [],
         "historias": [
+            "haha",
+            "TESTE2",
+            "TESTE2",
             "TESTE2"
         ],
         "linkedHistoris": {
+            "haha": [
+                "4d725397-39db-4932-90fc-d9fe7e4aa41a",
+                "ff782333-f65c-4185-9d60-603cbcd4f9f0"
+            ],
             "TESTE2": [
-                "b281576b-37aa-4d3d-a16e-c2b11f4a91b8",
-                "3d736b8f-846d-4c9e-9a21-6f3787ea8773"
+                "4d74633d-2f26-4a0b-9d9f-6f974116867e",
+                "db9a78f3-4130-47ca-8550-93c97a084eae"
             ]
         }
     },

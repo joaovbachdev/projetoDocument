@@ -1,3 +1,5 @@
+from email import header
+from tabnanny import check
 from urllib import response
 import requests
 import json
@@ -23,7 +25,7 @@ class NotionApi:
             results[i['id']] = i['properties']['Name']['title'][0]['text']['content']
         return results
 
-    def add_to_do(self, pageName, content):
+    def add_to_do(self, pageName, content, checked):
         data = self.get_pages_info()
         key = [chave for chave, valor in data.items() if valor == pageName]
 
@@ -42,7 +44,9 @@ class NotionApi:
                             "link": None
                             }
                                     }
-                                ]
+                                ],
+                                "checked":checked
+
                             }
                         }
                     ]
@@ -52,6 +56,20 @@ class NotionApi:
 
     def delete_block(self, id):
         response = requests.delete(f'https://api.notion.com/v1/blocks/{id}', headers=self.header)
+        return response
+
+    def check_to_do(self, id, checked):
+        print(id, "VALOR DE DASDADBADBASDMNBASDMNASBDMNSABD", checked)
+        url = f'https://api.notion.com/v1/blocks/{id}'
+        payload = {
+                "object":"block",
+                "to_do":{
+                    "checked":checked
+                }
+                
+            }
+        
+        response = requests.patch(url, json=payload, headers = self.header)
         return response
 
 #print(NotionApi().add_to_do('TESTE2','ahah'))
