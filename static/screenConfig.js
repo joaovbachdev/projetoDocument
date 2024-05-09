@@ -163,3 +163,10 @@ addNewImage(3800,11000,1300,1300,'static/matrixPontuaViagemExpandida.jpg')
 addNewImage(4600,11000,1300,1300,'static/matrixPontuaTelaInformacoes.jpg')
 addNewImage(5400,11000,1300,1300,'static/matrixPontuaInformacaoExpandida.jpg')
 
+
+
+//IMAGENS DO COMPROVA
+addNewImage(-12800,20000,1300,1300,'static/comprova/viagemComprovaGeral.png')
+addNewImage(-12800,18500,1300,1300,'static/comprova/pontoEspecifico.png')
+addNewImage(-11200,18500,1300,1300,'static/comprova/importarComprovantesPontos.png')
+addNewImage(-9700,18500,1300,1300,'static/comprova/importarComprovantesRequeridos.png')

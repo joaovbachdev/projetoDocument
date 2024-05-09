@@ -424,7 +424,7 @@ class ControllerBanco:
 
 #ControllerBanco().ultimasDezViagens()
 
-
+'''
 with open("banco/elementos.json","r+") as f:
     data = json.load(f)
     for i in data.keys():
@@ -432,7 +432,7 @@ with open("banco/elementos.json","r+") as f:
     f.seek(0)
     json.dump(data,f,indent=4)
     f.truncate
-
+'''
 
 #print(ControllerBanco().validateElementTagFilter("nada"))
 #ControllerBanco().getElementTests("inputUsuario","elementos")

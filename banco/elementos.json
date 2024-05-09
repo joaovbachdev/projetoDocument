@@ -4319,5 +4319,173 @@
         "bugs": [],
         "historias": [],
         "linkedHistoris": {}
+    },
+    "botaoAdicionarComprovantes": {
+        "position": [
+            -11519.112669182727,
+            20361.09781786344
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoAdicionarComprovantes",
+        "interageCom": "",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "botaoLogDeAtividade": {
+        "position": [
+            -12566.01585276258,
+            20432.161436621744
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoLogDeAtividade",
+        "interageCom": "",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "statusComprovanteRejeitado": {
+        "position": [
+            -11877.85625624999,
+            19113.275027720665
+        ],
+        "description": "cria via  auxiliar",
+        "name": "statusComprovanteRejeitado",
+        "interageCom": "",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "statusComprovanteAprovado": {
+        "position": [
+            -11896.744428252387,
+            18929.1153506973
+        ],
+        "description": "cria via  auxiliar",
+        "name": "statusComprovanteAprovado",
+        "interageCom": "",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "statusNumeroSemImagem": {
+        "position": [
+            -11877.85625624999,
+            19558.721084110515
+        ],
+        "description": "cria via  auxiliar",
+        "name": "statusNumeroSemImagem",
+        "interageCom": "",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "statusEmAnaliseSemNumero": {
+        "position": [
+            -11904.614499920051,
+            19701.956388462022
+        ],
+        "description": "cria via  auxiliar",
+        "name": "statusEmAnaliseSemNumero",
+        "interageCom": "",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "numeroEmitido": {
+        "position": [
+            -12515.332061330879,
+            18933.8373936979
+        ],
+        "description": "cria via  auxiliar",
+        "name": "numeroEmitido",
+        "interageCom": "",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "numeroSemImagemVinculada": {
+        "position": [
+            -12658.110558295693,
+            19512.230689507047
+        ],
+        "description": "cria via  auxiliar",
+        "name": "numeroSemImagemVinculada",
+        "interageCom": "",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "imagemSemNumeroVinculado": {
+        "position": [
+            -12672.868607121798,
+            19667.190202181147
+        ],
+        "description": "cria via  auxiliar",
+        "name": "imagemSemNumeroVinculado",
+        "interageCom": "",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "imagemENumeroVinculados": {
+        "position": [
+            -12650.731533882641,
+            18887.473289201935
+        ],
+        "description": "cria via  auxiliar",
+        "name": "imagemENumeroVinculados",
+        "interageCom": "",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "importarComprovantesPontos": {
+        "position": [
+            -9950.34529590034,
+            18860.45031880821
+        ],
+        "description": "cria via  auxiliar",
+        "name": "importarComprovantesPontos",
+        "interageCom": "",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "importPOntosBotaoSelecionar": {
+        "position": [
+            -10024.624811833413,
+            19226.783386023588
+        ],
+        "description": "cria via  auxiliar",
+        "name": "importPOntosBotaoSelecionar",
+        "interageCom": "",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "botaoAdicionarArquivoComprova": {
+        "position": [
+            -8462.79713454135,
+            19190.906856358964
+        ],
+        "description": "cria via  auxiliar",
+        "name": "botaoAdicionarArquivoComprova",
+        "interageCom": "",
+        "tags": [],
+        "testes": [],
+        "bugs": []
+    },
+    "docRequeridoComprova": {
+        "position": [
+            -9676.404377185234,
+            19181.528129599737
+        ],
+        "description": "cria via  auxiliar",
+        "name": "docRequeridoComprova",
+        "interageCom": "",
+        "tags": [],
+        "testes": [],
+        "bugs": []
     }
 }
