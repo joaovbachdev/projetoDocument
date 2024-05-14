@@ -73,7 +73,6 @@ class NotionApi:
         return response
 
 #print(NotionApi().add_to_do('TESTE2','ahah'))
-
 #print(NotionApi().get_pages_info())
 
 

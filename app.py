@@ -332,7 +332,7 @@ def updateTodo():
 
 
 
-app.run(host='0.0.0.0', port=5000, debug=True)
+app.run(ssl_context=('cert.pem', 'key.pem'))
 
 
 #socketio.runapp.run(debug=True)
