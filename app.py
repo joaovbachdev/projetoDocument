@@ -123,7 +123,9 @@ def auxCriaElemento():
             'interageCom':"",
             'tags':[],
             'testes':[],
-            'bugs':[]
+            'bugs':[],
+            'historias':[],
+            'linkedHistoris':{}
         }
         f.seek(0)
         json.dump(data,f,indent=4)
@@ -332,7 +334,7 @@ def updateTodo():
 
 
 
-app.run(ssl_context=('cert.pem', 'key.pem'))
+app.run(host='0.0.0.0', debug=True)
 
 
 #socketio.runapp.run(debug=True)

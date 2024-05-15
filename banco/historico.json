@@ -448,6 +448,9 @@
         },
         {
             "resultado": "erro"
+        },
+        {
+            "resultado": "erro"
         }
     ],
     "apiCriaViagem": [
@@ -952,6 +955,35 @@
         },
         {
             "resultado": "erro"
+        },
+        {
+            "resultado": "sucesso"
+        }
+    ],
+    "regrasAssinaturaDigitalComprova": [
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
+        },
+        {
+            "resultado": "sucesso"
         },
         {
             "resultado": "sucesso"

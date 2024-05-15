@@ -13,7 +13,7 @@
         ],
         "testes": [
             {
-                "plataforma": "mobile",
+                "plataforma": "web",
                 "teste": "testeClicaCpf",
                 "status": "realizado",
                 "automacao": [
@@ -24,23 +24,24 @@
             {
                 "plataforma": "web",
                 "teste": "testeWeb",
-                "status": "naoRealizado",
+                "status": "realizado",
                 "automacao": [
                     "page.goto(\"https.com\")"
+                ]
+            },
+            {
+                "plataforma": "web",
+                "teste": "chama nessa poha",
+                "status": "naoRealizado",
+                "automacao": [
+                    "a",
+                    "b"
                 ]
             }
         ],
         "bugs": [],
-        "historias": [
-            "SM1234",
-            "TESTE2"
-        ],
-        "linkedHistoris": {
-            "TESTE2": [
-                "4fa19fbf-3641-4c94-b173-f5058929a431",
-                "c52c4cb4-2a3c-4e1c-b7b3-64f8a8ac88f1"
-            ]
-        }
+        "historias": [],
+        "linkedHistoris": {}
     },
     "inputSenha": {
         "position": [
@@ -75,9 +76,7 @@
             }
         ],
         "bugs": [],
-        "historias": [
-            "SM1234"
-        ],
+        "historias": [],
         "linkedHistoris": {}
     },
     "botaoEntrar": {
@@ -578,22 +577,8 @@
             }
         ],
         "bugs": [],
-        "historias": [
-            "haha",
-            "TESTE2",
-            "TESTE2",
-            "TESTE2"
-        ],
-        "linkedHistoris": {
-            "haha": [
-                "4d725397-39db-4932-90fc-d9fe7e4aa41a",
-                "ff782333-f65c-4185-9d60-603cbcd4f9f0"
-            ],
-            "TESTE2": [
-                "4d74633d-2f26-4a0b-9d9f-6f974116867e",
-                "db9a78f3-4130-47ca-8550-93c97a084eae"
-            ]
-        }
+        "historias": [],
+        "linkedHistoris": {}
     },
     "botaoSairDoAplicativo": {
         "position": [
@@ -4343,7 +4328,9 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "linkedHistoris": {},
+        "historias": []
     },
     "botaoLogDeAtividade": {
         "position": [
@@ -4355,7 +4342,9 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "linkedHistoris": {},
+        "historias": []
     },
     "statusComprovanteRejeitado": {
         "position": [
@@ -4366,8 +4355,88 @@
         "name": "statusComprovanteRejeitado",
         "interageCom": "",
         "tags": [],
-        "testes": [],
-        "bugs": []
+        "testes": [
+            {
+                "plataforma": "web",
+                "teste": "enviar um documento que nao da match com nenhum doc eperado deve rejeitar",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "plataforma": "web",
+                "teste": "rejeitar um comprovante manualmente deve rejeitar",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "plataforma": "web",
+                "teste": "rejeitar um doc accessorio deve rejeitar",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "plataforma": "web",
+                "teste": "enviar um comprovante pela viagem que nao de match, deve rejeitar",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "plataforma": "web",
+                "teste": "enviar um comprovante pela aba de meus comprovantes que nao de match deve rejeitar",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "plataforma": "web",
+                "teste": "enviar um documento pelo front que nao de match, deve rejeitar",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "plataforma": "web",
+                "teste": "enviar um comprovante via portal de upload que nao de match, deve rejeitar",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "plataforma": "web",
+                "teste": "enviar uma nota fiscal que tenha nao tenha chave de acesso + 4 chaves deve rejeitar",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
+        "bugs": [],
+        "linkedHistoris": {
+            "SM2369": [
+                "a7819644-b71f-4f04-816a-51d0b7b22d89",
+                "8f959c95-0d81-47e8-a764-753d3e4b5d31",
+                "f4afdb24-1e56-4367-87af-9e80615d67ce",
+                "ad0ea973-bc72-419b-8148-d401ef4bd361",
+                "f212cfe8-5bcb-4936-ae74-b638a554ebcb",
+                "21e71938-79ec-455d-a7d7-b9874315d013",
+                "d2379de1-e643-478c-bd40-e6751614dec8",
+                "9fdadae3-4ea3-4c62-b73b-3abb4e833a6a"
+            ]
+        },
+        "historias": [
+            "SM2369"
+        ]
     },
     "statusComprovanteAprovado": {
         "position": [
@@ -4378,8 +4447,97 @@
         "name": "statusComprovanteAprovado",
         "interageCom": "",
         "tags": [],
-        "testes": [],
-        "bugs": []
+        "testes": [
+            {
+                "plataforma": "web",
+                "teste": "aprovar manualmente um comprovante sem numero esperado em analise, nao deve ser possivel",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "plataforma": "web",
+                "teste": "aprovar um comprovante sem numero esperado rejeitado, na deve ser possivel",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "plataforma": "web",
+                "teste": "enviar um comprovante para analise que retorne score 2",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "plataforma": "web",
+                "teste": "mandar uma nota que tenha chave de acesso + 2 chaves, deve aprovar",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "plataforma": "web",
+                "teste": "mandar uma nota que tenha chave de acesso + 4 chaves, deve aprovar",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "plataforma": "web",
+                "teste": "aprovar todos os comprovantes da viagem deve deletar os que estao sobrando",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "plataforma": "web",
+                "teste": "aprovar todos os comprovantes de apenas 1 ponto de coleta tendo mais de um nao deve deletar nada",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "plataforma": "web",
+                "teste": "ter um doc acessorio em analise, aprovar o ultimo comprovante faltando automaticamente, nao deve deletar nada",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "plataforma": "web",
+                "teste": "aprovar todos deve alterar o status da viagem apra arquivada",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
+        "bugs": [],
+        "linkedHistoris": {
+            "SM2369": [
+                "c684f48b-0116-4e5e-bc51-dcd9867f4321",
+                "cf16a84e-e224-4abd-921c-1d403b645f3a",
+                "2902cb1a-595c-4329-b7ca-eb8fca7aba17",
+                "32db42e0-abb4-45e9-9233-ac7f632e0329",
+                "4df8b76a-2915-4cac-a2ff-4da7d5625342",
+                "f515d50d-b644-4ac2-811e-989a2d7e2c6d",
+                "f9710f7c-850a-406e-879a-a7faa274f517",
+                "4a7e7375-8d82-455c-acd5-b2bcfabebd45",
+                "be0b45dd-b046-4a59-94c6-df826e8679e4"
+            ]
+        },
+        "historias": [
+            "SM2369"
+        ]
     },
     "statusNumeroSemImagem": {
         "position": [
@@ -4391,7 +4549,9 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "linkedHistoris": {},
+        "historias": []
     },
     "statusEmAnaliseSemNumero": {
         "position": [
@@ -4403,7 +4563,9 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "linkedHistoris": {},
+        "historias": []
     },
     "numeroEmitido": {
         "position": [
@@ -4415,7 +4577,9 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "linkedHistoris": {},
+        "historias": []
     },
     "numeroSemImagemVinculada": {
         "position": [
@@ -4427,7 +4591,9 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "linkedHistoris": {},
+        "historias": []
     },
     "imagemSemNumeroVinculado": {
         "position": [
@@ -4439,7 +4605,9 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "linkedHistoris": {},
+        "historias": []
     },
     "imagemENumeroVinculados": {
         "position": [
@@ -4451,7 +4619,9 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "linkedHistoris": {},
+        "historias": []
     },
     "importarComprovantesPontos": {
         "position": [
@@ -4463,7 +4633,9 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "linkedHistoris": {},
+        "historias": []
     },
     "importPOntosBotaoSelecionar": {
         "position": [
@@ -4475,7 +4647,9 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "linkedHistoris": {},
+        "historias": []
     },
     "botaoAdicionarArquivoComprova": {
         "position": [
@@ -4487,7 +4661,9 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "linkedHistoris": {},
+        "historias": []
     },
     "docRequeridoComprova": {
         "position": [
@@ -4499,6 +4675,120 @@
         "interageCom": "",
         "tags": [],
         "testes": [],
-        "bugs": []
+        "bugs": [],
+        "linkedHistoris": {},
+        "historias": []
+    },
+    "regrasAssinaturaDigitalComprova": {
+        "position": [
+            -12794.30497946967,
+            17907.337381927136
+        ],
+        "description": "as assinaturas digitais n\u00e3o passam por valida\u00e7\u00e3o automatica, sempre chegam aprovadas na viagem do motorista. A aprova\u00e7ao da assinatura digital deve recalcular o status da viagem e jamais disparar a dele\u00e7ao automatica.",
+        "name": "regrasAssinaturaDigitalComprova",
+        "interageCom": "",
+        "tags": [],
+        "testes": [
+            {
+                "plataforma": "web",
+                "teste": "enviar uma assinatura digital pela viagem, deve chegar como aprovada na viagem",
+                "status": "realizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "plataforma": "web",
+                "teste": "enviar uma assinatura digital pela aba de meus comprovantes, deve chegar aprovada na vaigem",
+                "status": "realizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "plataforma": "web",
+                "teste": "enviar uma assinatura pelo comprova, deve chegar aprovada",
+                "status": "realizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "plataforma": "web",
+                "teste": "enviar uma assinatura pelo portal de upload, deve chegar aprovada",
+                "status": "realizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "plataforma": "web",
+                "teste": "enviar uma assinatura em uma viagem sem doc esperado e que tenha outras fotos de comprovantes, nao deve deletar nada",
+                "status": "realizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "plataforma": "web",
+                "teste": "aprovar uma viagem por completo, as assinaturas nao devem ser deletadas",
+                "status": "realizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "plataforma": "web",
+                "teste": "enviar uma assinatura uma viagem que pede apenas assinatura, a viagem deve ser arquivada",
+                "status": "realizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "plataforma": "web",
+                "teste": "enviar uma assinatura em uma viagem que pede mais comprvovantes, deve ir para em analise a viagem",
+                "status": "realizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "plataforma": "web",
+                "teste": "ter 2 coletas que pedem assinatura, enviar apenas na primeira, a viagem deve ficar em analise",
+                "status": "realizado",
+                "automacao": [
+                    ""
+                ]
+            },
+            {
+                "plataforma": "web",
+                "teste": "enviar uma nota fiscal em uma viagem que pede apenas assinaturas, este cen\u00e1rio deve pontuar o motorista no matrixpontua",
+                "status": "naoRealizado",
+                "automacao": [
+                    ""
+                ]
+            }
+        ],
+        "bugs": [
+            "viagem com apenas assinaturas aprovadas ficando em analise",
+            "assinatura enviada pelo comprova ou pelo portal ficando em analise"
+        ],
+        "historias": [],
+        "linkedHistoris": {}
+    },
+    "numeroEsperadoAssinatura": {
+        "position": [
+            -12647.051753508586,
+            18245.98130692943
+        ],
+        "description": "cria via  auxiliar",
+        "name": "numeroEsperadoAssinatura",
+        "interageCom": "",
+        "tags": [],
+        "testes": [],
+        "bugs": [],
+        "historias": [],
+        "linkedHistoris": {}
     }
 }

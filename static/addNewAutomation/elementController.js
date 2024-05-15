@@ -169,7 +169,7 @@ function setTestList(data){
         item = document.createElement("div")
         item.setAttribute("class","testItem")
 
-
+       
         infoItemDiv = document.createElement("div")
         infoItemDiv.setAttribute("class","infoItemDiv")
         titulo = document.createElement("h3")
@@ -177,7 +177,12 @@ function setTestList(data){
 
         codigo = document.createElement("label")
         //console.log(element["automacao"].map(item=>item.teste).join('\n'))
-        codigo.textContent = element["automacao"].map(item=> item.teste).join('\n')
+        if(element.plataforma == 'mobile'){
+            codigo.textContent = element["automacao"].map(item=> item.teste).join('\n')
+        }else{
+            codigo.textContent = element["automacao"].join('\n')
+        }
+        
         
 
         itemStatus = document.createElement("input")

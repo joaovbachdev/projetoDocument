@@ -436,16 +436,14 @@ class ControllerBanco:
 #print(ControllerBanco().getMobileTestObject('telaLogin',0))
 
 #ControllerBanco().ultimasDezViagens()
-
 '''
 with open("banco/elementos.json","r+") as f:
     data = json.load(f)
     for i in data.keys():
-        data[i]["linkedHistoris"] = {}
+        data[i]["historias"] = []
     f.seek(0)
     json.dump(data,f,indent=4)
     f.truncate
 '''
-
 #print(ControllerBanco().validateElementTagFilter("nada"))
 #ControllerBanco().getElementTests("inputUsuario","elementos")

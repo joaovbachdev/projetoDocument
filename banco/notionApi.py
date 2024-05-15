@@ -7,7 +7,7 @@ import json
 class NotionApi:
     def __init__(self) -> None:
         self.token = 'secret_fQtOIe1fYqDGVFOOjk35itXEYvJNQmEt5QAFBaGhh5K'
-        self.databaseId = '0bc8205b6a4e4416810a849f05ee379a'
+        self.databaseId = '2225bc7775314a4bb6e13e1d6209c34d'#https://www.notion.so/2225bc7775314a4bb6e13e1d6209c34d?v=b840b7eb853d409391c8d2a329db5865&pvs=4
 
         self.header = {
             "Authorization":"Bearer " + self.token,
@@ -21,15 +21,17 @@ class NotionApi:
         response = requests.post(url, json=payload, headers = self.header)
         data = response.json()
         results = {}
+
         for i in data['results']:
-            results[i['id']] = i['properties']['Name']['title'][0]['text']['content']
+            results[i['id']] = i['properties']['Nome']['title'][0]['text']['content']
         return results
 
     def add_to_do(self, pageName, content, checked):
         data = self.get_pages_info()
+        validacaoToggleId = self.get_validacoes_id(list(data.keys())[0])
         key = [chave for chave, valor in data.items() if valor == pageName]
-
-        url = f'https://api.notion.com/v1/blocks/{key[0]}/children'
+        url = f'https://api.notion.com/v1/blocks/{validacaoToggleId}/children'
+        
         payload = {
             	"children":[
                         {
@@ -72,8 +74,32 @@ class NotionApi:
         response = requests.patch(url, json=payload, headers = self.header)
         return response
 
+    def get_ocorrencias_table(self, pageId):
+        url = f"https://api.notion.com/v1/blocks/{pageId}/children"
+        response = requests.get(url, headers=self.header)
+        toggleId = [i['id'] for i in response.json()['results'] if i['type'] == "toggle"][1]
+        
+        urlToggle = f"https://api.notion.com/v1/blocks/{toggleId}/children"
+        responseToggle = requests.get(url=urlToggle, headers=self.header)
+        
+        tabbleIid = [i['id'] for i in responseToggle.json()['results'] if i['type'] == 'table'][0]
+        tableContent_url = f"https://api.notion.com/v1/blocks/{tabbleIid}/children"
+        tableContent = requests.get(url=tableContent_url, headers=self.header)
+        
+        return tableContent.json()
+    
+    def get_validacoes_id(self, pageId):
+        url = f"https://api.notion.com/v1/blocks/{pageId}/children"
+        response = requests.get(url, headers=self.header)
+        toggleId = [i['id'] for i in response.json()['results'] if i['type'] == "toggle"][0]
+        
+        urlToggle = f"https://api.notion.com/v1/blocks/{toggleId}/children"
+        responseToggle = requests.get(url=urlToggle, headers=self.header)
+        
+        return toggleId
+        #print(response.json())
 #print(NotionApi().add_to_do('TESTE2','ahah'))
 #print(NotionApi().get_pages_info())
-
+#print(NotionApi().get_validacoes_cotent("3fe45f98-db2d-445f-855a-e85a2f01b099"))
 
 
