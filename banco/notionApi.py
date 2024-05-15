@@ -8,7 +8,7 @@ class NotionApi:
     def __init__(self) -> None:
         self.token = 'secret_fQtOIe1fYqDGVFOOjk35itXEYvJNQmEt5QAFBaGhh5K'
         self.databaseId = '2225bc7775314a4bb6e13e1d6209c34d'#https://www.notion.so/2225bc7775314a4bb6e13e1d6209c34d?v=b840b7eb853d409391c8d2a329db5865&pvs=4
-
+        self.bugsDatabase = '2b375eaeab2f4a8e9c2b9f422047443f'
         self.header = {
             "Authorization":"Bearer " + self.token,
             "Content-Type": "application/json",
@@ -97,6 +97,92 @@ class NotionApi:
         responseToggle = requests.get(url=urlToggle, headers=self.header)
         
         return toggleId
+    
+    def add_bug_register(self, name, link, url, card_desc):
+        url = "https://api.notion.com/v1/pages"
+        payload = {
+            "parent":{"database_id":self.bugsDatabase},
+            "properties":{
+                "id":{
+                    "title":[{"text":{"content":name}}]
+                    
+                },
+                "Link":{
+                    "rich_text":[
+                        {
+                            "text":{
+                                "content":link
+                            }
+                        }
+                        ]
+                },
+                "URL":{
+                    "url":url 
+               }
+            }
+        }
+        response = requests.post(url,json=payload, headers=self.header)
+        print(response)
+
+        pageCreated = response.json()['id']
+        
+        pageContentPayload = {
+            "children":[
+                {
+                    "heading_1":{
+                        "rich_text":[
+                            {
+                                "type":"text",
+                                "text":{
+                                    "content":"Descrição:",
+                                    "link":None
+                                },
+                                "annotations":{
+                                	"bold": False,
+                                    "italic": False,
+                                    "strikethrough": False,
+                                    "underline": False,
+                                    "code": False,
+                                    "color": "default"
+                                },
+                                "plain_text": "Descrição",
+                                "href":None
+                            }
+                        ],
+                        "is_toggleable":False,
+                        "color":"default"
+                    }
+                },
+                {
+                    "paragraph":{
+                        "rich_text":[
+                            {
+                                "type":"text",
+                                "text":{
+                                    "content":card_desc['description'],
+                                    "link":None
+                                },
+                                "annotations":{
+                                	"bold": False,
+                                    "italic": False,
+                                    "strikethrough": False,
+                                    "underline": False,
+                                    "code": False,
+                                    "color": "default"
+                                },
+                                "plain_text": card_desc['description'],
+                                "href":None
+                            }
+                        ],
+                        "color":"default"
+                    }
+                }
+            ]
+        }
+        response_edit_page = requests.patch(f"https://api.notion.com/v1/blocks/{pageCreated}/children", json=pageContentPayload, headers=self.header)
+        print(response_edit_page)
+
+#NotionApi().add_bug_register("sm1254","nota fiscal","https://taletole",{'description':"teste descicao"})
         #print(response.json())
 #print(NotionApi().add_to_do('TESTE2','ahah'))
 #print(NotionApi().get_pages_info())
