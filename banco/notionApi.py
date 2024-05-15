@@ -182,7 +182,7 @@ class NotionApi:
         response_edit_page = requests.patch(f"https://api.notion.com/v1/blocks/{pageCreated}/children", json=pageContentPayload, headers=self.header)
         print(response_edit_page)
 
-#NotionApi().add_bug_register("sm1254","nota fiscal","https://taletole",{'description':"teste descicao"})
+#NotionApi().add_bug_register("sm1265","Assinatura digital","https://taletole",{'description':"teste descicao"})
         #print(response.json())
 #print(NotionApi().add_to_do('TESTE2','ahah'))
 #print(NotionApi().get_pages_info())
